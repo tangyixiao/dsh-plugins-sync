@@ -1,0 +1,35 @@
+{
+  "name": "dsh-plugins-sync",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multi-device sync snapshot of the awesome-dsh-plugin catalog (4579 plugins) with ranking by downloads/stars and pinned install scripts for DeepSeek Harness (dsh).",
+  "type": "module",
+  "scripts": {
+    "install:top": "node scripts/install-top.mjs",
+    "sync": "node scripts/sync-catalog.mjs"
+  },
+  "top20": [
+    { "name": "dsh-market/dsh-market", "spec": "npm:dshmarket@1.65.1", "dl": 82491, "stars": 1100 },
+    { "name": "liustack/modlens", "spec": "npm:@liustack/modlens@3.26.5", "dl": 63829, "stars": 3152 },
+    { "name": "omdsh-dev/DSH-better-sidebar", "spec": "npm:dsh-better-sidebar@0.21.1", "dl": 39717, "stars": 2216 },
+    { "name": "ysr666/dsh-vision-router", "spec": "github:ysr666/dsh-vision-router#dadd0a4115db", "dl": 21679, "stars": 775 },
+    { "name": "Anionex/dsh-vision-toolkit", "spec": "github:Anionex/dsh-vision-toolkit#SKIP-ALREADY-INSTALLED", "dl": 17248, "stars": 714 },
+    { "name": "ccch1mneyyy/dsh-TUI", "spec": "npm:@deepseek-harness-tui/dsh-tui@0.11.0", "dl": 16959, "stars": 2009 },
+    { "name": "NanmiCoder/dsh-agent-teams", "spec": "npm:@nanmicoder/dsh-agent-teams@0.1.23", "dl": 10525, "stars": 573, "skip": true },
+    { "name": "shaobeichen/dsh-pocket", "spec": "github:shaobeichen/dsh-pocket#e6424c3a2c79", "dl": 10411, "stars": 179 },
+    { "name": "MicroMilo/upstream-radar", "spec": "npm:upstream-radar@0.45.0", "dl": 9808, "stars": 5 },
+    { "name": "liustack/modsearch", "spec": "npm:@liustack/modsearch@5.10.5", "dl": 8781, "stars": 153 },
+    { "name": "PlutoKeating/dsh-lark-bot", "spec": "npm:dsh-lark-bot@0.19.16", "dl": 7122, "stars": 21 },
+    { "name": "omdsh-dev/dsh-mnemon", "spec": "npm:dsh-mnemon@0.5.13", "dl": 6799, "stars": 109 },
+    { "name": "THEWOLFWALKER/dsh-notifier", "spec": "github:THEWOLFWALKER/dsh-notifier#9d69dd7a8908", "dl": 6677, "stars": 43 },
+    { "name": "bowenliang123/dsh-context", "spec": "npm:dsh-context@0.55.0", "dl": 6612, "stars": 416 },
+    { "name": "sjh9714/dsh-win32", "spec": "npm:dsh-win32@0.17.14", "dl": 5967, "stars": 11 },
+    { "name": "awesome-dsh-plugin/dsh-find-plugin", "spec": "github:awesome-dsh-plugin/dsh-find-plugin#afce1cd43f98", "dl": 5892, "stars": 58 },
+    { "name": "FuzzySoul/dsh-free-vision", "spec": "github:FuzzySoul/dsh-free-vision#9daa0dc4b429", "dl": 4739, "stars": 2 },
+    { "name": "RevolutionLA/dsh-dream-skin", "spec": "github:RevolutionLA/dsh-dream-skin#53eb7f3bb945", "dl": 4475, "stars": 58 }
+  ],
+  "excluded": [
+    { "name": "vectorize-io/hindsight#coding-agents", "reason": "no resolvable dsh.bundle spec in capabilities.json / catalog yml; install via its own repo instructions" },
+    { "name": "saya-ch/dsh-mobile", "reason": "no resolvable dsh.bundle spec; no stars data" }
+  ]
+}
