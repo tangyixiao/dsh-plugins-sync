@@ -2,10 +2,33 @@
   "repo": "tangyixiao/dsh-plugins-sync",
   "sourceBranch": "main",
   "sourceCommit": "db2fd057c4a2a57a80fbf63d6e624dbb2f6700de",
+  "designVersion": 3,
+  "direction": {
+    "visualConcept": "黄铜黄、石墨与纸白的插件目录调度板：真实插件清单像版本钉死的票据，索引、排名、精选安装三条轨道并置，清楚分开快照读取与安装命令。事实边界：仓库快照与生成脚本，不是实时市场；不把历史数量/排名写成实时数据，不让点击装置自动安装。",
+    "layout": "catalog",
+    "palette": {
+      "light": {
+        "bg": "#E6DFC3",
+        "surface": "#F8F0D9",
+        "ink": "#383021",
+        "muted": "#6c5f44",
+        "accent": "#7a5e20"
+      },
+      "dark": {
+        "bg": "#252113",
+        "surface": "#39311D",
+        "ink": "#F4EBCF",
+        "muted": "#bfb18a",
+        "accent": "#e8c76d"
+      }
+    },
+    "threeConcept": "Three.js 制作黄铜票夹、可更换版本票与三槽目录调度盘；票面只有真实路径、版本或短 SHA，不循环滚动“实时下载”数字。",
+    "distinctiveInteraction": "本地筛选已加载快照，点击版本票查看确切 pin 与 GitHub 来源；安装命令复制前必须显示目标 profile，网站不直接执行脚本。"
+  },
   "media": [],
   "skills": [
     "baoyu-design",
     "design-taste-frontend"
   ],
-  "design": "content-first source/product/photography; no rejected template or faux 3D"
+  "flagshipModel": null
 }
