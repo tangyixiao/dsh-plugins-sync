@@ -1,0 +1,4 @@
+* text=auto eol=lf
+# Preserve upstream catalog bytes and independent market snapshot payloads.
+data/** -text
+markets/snapshots/** -text
