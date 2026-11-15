@@ -29,7 +29,7 @@ export function assertGeneratedChanges(paths, readBase, readHead, sourceIds) {
   }
 }
 
-export function assertMergeContext(pr, { repo, base, head, status, sourceIds }) {
+export function assertMergeContext(pr, { repo, base, currentBase, head, status, sourceIds }) {
   assert.equal(pr.state, 'open');
   assert.equal(pr.draft, false);
   assert.equal(pr.head.repo.full_name, repo);
@@ -37,7 +37,8 @@ export function assertMergeContext(pr, { repo, base, head, status, sourceIds }) 
   assert.equal(pr.head.ref, 'automation/catalog-sync');
   assert.equal(pr.base.ref, 'main');
   assert.equal(pr.head.sha, head, 'PR head changed after validation');
-  assert.equal(pr.base.sha, base, 'Main changed after validation; rerun sync');
+  // PR base.sha may retain the creation-time SHA; only the live ref proves drift.
+  assert.equal(currentBase, base, 'Main changed after validation; rerun sync');
   assert.equal(status.incomplete, undefined);
   assert.deepEqual(status.sources.map((s) => s.id), sourceIds);
   assert.ok(status.sources.every((s) => s.status === 'fresh'), 'Cached or unavailable source: keep PR open');
@@ -58,9 +59,10 @@ function main() {
   assertGeneratedChanges(paths, (path) => read(base, path), (path) => read(head, path), sourceIds);
   const modes = git('diff', '--raw', '--no-abbrev', base, head);
   assert.ok(!modes.split('\n').some((line) => /^:\d+ (?:120000|160000) /.test(line)), 'Symlink or submodule in generated changes');
-  assertMergeContext(api(`repos/${repo}/pulls/${number}`), { repo, base, head, sourceIds,
+  const pr = api(`repos/${repo}/pulls/${number}`);
+  const currentBase = api(`repos/${repo}/git/ref/heads/main`).object.sha;
+  assertMergeContext(pr, { repo, base, currentBase, head, sourceIds,
     status: JSON.parse(read(head, 'markets/status.json')) });
-  assert.equal(api(`repos/${repo}/git/ref/heads/main`).object.sha, base, 'Main advanced; rerun sync');
   // No --admin or protection bypass. Bind the merge to the checked commit.
   execFileSync('gh', ['pr', 'merge', number, '--repo', repo, '--merge', '--match-head-commit', head,
     '--subject', 'chore(sync): automatically update catalog and markets',

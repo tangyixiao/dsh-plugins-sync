@@ -27,13 +27,16 @@ test('merge requires the validated head/base, same-repo automation branch and ev
   const repo = 'owner/catalog';
   const pr = { state: 'open', draft: false, head: { ref: 'automation/catalog-sync', sha: 'head', repo: { full_name: repo } },
     base: { ref: 'main', sha: 'base', repo: { full_name: repo } } };
-  const context = { repo, base: 'base', head: 'head', sourceIds: ['awesome'], status: { sources: [{ id: 'awesome', status: 'fresh' }] } };
+  const context = { repo, base: 'base', currentBase: 'base', head: 'head', sourceIds: ['awesome'], status: { sources: [{ id: 'awesome', status: 'fresh' }] } };
   assertMergeContext(pr, context);
+  // Existing PRs can keep their creation-time base SHA after main advances.
+  assertMergeContext({ ...pr, base: { ...pr.base, sha: 'old creation-time SHA' } }, context);
   for (const state of ['cached', 'unavailable']) {
     assert.throws(() => assertMergeContext(pr, { ...context, status: { sources: [{ id: 'awesome', status: state }] } }));
   }
   assert.throws(() => assertMergeContext(pr, { ...context, head: 'unvalidated' }));
   assert.throws(() => assertMergeContext(pr, { ...context, base: 'new main' }));
+  assert.throws(() => assertMergeContext(pr, { ...context, currentBase: 'main advanced during sync' }));
   assert.throws(() => assertMergeContext(pr, { ...context, sourceIds: ['awesome', 'missing'] }));
   assert.throws(() => assertMergeContext({ ...pr, head: { ...pr.head, ref: 'feature' } }, context));
   assert.throws(() => assertMergeContext({ ...pr, head: { ...pr.head, repo: { full_name: 'fork/catalog' } } }, context));
