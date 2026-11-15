@@ -75,7 +75,13 @@ npm test            # 同步保护、YAML 解析和版本冲突回归检查
 
 ## 署名与来源
 
-本仓库由 [Tangyixiao](https://github.com/tangyixiao) 维护，同步脚本与整理工作归相应贡献者；自动更新由 GitHub Actions 执行，机器人提交保留 `Maintained-by` 与数据来源说明。
+本仓库由 [Tangyixiao](https://github.com/tangyixiao) 维护，同步脚本与整理工作归相应贡献者；自动更新由 GitHub Actions 执行。每次 Action 生成的数据提交及自动合并提交均以 `github-actions[bot]` 为作者，并通过以下标准 Git trailer 与 Tangyixiao 联合署名，GitHub 可识别为共同作者：
+
+```text
+Co-authored-by: Tangyixiao <115929632+tangyixiao@users.noreply.github.com>
+```
+
+机器人提交同时保留 `Maintained-by` 与数据来源说明。没有数据变化时不创建空提交。
 
 完整目录、下载量、stars 和权限扫描数据来自 [Awesome DSH Plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 及其贡献者。六个市场通道的原始来源、归属和许可分别列在[多市场同步记录](markets/README.md)、[来源配置](markets.config.json) 和 [市场数据许可说明](LICENSE.market-data)，每次自动刷新都会保留。
 
