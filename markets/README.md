@@ -4,8 +4,8 @@
 |---|---|---|---:|---|
 | [Awesome DSH Plugin](https://awesome-dsh-plugin.com/index.json) | stable | fresh | 5635 | 2026-11-15T04:16:14.753Z |
 | [Open Plugin Market](https://dshopen.org/index.json) | stable | fresh | 1245 | 2026-11-15T04:16:14.791Z |
-| [DSH Marketplace](https://dshmarketplace.dev/market/index.json) | stable | fresh | 1792 | 2026-11-15T04:16:14.821Z |
-| [DSH Plugin Hub](https://dpharness.com/market/index.json) | stable | fresh | 3299 | 2026-11-15T04:16:14.862Z |
+| [DSH Marketplace](https://dshmarketplace.dev/market/index.json) | stable | fresh | 1792 | 2026-11-15T05:21:18.990Z |
+| [DSH Plugin Hub](https://dpharness.com/market/index.json) | stable | fresh | 3299 | 2026-11-15T05:21:23.574Z |
 | [Tangyixiao DSH Market](https://tangyixiao.github.io/dsh-plugin-market/index.json) | stable | fresh | 7690 | 2026-11-15T04:16:14.993Z |
 | [Tangyixiao DSH Market Preview](https://tangyixiao.github.io/dsh-plugin-market/preview/index.json) | preview | fresh | 7690 | 2026-11-15T04:16:15.131Z |
 
