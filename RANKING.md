@@ -3,6 +3,9 @@
 > 快照时间：2026-11-15 · 共 11137 个插件
 > 下载/stars 数据沿用上游缓存及其采集时间，并非本次重新采集；空值表示上游未采集。
 
+> 维护与同步：[Tangyixiao](https://github.com/tangyixiao)；目录数据：[Awesome DSH Plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 及原贡献者。
+> 条目修正贡献：[@Ultroncn](https://github.com/Ultroncn)（[PR #1](https://github.com/tangyixiao/dsh-plugins-sync/pull/1)）；各插件版权与许可归原作者。
+
 | # | 插件 | 下载 | Stars | 分类 |
 |---|------|------|-------|------|
 | 1 | [dsh-market/dsh-market](https://github.com/dsh-market/dsh-market) | 82491 | 1100 | market |

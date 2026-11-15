@@ -65,12 +65,21 @@ npm test            # 同步保护、YAML 解析和版本冲突回归检查
 
 - **Validate catalog**：每次 PR、main 推送和手动运行时，在 Ubuntu / Windows 上执行语法检查、回归测试、全部 YAML/JSON 与市场指针校验、依赖审计。离线校验不依赖第三方市场在线。
 - **Sync catalogs and markets**：每 6 小时自动运行，也可在 Actions 页面手动触发。计划时刻为北京时间 02:23 / 08:23 / 14:23 / 20:23，实际启动时间由 GitHub 调度决定。
-- 自动同步使用单独的 `automation/catalog-sync` 分支，创建或更新同一个 PR，由维护者审阅后合并。分支通过保留前次提交为父提交来正常推进，不使用强制推送。该分支只用于生成数据，请在其他分支提交人工改动。
+- 自动同步使用单独的 `automation/catalog-sync` 分支，创建或更新同一个 PR；本轮抓取、测试、完整性校验和依赖审计全部通过，且所有来源均为 fresh 时，自动合入 `main`，无需逐次手动合并。分支通过保留前次提交为父提交来正常推进，不使用强制推送。
+- 自动合并只接受生成目录、排行榜、市场快照及 README / package.json 中的插件数量变化。脚本、工作流、依赖、市场配置、精选安装版本或其他人工改动均被拒绝；PR 提交或 main 在校验后发生变化也会中止。该分支只用于生成数据，请在其他分支提交人工改动。Dependabot 依赖更新仍单独审阅。
 - 内容未变化时保留快照时间，避免仅因时间戳变化创建更新。某个来源失败会在 Actions 中报告；若缓存完整，仍可生成带 cached 状态的更新 PR。
-- 工作流使用内置 `GITHUB_TOKEN`，只给同步任务授予 contents / pull-requests 写权限，不需要另填市场账号或 npm 密钥。仓库需要允许 GitHub Actions 创建 PR。机器人 PR 的额外 CI 可能显示待批准，自动同步任务本身已执行相同的校验。
+- 工作流使用内置 `GITHUB_TOKEN`，只给同步任务授予 contents / pull-requests / actions 写权限，不需要另填市场账号或 npm 密钥。仓库需要允许 GitHub Actions 创建 PR。机器人 PR 的额外 CI 可能显示待批准，自动同步任务本身已执行相同的校验；自动合入后显式触发 Ubuntu / Windows CI。来源 cached / unavailable、校验失败或合并受保护规则阻止时，保留待处理 PR 并报错。
 - Dependabot 每周检查 npm 锁定依赖和 GitHub Actions 引用。
 
 添加市场时，在 `markets.config.json` 中增加唯一来源 ID、HTTPS 原生 format-1 索引 URL、通道与许可链接，然后运行同步及全部校验。每个来源的原始索引、声明和归属分别保留；本仓库的脚本许可不覆盖市场数据，见 [市场数据许可说明](LICENSE.market-data)。
+
+## 署名与来源
+
+本仓库由 [Tangyixiao](https://github.com/tangyixiao) 维护，同步脚本与整理工作归相应贡献者；自动更新由 GitHub Actions 执行，机器人提交保留 `Maintained-by` 与数据来源说明。
+
+完整目录、下载量、stars 和权限扫描数据来自 [Awesome DSH Plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 及其贡献者。六个市场通道的原始来源、归属和许可分别列在[多市场同步记录](markets/README.md)、[来源配置](markets.config.json) 和 [市场数据许可说明](LICENSE.market-data)，每次自动刷新都会保留。
+
+感谢 [@Ultroncn](https://github.com/Ultroncn) 在 [PR #1](https://github.com/tangyixiao/dsh-plugins-sync/pull/1) 中修正其插件条目；这项贡献记录在 `catalog-overrides.json`，自动刷新继续保留。各插件、翻译和市场声明的版权归原作者或来源；目录收录不改变其署名与许可。
 
 ## 免责声明
 

@@ -49,6 +49,10 @@ test('full sync parses multiline Chinese YAML and preserves PR corrections and r
   assert.equal(existsSync(join(dir, 'data/plugins/Ultronen__dsh-archived-chats.yml')), false);
   assert.match(readFileSync(join(dir, 'README.md'), 'utf8'), /2 个插件/);
   assert.match(readFileSync(join(dir, 'README.md'), 'utf8'), /（2 个，/);
+  const ranking = readFileSync(join(dir, 'RANKING.md'), 'utf8');
+  assert.match(ranking, /Tangyixiao/);
+  assert.match(ranking, /Awesome DSH Plugin/);
+  assert.match(ranking, /Ultroncn/);
 }));
 
 test('invalid incoming metadata fails before replacing the previous snapshot', () => fixture(({ dir, invoke }) => {

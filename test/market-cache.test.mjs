@@ -29,10 +29,16 @@ function fixture(run) {
 test('unchanged content is stable, while failed fetch retains validated cache and reports failure', () => fixture(({ dir, invoke }) => {
   const first = invoke();
   assert.equal(first.status, 0, first.stderr);
+  const report = readFileSync(join(dir, 'markets/README.md'), 'utf8');
+  assert.match(report, /Tangyixiao/);
+  assert.match(report, /Ultroncn/);
+  assert.match(report, /\[Example\]\(https:\/\/example.org\/index.json\)/);
+  assert.match(report, /\[fixture\]\(https:\/\/example.org\/license\)/);
   const snapshotPath = join(dir, 'markets/snapshots/example.json');
   const baseline = readFileSync(snapshotPath, 'utf8');
   assert.equal(invoke().status, 0);
   assert.equal(readFileSync(snapshotPath, 'utf8'), baseline);
+  assert.equal(readFileSync(join(dir, 'markets/README.md'), 'utf8'), report);
   writeFileSync(join(dir, 'source/example.json'), '{broken');
   const failed = invoke();
   assert.equal(failed.status, 1);
