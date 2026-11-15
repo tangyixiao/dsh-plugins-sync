@@ -18,15 +18,15 @@
       "id": "marketplace",
       "status": "fresh",
       "plugins": 1792,
-      "sha256": "d013cdda75dc19aa6ace6237b3cd80a9a858636c5b84f1f2f714ab27d2954233",
-      "snapshotAt": "2026-11-15T04:16:14.821Z"
+      "sha256": "59a79548ed1e658735ab85ed32a8cb7d99cc7d7df456f12b668e2864ba67dc0a",
+      "snapshotAt": "2026-11-15T06:17:49.568Z"
     },
     {
       "id": "hub",
       "status": "fresh",
       "plugins": 3299,
-      "sha256": "aa0aa8541a79d4d56c24794f2c170bbc4487c5ea120a2c8733ddea61620dd143",
-      "snapshotAt": "2026-11-15T04:16:14.862Z"
+      "sha256": "71248f768f8c21cdb6bcde1c593b2877f4e7c5d93a0aa43a2c7c0d00b702a57e",
+      "snapshotAt": "2026-11-15T06:17:58.180Z"
     },
     {
       "id": "tangyixiao",
@@ -45,9 +45,9 @@
   ],
   "summary": {
     "sources": 6,
-    "plugins": 7692,
+    "plugins": 7693,
     "listings": 27351,
     "versionRecords": 29632,
-    "conflicts": 1216
+    "conflicts": 1217
   }
 }
