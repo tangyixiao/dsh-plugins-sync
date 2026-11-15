@@ -10,44 +10,44 @@
     {
       "id": "open",
       "status": "fresh",
-      "plugins": 1245,
-      "sha256": "9a779d02769a55b825edc99b1ab088e6751e7ae0af1cda5084d9a23d7a476986",
-      "snapshotAt": "2026-11-15T04:16:14.791Z"
+      "plugins": 1254,
+      "sha256": "393c98c6d0a2a7c2c3a96d2059df67b1c9175986fe9865057dd486c7aa9617bd",
+      "snapshotAt": "2026-11-15T14:09:38.075Z"
     },
     {
       "id": "marketplace",
       "status": "fresh",
       "plugins": 1792,
-      "sha256": "c901e29dbe92d671e25f3af46f2efd2dcb49f4c1b456e82aecb3bab38c406d82",
-      "snapshotAt": "2026-11-15T06:21:08.944Z"
+      "sha256": "16ff10a9ffaf8d875b19a6e4ba20cb04bed12c47d2fd11eaf490aad480b5247f",
+      "snapshotAt": "2026-11-15T14:09:38.816Z"
     },
     {
       "id": "hub",
       "status": "fresh",
-      "plugins": 3299,
-      "sha256": "71248f768f8c21cdb6bcde1c593b2877f4e7c5d93a0aa43a2c7c0d00b702a57e",
-      "snapshotAt": "2026-11-15T06:21:12.374Z"
+      "plugins": 3301,
+      "sha256": "f287a4c102102819a53e131154df7d4609caa866a8d712f28f84bb3c4798e840",
+      "snapshotAt": "2026-11-15T14:09:44.678Z"
     },
     {
       "id": "tangyixiao",
       "status": "fresh",
-      "plugins": 7690,
-      "sha256": "8253b5c4c6191f7182367cb785bf020b1e22eefe04711bd6c16ad54e3050d586",
-      "snapshotAt": "2026-11-15T04:16:14.993Z"
+      "plugins": 7700,
+      "sha256": "637c153b543e880aebaca72886f9a2cb9e9c7c6379a60d8d0b33695353697d00",
+      "snapshotAt": "2026-11-15T14:09:45.378Z"
     },
     {
       "id": "tangyixiao-preview",
       "status": "fresh",
-      "plugins": 7690,
-      "sha256": "1ec7cec103310aaf285ca7b6daf024a64bb03c767069d6acfdde0385c6ed8a08",
-      "snapshotAt": "2026-11-15T04:16:15.131Z"
+      "plugins": 7700,
+      "sha256": "d821ee6d551a9e3478d1a73376d8e59b8c69ae5652a21d591ff740f6306b1ae4",
+      "snapshotAt": "2026-11-15T14:09:46.104Z"
     }
   ],
   "summary": {
     "sources": 6,
-    "plugins": 7693,
-    "listings": 27351,
-    "versionRecords": 29632,
-    "conflicts": 1217
+    "plugins": 7700,
+    "listings": 27382,
+    "versionRecords": 29703,
+    "conflicts": 1194
   }
 }
