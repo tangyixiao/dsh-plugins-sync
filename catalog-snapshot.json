@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-11-15T04:21:09.199Z",
+  "upstream": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+  "upstreamCommit": "1cdd13cfeaae82c7f5c649b5d49866615a84edd3",
+  "inputSha256": "e95e21cfd94ac54b0aadaf37ec7cabce418bdfa33778bc89f51bee2772ed9072",
+  "upstreamCount": 11139,
+  "count": 11139,
+  "duplicateUrlCount": 2,
+  "overrides": [
+    {
+      "file": "Ultroncn__dsh-archived-chats.yml",
+      "source": "https://github.com/tangyixiao/dsh-plugins-sync/pull/1"
+    }
+  ]
+}

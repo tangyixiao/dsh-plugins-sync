@@ -1,18 +1,29 @@
 # dsh-plugins-sync
 
-多端同步的 [DeepSeek Harness (dsh)](https://github.com/deepseek-ai/deepseek-harness) 插件目录快照，数据来自 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)（4579 个插件）。
+[![Validate catalog](https://github.com/tangyixiao/dsh-plugins-sync/actions/workflows/ci.yml/badge.svg)](https://github.com/tangyixiao/dsh-plugins-sync/actions/workflows/ci.yml)
+[![Sync catalogs and markets](https://github.com/tangyixiao/dsh-plugins-sync/actions/workflows/sync.yml/badge.svg)](https://github.com/tangyixiao/dsh-plugins-sync/actions/workflows/sync.yml)
+
+多端同步的 [DeepSeek Harness (dsh)](https://github.com/deepseek-ai/deepseek-harness) 插件目录快照，数据来自 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)（11139 个插件）。
+
+同时同步 Awesome、Open Plugin Market、DSH Marketplace、DSH Plugin Hub，以及 Tangyixiao 市场的稳定版和预览版原生索引。当前数量、来源状态和快照时间见 [多市场同步记录](markets/README.md)。
 
 ## 仓库结构
 
 | 路径 | 说明 |
 |---|---|
-| `data/plugins/*.yml` | 上游全量插件清单（4579 个，逐插件元数据） |
+| `data/plugins/*.yml` | 上游全量插件清单（11139 个，逐插件元数据） |
 | `data/downloads.json` / `stars.json` / `capabilities.json` | 上游采集的下载量、stars、权限扫描数据 |
 | `plugins.json` | 本仓库生成的扁平索引：名称/URL/分类/下载/stars/中英描述，已按 下载↓ stars↓ 排序 |
 | `RANKING.md` | Top 200 排行榜（人类可读） |
 | `package.json` → `top20` | **版本钉死的精选清单**（npm 精确版本 / github commit SHA） |
 | `scripts/install-top.mjs` | 一键把 top20 装进指定 profile |
 | `scripts/sync-catalog.mjs` | 从上游刷新 data/ 并重建 plugins.json + RANKING.md |
+| `catalog-overrides.json` | 已审阅的本地条目修正，记录来源 PR，刷新后保留 |
+| `catalog-snapshot.json` | 本次同步的上游提交、时间与条目数 |
+| `markets.config.json` | 六个市场来源、独立通道及许可来源配置 |
+| `markets/snapshots/*.json` | 各来源通过官方 format-1 解析器校验的独立快照 |
+| `market-plugins.json` | 按包名聚合的来源位置与版本冲突记录；声明保留在来源快照中 |
+| `markets/status.json` | 每个来源的 fresh / cached / unavailable 状态 |
 
 ## 新设备一键恢复
 
@@ -36,9 +47,30 @@ dsh plugin add --profile web <npm包名@版本 或 github:owner/repo#commit>
 ## 数据同步
 
 ```sh
-node scripts/sync-catalog.mjs   # 拉上游最新 data，重建索引与排行榜
-git add -A && git commit -m "sync" && git push
+npm ci --ignore-scripts --registry=https://registry.npmjs.org/
+npm run sync        # 全量目录、索引、排行榜及所有配置的市场来源
+npm run validate    # 离线校验完整快照、来源完整性及聚合指针
+npm test            # 同步保护、YAML 解析和版本冲突回归检查
 ```
+
+已有上游检出时，可复用数据：`node scripts/sync-catalog.mjs --source-dir <上游目录> --source-ref <完整提交 SHA>`。同步先检查全部 YAML 与 JSON，再替换快照，并应用 `catalog-overrides.json` 中的修正，避免已合入的作者更正被覆盖。新增、更名和移除条目均按该次上游快照同步。
+
+下载量、stars、权限扫描和截图数据沿用上游缓存；同步日期不代表这些字段的重新采集日期。`package.json` 的精选安装版本为单独维护的固定清单，不会随目录刷新自动升级或安装。
+
+`npm run sync:catalog` 只更新 Awesome 完整目录；`npm run sync:markets` 只更新配置的六个原生市场索引。后者每个来源最多读取 20 MiB、超时 30 秒；不会安装或执行收录的插件。
+
+多市场聚合按包名去重，同一版本的安装来源或宿主兼容声明不一致时保留所有来源指针。稳定版与预览版分别记录，未将预览版本替换成稳定版。来源失败时保留通过完整性验证的旧快照，标为 cached，并让本轮同步以失败状态结束；首次没有可用快照时，不生成缺少该来源的聚合结果。
+
+## GitHub Actions
+
+- **Validate catalog**：每次 PR、main 推送和手动运行时，在 Ubuntu / Windows 上执行语法检查、回归测试、全部 YAML/JSON 与市场指针校验、依赖审计。离线校验不依赖第三方市场在线。
+- **Sync catalogs and markets**：每 6 小时自动运行，也可在 Actions 页面手动触发。计划时刻为北京时间 02:23 / 08:23 / 14:23 / 20:23，实际启动时间由 GitHub 调度决定。
+- 自动同步使用单独的 `automation/catalog-sync` 分支，创建或更新同一个 PR，由维护者审阅后合并。分支通过保留前次提交为父提交来正常推进，不使用强制推送。该分支只用于生成数据，请在其他分支提交人工改动。
+- 内容未变化时保留快照时间，避免仅因时间戳变化创建更新。某个来源失败会在 Actions 中报告；若缓存完整，仍可生成带 cached 状态的更新 PR。
+- 工作流使用内置 `GITHUB_TOKEN`，只给同步任务授予 contents / pull-requests 写权限，不需要另填市场账号或 npm 密钥。仓库需要允许 GitHub Actions 创建 PR。机器人 PR 的额外 CI 可能显示待批准，自动同步任务本身已执行相同的校验。
+- Dependabot 每周检查 npm 锁定依赖和 GitHub Actions 引用。
+
+添加市场时，在 `markets.config.json` 中增加唯一来源 ID、HTTPS 原生 format-1 索引 URL、通道与许可链接，然后运行同步及全部校验。每个来源的原始索引、声明和归属分别保留；本仓库的脚本许可不覆盖市场数据，见 [市场数据许可说明](LICENSE.market-data)。
 
 ## 免责声明
 

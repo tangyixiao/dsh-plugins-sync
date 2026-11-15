@@ -1,0 +1,52 @@
+{
+  "sources": [
+    {
+      "id": "awesome",
+      "title": "Awesome DSH Plugin",
+      "url": "https://awesome-dsh-plugin.com/index.json",
+      "channel": "stable",
+      "license": "CC0-1.0 catalog; plugin licenses remain separate",
+      "licenseUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/LICENSE"
+    },
+    {
+      "id": "open",
+      "title": "Open Plugin Market",
+      "url": "https://dshopen.org/index.json",
+      "channel": "stable",
+      "license": "GPL-3.0 source catalog; plugin licenses remain separate",
+      "licenseUrl": "https://github.com/polang233/dsh-plugin-index/blob/main/LICENSE"
+    },
+    {
+      "id": "marketplace",
+      "title": "DSH Marketplace",
+      "url": "https://dshmarketplace.dev/market/index.json",
+      "channel": "stable",
+      "license": "Public API reuse terms; source attribution retained",
+      "licenseUrl": "https://dshmarketplace.dev/api-docs"
+    },
+    {
+      "id": "hub",
+      "title": "DSH Plugin Hub",
+      "url": "https://dpharness.com/market/index.json",
+      "channel": "stable",
+      "license": "Original translations and verification content: noncommercial reuse with source links; plugin licenses remain separate",
+      "licenseUrl": "https://dpharness.com/terms"
+    },
+    {
+      "id": "tangyixiao",
+      "title": "Tangyixiao DSH Market",
+      "url": "https://tangyixiao.github.io/dsh-plugin-market/index.json",
+      "channel": "stable",
+      "license": "AGPL-3.0 project; aggregated source data retains its original terms",
+      "licenseUrl": "https://github.com/tangyixiao/dsh-plugin-market/blob/main/LICENSE"
+    },
+    {
+      "id": "tangyixiao-preview",
+      "title": "Tangyixiao DSH Market Preview",
+      "url": "https://tangyixiao.github.io/dsh-plugin-market/preview/index.json",
+      "channel": "preview",
+      "license": "AGPL-3.0 project; aggregated source data retains its original terms",
+      "licenseUrl": "https://github.com/tangyixiao/dsh-plugin-market/blob/main/LICENSE"
+    }
+  ]
+}

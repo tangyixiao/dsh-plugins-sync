@@ -1,0 +1,21 @@
+Market snapshot attribution and reuse
+
+The MIT license for this repository's scripts does not relicense market data,
+plugin code, translations, compatibility claims, or other third-party content.
+LICENSE.list-data applies to the Awesome catalog snapshot under data/.
+
+markets.config.json records the original URL, source title, channel, stated
+license or reuse conditions, and license/terms link for each market snapshot.
+Those fields are also retained in markets/snapshots/<source-id>.json.
+
+Awesome DSH Plugin: CC0-1.0 catalog.
+Open Plugin Market: GPL-3.0 source catalog.
+DSH Marketplace: published public API reuse conditions.
+DSH Plugin Hub: original translations and verification content is subject to
+its noncommercial reuse conditions, with source and original links retained.
+Tangyixiao stable/preview: AGPL-3.0 project; aggregated data retains each
+upstream source's original conditions and attribution.
+
+Each plugin retains its own license. Distribution of these snapshots does not
+grant permission to relicense or commercially reuse restricted source content.
+Consult the linked source terms before redistribution for a different purpose.

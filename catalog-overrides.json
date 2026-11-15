@@ -1,0 +1,17 @@
+[
+  {
+    "file": "Ultroncn__dsh-archived-chats.yml",
+    "replaces": ["Ultronen__dsh-archived-chats.yml"],
+    "previousUrls": ["https://github.com/Ultronen/dsh-archived-chats"],
+    "source": "https://github.com/tangyixiao/dsh-plugins-sync/pull/1",
+    "entry": {
+      "url": "https://github.com/Ultroncn/dsh-archived-chats",
+      "name": "Ultroncn/dsh-archived-chats",
+      "category": "session",
+      "description": {
+        "en": "Archive Management adds conversation search, organization and backups to DeepSeek Harness. Find a past solution, preview its context, archive by workspace, or save a ZIP before deleting a chat. Supports DeepSeek Harness >=0.1.0-rc.7 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3.",
+        "zh": "查看、搜索和管理会话归档，支持工作区批量归档、标签备注、ZIP 备份和会话谱系。支持 DeepSeek Harness >=0.1.0-rc.7 || 0.2.2-rc.1 || 0.2.2-rc.2 || 0.2.2-rc.3。"
+      }
+    }
+  }
+]

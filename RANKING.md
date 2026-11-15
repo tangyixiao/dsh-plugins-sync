@@ -1,7 +1,7 @@
 # DSH 插件排行榜（按下载量，其次 stars）
 
-> 快照时间：2026-10-13 · 共 4579 个插件
-> 下载/stars 数据来自上游 data/downloads.json 与 data/stars.json，空值表示上游未采集。
+> 快照时间：2026-11-15 · 共 11139 个插件
+> 下载/stars 数据沿用上游缓存及其采集时间，并非本次重新采集；空值表示上游未采集。
 
 | # | 插件 | 下载 | Stars | 分类 |
 |---|------|------|-------|------|
@@ -82,8 +82,8 @@
 | 75 | [CeilCelia/dsh-eli-mode#packages/eli-mode](https://github.com/CeilCelia/dsh-eli-mode/tree/main/packages/eli-mode) | 1750 | 4 | memory |
 | 76 | [openAGFS/dsh-agfs](https://github.com/openAGFS/dsh-agfs) | 1749 | 1 | ui |
 | 77 | [omdsh-dev/dsh-data-agent](https://github.com/omdsh-dev/dsh-data-agent) | 1746 | 55 | tools |
-| 78 | [caoyiwei850/dsh-ssh-ops](https://github.com/caoyiwei850/dsh-ssh-ops) | 1726 | 4 | tools |
-| 79 | [flymysql/dsh-remote](https://github.com/flymysql/dsh-remote) | 1687 | 23 | tools |
+| 78 | [caoyiwei850/dsh-ssh-ops](https://github.com/caoyiwei850/dsh-ssh-ops) | 1726 | 4 | remote |
+| 79 | [flymysql/dsh-remote](https://github.com/flymysql/dsh-remote) | 1687 | 23 | remote |
 | 80 | [GIT121995/dsh-memory-gate](https://github.com/GIT121995/dsh-memory-gate) | 1663 | 3 | memory |
 | 81 | [stuarthu/dsh-crew](https://github.com/stuarthu/dsh-crew) | 1640 | 0 | workflow |
 | 82 | [sjh9714/dsh-movein](https://github.com/sjh9714/dsh-movein) | 1635 | 7 | dev |
