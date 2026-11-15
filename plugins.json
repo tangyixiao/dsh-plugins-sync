@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-11-15T04:21:09.199Z",
- "count": 11139,
+ "generatedAt": "2026-11-15T04:25:28.313Z",
+ "count": 11137,
  "plugins": [
   {
    "file": "dsh-market__dsh-market.yml",
@@ -28403,27 +28403,7 @@
    "descZh": "管理API供应商与启用模型，在原生模型菜单中按供应商分组切换并搜索模型。"
   },
   {
-   "file": "ccl4-56-23-5__DSH-Plugins--Api-Switcher鎻掍欢-2.3.0.yml",
-   "name": "ccl4-56-23-5/DSH-Plugins#api-switcher",
-   "url": "https://github.com/ccl4-56-23-5/DSH-Plugins/tree/main/Api-Switcher插件/2.3.0",
-   "category": "model",
-   "downloads": null,
-   "stars": null,
-   "descEn": "Manage API providers and enabled models, with provider-grouped model switching and keyword search in the native model menu.",
-   "descZh": "管理API供应商与启用模型，在原生模型菜单中按供应商分组切换并搜索模型。"
-  },
-  {
    "file": "ccl4-56-23-5__DSH-Plugins--Token用量插件-1.0.0.yml",
-   "name": "ccl4-56-23-5/DSH-Plugins#usage-statistics-fish",
-   "url": "https://github.com/ccl4-56-23-5/DSH-Plugins/tree/main/Token用量插件/1.0.0",
-   "category": "usage",
-   "downloads": null,
-   "stars": null,
-   "descEn": "A customized usage-statistics-panel dashboard with a 52-week square heatmap, bar-only token trends, and ended-turn labels, using the upstream collector and history. Same package name as upstream HaoyueQin/dsh-usage-statistics-panel, so the two cannot be installed together.",
-   "descZh": "基于 usage-statistics-panel 定制统计看板，提供 52 周方块热力图、纯柱状 Token 趋势与已结束轮次标签，沿用上游采集与历史数据。与上游 HaoyueQin/dsh-usage-statistics-panel 同包名，二者不能同时安装。"
-  },
-  {
-   "file": "ccl4-56-23-5__DSH-Plugins--Token鐢ㄩ噺鎻掍欢-1.0.0.yml",
    "name": "ccl4-56-23-5/DSH-Plugins#usage-statistics-fish",
    "url": "https://github.com/ccl4-56-23-5/DSH-Plugins/tree/main/Token用量插件/1.0.0",
    "category": "usage",
