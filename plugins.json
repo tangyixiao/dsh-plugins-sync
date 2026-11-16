@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-11-15T23:00:59.192Z",
- "count": 11326,
+ "generatedAt": "2026-11-16T06:53:23.859Z",
+ "count": 11332,
  "plugins": [
   {
    "file": "dsh-market__dsh-market.yml",
@@ -19589,8 +19589,8 @@
    "category": "usage",
    "downloads": null,
    "stars": null,
-   "descEn": "Translates Chinese text rendered by other DSH plugins into English as it appears - plugin cards, settings pages, dropdown menus, plugin view tabs and same-origin iframe panels - while leaving the chat transcript, tool output and anything you type untouched. Uses the shipped translator service (Bing or Google, no key needed) and falls back to the default model.",
-   "descZh": "把其他 DSH 插件显示的中文实时翻译成英文——插件卡片、设置页、下拉菜单、插件视图标签与同源 iframe 面板，同时不改动对话记录、工具输出和你输入的内容。使用内置翻译服务（Bing 或 Google，无需密钥），不可用时回退到默认模型。"
+   "descEn": "Translates Chinese text in the DSH interface into English as it appears - plugin cards, settings pages, dropdown menus, plugin view tabs, same-origin iframe panels, and the Chinese the agent writes in the conversation (assistant messages and thinking titles). User-authored rows, tool output, the composer, the Trajectory table and the Context dashboard are left untouched, so user content is never sent to a translation backend. Uses the shipped translator service (Bing or Google, no key needed) and falls back to the default model.",
+   "descZh": "把 DSH 界面中的中文实时翻译成英文——插件卡片、设置页、下拉菜单、插件视图标签、同源 iframe 面板，以及智能体在对话中自己写的中文（回复正文与思考标题）。用户自己写的消息、工具输出、输入框、Trajectory 表格与 Context 仪表盘不改动，因此用户内容不会被发送到翻译后端。使用内置翻译服务（Bing 或 Google，无需密钥），不可用时回退到默认模型。"
   },
   {
    "file": "AbelKeithsun__dsh-question-nav.yml",
@@ -25573,6 +25573,26 @@
    "descZh": "任意 agent、subagent 或后台任务运行时持有系统唤醒锁，全部结束后按可配置宽限期释放；提供中英双语 Web 设置页，实时显示活动与唤醒锁状态，支持手动保持与阻止屏幕关闭。"
   },
   {
+   "file": "BearingSteel__dsh-enter-newline.yml",
+   "name": "BearingSteel/dsh-enter-newline",
+   "url": "https://github.com/BearingSteel/dsh-enter-newline",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Swaps the DSH composer keys: Enter inserts a newline and Shift+Enter sends the message.",
+   "descZh": "调换 DSH 输入框的回车键位：Enter 插入换行，Shift+Enter 发送消息。"
+  },
+  {
+   "file": "BearingSteel__dsh-inline-download.yml",
+   "name": "BearingSteel/dsh-inline-download",
+   "url": "https://github.com/BearingSteel/dsh-inline-download",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Adds a download button to uploaded file attachments in user messages, and to present delivery cards, streaming the original file to the browser; attachment downloads resolve the file from the Session log and authenticated coordinates rather than a URL path.",
+   "descZh": "在用户消息里的上传文件气泡上添加下载按钮，同时覆盖 present 交付卡片，把原始文件流式下载到浏览器；附件下载通过会话日志与鉴权坐标定位文件，URL 中不携带路径。"
+  },
+  {
    "file": "beartackler__dsh-bridge.yml",
    "name": "beartackler/dsh-bridge",
    "url": "https://github.com/beartackler/dsh-bridge",
@@ -25751,6 +25771,16 @@
    "stars": null,
    "descEn": "Customizable startup animation for DeepSeek Harness with eight bundled clips, random rotation, tail fade and time-of-day greetings. Based on lxj5820/dsh-boot-animation, so do not install it with the upstream plugin; bundled clips and the welcome voice carry their own media terms.",
    "descZh": "DeepSeek Harness 启动动画定制版，内置 8 段短片，随机轮播、片尾淡入，还有分时段问候。基于 lxj5820/dsh-boot-animation 定制，不可与上游插件同装；随包短片与欢迎音按各自媒体授权。"
+  },
+  {
+   "file": "beidou6972yh__dsh-bw-router.yml",
+   "name": "beidou6972yh/dsh-bw-router",
+   "url": "https://github.com/beidou6972yh/dsh-bw-router",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "B&W v0.2.0 — plan a task into stages, assign the right model per stage, and switch models inside one session without losing context; costs are either stated or explicitly unavailable, never guessed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "B&W（小棒 & 灰狼）——把任务拆成分段、按段挑模型，并在同一会话内切换模型而不丢上下文；成本要么给出依据、要么明示不可用，绝不编数。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "beiheng127__dsh-dfy-qq.yml",
@@ -59783,6 +59813,16 @@
    "descZh": "在右侧栏文档预览中打开 STL、OBJ、PLY、glTF 与 GLB 模型，zip/tar/gzip 压缩包，音视频、字体、字幕，以及 TOML、Intel HEX、JCAMP-DX 谱图、VCD 波形、KiCad 原理图和电路板、DFU 固件。"
   },
   {
+   "file": "leleou209__dsh-commander.yml",
+   "name": "leleou209/dsh-commander",
+   "url": "https://github.com/leleou209/dsh-commander",
+   "category": "workflow",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A resident commander agent for DSH sessions that gates goal completion, goal edits and user questions, then drives the next turn in full mode. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "给 DSH 会话配一位常驻指挥员：托管「算不算完成、能不能改目标、该不该问用户」三个判断点，全接管时按轮次驱动下一轮。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "LeLiu__dsh-codeisland-bridge.yml",
    "name": "LeLiu/dsh-codeisland-bridge",
    "url": "https://github.com/LeLiu/dsh-codeisland-bridge",
@@ -89383,6 +89423,16 @@
    "descZh": "管理多个 AI Agent 的本地技能，支持版本比较、合并到公用目录，以及可恢复的迁移和删除。"
   },
   {
+   "file": "SunRayan__dsh-skin-nier-automata.yml",
+   "name": "SunRayan/dsh-skin-nier-automata",
+   "url": "https://github.com/SunRayan/dsh-skin-nier-automata",
+   "category": "theme",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A NieR-inspired theme with a graphite palette, ice-white type and a pure-CSS ruined skyline; it ships no artwork, and both wallpaper slots take images you upload yourself.",
+   "descZh": "尼尔风格主题：石墨色调、冷白文字与纯 CSS 废墟天际线；不含任何美术素材，两个壁纸位都由使用者自行上传图片。"
+  },
+  {
    "file": "sunrulin123__dsh-community-web-ui.yml",
    "name": "sunrulin123/dsh-community-web-ui",
    "url": "https://github.com/sunrulin123/dsh-community-web-ui",
@@ -103881,6 +103931,16 @@
    "stars": null,
    "descEn": "Recall, edit-and-resend and regenerate, plus in-conversation versioning: a timeline of every rewind, artifact rollback (git-first, snapshot fallback), a fork map of explored paths, session lineage, and a real-time watchdog that snapshots the log at the first sign of concurrent writes. Edits auto-stop the running agent (official cancel/whenIdle) so rewinds never corrupt the durable log or break /compact.",
    "descZh": "撤回/编辑重发/重新生成，加上单会话版本化：每次回退的时间线、产物回退（git 优先、快照兜底）、分叉图、会话谱系，以及实时看门狗（并发写入第一时间快照日志）。编辑前自动停止运行中的 agent（官方 cancel/whenIdle），回退不会损坏持久化日志、也不会破坏 /compact。"
+  },
+  {
+   "file": "yan9690__dsh-whale-glance.yml",
+   "name": "yan9690/dsh-whale-glance",
+   "url": "https://github.com/yan9690/dsh-whale-glance",
+   "category": "vision",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Screen companion for DeepSeek Harness on Windows. A background helper samples the screen, diffs it, and when the picture changes enough, wakes a one-shot subagent that looks at a stitched frame grid plus the on-screen text, and writes one line to a floating subtitle window. Game mode recognizes the running game and uses its slang library; video mode reads subtitles so no line is missed and can keep a per-show episode archive. The subagent never writes back into your main session, so long use does not grow its context. Off by default, with cooldown, hourly cap and window-title filter.",
+   "descZh": "给 DSH 配一双眼睛：后台定时采样屏幕、判画面变化，变了就叫醒一个一次性子代理，看一张拼图和屏幕上的字，往悬浮字幕窗里说一句。游戏模式认游戏、用黑话库；视频模式读字幕不漏台词，可建番剧档案记进度。子代理不回灌主会话，挂久了也不涨上下文。默认关闭，有冷却、每小时上限和窗口标题过滤。"
   },
   {
    "file": "yanboyang97__dsh-subscription-balance.yml",
