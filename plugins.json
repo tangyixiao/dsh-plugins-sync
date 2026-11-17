@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-11-16T22:24:01.642Z",
- "count": 11512,
+ "generatedAt": "2026-11-17T08:11:48.928Z",
+ "count": 11519,
  "plugins": [
   {
    "file": "dsh-market__dsh-market.yml",
@@ -21053,6 +21053,16 @@
    "descZh": "非官方火山方舟 Coding Plan 模型接入插件：注册 `ark-coding` 路由，12 个模型的容量事实逐项实测，多账户自动轮换，内置钉版 arkcli 拉官方模型目录与真实套餐额度，含设置向导与侧边栏用量卡片。"
   },
   {
+   "file": "Akiyuki1130__dsh-observer.yml",
+   "name": "Akiyuki1130/dsh-observer",
+   "url": "https://github.com/Akiyuki1130/dsh-observer",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Sidecar model narrates the main conversation's progress in a floating panel or an Observer tab, without touching the main session. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "用另一个模型在悬浮窗或「观察」栏里实时播报主对话进度（做了什么、接下来做什么、是否卡住），不干涉主会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "aklnaaw__dsh-xiaoke-widget.yml",
    "name": "aklnaaw/dsh-xiaoke-widget",
    "url": "https://github.com/aklnaaw/dsh-xiaoke-widget",
@@ -32869,8 +32879,8 @@
    "category": "memory",
    "downloads": null,
    "stars": null,
-   "descEn": "Memory Palace MCP plugin: DuckDB vector memory, skill library, forgetting curve, and a local-server supervisor for the @cup319/mmpl MCP server. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "记忆宫殿 MCP 插件：DuckDB 向量记忆、技能库、遗忘曲线，并为 @cup319/mmpl MCP 服务器提供本地进程监督。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Memory Palace MCP plugin: DuckDB vector memory, skill library, forgetting curve, and a local-server supervisor for the @cup319/mmpl MCP server. Its web routes reuse the DSH connection admission fence (Host/Origin + browser session), so a cross-site page cannot call them.",
+   "descZh": "记忆宫殿 MCP 插件：DuckDB 向量记忆、技能库、遗忘曲线，并为 @cup319/mmpl MCP 服务器提供本地进程监督。它的 Web 路由复用 DSH connection 的准入闸（Host/Origin + 浏览器会话），跨站网页无法调用。"
   },
   {
    "file": "Curiouslv__dsh-session-board.yml",
@@ -33881,6 +33891,26 @@
    "stars": null,
    "descEn": "Animated desktop pets, one mascot per coding-plan provider (GLM, MiniMax, Kimi, DeepSeek, MiMo). Poses follow the running session; moods follow quota usage read from dsh-quota-hub.",
    "descZh": "动画桌宠，每家编程套餐一只吉祥物（GLM、MiniMax、Kimi、DeepSeek、MiMo）。动作跟随会话运行状态，心情跟随 dsh-quota-hub 的额度用量。"
+  },
+  {
+   "file": "Darkhe55__dsh-plugin-middle-panel.yml",
+   "name": "Darkhe55/dsh-plugin-middle-panel",
+   "url": "https://github.com/Darkhe55/dsh-plugin-middle-panel",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Adds a document panel beside the conversation that previews HTML, Markdown, PDF, images, video and 3D models, and turns selected text, picked elements, marked regions and 3D spots into numbered annotations pasted back as one chat message. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "在对话旁增加一个文档面板，可预览 HTML、Markdown、PDF、图片、视频与 3D 模型，并把选中的文字、点选元素、框选区域与 3D 打点变成带编号的标注，一次性回填到对话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
+   "file": "Darkhe55__dsh-plugin-models-fingerprint.yml",
+   "name": "Darkhe55/dsh-plugin-models-fingerprint",
+   "url": "https://github.com/Darkhe55/dsh-plugin-models-fingerprint",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Monitors DSH model routes by comparing protocol fingerprints and behavior statistics across sessions, with per-turn cards, route equivalence, official baselines, and drift/quality signals. Fingerprints are evidence, not proof of model identity. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "通过对比 DSH 会话中的协议指纹与行为统计，监控模型路由变化，提供逐轮卡片、路由等价性、官方基线和漂移/质量信号；指纹是证据，不是模型身份证明。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "darkings__dsh-agy-provider.yml",
@@ -46629,8 +46659,8 @@
    "category": "vision",
    "downloads": null,
    "stars": null,
-   "descEn": "Your agent has browsed countless web pages — now let it watch video. Video2Agent lets an AI agent understand video and answer directly: ask Bilibili or local videos what was said, which one is better, whether it is worth watching. Cross-video search returns the video and timecode, exact-frame evidence at a timecode, and 1-10 video batch analysis; local-first, with optional cloud ASR/OCR and Bilibili login. Needs Python 3.11+, FFmpeg and the CLI (pip install video2agent); the plugin settings page checks and installs the environment. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "你的 Agent 浏览了无数网页，现在该让它看视频了。Video2Agent 让 AI Agent 看懂视频、直接回答：B 站和本地视频都能问——讲了什么、哪条更好、值不值得看。跨视频检索返回视频与时间码，按时间码取帧作证据，一次批量分析 1-10 个视频；本地优先，云端 ASR/OCR 与 B 站登录可选。需要 Python 3.11+、FFmpeg 与 CLI（pip install video2agent），设置页可一键检查并安装环境。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Your agent has browsed countless web pages — now let it watch video. Video2Agent lets an AI agent understand video and answer directly: ask Bilibili or local videos what was said, which one is better, whether it is worth watching. Cross-video search returns the video and timecode, exact-frame evidence at a timecode, and 1-10 video batch analysis; local-first, with optional cloud ASR/OCR and Bilibili login. Needs Python 3.11+, FFmpeg and the CLI (pip install video2agent); the plugin settings page checks and installs the environment.",
+   "descZh": "你的 Agent 浏览了无数网页，现在该让它看视频了。Video2Agent 让 AI Agent 看懂视频、直接回答：B 站和本地视频都能问——讲了什么、哪条更好、值不值得看。跨视频检索返回视频与时间码，按时间码取帧作证据，一次批量分析 1-10 个视频；本地优先，云端 ASR/OCR 与 B 站登录可选。需要 Python 3.11+、FFmpeg 与 CLI（pip install video2agent），设置页可一键检查并安装环境。"
   },
   {
    "file": "HarmlessFunny__dsh-background-by-model.yml",
@@ -54073,6 +54103,16 @@
    "descZh": "DeepSeek Harness（dsh）Web UI 的黑洞主题插件。"
   },
   {
+   "file": "JiangXingchen4210__Davinci_MCP_DSH_Demo.yml",
+   "name": "JiangXingchen4210/Davinci_MCP_DSH_Demo",
+   "url": "https://github.com/JiangXingchen4210/Davinci_MCP_DSH_Demo",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "DaVinci Resolve color console (DEMO): LOG restore with official LUT matching, 3-layer 15-node color graph, 10 sourced styles, delivery approval; macOS only.",
+   "descZh": "达芬奇调色控制台（DEMO）：灰片还原与官方 LUT 匹配、三层 15 节点调色图、10 个带出处的风格、交付审批；仅支持 macOS。"
+  },
+  {
    "file": "jiangyinluwei__dsh-plugInOne.yml",
    "name": "jiangyinluwei/dsh-plugInOne",
    "url": "https://github.com/jiangyinluwei/dsh-plugInOne",
@@ -54183,9 +54223,9 @@
    "descZh": "把 DSH 会话整理成一张自包含的交互式 HTML 脑图（主题、结论、决策、待办、未决问题），并给出与上一次生成相比的变更。"
   },
   {
-   "file": "jiaxusummer__dsh-app-icon.yml",
-   "name": "jiaxusummer/dsh-app-icon",
-   "url": "https://github.com/jiaxusummer/dsh-app-icon",
+   "file": "jiaxusummer__dsh-icon-changer.yml",
+   "name": "jiaxusummer/dsh-icon-changer",
+   "url": "https://github.com/jiaxusummer/dsh-icon-changer",
    "category": "ui",
    "downloads": null,
    "stars": null,
@@ -73811,6 +73851,16 @@
    "stars": null,
    "descEn": "macOS-only frosted-glass skin for the DSH NEXT / DSH Desktop conversation pane and third-party sidebars: native vibrancy material, independent switches per level, an optional wallpaper backdrop with adjustable frost, and a Settings section; background material only, no layout changes.",
    "descZh": "macOS 专用磨砂玻璃皮肤：给 DSH NEXT / DSH Desktop 的会话面板与第三方侧边栏套上原生 Vibrancy 材质，两级效果各自独立开关，可选壁纸底图并调节磨砂度，附设置页；只改背景材质，不动布局。"
+  },
+  {
+   "file": "natgurlain__dsh-browser-agent--packages-browser-bridge-browser.yml",
+   "name": "natgurlain/dsh-browser-agent#bridge-browser",
+   "url": "https://github.com/natgurlain/dsh-browser-agent/tree/main/packages/browser/bridge-browser",
+   "category": "browser",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Browser bridge for DSH 0.2.2-rc.1+, used with its companion Chrome/Brave/Firefox extension: the agent reads and operates tabs in the user's own browser (snapshot, click, type, navigate, extract tables) and each page action waits for an approval card that names the element. A fork of omdsh-dev/dsh-browser. The extension is loaded separately and paired with a code typed into DSH.",
+   "descZh": "浏览器桥接（需 DSH 0.2.2-rc.1+），配合 Chrome/Brave/Firefox 配套扩展使用：Agent 在你自己的浏览器里读取并操作标签页（快照、点击、输入、跳转、提取表格），每次页面操作都要先通过点名具体元素的确认卡。fork 自 omdsh-dev/dsh-browser。扩展需另行加载，并用在 DSH 里输入的配对码配对。"
   },
   {
    "file": "NativeDog1__dsh-boot-animation.yml",
@@ -95893,6 +95943,16 @@
    "descZh": "DSH Web UI 的多会话平铺工作区：1–4 个格子，拖分隔条同时改变相邻格子的大小；浏览器式标签页可并存多套布局；拖标题栏交换会话；每格独立选会话；格内新建会话时先选工作区，全程不跳出面板。"
   },
   {
+   "file": "VeillessRose__dsh-ai-fastvideo.yml",
+   "name": "VeillessRose/dsh-ai-fastvideo",
+   "url": "https://github.com/VeillessRose/dsh-ai-fastvideo",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Text-driven video generator for DSH: writes one Canvas page per scene from 341 bundled style prompts, renders frames with a headless browser, then adds TTS narration, music and sound effects with ffmpeg.",
+   "descZh": "文本驱动的视频生成器：按 341 条内置风格提示词逐屏生成 Canvas 页面，用无头浏览器渲帧，再用 ffmpeg 合成配音、配乐与音效。"
+  },
+  {
    "file": "Velestia-star__agent-skill.yml",
    "name": "Velestia-star/agent-skill",
    "url": "https://github.com/Velestia-star/agent-skill",
@@ -99871,6 +99931,16 @@
    "stars": null,
    "descEn": "Makes the built-in web_fetch tool work when Clash / mihomo runs in TUN mode with fake-ip: it lets the fake-ip address ranges (198.18.0.0/15, fdfe:dcba:9876::/64, 2001:2::/48) past the public-address check that otherwise rejects them, while loopback, private and link-local addresses stay blocked as before. Works with no proxy environment variables and no Clash changes.",
    "descZh": "让内置 web_fetch 在 Clash / mihomo 以 TUN + fake-ip 模式运行时正常工作：只放行 fake-ip 地址段（198.18.0.0/15、fdfe:dcba:9876::/64、2001:2::/48）通过公网地址校验，回环、内网与链路本地地址仍照旧拦截。无需设置代理环境变量，也无需改动 Clash。"
+  },
+  {
+   "file": "wjj865-code__dsh-orchestrator.yml",
+   "name": "wjj865-code/dsh-orchestrator",
+   "url": "https://github.com/wjj865-code/dsh-orchestrator",
+   "category": "agi",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Coordinator plus child task sessions for DeepSeek Harness: the main session only splits the work, dispatches child sessions with task_create and reads their task_report results, while every task lives in a durable SQLite ledger with dependencies, groups, write scopes and a priority queue. A finished task lands in a delivered-but-unconfirmed state that keeps the follow-up window open until you confirm or the timeout closes it; on top sit a layered memory that distils lessons into later tasks, an inbox for tasks waiting on your decision, an optional daily digest, daily ledger snapshots and a browser task panel.",
+   "descZh": "给 DeepSeek Harness 加一位协调者和一组子任务会话：主会话只拆活、用 task_create 派子会话、读 task_report 回报；每条任务进持久 SQLite 台账，带依赖、分组、写域与优先级队列。子会话报 done 落「已交付待确认」，追问窗口保留到你确认或超时收尾；其上还有把经验蒸馏进后续任务的分层记忆、等用户拍板任务的收件箱、可选的每日日报、每日台账快照与浏览器任务面板。"
   },
   {
    "file": "wjl906__dsh-slowmist-security-guard.yml",
