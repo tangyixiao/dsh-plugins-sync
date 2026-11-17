@@ -31,7 +31,8 @@ test('unchanged content is stable, while failed fetch retains validated cache an
   assert.equal(first.status, 0, first.stderr);
   const report = readFileSync(join(dir, 'markets/README.md'), 'utf8');
   assert.match(report, /Tangyixiao/);
-  assert.match(report, /Ultroncn/);
+  assert.match(report, /原始目录、翻译、验证声明及插件版权归各来源和原作者/);
+  assert.doesNotMatch(report, /Ultroncn/);
   assert.match(report, /\[Example\]\(https:\/\/example.org\/index.json\)/);
   assert.match(report, /\[fixture\]\(https:\/\/example.org\/license\)/);
   const snapshotPath = join(dir, 'markets/snapshots/example.json');

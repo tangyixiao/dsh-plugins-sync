@@ -85,7 +85,7 @@ Co-authored-by: Tangyixiao <115929632+tangyixiao@users.noreply.github.com>
 
 完整目录、下载量、stars 和权限扫描数据来自 [Awesome DSH Plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 及其贡献者。六个市场通道的原始来源、归属和许可分别列在[多市场同步记录](markets/README.md)、[来源配置](markets.config.json) 和 [市场数据许可说明](LICENSE.market-data)，每次自动刷新都会保留。
 
-感谢 [@Ultroncn](https://github.com/Ultroncn) 在 [PR #1](https://github.com/tangyixiao/dsh-plugins-sync/pull/1) 中修正其插件条目；这项贡献记录在 `catalog-overrides.json`，自动刷新继续保留。各插件、翻译和市场声明的版权归原作者或来源；目录收录不改变其署名与许可。
+感谢 [Ultroncn](https://github.com/Ultroncn) 在 [PR #1](https://github.com/tangyixiao/dsh-plugins-sync/pull/1) 中修正其插件条目；这项贡献记录在 `catalog-overrides.json`，自动刷新继续保留。各插件、翻译和市场声明的版权归原作者或来源；目录收录不改变其署名与许可。
 
 ## 免责声明
 
