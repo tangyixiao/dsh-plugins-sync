@@ -52,7 +52,8 @@ test('full sync parses multiline Chinese YAML and preserves PR corrections and r
   const ranking = readFileSync(join(dir, 'RANKING.md'), 'utf8');
   assert.match(ranking, /Tangyixiao/);
   assert.match(ranking, /Awesome DSH Plugin/);
-  assert.match(ranking, /Ultroncn/);
+  assert.match(ranking, /各插件版权与许可归原作者/);
+  assert.doesNotMatch(ranking, /条目修正贡献|@Ultroncn/);
 }));
 
 test('invalid incoming metadata fails before replacing the previous snapshot', () => fixture(({ dir, invoke }) => {

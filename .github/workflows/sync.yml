@@ -85,7 +85,6 @@ jobs:
             -m 'chore(sync): refresh catalog and market snapshots' \
             -m 'Maintained-by: Tangyixiao <115929632+tangyixiao@users.noreply.github.com>' \
             -m 'Data-sources: markets.config.json; LICENSE.list-data; LICENSE.market-data' \
-            -m 'Contributor-credit: Ultroncn (PR #1; catalog-overrides.json)' \
             -m 'Co-authored-by: Tangyixiao <115929632+tangyixiao@users.noreply.github.com>')
           git push origin "$commit:refs/heads/$branch"
           cp markets/README.md work/sync-pr-body.md

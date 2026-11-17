@@ -75,7 +75,7 @@ if (snapshots.length === sources.length) {
     '稳定版与预览版分别保留。同名版本冲突不自动选胜者，完整声明在各来源快照中，聚合文件保留可追溯的记录位置。',
     '这里只收录各市场发布的原生 format-1 索引；其范围可能小于市场网站的全部目录。各来源的标签、实装或安全声明仅代表该来源，未转化为本仓库的验证结论。',
     '维护与同步：[Tangyixiao](https://github.com/tangyixiao)；自动执行：GitHub Actions。',
-    '条目修正贡献：[@Ultroncn](https://github.com/Ultroncn)（[PR #1](https://github.com/tangyixiao/dsh-plugins-sync/pull/1)）；原始目录、翻译、验证声明及插件版权归各来源和原作者。',
+    '原始目录、翻译、验证声明及插件版权归各来源和原作者。',
     '各来源署名与许可：', '',
     ...sources.map((source) => `- [${source.title}](${source.url})（${source.channel}）：[${source.license}](${source.licenseUrl})。`), '',
     '许可与原始来源见 markets.config.json 和 LICENSE.market-data。', ''];
