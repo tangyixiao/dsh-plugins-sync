@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-11-17T21:08:29.804Z",
- "count": 11733,
+ "generatedAt": "2026-11-18T07:45:11.920Z",
+ "count": 11744,
  "plugins": [
   {
    "file": "dsh-market__dsh-market.yml",
@@ -26923,6 +26923,16 @@
    "descZh": "以寄存器阵列与反应堆芯历史盘面的形式，在 DSH 右侧栏实时显示当前会话的提示词缓存遥测。"
   },
   {
+   "file": "BillyWang-7__dsh-turn-bell.yml",
+   "name": "BillyWang-7/dsh-turn-bell",
+   "url": "https://github.com/BillyWang-7/dsh-turn-bell",
+   "category": "notify",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Native DeepSeek Harness notifications, in the app's own icon and sound, on macOS, Windows and Linux, when a turn finishes or the agent needs your confirmation. Clicking one opens that conversation.",
+   "descZh": "macOS、Windows、Linux 通用的 DeepSeek Harness 原生通知：一轮回答结束、或需要你确认权限时，用应用自己的图标和声音提醒，点一下直接跳到对应会话。"
+  },
+  {
    "file": "Binaryinject__dsh-review-checkout.yml",
    "name": "Binaryinject/dsh-review-checkout",
    "url": "https://github.com/Binaryinject/dsh-review-checkout",
@@ -28449,8 +28459,8 @@
    "category": "notify",
    "downloads": null,
    "stars": null,
-   "descEn": "Reads the GitHub repositories a Session subscribes to and injects, at turn boundaries, the events that concern it: failed CI on the records it owns, review requests, assigned issues and mentions, open Dependabot and code-scanning alerts, and its own pull requests that conflict with the base branch. Read-only — it never writes to GitHub. Wake is opt-in and reaches only the session responsible for that repository. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "按会话订阅的 GitHub 仓库取数，在回合边界注入与它相关的事件：自己负责记录的 CI 失败、评审请求、指派给它的 issue 与 @它的评论、开着的依赖与代码告警、以及它与基分支冲突的 PR。只读 GitHub，不代做任何操作；唤醒可选，且只会叫到被指定负责该仓库的那个会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Give each DSH session its own GitHub watch: reviews on the PR it opened, failing CI, issues assigned to it and @mentions arrive in the next turn; an idle session can turn up on its own to fix them. Read-only. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "让 DSH 的会话自己盯 GitHub：它提的 PR 被评审、CI 挂了、派给它的 issue 有人回，都会在下一轮自动进上下文；会话空闲时还能自己开一轮去修。只读，不改仓库。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "c505016310-maker__dsh-safety-memory.yml",
@@ -38921,6 +38931,16 @@
    "stars": null,
    "descEn": "Pomodoro focus timer docked under the composer with long-break cycles, daily focus tracking, phase-change signals, and agent tools that read and control the timer. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
    "descZh": "停靠在输入框下方的番茄钟，支持长休息循环、每日专注统计、阶段切换提醒，以及供 Agent 读取和控制计时器的工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
+   "file": "Ejinhouse__dsh-turn-timeline.yml",
+   "name": "Ejinhouse/dsh-turn-timeline",
+   "url": "https://github.com/Ejinhouse/dsh-turn-timeline",
+   "category": "session",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Left-sidebar timeline of the current session's turns, showing each turn's deliverables, ledger updates and file changes read from the session event log and the change ledger. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "左侧栏「任务时间线」面板：按 turn 展示当前会话的交付物、台账更新与文件改动，数据来自会话事件日志与变更台账。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "el16z3c__dsh-think-ux.yml",
@@ -62643,6 +62663,16 @@
    "descZh": "给 DSH 输入框加一个鱼耳麦克风，本地转写语音、估计语气与情绪，并让大肥鱼按情绪自然回复。"
   },
   {
+   "file": "lieang-git__dsh-quote-cards.yml",
+   "name": "lieang-git/dsh-quote-cards",
+   "url": "https://github.com/lieang-git/dsh-quote-cards",
+   "category": "session",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Conversation bookmark cards: select text to save the quote with tags, a note, and a timestamp; browse saved quotes in a draggable gallery panel, filter by conversation, jump back to the source with a highlight, and restore or permanently delete items from a recycle bin.",
+   "descZh": "对话摘记：选中文字即可收藏原话并加标签、说明和收藏时间；用可拖动的画廊面板浏览、按对话筛选，一键定位回原文并高亮，回收箱支持批量恢复与永久删除。"
+  },
+  {
    "file": "lifangjin__dsh-maoying.yml",
    "name": "lifangjin/dsh-maoying",
    "url": "https://github.com/lifangjin/dsh-maoying",
@@ -73913,6 +73943,16 @@
    "descZh": "在会话右键菜单里永久删除一个会话（先弹确认框）：DSH home 下的日志目录、投影缓存缩略图、每个 workspace.json 里的会话 id、以及归档与置顶列表里的条目。本次启动后 resume 进内存的会话会先从 sessions 与 agents 两个 store 里摘除，删掉的会话不会以幽灵条目的形式回到侧边栏。会话正在跑一轮对话时拒绝删除；工作区目录本身不受影响。"
   },
   {
+   "file": "MrKleene__dsh-aoci-keeper.yml",
+   "name": "MrKleene/dsh-aoci-keeper",
+   "url": "https://github.com/MrKleene/dsh-aoci-keeper",
+   "category": "dev",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Keeps an AOCI cognition index from drifting: each turn the model sees the finding count and the maintenance command, so index debt is paid before the task ends. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "让 AOCI 认知索引不再悄悄漂移：每轮开始时把 finding 数与维护命令交给模型，让索引债在任务结束前还清。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "MrLsss__cyber-self.yml",
    "name": "MrLsss/cyber-self",
    "url": "https://github.com/MrLsss/cyber-self",
@@ -74191,6 +74231,16 @@
    "stars": null,
    "descEn": "Translation and refinement workspace with topic memory, revision history, and main-model coordination; Normal mode uses the companion Composer extension.",
    "descZh": "提供主题记忆、版本历史与主模型协作的翻译润色工作区，普通模式配套 Composer 扩展使用。"
+  },
+  {
+   "file": "mumu1001ai-jpg__dsh-dingpan.yml",
+   "name": "mumu1001ai-jpg/dsh-dingpan",
+   "url": "https://github.com/mumu1001ai-jpg/dsh-dingpan",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A watchlist panel for A-share, Hong Kong, US, Korean and FTSE China A50 quotes, with daily/weekly/monthly candlestick charts that page and zoom, a global-markets board, sector boards, DRAM/NAND spot prices, and a draggable Windows taskbar price pill. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "盯盘面板：A股/港股/美股/韩股/富时中国A50 实时行情，可翻页缩放的日周月K线，全球市场、板块与存储（DRAM/NAND）价格走势，以及把自选股价格钉在 Windows 任务栏上的可拖动胶囊。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "mumuer1024__dsh-ui-liteglass.yml",
@@ -78646,11 +78696,21 @@
    "file": "p33333333333333l__dsh-mcp-servers.yml",
    "name": "p33333333333333l/dsh-mcp-servers",
    "url": "https://github.com/p33333333333333l/dsh-mcp-servers",
-   "category": "tools",
+   "category": "ui",
    "downloads": null,
    "stars": null,
    "descEn": "Adds a /mcp command that opens a panel to view, add, edit and remove MCP servers, writing the profile patch for you instead of hand-editing cordis.patch.yml.",
    "descZh": "添加 /mcp 命令，弹出面板查看、新增、编辑和删除 MCP 服务器，自动写入 profile 配置，不必手改 cordis.patch.yml。"
+  },
+  {
+   "file": "p33333333333333l__dsh-specialist-team.yml",
+   "name": "p33333333333333l/dsh-specialist-team",
+   "url": "https://github.com/p33333333333333l/dsh-specialist-team",
+   "category": "workflow",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Assign tasks to specialists with role-specific models, file scopes and tool permissions.",
+   "descZh": "专家团队可按任务分派专家，并为各角色指定模型、文件范围和工具权限。"
   },
   {
    "file": "p56568833__dsh-plugin-groups.yml",
@@ -84943,6 +85003,16 @@
    "descZh": "基于 MarkText 内核 muya 的右侧栏所见即所得 Markdown 编辑器：打开 .md 按渲染结果编辑，保存走 ctx.fs 并带版本守卫。"
   },
   {
+   "file": "Rollstack__skills.yml",
+   "name": "Rollstack/skills",
+   "url": "https://github.com/Rollstack/skills",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Build decks from your company's data, and refresh, schedule and send reports, with Rollstack's MCP server and skills. Requires a Rollstack account and a Rollstack API key.",
+   "descZh": "用 Rollstack 的 MCP 服务器和技能，基于公司数据生成演示文稿，并刷新、定时和发送报告。需要 Rollstack 账号和 API Key。"
+  },
+  {
    "file": "romantic123fly__dsh-session-folders.yml",
    "name": "romantic123fly/dsh-session-folders",
    "url": "https://github.com/romantic123fly/dsh-session-folders",
@@ -88933,6 +89003,26 @@
    "descZh": "DeepSeek Harness 用量统计：状态栏显示当前会话费用拆分，每轮对话完成后显示本轮费用并可点击查看缓存命中、缓存未命中与输出明细，统计页提供 Codex 风格的 KPI 卡片、53 周活动热力图与每周柱状图，按 DeepSeek 峰谷价计费。"
   },
   {
+   "file": "Sinales733__dsh-motion.yml",
+   "name": "Sinales733/dsh-motion",
+   "url": "https://github.com/Sinales733/dsh-motion",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A livelier running indicator for DeepSeek Harness: the whale tail rotates through seamless loops (the original wag, the official spin, turn and stroke, a fluke dive and a spout) and never stands still, and tool-call icons animate the parts of DSH's own icons, finishing with a thin ring.",
+   "descZh": "让 DeepSeek Harness 的运行指示器更灵动：鲸尾在原版摆尾、官方的旋转 / 转身 / 划水、举尾下潜、喷水之间无缝轮换，全程不停住；工具调用的图标让 DSH 原图标的部件动起来，完成时画一圈细环。"
+  },
+  {
+   "file": "Sinales733__dsh-music.yml",
+   "name": "Sinales733/dsh-music",
+   "url": "https://github.com/Sinales733/dsh-music",
+   "category": "voice",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Brings the song you are playing (Spotify, NetEase Cloud Music, QQ Music, KuGou and more) into DeepSeek Harness: the line being sung in the running indicator and under the composer, lit word by word; a cover capsule to play or pause, and scroll on to skip; a ring of light on the composer and the window's edge glowing with the beat; the cover flowing behind the window; the whale tail moving to the beat; and the player's volume stepping back while the AI waits for your approval. Windows only; lyrics from NetEase, QQ Music, KuGou and LRCLIB.",
+   "descZh": "把你正在听的歌（Spotify、网易云音乐、QQ 音乐、酷狗等）带进 DeepSeek Harness：运行指示器和输入框下显示逐字点亮的歌词；封面小胶囊点一下播放或暂停，滚动滚轮切歌；输入框的光环和窗口边缘跟着节拍发光；窗口底下流动着封面颜色；鲸尾跟着鼓点摆；AI 等你批准时播放器音量自动调低。仅限 Windows；歌词来自网易云、QQ 音乐、酷狗和 LRCLIB。"
+  },
+  {
    "file": "Siom126__dsh-plugin-storage-inspector.yml",
    "name": "Siom126/dsh-plugin-storage-inspector",
    "url": "https://github.com/Siom126/dsh-plugin-storage-inspector",
@@ -89669,8 +89759,8 @@
    "category": "memory",
    "downloads": null,
    "stars": null,
-   "descEn": "The memory that dreams — cross-session memory for DeepSeek Harness: recalls you and your projects across sessions, consolidates memories while idle (autoDream), freezes conflicting memories for your review, and keeps a replayable audit trail. Memory stays on your machine as SQLite with human-editable Markdown mirrors; four-way recall (keyword, vector, BM25, entity graph) and an interactive memory panel ship with it, plus 12 model tools, an MCP server, an external API and a CLI. Optional affective memory, a per-agent diary and image provenance come with it. Summarization and consolidation run on the host model you already configured; with a local embedder, semantic search runs fully offline. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "会做梦的记忆 — DeepSeek Harness 跨会话记忆插件：跨会话记住你与项目，空闲时自动巩固记忆（autoDream），冲突记忆先冻结待你裁决，全程可回放审计。记忆落在本机：SQLite 存储配可人工编辑的 Markdown 镜像；附带四路召回（关键词、向量、BM25、实体图谱）与交互式记忆库面板，另有 12 个模型工具、MCP 服务端、外部 API 与 CLI。可选的情绪记忆、每个 Agent 一本的日记本，以及把记忆追回它来自哪张图的图像溯源。摘要与巩固走你已配置的宿主模型；把嵌入换成本地模型后，语义检索可完全离线运行。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "The memory that dreams — cross-session memory for DeepSeek Harness: recalls you and your projects across sessions, consolidates memories while idle (autoDream), freezes conflicting memories for your review, and keeps a replayable audit trail. Memory stays on your machine as SQLite with human-editable Markdown mirrors; four-way recall (keyword, vector, BM25, entity graph) and an interactive memory panel ship with it, plus 12 model tools, an MCP server, an external API and a CLI. Optional affective memory, a per-agent diary and image provenance come with it. Summarization and consolidation run on the host model you already configured; with a local embedder, semantic search runs fully offline.",
+   "descZh": "会做梦的记忆 — DeepSeek Harness 跨会话记忆插件：跨会话记住你与项目，空闲时自动巩固记忆（autoDream），冲突记忆先冻结待你裁决，全程可回放审计。记忆落在本机：SQLite 存储配可人工编辑的 Markdown 镜像；附带四路召回（关键词、向量、BM25、实体图谱）与交互式记忆库面板，另有 12 个模型工具、MCP 服务端、外部 API 与 CLI。可选的情绪记忆、每个 Agent 一本的日记本，以及把记忆追回它来自哪张图的图像溯源。摘要与巩固走你已配置的宿主模型；把嵌入换成本地模型后，语义检索可完全离线运行。"
   },
   {
    "file": "slowhiring__dsh-github-ops.yml",
@@ -98333,6 +98423,16 @@
    "descZh": "给 DSH 聊天输入框加 CLI 风格历史记忆：按上下方向键召回之前发送过的消息。"
   },
   {
+   "file": "vip-pan__dsh-codemap.yml",
+   "name": "vip-pan/dsh-codemap",
+   "url": "https://github.com/vip-pan/dsh-codemap",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Project-scoped code graph tools for DSH: one bundle registers nine read-only tools (symbol lookup, call chains, dependencies, Cypher queries) and resolves the repository from each session's working directory by connecting to the codemap CLI over MCP.",
+   "descZh": "DSH 的项目级代码图谱工具：一个插件注册九个只读工具（符号查找、调用链、依赖、Cypher 查询），按会话工作目录自动定位仓库，通过 MCP 连接 codemap CLI。"
+  },
+  {
    "file": "visangela__dsh-novel-assistant.yml",
    "name": "visangela/dsh-novel-assistant",
    "url": "https://github.com/visangela/dsh-novel-assistant",
@@ -106401,6 +106501,16 @@
    "stars": null,
    "descEn": "Runs a complete HR workbench inside DSH — a 3D office, recruiting pipeline (resume, interview, written test, score), employee roster, files, attendance, performance, training and analytics — with the site’s AI assistant answering through the model DSH already runs.",
    "descZh": "在 DSH 里跑一整套 HR 工作台——3D 办公室、招聘流水线（简历、面试、笔试、综合成绩）、员工花名册、文件柜、考勤、绩效、培训与人事分析——站内 AI 助手直接用 DSH 的模型回答。"
+  },
+  {
+   "file": "xskhy-kongyi__dsh-conversation-vault.yml",
+   "name": "xskhy-kongyi/dsh-conversation-vault",
+   "url": "https://github.com/xskhy-kongyi/dsh-conversation-vault",
+   "category": "session",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Tuck conversations out of a workspace so they stop appearing in every list, manage archived ones in one panel (grouped by workspace, collapsible, bulk clear), delete only the conversation log without touching any file, and distill long sessions into editable Markdown memory cards that any later session can read, search or append to through a memory_card tool. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "把没用的对话从工作区彻底收起，集中在一个面板里管理归档（按工作区分组、可折叠、可整组清空），删除时只移除对话记录而不动任何文件；并把长对话蒸馏成可编辑的 Markdown 记忆卡，供后续会话通过 memory_card 工具读取、检索与追加。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "xsnnnnnn__dsh-coros.yml",
