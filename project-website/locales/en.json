@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "description": "Explore DeepSeek Harness catalog snapshots, compare their sources and restore a pinned selection into a specific profile."
+  },
+  "pages": {
+    "home": {
+      "title": "Restore a plugin selection on another machine · {project}"
+    },
+    "features": {
+      "title": "Features · {project}",
+      "description": "Explore DeepSeek Harness catalog snapshots, compare their sources and restore a pinned selection into a specific profile."
+    },
+    "download": {
+      "title": "Get started · {project}",
+      "description": "Check the top20 field in package.json for the chosen npm versions and Git commit IDs."
+    },
+    "community": {
+      "title": "Community · {project}",
+      "description": "Find usage guidance, follow discussions and review changes to this project."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "download": "Get started",
+    "community": "Community"
+  },
+  "ui": {
+    "skip_link": "Skip to main content",
+    "navigation": "Main navigation",
+    "open_navigation": "Open navigation",
+    "close_navigation": "Close navigation",
+    "language": "Choose language",
+    "theme": "Choose theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "platforms": "Supported platforms",
+    "github": "GitHub",
+    "view_image": "View full illustration",
+    "feature_more": "Explore features",
+    "download": "Browse the plugin rankings",
+    "release_notes": "Source repository",
+    "documentation": "Documentation",
+    "source": "Source repository",
+    "illustration": "First steps",
+    "license": "MIT scripts · catalog terms by source"
+  },
+  "hero": {
+    "title": [
+      "Restore a plugin selection on another machine"
+    ],
+    "description": [
+      "Explore DeepSeek Harness catalog snapshots, compare their sources and restore a pinned selection into a specific profile."
+    ],
+    "primary_action": "Browse the plugin rankings",
+    "secondary_action": "Explore features"
+  },
+  "preview": {
+    "caption": "First steps",
+    "tabs": [
+      {
+        "label": "Get started",
+        "icon": "book"
+      }
+    ],
+    "items": [
+      {
+        "title": "Inspect the pinned selection",
+        "description": "Check the top20 field in package.json for the chosen npm versions and Git commit IDs.",
+        "icon": "book"
+      },
+      {
+        "title": "Restore a profile",
+        "description": "Clone the repository and run node scripts/install-top.mjs --profile web. Existing entries are skipped by default.",
+        "icon": "link"
+      }
+    ]
+  },
+  "features": {
+    "title": "Project features",
+    "groups": [
+      {
+        "title": "Browse the rankings",
+        "description": "RANKING.md orders entries using download and star data. A separate flat index includes Chinese and English descriptions.",
+        "detail": "",
+        "icon": "layers"
+      },
+      {
+        "title": "Check source freshness",
+        "description": "Each source records fresh, cached or unavailable status. Conflicts retain pointers to the competing entries.",
+        "detail": "",
+        "icon": "book"
+      }
+    ]
+  },
+  "getting_started": {
+    "title": "Get started · {project}",
+    "steps": [
+      {
+        "title": "Inspect the pinned selection",
+        "description": "Check the top20 field in package.json for the chosen npm versions and Git commit IDs.",
+        "icon": "book"
+      },
+      {
+        "title": "Restore a profile",
+        "description": "Clone the repository and run node scripts/install-top.mjs --profile web. Existing entries are skipped by default.",
+        "icon": "link"
+      }
+    ]
+  },
+  "community": {
+    "title": "Community · {project}",
+    "description": "Find usage guidance, follow discussions and review changes to this project.",
+    "links": [
+      {
+        "label": "Help and feedback",
+        "description": "Browse existing reports or describe a reproducible problem.",
+        "icon": "book"
+      },
+      {
+        "label": "Source repository",
+        "description": "Find the project and its maintenance links.",
+        "icon": "link"
+      },
+      {
+        "label": "Review changes",
+        "description": "Review open pull requests or prepare a contribution.",
+        "icon": "code"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "{copyright}"
+  }
+}

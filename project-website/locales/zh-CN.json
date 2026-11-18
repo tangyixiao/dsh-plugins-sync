@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "description": "浏览 DeepSeek Harness 的多市场快照，核对来源和版本，把已固定版本的精选插件装回指定 profile。"
+  },
+  "pages": {
+    "home": {
+      "title": "用同一份清单恢复另一台设备 · {project}"
+    },
+    "features": {
+      "title": "项目特点 · {project}",
+      "description": "浏览 DeepSeek Harness 的多市场快照，核对来源和版本，把已固定版本的精选插件装回指定 profile。"
+    },
+    "download": {
+      "title": "开始使用 · {project}",
+      "description": "在 package.json 的 top20 字段检查准备安装的 npm 版本或 Git 提交号。"
+    },
+    "community": {
+      "title": "参与项目 · {project}",
+      "description": "从这里找到使用说明、已有讨论和项目变更。"
+    }
+  },
+  "nav": {
+    "home": "首页",
+    "features": "项目特点",
+    "download": "开始使用",
+    "community": "参与项目"
+  },
+  "ui": {
+    "skip_link": "跳转到主要内容",
+    "navigation": "主导航",
+    "open_navigation": "打开导航",
+    "close_navigation": "关闭导航",
+    "language": "选择语言",
+    "theme": "选择主题",
+    "light": "浅色",
+    "dark": "深色",
+    "system": "跟随系统",
+    "platforms": "支持的平台",
+    "github": "GitHub",
+    "view_image": "查看完整演示图",
+    "feature_more": "查看详情",
+    "download": "浏览插件排行",
+    "release_notes": "仓库源代码",
+    "documentation": "使用文档",
+    "source": "仓库源代码",
+    "illustration": "使用路径",
+    "license": "脚本采用 MIT，目录数据按来源授权"
+  },
+  "hero": {
+    "title": [
+      "用同一份清单恢复另一台设备"
+    ],
+    "description": [
+      "浏览 DeepSeek Harness 的多市场快照，核对来源和版本，把已固定版本的精选插件装回指定 profile。"
+    ],
+    "primary_action": "浏览插件排行",
+    "secondary_action": "查看详情"
+  },
+  "preview": {
+    "caption": "使用路径",
+    "tabs": [
+      {
+        "label": "开始使用",
+        "icon": "book"
+      }
+    ],
+    "items": [
+      {
+        "title": "先看精选版本",
+        "description": "在 package.json 的 top20 字段检查准备安装的 npm 版本或 Git 提交号。",
+        "icon": "book"
+      },
+      {
+        "title": "恢复到目标 profile",
+        "description": "克隆仓库后运行 node scripts/install-top.mjs --profile web；默认会跳过已经安装的条目。",
+        "icon": "link"
+      }
+    ]
+  },
+  "features": {
+    "title": "项目特点",
+    "groups": [
+      {
+        "title": "查找与排行",
+        "description": "RANKING.md 展示按下载量与星标整理的排行，扁平索引另带中英描述。",
+        "detail": "",
+        "icon": "layers"
+      },
+      {
+        "title": "核对快照新旧",
+        "description": "每个来源单独记录 fresh、cached 或 unavailable。版本冲突保留到来源的指针。",
+        "detail": "",
+        "icon": "book"
+      }
+    ]
+  },
+  "getting_started": {
+    "title": "开始使用 · {project}",
+    "steps": [
+      {
+        "title": "先看精选版本",
+        "description": "在 package.json 的 top20 字段检查准备安装的 npm 版本或 Git 提交号。",
+        "icon": "book"
+      },
+      {
+        "title": "恢复到目标 profile",
+        "description": "克隆仓库后运行 node scripts/install-top.mjs --profile web；默认会跳过已经安装的条目。",
+        "icon": "link"
+      }
+    ]
+  },
+  "community": {
+    "title": "参与 · {project}",
+    "description": "从这里找到使用说明、已有讨论和项目变更。",
+    "links": [
+      {
+        "label": "帮助与反馈",
+        "description": "查看已报告的问题，或描述复现步骤。",
+        "icon": "book"
+      },
+      {
+        "label": "仓库源代码",
+        "description": "查看原项目与维护入口。",
+        "icon": "link"
+      },
+      {
+        "label": "查看项目变更",
+        "description": "查看已有拉取请求或准备贡献。",
+        "icon": "code"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "{copyright}"
+  }
+}
