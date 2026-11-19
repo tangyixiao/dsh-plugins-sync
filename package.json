@@ -2,7 +2,7 @@
   "name": "dsh-plugins-sync",
   "version": "1.0.0",
   "private": true,
-  "description": "Multi-device sync snapshot of the awesome-dsh-plugin catalog (11978 plugins) with ranking by downloads/stars and pinned install scripts for DeepSeek Harness (dsh).",
+  "description": "Multi-device sync snapshot of the awesome-dsh-plugin catalog (11979 plugins) with ranking by downloads/stars and pinned install scripts for DeepSeek Harness (dsh).",
   "type": "module",
   "scripts": {
     "test": "node --test test/*.test.mjs",
