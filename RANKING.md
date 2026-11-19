@@ -1,6 +1,6 @@
 # DSH 插件排行榜（按下载量，其次 stars）
 
-> 快照时间：2026-11-19 · 共 11979 个插件
+> 快照时间：2026-11-20 · 共 12191 个插件
 > 下载/stars 数据沿用上游缓存及其采集时间，并非本次重新采集；空值表示上游未采集。
 
 > 维护与同步：[Tangyixiao](https://github.com/tangyixiao)；目录数据：[Awesome DSH Plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 及原贡献者。
