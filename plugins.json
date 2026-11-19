@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-11-18T20:45:18.723Z",
- "count": 11978,
+ "generatedAt": "2026-11-19T07:41:57.729Z",
+ "count": 11979,
  "plugins": [
   {
    "file": "dsh-market__dsh-market.yml",
@@ -35569,8 +35569,8 @@
    "category": "model",
    "downloads": null,
    "stars": null,
-   "descEn": "FreePi model provider for DeepSeek Harness: adds a \"freepi\" provider and makes FreePi Auto the default model for new sessions; ad-supported, with one labelled ad in a bar above the composer. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "DeepSeek Harness 的 FreePi 模型提供方：新增「freepi」提供方并把 FreePi Auto 设为新会话的默认模型；靠广告支持，输入框上方有一条带标注的广告。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "FreePi model provider for DeepSeek Harness: adds a \"freepi\" provider and makes FreePi Auto the default model for new sessions; ad-supported, with one labelled ad in a bar above the composer.",
+   "descZh": "DeepSeek Harness 的 FreePi 模型提供方：新增「freepi」提供方并把 FreePi Auto 设为新会话的默认模型；靠广告支持，输入框上方有一条带标注的广告。"
   },
   {
    "file": "dennisrongo__dsh-plugins--plugins-dsh-git.yml",
@@ -41879,8 +41879,8 @@
    "category": "tools",
    "downloads": null,
    "stars": null,
-   "descEn": "Puts the plugins, skills and MCP servers a DSH installation runs into one panel: per-row switches, add, edit and test dialogs for MCP servers, per-tool masking, lazy servers with an on-demand tool catalog, group and collection bulk enable or disable, saved switch presets, dshmarket group import, and rule-based automatic grouping into official, MCP, general and downloaded buckets. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "把这套 DSH 安装里的插件、技能与 MCP 服务收进一个面板：逐行开关、MCP 服务器的新增/编辑/测试连接、工具级屏蔽与懒启动（按需加载工具目录）、分组与分组群的整组启停、可保存与一键应用的开关预设、导入 dshmarket 分组，以及按官方 / MCP / 通用 / 用户下载四类自动分组。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Puts the plugins, skills and MCP servers a DSH installation runs into one panel: per-row switches, add, edit and test dialogs for MCP servers, per-tool masking, lazy servers with an on-demand tool catalog, group and collection bulk enable or disable, saved switch presets, dshmarket group import, and rule-based automatic grouping into official, MCP, general and downloaded buckets.",
+   "descZh": "把这套 DSH 安装里的插件、技能与 MCP 服务收进一个面板：逐行开关、MCP 服务器的新增/编辑/测试连接、工具级屏蔽与懒启动（按需加载工具目录）、分组与分组群的整组启停、可保存与一键应用的开关预设、导入 dshmarket 分组，以及按官方 / MCP / 通用 / 用户下载四类自动分组。"
   },
   {
    "file": "fenshal__dsh-migrator.yml",
@@ -49331,6 +49331,16 @@
    "stars": null,
    "descEn": "Native RSS monitor for DeepSeek Harness: multi-source subscription, keyword filtering, scheduled polling with smart dedup, and email notifications for new items (HTML template with thumbnail cards), with SMTP passwords stored only in the credential store.",
    "descZh": "DeepSeek Harness 原生 RSS 订阅监控插件：多源订阅、关键词过滤、定时检查去重、新条目邮件通知（缩略图 HTML 模板），SMTP 密码走凭据库永不落盘，原生设置页四页签体验。"
+  },
+  {
+   "file": "hgognav233-netizen__agent-workflow-viewer.yml",
+   "name": "hgognav233-netizen/agent-workflow-viewer",
+   "url": "https://github.com/hgognav233-netizen/agent-workflow-viewer",
+   "category": "session",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Session canvas for DeepSeek Harness: draws the capabilities each session uses (files, terminal, web, MCP, skills, child tasks) and the objects they touched, highlights running and failed paths, and opens a detail panel with error text, estimated spend and a filterable timeline; reachable from the left navigation or beside the conversation input.",
+   "descZh": "DeepSeek Harness 会话画布：把每个会话用到的能力（文件、终端、网页、MCP、技能、子任务）和它们碰过的对象画成图，高亮执行中和失败的路径；详情栏显示错误原因、估算花费和可筛选的时间线；从左侧导航或对话输入框旁打开。"
   },
   {
    "file": "hgrh6268-lgtm__dsh-session-rate-cards.yml",
