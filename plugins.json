@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-11-19T20:51:15.279Z",
- "count": 12191,
+ "generatedAt": "2026-11-20T07:33:01.239Z",
+ "count": 12203,
  "plugins": [
   {
    "file": "dsh-market__dsh-market.yml",
@@ -2589,8 +2589,8 @@
    "category": "tools",
    "downloads": 607,
    "stars": 3,
-   "descEn": "CalDAV calendar workbench and 7 calendar_* tools (list/create/update/delete/search/find_time/health) for iCloud, Google, Nextcloud and custom endpoints: month/week/agenda views, free-slot search with copyable invite text, week-view drag-to-reschedule with undo, RRULE expansion, test-before-save connection setup, ICS import preview with conflict checks, and 5 switchable workbench themes. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "CalDAV 日历工作台与 7 个 calendar_* 工具（查/建/改/删/搜/找空闲时段/自检），支持 iCloud、Google、Nextcloud 与自建端点：提供月/周/议程视图、空闲时段查找与邀约文案复制、周视图拖拽改期与撤销、RRULE 重复展开、连接先测后存、ICS 导入去重冲突预览及 5 套工作台主题。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "CalDAV calendar workbench and 7 calendar_* tools (list/create/update/delete/search/find_time/health) for iCloud, Google, Nextcloud and custom endpoints: month/week/agenda views, free-slot search with copyable invite text, week-view drag-to-reschedule with undo, RRULE expansion, test-before-save connection setup, ICS import preview with conflict checks, and 5 switchable workbench themes.",
+   "descZh": "CalDAV 日历工作台与 7 个 calendar_* 工具（查/建/改/删/搜/找空闲时段/自检），支持 iCloud、Google、Nextcloud 与自建端点：提供月/周/议程视图、空闲时段查找与邀约文案复制、周视图拖拽改期与撤销、RRULE 重复展开、连接先测后存、ICS 导入去重冲突预览及 5 套工作台主题。"
   },
   {
    "file": "PerryLink__dsh-github.yml",
@@ -30153,6 +30153,16 @@
    "descZh": "DeepSeek Harness 首页风格聊天背景皮肤，对照 deepseek.com/harness 首页逐行移植：WebGL 流体背景（5 色噪声场、流场笔刷、光源、辉光、暗角、颗粒）、白色 90px 点线网格（鼠标扰动 + 弹簧回弹）、数字点云鲸鱼（粒子聚形、呼吸游动、鼠标径向推开、光标光束提亮）。仅深色主题生效，系统开启减少动态效果时自动停用。"
   },
   {
+   "file": "changhao213141__dsh-folder-cards.yml",
+   "name": "changhao213141/dsh-folder-cards",
+   "url": "https://github.com/changhao213141/dsh-folder-cards",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Turns the sidebar workspace region into 3:4 folder cards, two per row. A card shows a folder glyph and the workspace name, or an image you insert. Clicking a card plays a ripple and opens that folder sessions, with a back button at the top of the list. Ships title and content search, the native session context menu (rename, pin, fork, copy id, archive), an expandable archived section, and sorting by folder order or recent activity. Reads DSH services only and writes no official state; disabling it restores the native list.",
+   "descZh": "把侧栏「工作区」区换成两列 3:4 竖版文件夹卡片：默认文件夹图标加名称，可给每张卡插入封面图。点卡片以水波过渡进入该文件夹的会话列表，返回按钮在列表最上方。保留标题与正文搜索、原生会话右键菜单（重命名/置顶/分叉/复制 ID/归档）、可展开的已归档区，以及按文件夹顺序/最近活跃排序。只读 DSH 服务、不写官方状态，禁用即还原原生列表。"
+  },
+  {
    "file": "ChangJiang326__dsh-codex-bridge.yml",
    "name": "ChangJiang326/dsh-codex-bridge",
    "url": "https://github.com/ChangJiang326/dsh-codex-bridge",
@@ -30181,6 +30191,16 @@
    "stars": null,
    "descEn": "Appends ambiguity-handling rules to the dsh system prompt so the agent asks clarifying options before guessing.",
    "descZh": "向 dsh system prompt 追加歧义处理规则，让 agent 在猜测前先列出 A/B/C/D 选项请求澄清。"
+  },
+  {
+   "file": "changmingjuebumaimeng3666__dsh-metabolism.yml",
+   "name": "changmingjuebumaimeng3666/dsh-metabolism",
+   "url": "https://github.com/changmingjuebumaimeng3666/dsh-metabolism",
+   "category": "memory",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Context metabolism for DSH: every span a compaction removes is archived to local files and replaced with a one-line pointer, so the original words can be recalled later by keyword or date.",
+   "descZh": "上下文代谢：每次压缩掉的原文都归档到本地，只留一行指针；需要细节时按关键词或日期把原话捞回来。"
   },
   {
    "file": "changtianfeiyun__dsh-checkin-hub.yml",
@@ -30431,6 +30451,16 @@
    "stars": null,
    "descEn": "Bring the WorkBuddy accounts signed in on this machine into DSH, managing CN and international accounts separately. Supports automatic failover between accounts, one-click refresh of model catalogs and credits, the CN daily check-in, and a togglable OpenAI-compatible endpoint.",
    "descZh": "将本机登录的 WorkBuddy 多账号接入 DSH，国内版与国际版分开管理。支持账号故障自动切换、一键刷新模型目录与积分、国内版每日签到，以及可开关的 OpenAI 兼容端点。"
+  },
+  {
+   "file": "chddydwd__dsh-eye.yml",
+   "name": "chddydwd/dsh-eye",
+   "url": "https://github.com/chddydwd/dsh-eye",
+   "category": "vision",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Local screen ring for DeepSeek Harness: keeps the last ~45 seconds of screen frames in memory so the model can rewind what just happened, recalls any frame at 1:1 pixels, reads window text through the Windows accessibility API instead of OCR, locates controls by name and reports coordinates only (never clicks), and masks private regions in every capture. Windows only; everything stays on the machine. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "给 DeepSeek Harness 装一双「看得见刚才」的眼睛：屏幕帧按内存环保留最近约 45 秒，能倒带「刚才发生了什么」、按格子回取 1:1 原像素；读窗口文字走 Windows 无障碍接口（不是 OCR 猜）；按名字找控件只报坐标、从不代点；隐私打码让所有给出去的图一起挡。仅支持 Windows，全程本机、不上传。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "Che-Year__dsh-unidoc.yml",
@@ -42359,8 +42389,8 @@
    "category": "tools",
    "downloads": null,
    "stars": null,
-   "descEn": "Puts the plugins, skills and MCP servers a DSH installation runs into one panel: per-row switches, add, edit and test dialogs for MCP servers, per-tool masking, lazy servers with an on-demand tool catalog, group and collection bulk enable or disable, saved switch presets, dshmarket group import, and rule-based automatic grouping into official, MCP, general and downloaded buckets.",
-   "descZh": "把这套 DSH 安装里的插件、技能与 MCP 服务收进一个面板：逐行开关、MCP 服务器的新增/编辑/测试连接、工具级屏蔽与懒启动（按需加载工具目录）、分组与分组群的整组启停、可保存与一键应用的开关预设、导入 dshmarket 分组，以及按官方 / MCP / 通用 / 用户下载四类自动分组。"
+   "descEn": "Puts the plugins, skills and MCP servers a DSH installation runs into one panel: per-row switches, add, edit and test dialogs for MCP servers, per-tool masking, lazy servers with an on-demand tool catalog, group and collection bulk enable or disable, saved switch presets, dshmarket group import, together with per-session tool overlays and saved whole-environment scenes, and rule-based automatic grouping into official, MCP, general and downloaded buckets.",
+   "descZh": "把这套 DSH 安装里的插件、技能与 MCP 服务收进一个面板：逐行开关、MCP 服务器的新增/编辑/测试连接、工具级屏蔽与懒启动（按需加载工具目录）、分组与分组群的整组启停、可保存与一键应用的开关预设、导入 dshmarket 分组、按会话的工具覆盖层与可保存的整环境场景，以及按官方 / MCP / 通用 / 用户下载四类自动分组。"
   },
   {
    "file": "fenshal__dsh-migrator.yml",
@@ -43813,16 +43843,6 @@
    "descZh": "给只提供英文简介的已安装 DSH 插件自动补上中文简介，启动时以及每次插件变动后各跑一次，插件名称一律不改。原本已导出语言包的插件刷新页面即生效，原本没有语言包导出的也会自动补上：内存注入层即时生效，写入磁盘的语言包需重启一次。"
   },
   {
-   "file": "FragrantLotus__dsh-sidebar-entries.yml",
-   "name": "FragrantLotus/dsh-sidebar-entries",
-   "url": "https://github.com/FragrantLotus/dsh-sidebar-entries",
-   "category": "ui",
-   "downloads": null,
-   "stars": null,
-   "descEn": "Plugin rail for the DSH sidebar. Caps the rail to a whole number of rows with its own scrollbar, folds the whole list behind one chevron, and reorders entries by dragging them. Footer entries are pulled up into the same rail. Every subsystem is guarded, so one failure cannot take the page down.",
-   "descZh": "整理 DSH 左侧插件栏：高度上限按整行取整，栏内单独滚动；一个箭头折叠整栏；长按拖拽调整顺序；页脚入口并入同一栏。各子系统独立守卫，单个失败不会拖垮整页。"
-  },
-  {
    "file": "framecy__dsh-ssh-shell.yml",
    "name": "framecy/dsh-ssh-shell",
    "url": "https://github.com/framecy/dsh-ssh-shell",
@@ -44021,6 +44041,16 @@
    "stars": null,
    "descEn": "Context ring gauge in the DSH composer toolbar: view usage, open a breakdown panel, and run /compact from the panel, with a fireworks animation.",
    "descZh": "DSH 输入框工具栏的上下文小环：查看用量，打开面板查看构成并执行 /compact，带烟花动画。"
+  },
+  {
+   "file": "Frost-wu__dsh-token-saver-100.yml",
+   "name": "Frost-wu/dsh-token-saver-100",
+   "url": "https://github.com/Frost-wu/dsh-token-saver-100",
+   "category": "fun",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Refuses every conversation model call and streams back “恭喜你，又省下了token！” instead, so a turn spends no tokens; a settings page counts how many calls it has refused. Requests that declare a purpose, such as chat titles and compaction, are left alone. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "拦下每一次对话模型调用，直接流回「恭喜你，又省下了token！」，于是一轮对话不花任何 token；设置页累计显示已拦下的调用次数。带 purpose 的后台请求（标题生成、上下文压缩等）不受影响。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "FrozMN__dsh-session-adopt.yml",
@@ -65623,6 +65653,16 @@
    "descZh": "DeepSeek Harness Web 插件——PDF 文字层与扫描件 OCR、Office 文档转 Markdown、TIFF/epub 与长文档索引卡。"
   },
   {
+   "file": "linkl-ike__my-fish.yml",
+   "name": "linkl-ike/my-fish",
+   "url": "https://github.com/linkl-ike/my-fish",
+   "category": "fun",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Runs a virtual fish companion inside DeepSeek Harness: persona, long-term memory (digest, audit, markdown export), QQ/Bilibili/Douyin chat, voice, diary and backups, plus AI painting via local ComfyUI and a 12-tab control panel. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "在 DSH 里养一条鱼：人格、长期记忆（摘要 / 体检 / Markdown 导出）、QQ/B站/抖音聊天、语音、日记与备份，外加本地 ComfyUI 画图和 12 个标签页的一体化面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "linlin539__dsh-skill-writing-plans.yml",
    "name": "linlin539/dsh-skill-writing-plans",
    "url": "https://github.com/linlin539/dsh-skill-writing-plans",
@@ -74611,6 +74651,16 @@
    "stars": null,
    "descEn": "Offline Wikipedia and ZIM lookups through your own kiwix-serve: the wiki_search, wiki_read and wiki_books tools run full-text search with snippets, read an article by exact title, and list the local ZIM library.",
    "descZh": "通过你自己运行的 kiwix-serve 离线查询维基百科等 ZIM 数据包：wiki_search / wiki_read / wiki_books 三个工具分别做带摘要片段的全文搜索、按精确标题读取全文、列出本地 ZIM 书库。"
+  },
+  {
+   "file": "Mingtian-Lii__dsh-wechat-skin.yml",
+   "name": "Mingtian-Lii/dsh-wechat-skin",
+   "url": "https://github.com/Mingtian-Lii/dsh-wechat-skin",
+   "category": "theme",
+   "downloads": null,
+   "stars": null,
+   "descEn": "WeChat-style theme for the DSH Web GUI: green accents and send action, green user bubbles, a soft gray chat canvas, a green sidebar whale, a badge on the current session, a context-usage status dot, and a prominent compaction card.",
+   "descZh": "微信风格主题：微信绿强调色与发送按钮、绿色用户气泡、浅灰聊天画布、绿色鲸鱼图标、当前会话的「当前」徽标，上下文使用率状态点，以及醒目的上下文压缩卡片。"
   },
   {
    "file": "MingTXin__dsh-remote-workstation.yml",
@@ -84943,6 +84993,26 @@
    "descZh": "可拖动的悬浮小窗，分吃饭、喝水、站立三个 tab：随机决定三餐（每天各 3 次机会、不重复、可增删菜品），记录喝水与站立，每类提醒各用一种音色响约 3 秒；可收成 32px 悬浮球。"
   },
   {
+   "file": "Qing8-Max__dsh-dev-modes.yml",
+   "name": "Qing8-Max/dsh-dev-modes",
+   "url": "https://github.com/Qing8-Max/dsh-dev-modes",
+   "category": "workflow",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Three agent presets in one bundle: software development, game development, and read-only discussion, plus per-session isolation and quiet-run switches. Ships delivery and engine workflow skills for Godot, Unity, Unreal and Cocos. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "一次安装新增三个 Agent 预设：软件开发、游戏开发、只读讨论，并带每会话的隔离与静默运行开关；随包附带交付流程与 Godot / Unity / Unreal / Cocos 引擎工作流技能。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
+   "file": "Qing8-Max__dsh-session-overview.yml",
+   "name": "Qing8-Max/dsh-session-overview",
+   "url": "https://github.com/Qing8-Max/dsh-session-overview",
+   "category": "session",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Adds an Overview tab to the DSH conversation view switcher showing the current session's turns, wall time, token usage, cache hit rate and generation speed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "在 DSH 会话视图切换器中增加「概览」页签，显示当前会话的回合数、墙面时间、令牌用量、缓存命中率与生成速度。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "qinghuidaqzp__dsh-encoding-guard.yml",
    "name": "qinghuidaqzp/dsh-encoding-guard",
    "url": "https://github.com/qinghuidaqzp/dsh-encoding-guard",
@@ -91983,6 +92053,16 @@
    "descZh": "面向 DeepSeek Harness（dsh）的 Minecraft 开发插件，覆盖 Minecraft 1.7.10 至 26.3：9 个技能（Paper/Spigot 插件、Fabric/Forge/NeoForge 模组、大型模组附属、分时代 Gradle/JDK 构建）、mc_scaffold 项目生成器与 mc_gradle 构建执行器、18 份由钉选工件生成且带 provenance 头的离线 API 签名索引，以及确定性分片流水线 mc_arbitrate（契约冻结、分片任务书、21 条高置信审计规则含 5 条跨分片检查、清单合并、编译错误定点路由），引擎内部不调用模型。Apache-2.0 + NOTICE。"
   },
   {
+   "file": "silentlamb05147__dsh-pure-search.yml",
+   "name": "silentlamb05147/dsh-pure-search",
+   "url": "https://github.com/silentlamb05147/dsh-pure-search",
+   "category": "docs",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Local document search for DSH: eight kb_* tools that ingest Markdown, TXT, PDF, DOCX, HTML and JSON into workspace- and session-scoped indexes, returning matching passages with path, chapter and line-range citations; BM25 by default with optional dense retrieval, fully offline and host-only.",
+   "descZh": "面向 DSH 的本地文档检索：八个 kb_* 工具把 Markdown、TXT、PDF、DOCX、HTML、JSON 建成工作区/会话分层索引，返回带路径、章节与行号的原文片段；默认 BM25，可选稠密检索，全程离线、仅宿主侧。"
+  },
+  {
    "file": "SilenZerOrz__obsidian-dsh-acp.yml",
    "name": "SilenZerOrz/obsidian-dsh-acp",
    "url": "https://github.com/SilenZerOrz/obsidian-dsh-acp",
@@ -93871,6 +93951,16 @@
    "stars": null,
    "descEn": "MBCC console skin for the DSH Web UI: repaints the interface through theme tokens in dark and light with five accent colors; adds a two-stage opening animation (an optional video clip, then a boot log); and adds a wallpaper library in the sidebar footer where local images replace the chat background, with slideshow, opacity and fit controls, plus a built-in dark theme. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
    "descZh": "MBCC 终端风格皮肤：通过主题 token 重绘深浅两套配色并提供五档强调色；新增两段式开屏动画（可选视频片段 + 启动日志）；在侧栏底部新增壁纸库，可用本地图片替换聊天背景，支持幻灯片播放、透明度与填充方式调节，并内置一套深色主题。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
+   "file": "Sophia-DuoDuo__dsh-smart-planner.yml",
+   "name": "Sophia-DuoDuo/dsh-smart-planner",
+   "url": "https://github.com/Sophia-DuoDuo/dsh-smart-planner",
+   "category": "workflow",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Task planner for DeepSeek Harness: stages a project into daily tasks with buffer days, a capacity board, evening review, a pinned assistant chat, and a fish task popover in every conversation header. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "面向 DeepSeek Harness 的任务规划助手：把项目拆成每日任务，支持缓冲日、容量看板、晚间复盘、置顶助手会话，以及每个对话标题前的小鱼任务浮层。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "sorawithcat__dsh-health-reminder.yml",
@@ -108843,6 +108933,16 @@
    "descZh": "DeepSeek Harness 会话级 root 权限桥：申请制（逐次网页审批）、完整 root（网页内 polkit 密码输入）与 fakeroot 三种模式，支持 sudo 或 run0 --empower 提权，子代理 sudo 策略可配置。它用 sudo 或 run0 提升真实命令的权限：申请制下每次请求都等你批准；完全 root 模式下，在网页里输一次密码后整个会话的每条 bash 命令都以提权方式运行。委托的子代理默认逐次审批（subagentPolicy: request）。"
   },
   {
+   "file": "xiaojiuop__dsh-wallpaper-studio.yml",
+   "name": "xiaojiuop/dsh-wallpaper-studio",
+   "url": "https://github.com/xiaojiuop/dsh-wallpaper-studio",
+   "category": "theme",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Paints an uploaded image, a video file, a direct URL, or one of 6 built-in gradients behind the whole DSH interface, with fill/fit/tile scaling, wallpaper opacity, background blur and a darkening veil. Overrides the primary, canvas and panel design tokens, keeping separate light and dark values, and sets independent opacity for panels, inputs and popovers. Media stays in the browser (IndexedDB) and is never uploaded.",
+   "descZh": "把上传的图片、视频文件、直链 URL 或 6 套内置渐变铺到整个 DSH 界面背后，支持填充/适应/平铺、壁纸可见度、背景模糊与遮罩暗度；覆盖主色/底色/面板色三类设计令牌（深浅模式各一套），并可分别调整面板、输入框、弹层的透明度。素材只留在本机浏览器（IndexedDB），不上传任何服务器。"
+  },
+  {
    "file": "xiaokaizhou__dsh-media-preview.yml",
    "name": "xiaokaizhou/dsh-media-preview",
    "url": "https://github.com/xiaokaizhou/dsh-media-preview",
@@ -110081,6 +110181,16 @@
    "stars": null,
    "descEn": "A self-justification gate for outbound claims: a claim needs a checkable source (an http(s) URL plus a quote of at least 8 characters), every number in the text must appear in a quote, and a quote whose vocabulary overlap with the post is under 10% counts as an invalid citation; absolute wording is rejected when the only evidence is second-hand. All verdicts come from deterministic rules — no model call, no network. The guard subcommand refuses to run the publish command when the gate fails (fail-closed), explains what is wrong and how to fix it, and requires an --ack note on the second attempt stating what changed; after three attempts it stops and hands back to a human. Ships check / explain / fix / guard, with 30 tests.",
    "descZh": "公开发言前的自证闸门：断言必须给出可核对的出处（http(s) 链接 + 不少于 8 字原文），正文里的数字必须能在引文中找到，引文与正文词汇重叠低于 10% 判为无效引用；只有二手来源时不允许使用绝对化措辞。判定全部由确定性规则完成，不调用模型、不联网。guard 子命令在不过闸时不执行后续发布命令（fail-closed），被拦时给出解释与可选改法；同一话题第二次提交必须带 --ack 回执说明改了什么，三次不过即停止并交回人工。提供 check / explain / fix / guard 四个命令，30 个测试。"
+  },
+  {
+   "file": "xjiang-yyds__dsh-composer-breathing-border.yml",
+   "name": "xjiang-yyds/dsh-composer-breathing-border",
+   "url": "https://github.com/xjiang-yyds/dsh-composer-breathing-border",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Adds a breathing glow border around the message composer, with six selectable colors.",
+   "descZh": "为消息输入区添加呼吸光晕边框，内置六种可选颜色。"
   },
   {
    "file": "xkjxziochu__dsh-input-optimizer.yml",
@@ -113011,6 +113121,16 @@
    "stars": null,
    "descEn": "Local-folder wallpaper for the DSH Web UI: it defaults to your Pictures library (C:\\Users\\<you>\\Pictures) and the host serves those images over same-origin HTTP, rotating one every N minutes (0-1440, default 5) in a shuffled pass with no repeats; the settings page under Plugins picks a different folder through the native system dialog, and tunes image opacity (100%), darkening scrim (25%) and panel opacity (15%) with changes applied live. Dialogs, modals and menus keep the default opaque background so text stays readable. Reads .jpg .jpeg .png .webp .gif .avif .bmp straight from disk, and keeps per-user settings under $DSH_HOME so upgrades never ship your folder path.",
    "descZh": "用本地文件夹当 DSH Web 壁纸：默认就用当前用户的「图片」库（C:\\Users\\<用户名>\\Pictures），宿主通过同源 HTTP 提供其中的图片，每 N 分钟轮换一张（0-1440，默认 5），洗牌后一轮内不重复；「插件」页的设置界面可用系统原生文件夹对话框换目录，并可调节背景图不透明度（100%）、压暗遮罩（25%）与面板不透明度（15%），改动即时生效。弹窗、对话框与菜单保持默认不透明底色，字更清楚。直接读取 .jpg .jpeg .png .webp .gif .avif .bmp，用户配置写入 $DSH_HOME，升级不会带上你的目录路径。"
+  },
+  {
+   "file": "YiDaWuYi__dsh-manga-workflow.yml",
+   "name": "YiDaWuYi/dsh-manga-workflow",
+   "url": "https://github.com/YiDaWuYi/dsh-manga-workflow",
+   "category": "workflow",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Manga translation pipeline for DeepSeek Harness: box marking in a sidebar workbench, local Japanese/Korean/English OCR, free-engine or AI translation, GPU text erasure with Chinese embedding, pre-embedding proofreading, and an automatic box-detection benchmark.",
+   "descZh": "漫画汉化流水线插件：侧边栏工作台里框选文字，本地 OCR（日/韩/英）、免费引擎或 AI 翻译、GPU 去字与中文嵌字、嵌字前校对，并带自动标框与识别基准测试。"
   },
   {
    "file": "Yifeng123589__dsh-design-kit.yml",
