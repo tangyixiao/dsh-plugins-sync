@@ -3,7 +3,7 @@
 [![Validate catalog](https://github.com/tangyixiao/dsh-plugins-sync/actions/workflows/ci.yml/badge.svg)](https://github.com/tangyixiao/dsh-plugins-sync/actions/workflows/ci.yml)
 [![Sync catalogs and markets](https://github.com/tangyixiao/dsh-plugins-sync/actions/workflows/sync.yml/badge.svg)](https://github.com/tangyixiao/dsh-plugins-sync/actions/workflows/sync.yml)
 
-多端同步的 [DeepSeek Harness (dsh)](https://github.com/deepseek-ai/deepseek-harness) 插件目录快照，数据来自 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)（12387 个插件）。
+多端同步的 [DeepSeek Harness (dsh)](https://github.com/deepseek-ai/deepseek-harness) 插件目录快照，数据来自 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)（12392 个插件）。
 
 同时同步 Awesome、Open Plugin Market、DSH Marketplace、DSH Plugin Hub，以及 Tangyixiao 市场的稳定版和预览版原生索引。当前数量、来源状态和快照时间见 [多市场同步记录](markets/README.md)。
 
@@ -11,7 +11,7 @@
 
 | 路径 | 说明 |
 |---|---|
-| `data/plugins/*.yml` | 上游全量插件清单（12387 个，逐插件元数据） |
+| `data/plugins/*.yml` | 上游全量插件清单（12392 个，逐插件元数据） |
 | `data/downloads.json` / `stars.json` / `capabilities.json` | 上游采集的下载量、stars、权限扫描数据 |
 | `plugins.json` | 本仓库生成的扁平索引：名称/URL/分类/下载/stars/中英描述，已按 下载↓ stars↓ 排序 |
 | `RANKING.md` | Top 200 排行榜（人类可读） |
