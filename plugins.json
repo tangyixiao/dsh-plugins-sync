@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-11-20T20:35:41.146Z",
- "count": 12387,
+ "generatedAt": "2026-11-21T07:28:21.529Z",
+ "count": 12392,
  "plugins": [
   {
    "file": "dsh-market__dsh-market.yml",
@@ -28143,6 +28143,16 @@
    "descZh": "建立 64 token 缓存块模型，计算每轮 API 花费及缓存投资回报率。"
   },
   {
+   "file": "bortpro__dsh-plugin-socratic-tutor.yml",
+   "name": "bortpro/dsh-plugin-socratic-tutor",
+   "url": "https://github.com/bortpro/dsh-plugin-socratic-tutor",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Socratic tutor with topic-specific curricula, diagnostic questions, a saved skill map, spaced review, and a final assessment.",
+   "descZh": "苏格拉底式导师：按主题定制课程、诊断性提问、保存技能图谱、间隔复习与结业评估。"
+  },
+  {
    "file": "BossKrabs__product--packages-dsh-madara-pixel-pet.yml",
    "name": "BossKrabs/product#dsh-madara-pixel-pet",
    "url": "https://github.com/BossKrabs/product/tree/main/packages/dsh-madara-pixel-pet",
@@ -51909,8 +51919,8 @@
    "category": "usage",
    "downloads": null,
    "stars": null,
-   "descEn": "OpenCode Go quota in the DSH right sidebar: per-model monthly caps, the shared 5-hour, weekly and monthly allowance left, and an opencode_quota tool for chat. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "在 DSH 右侧边栏查看 OpenCode Go 各模型的月度上限与共享 5 小时／每周／每月额度剩余，并在对话中提供 opencode_quota 工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "OpenCode Go quota in the DSH right sidebar: per-model monthly caps, the shared 5-hour, weekly and monthly allowance left, and an opencode_quota tool for chat.",
+   "descZh": "在 DSH 右侧边栏查看 OpenCode Go 各模型的月度上限与共享 5 小时／每周／每月额度剩余，并在对话中提供 opencode_quota 工具。"
   },
   {
    "file": "hseons__dsh-usage-peak.yml",
@@ -81263,6 +81273,36 @@
    "descZh": "自带一套最小账本工具：brief.ps1 查过往踩过的坑，add-lesson.ps1 记新的，安装时自动部署到技能目录并接好 AGENTS.md。模型动手前查一遍、踩坑后记成规则，同一个坑不必踩第二次。本插件负责盯着它有没有真的这么做，并把「查了几次、记了哪几条」摆在面板和输入框下方。"
   },
   {
+   "file": "OldQin-Family__dsh-breeze-tts.yml",
+   "name": "OldQin-Family/dsh-breeze-tts",
+   "url": "https://github.com/OldQin-Family/dsh-breeze-tts",
+   "category": "voice",
+   "downloads": null,
+   "stars": null,
+   "descEn": "DSH client for a self-hosted Breeze TTS service: AI auto-read plus a voice workshop for designing, cloning, and managing voices. Requires a running Breeze service; no model is bundled. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "DSH 的 Breeze 语音客户端：AI 自动朗读，以及设计、克隆和管理音色的声音工坊；需自备并运行 Breeze 服务，插件不含模型。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
+   "file": "OldQin-Family__GitHub-ShipGo--packages-dsh-shipgo.yml",
+   "name": "OldQin-Family/GitHub-ShipGo#dsh-shipgo",
+   "url": "https://github.com/OldQin-Family/GitHub-ShipGo/tree/main/packages/dsh-shipgo",
+   "category": "workflow",
+   "downloads": null,
+   "stars": null,
+   "descEn": "ShipGo release checklist panel for DSH: track the pre-release gates for package assets, archive sealing, and delivery. Progress stays in the browser; it does not run scripts or publish anything. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "DSH 发布检查单面板：按 ShipGo 的发版闸门逐项确认发布件、封包与交付检查；进度保存在浏览器，不执行脚本、不代发版。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
+   "file": "OldQin-Family__PortWrench--packages-dsh-portwrench.yml",
+   "name": "OldQin-Family/PortWrench#dsh-portwrench",
+   "url": "https://github.com/OldQin-Family/PortWrench/tree/main/packages/dsh-portwrench",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "PortWrench panel for DSH: view listening ports, identify owning processes, and close process trees on Windows. Requires the PortWrench app to be installed and running. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "端口扳手的 DSH 面板：在 DSH 内查看监听端口、识别占用进程、关闭进程树；仅 Windows，需先安装并运行 PortWrench 本体。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "oldzhang82__dsh-tps-ttft.yml",
    "name": "oldzhang82/dsh-tps-ttft",
    "url": "https://github.com/oldzhang82/dsh-tps-ttft",
@@ -101113,6 +101153,16 @@
    "descZh": "移动端访问网关：独立子进程反向代理 + 首次访问 PC 审批（管理 token 认证、DNS rebinding 防护）+ 局域网/VPN/公网自动识别与网络模式切换 + 扫码访问 + WebSocket 实时转发 + 窄屏 UI 适配（输入区重排、第三方插件弹窗适配、crypto.randomUUID polyfill）。"
   },
   {
+   "file": "TongjieYang__dsh-skill-hub.yml",
+   "name": "TongjieYang/dsh-skill-hub",
+   "url": "https://github.com/TongjieYang/dsh-skill-hub",
+   "category": "skill",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Skill hub: browse and classify local agent skills, compose them into teams with roles and stages, insert a skill prompt into the composer in one click, and keep third-party API keys in the OS keychain instead of dotfiles. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "技能中枢：罗列与分类本机 skill，按角色与流程编排专家团，一键把 skill 提示词插进输入框，并把第三方 API Key 收进系统钥匙串而不是 dotfiles。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "tonglingming-hue__dsh-novel-studio.yml",
    "name": "tonglingming-hue/dsh-novel-studio",
    "url": "https://github.com/tonglingming-hue/dsh-novel-studio",
@@ -115449,8 +115499,8 @@
    "category": "skill",
    "downloads": null,
    "stars": null,
-   "descEn": "Expert Library (also called Expert Role or Private Think Tank). Domain knowledge libraries for agents: each expert is a folder with SKILL.md, a manifest and references; only its name and one-line description sit in the skill catalog until the model loads it, so a large corpus stays out of the context. Ships two experts (design, DSH plugin) that are copied into the library on first start, fill-only and never overwriting yours. 12 tools create experts, move material in, find documents, plan and record research, dispatch steps to child sessions or open a standalone workspace. A gap list shows which questions went unanswered, a five-star maturity score uses structure, coverage, content, freshness and research closure (the fifth star also needs real usage), and a panel shows per session which expert was loaded and which file was read. It reads and writes files under the expert root; its HTTP routes accept local requests only; dispatching steps or opening a workspace creates child sessions and spends tokens.",
-   "descZh": "专家库（别名：专家角色、私人智库）。把调研资料变成可加载的专家技能：每位专家是一个目录（SKILL.md + 清单 + references），平时只占技能目录里一行名字和简介，模型真要用时才读正文，大库不必一次进上下文。装完自带两个专家（设计、DSH 插件），首次启动复制进资料库，只补缺、不覆盖你已有的。12 个工具：建专家、搬入资料、查资料、排调研计划、记进度、派子会话并行查、开独立工作区。缺口清单列出哪些问题没答上；五星成熟度看结构、覆盖、内容、新鲜度、调研闭环，第五星还要求真实使用过；面板按会话显示哪次加载了哪位专家、读了哪个文件。它会读写专家库目录下的文件；HTTP 接口只接受本机请求；派发与工作区会新建子会话、消耗用量。"
+   "descEn": "Expert Library (also called Expert Role or Private Think Tank). Turns research material into loadable expert skills: each expert is a folder with SKILL.md, a manifest and references; only its name and one-line description sit in the skill catalog until the model loads it, so a large corpus stays out of the context. Material is organized into eight categories with two-level browsing. Ships two experts (library guide, DSH plugin) that are copied into the library on first start, fill-only and never overwriting yours. 14 tools create experts, move material in, find documents, plan and record research, dispatch steps to child sessions or open a standalone workspace. Retrieval uses a small local embedding model by default, falls back to keyword matching when it is missing, and can be downloaded from the settings panel; the library folder can live on any drive. The gap list shows which questions went unanswered; agreeing to research one sends it to the matching category session, and the result is checked for how many files were added and whether they are registered. A panel shows call history, session activity and each expert's maturity score. It reads and writes files under the expert root; its HTTP routes accept local requests only; research and dispatch reuse or create sessions and spend tokens. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "专家库（别名：专家角色、私人智库）。把调研资料变成可加载的专家技能：每位专家是一个目录（SKILL.md + 清单 + references），平时只占技能目录里一行名字和简介，模型要用时才读正文，大库不必一次进上下文。资料按八类归档、两级浏览；自带「专家库说明书」与「插件开发」两个专家，首次启动复制进资料库，只补缺、不覆盖你已有的。14 个工具：建专家、搬入资料、查资料、排调研计划、记进度、派子会话并行查、开独立工作区。检索默认用本地小向量模型，没装模型时自动降级关键词匹配，设置页可一键下载；资料目录能换到任意盘；缺口清单列出哪些问题没答上，点「同意去查」就投进对应大类的会话去补，跑完自动核对补了几份、三表登记齐没齐；面板显示调用记录、会话动态与每位专家的成熟度。它会读写专家库目录下的文件；HTTP 接口只接受本机请求；调研与派发会复用或新建会话、消耗用量。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "yjnmedia__dsh-skill-order.yml",
