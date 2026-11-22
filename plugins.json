@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-11-22T07:10:04.405Z",
- "count": 12519,
+ "generatedAt": "2026-11-22T19:53:02.894Z",
+ "count": 12644,
  "plugins": [
   {
    "file": "dsh-market__dsh-market.yml",
@@ -15273,6 +15273,16 @@
    "descZh": "在 DSH 设置里浏览 awesome-claude-video-skills 目录（373 条），把选中的技能装进 ~/.claude/skills 和/或 ~/.dsh/skills：下载该仓库的 GitHub 归档并复制技能目录，不执行仓库里的任何代码。安装以后台任务运行、显示实时进度（已下载字节与已复制文件数）并可取消；本插件装上的技能可以卸载，没有本插件标记的目录保持不动。列表显示 GitHub 报告的仓库体积近似值。同样的能力也以 video_skill_search、video_skill_install、video_skill_uninstall 三个工具暴露给智能体。"
   },
   {
+   "file": "13691032917-creator__dsh-work-out.yml",
+   "name": "13691032917-creator/dsh-work-out",
+   "url": "https://github.com/13691032917-creator/dsh-work-out",
+   "category": "session",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A left-sidebar timeline of every file produced across all conversations, newest first, with files changed or deleted after delivery marked in colour. One conversation action jumps to the conversation, scrolls the line that mentions the file into view, and opens it in the right sidebar preview.",
+   "descZh": "左侧栏把所有对话产出的文件按时间汇总成一条时间线，交付后被更改或已删除的文件用颜色标出。点击对话按钮会跳到该对话、滚到提到这个文件的那一行，并在右侧栏预览中打开文件。"
+  },
+  {
    "file": "137__dsh-chatgpt-style.yml",
    "name": "137/dsh-chatgpt-style",
    "url": "https://github.com/137/dsh-chatgpt-style",
@@ -17953,6 +17963,16 @@
    "descZh": "读取 16 个 AI 工具的本地会话记录，外加 Windows 最近文件活动，在本机生成日报或周报。目前仅支持 Windows x64：插件自带 Windows sidecar，无需安装 Python；macOS / Linux 暂不支持。"
   },
   {
+   "file": "60liulin60__dsh-workspace-running-tasks.yml",
+   "name": "60liulin60/dsh-workspace-running-tasks",
+   "url": "https://github.com/60liulin60/dsh-workspace-running-tasks",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Marks workspace rows with their live state — a spinner while any of the workspace sessions is running, a warning dot while one waits for approval, an answer or plan review — and raises workspaces with running tasks to the front of the sidebar list, keeping that order once they finish.",
+   "descZh": "在工作区行内标出实时状态：有任务运行时行首文件夹图标换成旋转环，等待权限审核、提问或计划确认时换成警示点；有任务运行的工作区自动排到「工作区」列表最前，任务全部结束后保留当前顺序。"
+  },
+  {
    "file": "60studay__dsh-serial-whalesong.yml",
    "name": "60studay/dsh-serial-whalesong",
    "url": "https://github.com/60studay/dsh-serial-whalesong",
@@ -17979,8 +17999,8 @@
    "category": "model",
    "downloads": null,
    "stars": null,
-   "descEn": "Retry failed model requests automatically: intercepts every request error and replays the same step after a 2s / 5s / 10s / 20s backoff ladder, so gateway blips and rate limits no longer end the turn.",
-   "descZh": "模型请求失败自动重试：拦截每一次请求错误，按 2/5/10/20 秒的阶梯退避后重放同一个 step，中转站抖动与限流不再中断整轮对话。"
+   "descEn": "Selective retry for transient model-request failures in DeepSeek Harness: gateway blips, HTTP/2 and upstream stream interruptions get a 2s / 5s / 10s / 20s backoff, while quota, auth, context-overflow and parameter errors pass straight back to DSH.",
+   "descZh": "为 DeepSeek Harness 的暂时性模型请求故障补充重试：中转抖动、HTTP/2 与上游流中断按 2/5/10/20 秒阶梯重试；额度、鉴权、上下文超限和参数错误直接交回 DSH。"
   },
   {
    "file": "643048695__dsh-compaction-route.yml",
@@ -18009,8 +18029,8 @@
    "category": "tools",
    "downloads": null,
    "stars": null,
-   "descEn": "Adds a download_file tool that fetches a URL over 16 aria2c connections and falls back to a single stream when aria2 is unavailable. Needs aria2c installed separately; the aria2 channel does not verify TLS certificates.",
-   "descZh": "新增 download_file 工具，用 16 路 aria2c 并发下载，aria2 不可用时自动退回单线程流式下载。需自行安装 aria2c；aria2 通道不校验 TLS 证书。"
+   "descEn": "Adds a download_file tool with 16-connection aria2c acceleration and automatic single-stream fallback. Timeouts no longer crash the host, temporary files stay isolated until success, connection counts are reported as measured, and the CA certificate bundle is loaded automatically. Needs aria2c installed separately.",
+   "descZh": "新增 download_file 工具，用 16 路 aria2c 并发下载，失败自动退回单线程流式下载。超时不再让宿主崩溃，临时文件成功后才替换目标，连接数按实测回报，并自动加载证书。需自行安装 aria2c。"
   },
   {
    "file": "643048695__dsh-subagent-role-router.yml",
@@ -18151,6 +18171,16 @@
    "stars": null,
    "descEn": "Drag-to-resize the chat content width in the DeepSeek Harness web UI: a handle on the column right edge overrides the built-in 748px width (default 1040px, 520-2400 range, persisted per browser, double-click resets).",
    "descZh": "为 DeepSeek Harness 网页界面提供可拖拽的聊天内容宽度：文字列右缘的把手覆盖内置的 748px 宽度（默认 1040px、范围 520~2400、按浏览器记忆，双击恢复默认）。"
+  },
+  {
+   "file": "777wtmsb__dsh-choice-buttons.yml",
+   "name": "777wtmsb/dsh-choice-buttons",
+   "url": "https://github.com/777wtmsb/dsh-choice-buttons",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Turns the A–H or 1–99 option list at the end of an answer into clickable pills under the reply; clicking one sends that option line back as your message. Pure client plugin, no model round-trip.",
+   "descZh": "把回答末尾的 A–H 或 1–99 选项行渲染成回复下方的可点胶囊，点一下就把那行作为你的消息发出。纯客户端插件，不额外消耗模型调用。"
   },
   {
    "file": "778672151__dsh-session-turn-eta.yml",
@@ -20353,6 +20383,16 @@
    "descZh": "DSH 网页版桌面宠物「肥鲸」：蓝发鲸鱼娘常驻页面右下角，可拖拽并记住位置、会眨眼、点击可聊天，支持语音对话、念诗说书与饭点提醒。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
+   "file": "adengou__dsh-kbar.yml",
+   "name": "adengou/dsh-kbar",
+   "url": "https://github.com/adengou/dsh-kbar",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Command palette for the DSH web UI: one shortcut searches sessions, slash commands, skills, models and installed bundles, and runs registered shortcut commands. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "DSH 命令面板：一个快捷键搜索会话、斜杠命令、技能、模型与已装插件，并执行已注册的快捷键命令。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "adengou__dsh-kumquat.yml",
    "name": "adengou/dsh-kumquat",
    "url": "https://github.com/adengou/dsh-kumquat",
@@ -22169,8 +22209,8 @@
    "category": "docs",
    "downloads": null,
    "stars": null,
-   "descEn": "Sidebar paper-reading board: import PDFs into a searchable tagged library, open several papers in tabs on the original pdf.js layout, highlight in four colours, comment on a sentence and keep whole-paper notes. Words, selections, pages or the full document translate with the model your DSH already runs, falling back to Google, Youdao, MyMemory and finally a local dictionary; translation is cached per paper so a second pass is instant. Adds a sortable overview with CSV/JSON export. Papers, notes and translation archives stay in the browser (localStorage + IndexedDB), and AI translation spends your own tokens. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "侧栏论文精读看板：PDF 入库为可搜索、可打标签的论文库，按原版 pdf.js 版式多标签阅读，四色划线、句级批注、整篇笔记。单词、选段、整页或全文都用你 DSH 已经在用的模型翻译，不可用时依次退回 Google、有道、MyMemory 与本地词典；整篇译文按论文缓存，第二次打开即秒出。另有可排序总览与 CSV/JSON 导出。论文、笔记与译文存档都留在浏览器本地（localStorage + IndexedDB），AI 翻译消耗你自己的额度。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Sidebar paper-reading board: import PDFs into a searchable tagged library, open several papers in tabs on the original pdf.js layout, highlight in four colours, comment on a sentence and keep whole-paper notes. Words, selections, pages or the full document translate with the model your DSH already runs, falling back to Google, Youdao, MyMemory and finally a local dictionary; translation is cached per paper so a second pass is instant. Adds a sortable overview with CSV/JSON export. Papers, notes and translation archives stay in the browser (localStorage + IndexedDB), and AI translation spends your own tokens. Its translate route goes through the host's own admission check (ctx.connection.requestRejection).",
+   "descZh": "侧栏论文精读看板：PDF 入库为可搜索、可打标签的论文库，按原版 pdf.js 版式多标签阅读，四色划线、句级批注、整篇笔记。单词、选段、整页或全文都用你 DSH 已经在用的模型翻译，不可用时依次退回 Google、有道、MyMemory 与本地词典；整篇译文按论文缓存，第二次打开即秒出。另有可排序总览与 CSV/JSON 导出。论文、笔记与译文存档都留在浏览器本地（localStorage + IndexedDB），AI 翻译消耗你自己的额度。翻译接口先过宿主自己的准入检查（ctx.connection.requestRejection）。"
   },
   {
    "file": "AllenWES365__dsh-local-memory.yml",
@@ -23183,6 +23223,16 @@
    "descZh": "通过官方 Antigravity ACP 接入 Gemini，工具经反向隧道在本机执行。默认模型是 Gemini 3.8 Flash，路线可以改成 agy 接受的其他模型 id。"
   },
   {
+   "file": "anheon__dsh-connect-codearts.yml",
+   "name": "anheon/dsh-connect-codearts",
+   "url": "https://github.com/anheon/dsh-connect-codearts",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Connects Huawei Cloud CodeArts Doer models to DeepSeek Harness using IAM access keys, with model discovery, credit balance, and an automatic daily check-in toggle.",
+   "descZh": "使用华为云 IAM 访问密钥将码道 CodeArts Doer 模型接入 DeepSeek Harness，支持模型发现、积分余额和自动签到开关。"
+  },
+  {
    "file": "anheon__dsh-session-manager-delete.yml",
    "name": "anheon/dsh-session-manager-delete",
    "url": "https://github.com/anheon/dsh-session-manager-delete",
@@ -24023,6 +24073,26 @@
    "descZh": "DSH Desktop 的会话内资料台（支持 DSH 0.2.2-rc.2）：由当前对话模型执行搜索轮次，候选以 GitHub 卡片展示，保留/排除反馈、收藏夹与筛选结果都留在同一会话。"
   },
   {
+   "file": "Archerkattri__dsh-qwen-websearch.yml",
+   "name": "Archerkattri/dsh-qwen-websearch",
+   "url": "https://github.com/Archerkattri/dsh-qwen-websearch",
+   "category": "browser",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Qwen Token Plan web search provider that runs web_search on Token Plan credits through the Responses API web_search tool, summarizing with Qwen3.8 Flash and returning source URLs.",
+   "descZh": "通过 Responses API 的 web_search 工具让 web_search 走 Qwen Token Plan 额度，由 Qwen3.8 Flash 总结并返回来源链接。"
+  },
+  {
+   "file": "Archerkattri__dsh-qwen4-effort.yml",
+   "name": "Archerkattri/dsh-qwen4-effort",
+   "url": "https://github.com/Archerkattri/dsh-qwen4-effort",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Fills the official Qwen4 effort levels (low/medium/xhigh for Max Preview, low/high/xhigh for Max) into Qwen4 models on existing Qwen Token Plan routes, preserving other providers and existing declarations.",
+   "descZh": "为已有 Qwen Token Plan 路由上的 Qwen4 模型补齐官方推理等级（Max Preview 为 low/medium/xhigh，Max 为 low/high/xhigh），并保留其他提供商与已有声明。"
+  },
+  {
    "file": "architect-xyz__liquid-dsh-plugin.yml",
    "name": "architect-xyz/liquid-dsh-plugin",
    "url": "https://github.com/architect-xyz/liquid-dsh-plugin",
@@ -24361,6 +24431,16 @@
    "stars": null,
    "descEn": "Linux X11 computer use for DeepSeek Harness: 9 tools (screenshot, move/click/drag/scroll mouse, type, key combos) driven by a zero-dependency Python XTest helper — native-pixel coordinates, per-action verification, optional auto-observation screenshot.",
    "descZh": "Linux X11 电脑控制插件：9 个工具（截图、鼠标移动/点击/拖拽/滚轮、输入、快捷键），由零依赖 Python XTest 助手驱动——原生像素坐标、每次操作返回坐标校验、可选自动截图。"
+  },
+  {
+   "file": "ASER-ho__Loji-skill.yml",
+   "name": "ASER-ho/Loji-skill",
+   "url": "https://github.com/ASER-ho/Loji-skill",
+   "category": "skill",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Registers the Loji-skill Agent Skill for the Loji character from The Fire Rises, so DSH can load the role knowledge base, lore, style and safety references on demand.",
+   "descZh": "把《The Fire Rises》角色「逻辑/征酱」的 Loji-skill 注册为 DSH Agent Skill，按需加载角色知识库、世界观、表达风格与安全边界参考。"
   },
   {
    "file": "asfre__dsh-mcp-global-manager.yml",
@@ -24813,6 +24893,16 @@
    "descZh": "把带 CSS、SMIL 或关键帧的 SVG 渲染为确定性的 GIF、MP4 或 WebM，并提供一个 DSH 工具用于逐帧精确的循环动画与图表。"
   },
   {
+   "file": "atorber__dsh-hitrading.yml",
+   "name": "atorber/dsh-hitrading",
+   "url": "https://github.com/atorber/dsh-hitrading",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A-share research assistant with 13 agent tools and a 15-tab console covering quotes, market turnover and breadth, strong stocks, limit-up ladders, watchlists with sectors and T-n returns, a paper portfolio with cash account and trade log, screening, backtesting, news, Weibo and alerts. Analysis only - never places real orders.",
+   "descZh": "A股投资助手：13 个 Agent 工具 + 15 个 Tab 控制台——行情自选、量能与涨跌家数、强势股、涨停连板梯队、龙虎榜、快讯公告微博、带现金账户与成交流水的模拟仓、选股、回测与价格预警。纯分析不接券商、不下真实订单，结果仅供参考。"
+  },
+  {
    "file": "atrestandbed-bot__dsh-agents-viewer.yml",
    "name": "atrestandbed-bot/dsh-agents-viewer",
    "url": "https://github.com/atrestandbed-bot/dsh-agents-viewer",
@@ -24861,6 +24951,16 @@
    "stars": null,
    "descEn": "Personalize DSH with glass surfaces, independent light and dark themes, image/video/HTML backgrounds, particles, custom greetings, overlay sidebars, task and Artifact cards, message bubbles, smooth answer streaming, and settings import/export.",
    "descZh": "自定义 DSH 玻璃材质与独立明暗主题，支持图片、视频与 HTML 背景、粒子、自定义问候与开屏、覆盖侧栏、任务与 Artifact 卡片、消息气泡、回答逐字渐显，以及配置导入导出。"
+  },
+  {
+   "file": "AuoraCounty__dsh-sci-compute--dsh-sci-compute.yml",
+   "name": "AuoraCounty/dsh-sci-compute#dsh-sci-compute",
+   "url": "https://github.com/AuoraCounty/dsh-sci-compute/tree/main/dsh-sci-compute",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Exposes sci_catalog and sci_compute for 29 calculus, linear algebra, and physics-lab operations on a bundled numpy, scipy, and sympy runtime.",
+   "descZh": "通过 sci_catalog 与 sci_compute 提供 29 项微积分、线性代数和物理实验运算，运行时自带 numpy、scipy 与 sympy。"
   },
   {
    "file": "aureth-labs__dsh-aurabot-qq.yml",
@@ -25173,6 +25273,16 @@
    "descZh": "两个原生工具，提供基于 360、Bing RSS 和 DuckDuckGo 的免 API Key 中英文搜索与静态网页正文读取，无需浏览器、Python 或 MCP 子进程。"
   },
   {
+   "file": "AyanamReiIV__dsh-plugin-wallpaper-machine.yml",
+   "name": "AyanamReiIV/dsh-plugin-wallpaper-machine",
+   "url": "https://github.com/AyanamReiIV/dsh-plugin-wallpaper-machine",
+   "category": "theme",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Use your local WallpaperMachine library as the DeepSeek Harness background on macOS, with live Scene wallpapers rendered by WebWallGL and Video or Image wallpapers played directly behind the chat. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "把 macOS 上 WallpaperMachine 的壁纸库接入 DeepSeek Harness：场景壁纸由 WebWallGL 实时渲染，视频与图片直接作为聊天背景播放。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "AyaoJies__dsh-mobile-android-test.yml",
    "name": "AyaoJies/dsh-mobile-android-test",
    "url": "https://github.com/AyaoJies/dsh-mobile-android-test",
@@ -25331,6 +25441,16 @@
    "stars": null,
    "descEn": "Prompt optimizer inside the DSH composer. One click rewrites the current draft with the model you already selected: it classifies the scenario (paper / repo evaluation / agent task / daily question / English writing), returns a compact three-check diagnosis panel (is acceptance testable? missing information or capability? raising depth or widening scope?), and lets you pin a scenario manually. A running rewrite can be stopped without writing a half result back, a selected fragment can be rewritten on its own, and every rewrite keeps an undo history per session in the browser (up to ten steps). The draft is replaced in place, with no extra chat turn. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
    "descZh": "DSH 输入框内的提示词优化器。点一下就用当前选中的模型就地改写草稿：自动识别场景（论文 / 项目评估 / 派活 / 日常 / 英文），弹出三自检诊断面板（验收能否机器判定？缺信息还是缺能力？ 在抬深度还是扩范围？），并可手动钉住场景。改写进行中可随时停止，不会写回半截结果；也可以 只润色选中的片段；每一轮改写都能撤销，撤销历史按会话存在本机浏览器，最多 10 步。 改写结果直接替换输入框草稿，不新增对话轮次。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
+   "file": "az1hA__dsh-free-game-claimer.yml",
+   "name": "az1hA/dsh-free-game-claimer",
+   "url": "https://github.com/az1hA/dsh-free-game-claimer",
+   "category": "fun",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Checks Epic Games, GOG and Steam for limited-time free games, attempts to claim them with saved browser logins, and marks owned or manual games separately. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "检查 Epic Games、GOG、Steam 的限时免费游戏，使用已保存的浏览器登录尝试入库，并单独标记已在库中或需要手动确认的游戏。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "azazo1__dsh-deep-diving-back.yml",
@@ -26273,6 +26393,16 @@
    "descZh": "为 DSH Web 界面添加基于本机回环接口的重启按钮，按当前进程的可执行文件、参数和工作目录请求重新启动。"
   },
   {
+   "file": "baolongzhanshenNo1__workflow-kit--plugins-dsh-plugin.yml",
+   "name": "baolongzhanshenNo1/workflow-kit#dsh-plugin",
+   "url": "https://github.com/baolongzhanshenNo1/workflow-kit/tree/main/plugins/dsh-plugin",
+   "category": "workflow",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Issue-driven workflow discipline for coding agents: injects the wfk protocol (ledger cards, tiered gates, evidence-bound completion) into the system prompt and vendors the wfk.py CLI.",
+   "descZh": "给编码 agent 的 issue 驱动工作流纪律：向 system prompt 注入 wfk 协议（账本卡、分层门禁、证据绑定的完成判定），并随包内置 wfk.py 命令行工具。"
+  },
+  {
    "file": "baosfeng__my-dsh-plugins--plugins-dsh-file-activity.yml",
    "name": "baosfeng/my-dsh-plugins#dsh-file-activity",
    "url": "https://github.com/baosfeng/my-dsh-plugins/tree/main/plugins/dsh-file-activity",
@@ -26929,8 +27059,8 @@
    "category": "model",
    "downloads": null,
    "stars": null,
-   "descEn": "DSH Max plugin for the WB model router gateway: shows a staged plan with per-stage model and cost estimate from /v1/route/plan, asks for confirmation before spending, and switches models between stages inside one session. Requires a running gateway; when it is unreachable the plugin states unavailability instead of guessing. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "WB 模型路由网关的 DSH Max 插件：从 /v1/route/plan 取分段计划与每段模型/费用估算，确认后才执行，并在同一会话内按段切换模型；网关不可用时明示不可用、不猜数。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "DSH Max plugin for the WB model router gateway: shows a staged plan with per-stage model and cost estimate from /v1/route/plan, asks for confirmation before spending, and switches models between stages inside one session. Requires a running gateway; when it is unreachable the plugin states unavailability instead of guessing.",
+   "descZh": "WB 模型路由网关的 DSH Max 插件：从 /v1/route/plan 取分段计划与每段模型/费用估算，确认后才执行，并在同一会话内按段切换模型；网关不可用时明示不可用、不猜数。"
   },
   {
    "file": "beidou6972yh__dsh-bw-router--dsh-wb-pro.yml",
@@ -26939,8 +27069,8 @@
    "category": "model",
    "downloads": null,
    "stars": null,
-   "descEn": "DSH Pro plugin that plans a task into stages and switches models between stages using DSH native planning, without requiring the WB router gateway. Costs are recorded per stage; unpriced models are marked unavailable rather than guessed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "WB 路由的 DSH Pro 插件：用 DSH 原生规划把任务拆段并按段切换模型，不依赖网关；按段记账，未配价模型明示不可用、不猜数。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "DSH Pro plugin that plans a task into stages and switches models between stages using DSH native planning, without requiring the WB router gateway. Costs are recorded per stage; unpriced models are marked unavailable rather than guessed.",
+   "descZh": "WB 路由的 DSH Pro 插件：用 DSH 原生规划把任务拆段并按段切换模型，不依赖网关；按段记账，未配价模型明示不可用、不猜数。"
   },
   {
    "file": "beidou6972yh__dsh-bw-router.yml",
@@ -27121,16 +27251,6 @@
    "stars": null,
    "descEn": "Hierarchical model selection and collapsible multi-key configuration in the DSH 0.2.2-rc.1 web UI (native app menus unchanged); host patches are explicitly enabled, updated or restored from settings with verified backups and require an engine restart. Ordinary uninstall does not restore patches.",
    "descZh": "适用于 DSH 0.2.2-rc.1 网页界面的分层模型选择与可折叠多密钥配置（不改 App 原生菜单）；在设置页手动启用、更新或还原宿主补丁，校验备份后需重启引擎。普通卸载不会还原补丁。"
-  },
-  {
-   "file": "Betsy20__dsh-magpie.yml",
-   "name": "Betsy20/dsh-magpie",
-   "url": "https://github.com/Betsy20/dsh-magpie",
-   "category": "ui",
-   "downloads": null,
-   "stars": null,
-   "descEn": "Embeds the original Magpie web UI in the DSH sidebar: downloads the Magpie binary from the yetone/magpie GitHub releases when missing, starts `magpie serve --web` in the background, and serves it through a local reverse proxy that injects the login cookie server-side.",
-   "descZh": "把 Magpie 原版 Web UI 嵌进 DSH 侧边栏：缺 Magpie 二进制时自动从 yetone/magpie 的 GitHub Releases 下载，后台启动 `magpie serve --web`，并经由在服务端注入登录 Cookie 的本地反向代理提供页面。"
   },
   {
    "file": "better-er__dsh-cache-billing.yml",
@@ -27743,6 +27863,16 @@
    "descZh": "仅 Windows：本地加密凭据库（DPAPI 包裹的 AES-256-GCM）配无头 Chrome 登录态保管：31 个 agent 工具登录一次即可把会话存到本机，之后抓登录墙内的页面（贴吧、NGA、Pixiv、书屋）并逐楼层提取正文。页面实时镜像到可拖动、可收起的右边缘抽屉，点击、打字、滚动经 CDP 回放，验证码不必再开独立浏览器窗口。可迁移 Edge/Chrome 已存密码：插件会读取浏览器的 Login Data 密码库，在进程内解密 v10/v11 条目，并把密码库及其密钥复制进自己的受控 profile 让浏览器自动填充（v20 App-Bound 条目只能自动填充、无法离线解密）。另附一条命令修复 DSH profile 登记的安装器，以及内置自检。"
   },
   {
+   "file": "binsonHao__dsh-workspace-links.yml",
+   "name": "binsonHao/dsh-workspace-links",
+   "url": "https://github.com/binsonHao/dsh-workspace-links",
+   "category": "workflow",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Visual settings page for linking related projects and automatically giving agents their paths, roles, and notes.",
+   "descZh": "在设置页中可视化关联相关项目，并自动向 AI 提供各项目的路径、角色和备注。"
+  },
+  {
    "file": "BinXie-lixiangdehua__dsh-devflow.yml",
    "name": "BinXie-lixiangdehua/dsh-devflow",
    "url": "https://github.com/BinXie-lixiangdehua/dsh-devflow",
@@ -28019,8 +28149,8 @@
    "category": "security",
    "downloads": null,
    "stars": null,
-   "descEn": "Windows-only approval popups for DeepSeek Harness: a global in-app modal plus a native WinForms dialog, semantic high-risk detection with per-category switches, and four selectable accent colors. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "Windows 专用的 DSH 权限审批弹窗：应用内全局模态框 + 原生 WinForms 系统窗口，语义级高危识别、按类别开关和四种可选颜色。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Windows-only approval popups for DeepSeek Harness: a global in-app modal plus a native WinForms dialog, semantic high-risk detection with per-category switches, and four selectable accent colors.",
+   "descZh": "Windows 专用的 DSH 权限审批弹窗：应用内全局模态框 + 原生 WinForms 系统窗口，语义级高危识别、按类别开关和四种可选颜色。"
   },
   {
    "file": "bloodarea__dsh-agent-team-presets.yml",
@@ -28731,6 +28861,16 @@
    "stars": null,
    "descEn": "Connects dsh to the BulkPublish MCP server (32 tools) to draft, schedule, publish and analyse social media posts, manage media, and handle inbox conversations and comments across 15 platforms, authenticated with a BulkPublish API key sent as a bearer token.",
    "descZh": "把 dsh 连接到 BulkPublish MCP 服务器（32 个工具），用于草拟、定时、发布与分析社交媒体帖子，管理媒体，并处理 15 个平台上的收件箱对话与评论；以 BulkPublish API Key 作为 Bearer token 认证。"
+  },
+  {
+   "file": "BullyHigh__dsh-side-ask.yml",
+   "name": "BullyHigh/dsh-side-ask",
+   "url": "https://github.com/BullyHigh/dsh-side-ask",
+   "category": "session",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Opens a read-only side question for the current conversation from the header, the text-selection menu or the right Sidebar add menu: it forks at the latest durable event, puts the selection or the unsent draft into the side composer, and archives the side session when the tab closes.",
+   "descZh": "从对话头部、划词菜单或右侧栏「+」菜单打开只读的侧边提问：在最新持久事件处 fork，把选中的文字或未发送的草稿放进侧栏输入框，关闭标签即静默归档。"
   },
   {
    "file": "bululuburuarua666__dsh-herald.yml",
@@ -29823,6 +29963,16 @@
    "descZh": "DeepSeek Harness 并行会话协调：列出并行会话、在会话之间转发带发起方归属的消息，并在任务阶段冲突时暂停或恢复另一个会话。"
   },
   {
+   "file": "Catwb__dsh-solution-ledger.yml",
+   "name": "Catwb/dsh-solution-ledger",
+   "url": "https://github.com/Catwb/dsh-solution-ledger",
+   "category": "memory",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Keeps a global ledger of troubleshooting fixes and design decisions, and surfaces a matching confirmed entry when a tool call fails. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "把踩过的坑和做过的取舍记进全局账本，工具调用失败时自动带出已确认的相关条目。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "cayan0x__dsh-fold-context.yml",
    "name": "cayan0x/dsh-fold-context",
    "url": "https://github.com/cayan0x/dsh-fold-context",
@@ -29951,6 +30101,16 @@
    "stars": null,
    "descEn": "Adds a left-sidebar bell with separate counts for running sessions and finished-but-unread sessions, plus one page that lists both groups and opens a session on click.",
    "descZh": "在左侧栏增加一个铃铛，分别显示进行中与已完成待查看的会话数量，并提供一个页面列出两组会话、点击打开。"
+  },
+  {
+   "file": "cccccccccccccy__dsh-syncthing-pair.yml",
+   "name": "cccccccccccccy/dsh-syncthing-pair",
+   "url": "https://github.com/cccccccccccccy/dsh-syncthing-pair",
+   "category": "remote",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Pairs one folder on this Mac with one folder on a remote Mac over SSH and creates the same two-way Syncthing folder on both sides, with a DSH Web panel and an agent tool. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "输入本机与远端 Mac 的两个目录，通过 SSH 在两端创建同一个 Syncthing 双向文件夹；带 DSH 网页面板和 agent 工具。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "ccccwwwxx__dsh-bifenggang.yml",
@@ -32143,6 +32303,26 @@
    "descZh": "一句话把碎片化的 Markdown 文档收束成少数权威文档，其余归档——永不删除，不依赖 git 也能一键逐字节回滚。"
   },
   {
+   "file": "chrischjh__dsh-google-modern-web-guide.yml",
+   "name": "chrischjh/dsh-google-modern-web-guide",
+   "url": "https://github.com/chrischjh/dsh-google-modern-web-guide",
+   "category": "usage",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Offline GoogleChrome modern-web-guidance for DSH: project `.mwgrc` Baseline policy plus three tools (mwg_search, mwg_retrieve, mwg_legacy_scan) and the modern-web-guidance skill. Under a `limited` target guides skip fallback strategies.",
+   "descZh": "为 DSH 提供离线的 GoogleChrome modern-web-guidance：项目级 .mwgrc Baseline 策略，三个工具（mwg_search、mwg_retrieve、mwg_legacy_scan）与 modern-web-guidance 技能；limited 目标下指南跳过 fallback 段。"
+  },
+  {
+   "file": "chrischjh__dsh-stageshow.yml",
+   "name": "chrischjh/dsh-stageshow",
+   "url": "https://github.com/chrischjh/dsh-stageshow",
+   "category": "skill",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Ships the Stageshow skill (benjitaylor/skills v1.1.1) as a DSH skill — faux product UI illustrations, feature cards, cursor demos and bento grids built in React, vendored byte-identical with a hash-lock self-check tool.",
+   "descZh": "把 Stageshow 技能（benjitaylor/skills v1.1.1）作为 DSH 技能提供：用 React 制作以假乱真的产品 UI 插图、功能卡片、光标演示与 bento 网格，内嵌 kit 与全部示例，附哈希锁自检工具。"
+  },
+  {
    "file": "CHristianREEVEE__dsh-xiuxian-world.yml",
    "name": "CHristianREEVEE/dsh-xiuxian-world",
    "url": "https://github.com/CHristianREEVEE/dsh-xiuxian-world",
@@ -32211,6 +32391,16 @@
    "stars": null,
    "descEn": "Assigns a model and reasoning effort to each Agent Teams teammate, from the chat toolbar or a settings page.",
    "descZh": "为每个 Agent Teams 队友单独指定模型与推理强度，可在聊天工具行或设置页切换。"
+  },
+  {
+   "file": "CHSCN123__dsh-knowledge-base.yml",
+   "name": "CHSCN123/dsh-knowledge-base",
+   "url": "https://github.com/CHSCN123/dsh-knowledge-base",
+   "category": "memory",
+   "downloads": null,
+   "stars": null,
+   "descEn": "262 formats in, local Markdown notes out: drop Office, PDF, EPUB, archives, subtitles, mail or code into the Settings card and it extracts the text into a searchable local library — no network, nothing uploaded.",
+   "descZh": "262 种格式拖进设置卡片，本地转成可检索的 Markdown 笔记：Office、PDF、EPUB、压缩包、字幕、邮件、代码都能抽正文，全程不联网、不上传。"
   },
   {
    "file": "Chsw-CC__dsh-connect-doubao-plus.yml",
@@ -32983,6 +33173,16 @@
    "descZh": "控制 DSH 右栏内置 Browser 的 Agent 插件：快照返回编号控件，支持点击/输入/按键/选择/滚动，按问题检索阅读与变化对比，一次调用最多 12 步，并可切换和关闭多个标签。"
   },
   {
+   "file": "CM-Silence__dsh-mo-image.yml",
+   "name": "CM-Silence/dsh-mo-image",
+   "url": "https://github.com/CM-Silence/dsh-mo-image",
+   "category": "workflow",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Generate and edit images in DSH conversations using cloud or local models, with provider presets and configurable image APIs. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "在 DSH 对话中生成和编辑图片，支持云端和本地模型、提供商预设及自定义生图 API。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "cm860712ch-cloud__dsh-quick-input.yml",
    "name": "cm860712ch-cloud/dsh-quick-input",
    "url": "https://github.com/cm860712ch-cloud/dsh-quick-input",
@@ -33379,8 +33579,8 @@
    "category": "dev",
    "downloads": null,
    "stars": null,
-   "descEn": "Maintenance center for DeepSeek Harness: checks app and plugin updates, updates and rolls back plugins, watches GitHub sources, and keeps long chats smooth, with an optional glass skin. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "DSH 维护中心：检测应用与插件更新、更新与回退插件、监控 GitHub 来源，让长对话保持流畅，并提供可选的玻璃皮肤。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Maintenance center for DeepSeek Harness: checks app and plugin updates, updates and rolls back plugins, watches GitHub sources, and keeps long chats smooth, with an optional glass skin.",
+   "descZh": "DSH 维护中心：检测应用与插件更新、更新与回退插件、监控 GitHub 来源，让长对话保持流畅，并提供可选的玻璃皮肤。"
   },
   {
    "file": "colin4k__DSH-webtokens-desktop.yml",
@@ -35119,8 +35319,8 @@
    "category": "memory",
    "downloads": null,
    "stars": null,
-   "descEn": "Local long-term memory for DSH sessions: archives older turns under context pressure, with a turn-summary index for faster turn lists, statistics, window probing and archive planning (rebuilt automatically when unavailable, with a manual full verification), four tiered hot-memory boards, project documents with enabled/disabled/archived filters and optional owner-controlled family sharing, project hot memory, dual user/assistant turn previews, memory families with editable names and root transfer, root-abdication recovery, orphan-family takeover, summary keyword locator with segment-level candidates and paging, manual injection, 20K segmented reads, and tag-related retrieval. Includes staged recall cues, automatic compatibility with older memory layouts, and post-install version verification. Off in each new session until you turn it on with `/palace on` or the Memory Palace tab. All data stays in the workspace.",
-   "descZh": "DSH 会话的本地长期记忆：上下文压力升高时归档较早轮次，提供轮次摘要索引（列表、统计、窗口与归档规划更快；索引不可用时自动重建，并支持手动全量校验）、四板块分级热记忆、项目档案（支持启用/停用/归档筛选与可由拥有者控制的家族共用）与项目热记忆、轮次用户与助手双摘要、记忆家族与根转移（家族名可独立修改，转移保留项目热记忆）、让位恢复与空根接管、摘要关键词定位与段级候选翻页、手动注入、20K 分段读取和 tag 关联检索；包含分级回忆 cue、旧版记忆布局自动兼容与安装后版本校验。新会话默认关闭，用 /palace on 或「记忆回廊」页签开启。数据都保存在工作区。"
+   "descEn": "Local long-term memory for DSH sessions: archives older turns under context pressure, with four tiered hot-memory boards, project documents, trivia notes (short, non-injected), a tag graph with prominence ranks and synonym expansion, memory families with root transfer, summary keyword locator, manual injection, 20K segmented reads, and tag-related retrieval. All data stays in the workspace. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "DSH 会话的本地长期记忆：上下文压力升高时归档较早轮次，提供四板块分级热记忆、项目档案、不注入的杂事随记、带瞩目等级与同义词扩展的关系图谱、记忆家族与根转移、摘要关键词定位、手动注入、20K 分段读取和 tag 关联检索。数据都保存在工作区。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "dafeiyu1314520__dsh-douyin-agent.yml",
@@ -35729,8 +35929,8 @@
    "category": "session",
    "downloads": null,
    "stars": null,
-   "descEn": "Switches the Agent mode of an existing DSH session in place, or rebuilds the session under a target mode by re-importing its native event sequence, with an idempotent migration ledger that can be resumed and a per-run report.",
-   "descZh": "在已存在的 DSH 会话中就地切换 Agent 模式，或按目标模式重建会话并真导入原生事件序列；迁移有幂等台账、可续跑，并生成每次迁移的报告。"
+   "descEn": "Performs a mode exchange (mode switch, switch mode) on an existing DSH session: the Agent mode is swapped in place, so the system prompt and toolset change at runtime and no new session is created. Also runs a mode migration (session migration), rebuilding the session under a target mode and re-importing its native event sequence, with an idempotent ledger, resumable runs and a per-run report.",
+   "descZh": "模式交换（也叫模式切换、切换模式）：在已存在的 DSH 会话中就地换掉 Agent 模式，不新建会话，系统提示词与工具集在运行时替换。也可做模式迁移（会话迁移）：按目标模式重建会话并真导入原生事件序列，迁移有幂等台账、可续跑，并生成每次迁移的报告。"
   },
   {
    "file": "dat-lequoc__dsh-kiro.yml",
@@ -37953,14 +38153,24 @@
    "descZh": "在插件页的一个标签里安装、更新和卸载 DSH 插件。安装直接调用 profile 进程内的 pluginManager 服务，因此桌面端运行中也能装，不必只靠命令行。更新委托给 dsh-market 的公开 update API v1（该区需要装 dsh-market），把市场报告的阶段、百分比与已下载字节显示成进度条，市场提供恢复点时给出一键回滚。卸载被「插件正在使用中」拒绝时，先停用该组合包，再从 profile 清单里摘除，并把残留文件记入 profile 下的待清理队列，下次启动后自动清扫。"
   },
   {
+   "file": "DogEgg-alR__dsh-scan-to-pdf.yml",
+   "name": "DogEgg-alR/dsh-scan-to-pdf",
+   "url": "https://github.com/DogEgg-alR/dsh-scan-to-pdf",
+   "category": "docs",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Turn photos and scans of written pages into a typeset PDF from a tab in the Plugins page. Drop in images, a ZIP, Word or PDF files (each page of a PDF is rendered to an image, so scans inside them work the same way), and every page is first cleaned like a scan: composited onto white, contrast stretched, resized. A vision model transcribes each page to Markdown, and for the figures it sees it writes a placeholder plus a 0..1 bounding box; the plugin crops that region out of the page, cleans it the same way, and puts it back at that spot in the PDF. Layout is real Word layout converted by LibreOffice: A4, alternating page numbers, tables with horizontal rules only. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "在插件页的一个标签里，把拍照 / 扫描的页面抄成排版好的 PDF。图片、ZIP、Word、PDF 都能拖进来（PDF 逐页渲成图片，所以里面的扫描件一样能抄），每页先按扫描件处理：白底合成、拉对比、统一尺寸。视觉模型把每页抄成 Markdown，看到插图时留下占位符和一个 0~1 的包围框，插件按框从页面上裁出这幅图、做同样的清理、再放回正文里的那个位置。版式是真正的 Word 排版再经 LibreOffice 转换：A4、奇偶页页码分居左右、表格只留横线。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "Dogwind221__dwguard-dsh-hmos.yml",
    "name": "Dogwind221/dwguard-dsh-hmos",
    "url": "https://github.com/Dogwind221/dwguard-dsh-hmos",
    "category": "workflow",
    "downloads": null,
    "stars": null,
-   "descEn": "HarmonyOS delivery orchestration for DSH: freezes a four-dimension acceptance pack whose measurable criteria carry machine-checkable assertions, runs an adversarial pre-review before dispatch, hands the work to DevEco Code in Goal mode, then audits the delivery with independently gathered evidence (screenshots, UI tree, logs, hashed evidence bundle), recomputing assertion verdicts against measured values and filing rework orders; includes a cited rule catalog, a user-confirmation state and a gate calibration ledger.",
-   "descZh": "DSH 侧鸿蒙交付编排插件：冻结四维验收任务包（可量化判据带机器可校验断言）、派发前对抗预审、以 Goal 模式交给 DevEco Code，再用独立取证（截图 / 布局树 / 日志 / 带 SHA-256 的证据包）做外部审计，按实测值重算断言判定并生成返工单；含带官方引用的规则目录、用户确认状态与闸门校准账本。"
+   "descEn": "HarmonyOS delivery orchestration for DSH: freezes a four-dimension acceptance pack whose measurable criteria carry machine-checkable assertions, runs an adversarial pre-review before dispatch, hands the work to DevEco Code in Goal mode, then audits the delivery with independently gathered evidence (screenshots, UI tree, logs, hashed evidence bundle), recomputing assertion verdicts against measured values and filing rework orders; includes a cited rule catalog, a user-confirmation state and a gate calibration ledger. 1.0.5 adds screenshot regression, perf sampling, scenario replay, runtime accessibility checks, package/permission audit and stability gates (17 tools / 29 actions). Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "DSH 侧鸿蒙交付编排插件：冻结四维验收任务包（可量化判据带机器可校验断言）、派发前对抗预审、以 Goal 模式交给 DevEco Code，再用独立取证（截图 / 布局树 / 日志 / 带 SHA-256 的证据包）做外部审计，按实测值重算断言判定并生成返工单；含带官方引用的规则目录、用户确认状态与闸门校准账本。1.0.5 新增截图回归、perf 采样、scenario 回放、运行时无障碍、包/权限审计与稳定性门禁（17 个工具 / 29 个 action）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "Dogwind221__img2img-studio--plugins-dsh-img2img-config.yml",
@@ -38281,6 +38491,16 @@
    "stars": null,
    "descEn": "AIGC creation inside DeepSeek Harness: generate images, video, audio and 3D with open and closed-source models — parameter schemas, cost estimates, approval gates and a task panel.",
    "descZh": "把 AIGC 创作直接放进 DeepSeek Harness：用开源与闭源模型生成图像、视频、音频与 3D，含参数 schema、费用预估、审批与任务面板。"
+  },
+  {
+   "file": "doomedwkk__dsh-cyberpunk-boot.yml",
+   "name": "doomedwkk/dsh-cyberpunk-boot",
+   "url": "https://github.com/doomedwkk/dsh-cyberpunk-boot",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A Cyberpunk-style boot sequence for the DSH web client and its desktop build. The first load of a window shows a full-window stencil DSH wordmark, six boot-log rows and a stuttering progress bar, then a sliced glitch-out onto the interface. The soundtrack is synthesized in the page with no audio file and no network request, in three switchable takes: a C-major ring bell, a short metallic alert chime, and a cinematic start-game impact. Any key or a click skips it, Ctrl+Alt+B replays it, Ctrl+Alt+M mutes the sound and Ctrl+Alt+S switches the take.",
+   "descZh": "赛博朋克风格的 DSH 启动动画，Web 客户端与桌面版都能用。窗口首次加载时铺满整窗显示模板字 DSH 标志、六行启动日志和抖动的进度条，随后以分层故障效果过渡露出界面；声音在页面内合成，不含音频文件、不联网，提供三种可切换音色：C 大调铃声、短促的金属提示音、以及「开始游戏」电影感冲击。任意键或点击可跳过，Ctrl+Alt+B 重播，Ctrl+Alt+M 静音，Ctrl+Alt+S 切换音色。"
   },
   {
    "file": "Doran1110__doran-design.yml",
@@ -38631,6 +38851,16 @@
    "stars": null,
    "descEn": "Makes the DeepSeek Harness settings window resizable and configurable in size, with presets, drag resizing, and sizes saved to the profile config.",
    "descZh": "让 DeepSeek Harness 设置窗口可配置大小并可拖动缩放，提供尺寸预设，并把尺寸保存到 profile 配置。"
+  },
+  {
+   "file": "DreamYuande__dsh-history-message-editor.yml",
+   "name": "DreamYuande/dsh-history-message-editor",
+   "url": "https://github.com/DreamYuande/dsh-history-message-editor",
+   "category": "session",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Edit a sent user message in place and regenerate the reply from that point in the same DSH session and workspace.",
+   "descZh": "原位编辑已发送的用户消息，从修改处重新生成回复，沿用当前 DSH 会话和工作目录。"
   },
   {
    "file": "dreanzy__dsh-plg--packages-dsh-mcp-pack.yml",
@@ -39563,6 +39793,16 @@
    "descZh": "活过本次会话的记忆，载体是普通的每日日志文件：一天一个 markdown，外加一份生成出来的索引，让助手先用索引检索而不是重读全文。注册 annals 技能，把「写下来」的规矩注入系统提示词，并提供三个工具——annals_init 一次建好日志目录、索引生成器与独立的 git 仓库；annals_query 全文检索历史条目并带回文件与行号锚点；annals_links 查条目之间的双向引用。改过文件但当天没写日志时每轮提醒一次，写了日志却没更新索引时再提醒一次。另有设置页可关这六个开关。"
   },
   {
+   "file": "DuncanLii__dsh-context-kernel.yml",
+   "name": "DuncanLii/dsh-context-kernel",
+   "url": "https://github.com/DuncanLii/dsh-context-kernel",
+   "category": "session",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Context management for long agent sessions: projects older history into one structured working-context message, prunes oversized tool results deterministically, and gates task completion on execution evidence rather than the model's own claims. Ships two tools and defaults to shadow mode (records what it would do, changes nothing).",
+   "descZh": "面向长会话的上下文管理：把较早历史投影成一条结构化工作上下文消息、对超大工具结果做确定性裁剪、并用执行证据而非模型自述来判定任务能否结束。提供两个工具，默认以影子模式运行（只记录不改变）。"
+  },
+  {
    "file": "dungcsnd1133__dsh-dl-brand.yml",
    "name": "dungcsnd1133/dsh-dl-brand",
    "url": "https://github.com/dungcsnd1133/dsh-dl-brand",
@@ -39851,6 +40091,16 @@
    "stars": null,
    "descEn": "Notes workspace in the right sidebar: a notes tree beside a live-preview Markdown editor with tabs, split panes, outline and trash, over plain .md files and a thin per-workspace index. Agents organize it through one `knowledge` tool; `embed` fences render an interactive HTML page in a sandboxed iframe (scripts run, no network).",
    "descZh": "右侧栏的笔记工作区：笔记树 + 实时预览的 Markdown 编辑器（标签 / 分屏 / 大纲 / 回收站），笔记是普通 .md 文件，索引是按工作区的薄映射，Agent 侧只用一个 `knowledge` 工具整理；`embed` 围栏把可交互网页演示嵌进笔记（沙箱 iframe，脚本可跑、断网、拿不到宿主）。"
+  },
+  {
+   "file": "DynasturnStudio__dsh-date-model.yml",
+   "name": "DynasturnStudio/dsh-date-model",
+   "url": "https://github.com/DynasturnStudio/dsh-date-model",
+   "category": "fun",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A playful composer widget that builds a fake model name from two unbounded number wheels, a weather tier and a calendar date, injects it into the system prompt, and hides the real model seat behind an eye toggle.",
+   "descZh": "输入框里的趣味「按日期选模型」：两个无限数字滚轮 + 七种天气 + 月历拼出假模型名，写进系统提示词，并可用小眼睛显隐真实模型选择器。"
   },
   {
    "file": "dyrcjqlgcj__dsh-hindsight-local.yml",
@@ -42009,8 +42259,8 @@
    "category": "tools",
    "downloads": null,
    "stars": null,
-   "descEn": "Registers the Tongdaxin MCP service as four DSH tools — option chain, contract months, K-line and real-time quotes — and re-initializes the MCP session automatically when the server expires it.",
-   "descZh": "把通达信 MCP 行情服务注册为四个 DSH 工具：期权链、可交易合约月份、K 线与实时行情；服务端回收 MCP 会话时自动重新握手并重放请求。"
+   "descEn": "Registers the Tongdaxin (通达信) MCP market-data service as 13 native DSH tools covering real-time quotes, K-line, option chains, stock screening, F10 financials, news, filings, research reports and macro data, with a shared session that re-initializes automatically when the server expires it.",
+   "descZh": "把通达信 MCP 行情服务注册为 13 个 DSH 原生工具，覆盖实时行情、K 线、期权链、条件选股、F10 财务、新闻公告、研报与宏观数据；共用常驻会话，服务端回收时自动重新握手。"
   },
   {
    "file": "Faide-cyber__dsh-model-in-use.yml",
@@ -42319,8 +42569,8 @@
    "category": "model",
    "downloads": null,
    "stars": null,
-   "descEn": "A catalog of 1,692 public models across 75 vendors in the model picker and Models settings — every entry is fake and answers locally with a canned self-introduction, so nothing is sent to a provider and nothing is billed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "在模型选择器和设置页加入 75 家厂商、1692 条公开模型（2013 至 2026），全是假模型——不管问什么都会一本正经自报代号，由插件本地合成回复，不发推理请求、不扣真实余额，支持厂商分组、80 条分页、推理档位与全目录搜索。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "A catalog of 1,692 public models across 75 vendors in the model picker and Models settings — every entry is fake and answers locally with a canned self-introduction, so nothing is sent to a provider and nothing is billed.",
+   "descZh": "在模型选择器和设置页加入 75 家厂商、1692 条公开模型（2013 至 2026），全是假模型——不管问什么都会一本正经自报代号，由插件本地合成回复，不发推理请求、不扣真实余额，支持厂商分组、80 条分页、推理档位与全目录搜索。"
   },
   {
    "file": "Fantasy421__dsh-whiteboard.yml",
@@ -42631,6 +42881,16 @@
    "stars": null,
    "descEn": "Keyword-rule scan of a project directory for tax-industry compliance gaps ahead of regulatory audits: accounting voucher and ledger retention set under 30 years, invoice-title lines with no taxpayer ID, tax data leaving China with no security assessment or standard contract mentioned, and e-invoice lines with no verification or de-duplication mentioned, with rule sources kept in rules/.",
    "descZh": "稽查前对项目目录做财税行业专项体检（关键词规则扫描）：会计凭证与账簿保存期配置低于 30 年、开票信息缺纳税人识别号、税务数据出境未提及安全评估或标准合同、电子发票未提及验真或查重，规则出处保留在 rules/。"
+  },
+  {
+   "file": "feichai0017__dsh-fish-ui.yml",
+   "name": "feichai0017/dsh-fish-ui",
+   "url": "https://github.com/feichai0017/dsh-fish-ui",
+   "category": "theme",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Adds six animated conversation backgrounds, selectable accent colors, and outline or duotone icons to DeepSeek Harness.",
+   "descZh": "为 DeepSeek Harness 提供六种动态会话背景，可自选强调色并切换线描或双色图标。"
   },
   {
    "file": "feiertu__dsh-input-rewriter.yml",
@@ -43129,8 +43389,8 @@
    "category": "tools",
    "downloads": null,
    "stars": null,
-   "descEn": "Puts the plugins, skills and MCP servers a DSH installation runs into one panel: per-row switches, add, edit and test dialogs for MCP servers, per-tool masking, lazy servers with an on-demand tool catalog, group and collection bulk enable or disable, saved switch presets, dshmarket group import, together with per-session tool overlays and saved whole-environment scenes, and rule-based automatic grouping into official, MCP, general and downloaded buckets.",
-   "descZh": "把这套 DSH 安装里的插件、技能与 MCP 服务收进一个面板：逐行开关、MCP 服务器的新增/编辑/测试连接、工具级屏蔽与懒启动（按需加载工具目录）、分组与分组群的整组启停、可保存与一键应用的开关预设、导入 dshmarket 分组、按会话的工具覆盖层与可保存的整环境场景，以及按官方 / MCP / 通用 / 用户下载四类自动分组。"
+   "descEn": "Puts the plugins, skills and MCP servers a DSH installation runs into one panel: per-row switches, group and preset management, MCP server add/edit/test, per-tool masking, lazy MCP tools with an on-demand catalog, per-session overlays and saved scenes, plus a manager for official compatibility packs with checksum-verified install, update and uninstall behind explicit confirmations.",
+   "descZh": "把这套 DSH 安装里的插件、技能与 MCP 服务收进一个面板：逐行开关、分组与预设管理、MCP 服务器新增/编辑/测试、工具级屏蔽、带按需目录的 MCP 懒加载、按会话的工具覆盖与可保存场景；同时从远端目录管理官方兼容包，安装、更新和卸载均先校验并在确认后执行。"
   },
   {
    "file": "fenshal__dsh-migrator.yml",
@@ -43531,6 +43791,16 @@
    "stars": null,
    "descEn": "Rider-Waite-Smith tarot for DSH with a right-dock table for the Celtic Cross, Waite's alternative and thirty-five-card methods, plain draws, and three- or nine-card layouts; the plugin handles drawing and placement, then turns each card into the conversation for model interpretation from Waite's Pictorial Key.",
    "descZh": "DSH 的莱德-韦特-史密斯塔罗牌插件，在右侧栏提供凯尔特十字、韦特的替代与三十五张牌方法、普通抽牌以及三张牌和九张牌布局；插件负责抽牌与摆放，再将每张翻开的牌逐轮送入对话，由模型依据韦特《塔罗图解》进行解读。"
+  },
+  {
+   "file": "Fireqtian__dsh-official-file-parse.yml",
+   "name": "Fireqtian/dsh-official-file-parse",
+   "url": "https://github.com/Fireqtian/dsh-official-file-parse",
+   "category": "docs",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Parses PDF, Word, and PowerPoint files through the official DeepSeek Files API, keeping figures and layout when asked, then answers questions about them.",
+   "descZh": "通过官方 DeepSeek Files API 解析 PDF、Word、PowerPoint（可按需保留图表与版面），并回答关于文档的问题。"
   },
   {
    "file": "fireworksss__LeisureTimeQueue.yml",
@@ -44029,8 +44299,8 @@
    "category": "tools",
    "downloads": null,
    "stars": null,
-   "descEn": "Windows serial-port monitor for DeepSeek Harness — port parameters, live text/hex receive and data sending.",
-   "descZh": "DeepSeek Harness 的 Windows 串口调试面板：串口参数设置、文本/十六进制实时接收显示与数据发送。"
+   "descEn": "Serial-port debugger for DeepSeek Harness — port parameters, live receive display and data sending, in a right-sidebar panel with a Chinese/English interface. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "DeepSeek Harness 串口调试插件：串口参数设置、实时接收显示与数据发送，面板位于右侧边栏，界面支持中英文。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "Flycat43__liang-desktop-pet--plugins-liang-harness-plugin.yml",
@@ -45833,6 +46103,16 @@
    "descZh": "在输入框中提供 Plan/Build 模式切换：按 Tab 键或点击工具栏按钮即可切换，并按模式分别记住右侧原生模型选择器中所选的模型。"
   },
   {
+   "file": "gaozhenkun92-eng__dsh-rp-studio.yml",
+   "name": "gaozhenkun92-eng/dsh-rp-studio",
+   "url": "https://github.com/gaozhenkun92-eng/dsh-rp-studio",
+   "category": "fun",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Roleplay console for DeepSeek Harness: character cards (PNG/JSON/CHARX-style), worldbook collections with per-entry switches, a three-source image gallery, and per-agent tool permissions — plus a global persona layer so any session stays in character. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "DeepSeek Harness 的角色扮演后台：角色卡（PNG/JSON/纯文字导入导出）、带集合与开关的世界书、三来源图库、按 agent 生效的工具权限，人格由部署层提示段全局注入，任何会话都保持角色。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "GarinZ__dsh-sidebar-view.yml",
    "name": "GarinZ/dsh-sidebar-view",
    "url": "https://github.com/GarinZ/dsh-sidebar-view",
@@ -46839,8 +47119,8 @@
    "category": "workflow",
    "downloads": null,
    "stars": null,
-   "descEn": "Let AI manage AI and take the day off. It minds the flow itself, stops a runaway before it costs you, keeps working while you are away, and asks before touching your workspace.",
-   "descZh": "AI 管 AI，你当甩手掌柜 —— 它自己盯流程，跑崩了先拦住。不用守着屏幕，越权改工作区会先问你。"
+   "descEn": "A quiet sidekick beside DeepSeek Harness: stays out of the way in plain chats, chimes in with tips and safety checks while you're here, and takes over when you step away.",
+   "descZh": "蹲在 DeepSeek Harness 旁的小助手：平时歇着不打扰，你在电脑前提建议、防手滑，离开后帮你包办到底。"
   },
   {
    "file": "gluztm__DSHGuard--packages-dsh-guard.yml",
@@ -46849,8 +47129,8 @@
    "category": "tools",
    "downloads": null,
    "stars": null,
-   "descEn": "Cross-platform DSH Web sidebar & CLI manager: plugin/MCP switches, symlink repair, one-way .credentials.yaml key setup, config snapshots with SHA-256 rollback, and desktop coordination.",
-   "descZh": "跨平台 DSH Web 侧边栏与 CLI 伴生管理插件：支持插件/MCP 启停与断链修复、.credentials.yaml 密钥单向盲写、本地配置快照 SHA-256 比对回滚，并与桌面端协同联动。"
+   "descEn": "Cross-platform DSH Web/Desktop sidebar & CLI control plane: single-track host auto-detection, plugin/MCP toggles, loopback MCP probing & timeout tuning, context/Skills governance, one-way .credentials.yaml writes, and pinned config snapshots.",
+   "descZh": "跨平台 DSH 侧边栏与 CLI 控制面插件：自动识别当前宿主运行端，支持插件/MCP 启停与本地安全探活/超时调优、开机上下文与 Skills 治理、.credentials.yaml 单向盲写及快照置顶回滚。"
   },
   {
    "file": "GM-HZ__agent-dag-workflow.yml",
@@ -48679,8 +48959,8 @@
    "category": "usage",
    "downloads": null,
    "stars": null,
-   "descEn": "Usage, token, cache, and cost statistics for DeepSeek Harness, with workspace and model breakdowns, per-turn history, price references, and CSV/Excel export. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "DSH 使用量与费用统计：按工作区、模型和渠道拆分 Token 与消费，包含逐轮记录、价格表以及 CSV/Excel 导出。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Usage, token, cache, and cost statistics for DeepSeek Harness, with workspace and model breakdowns, per-turn history, price references, and CSV/Excel export.",
+   "descZh": "DSH 使用量与费用统计：按工作区、模型和渠道拆分 Token 与消费，包含逐轮记录、价格表以及 CSV/Excel 导出。"
   },
   {
    "file": "H1Kariiiiiii__dsh-icon-console.yml",
@@ -48819,8 +49099,8 @@
    "category": "usage",
    "downloads": null,
    "stars": null,
-   "descEn": "Shows the current DeepSeek billing window (peak or off-peak, Beijing time) as a composer badge and in settings, lists DeepSeek's per-model prices, and estimates the cost of each turn. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "在输入框徽标与设置页显示当前 DeepSeek 计费时段（高峰或空闲，北京时间），列出 DeepSeek 各模型价格，并估算每一轮对话的花费。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Shows the current DeepSeek billing window (peak or off-peak, Beijing time) as a composer badge and in settings, lists DeepSeek's per-model prices, and estimates the cost of each turn.",
+   "descZh": "在输入框徽标与设置页显示当前 DeepSeek 计费时段（高峰或空闲，北京时间），列出 DeepSeek 各模型价格，并估算每一轮对话的花费。"
   },
   {
    "file": "haidai233__dsh-plugin-trim.yml",
@@ -49183,6 +49463,16 @@
    "descZh": "下载抖音和小红书无水印视频，用本地或云端语音识别转成文字、按术语表校正，并从设置面板或 agent 工具导出 Markdown、DOCX、SRT、VTT 等格式。需自备 Python 3.10+（pip 安装 playwright、python-docx、numpy，默认的本地 SenseVoice 引擎另需 sherpa-onnx 并在首次使用时下载约 228 MB 模型）、PATH 中的 ffmpeg，以及 Chrome 或 Edge。"
   },
   {
+   "file": "hanhan9999999999999999999__dsh-macro-memory.yml",
+   "name": "hanhan9999999999999999999/dsh-macro-memory",
+   "url": "https://github.com/hanhan9999999999999999999/dsh-macro-memory",
+   "category": "memory",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Eight memory_* tools and one 1235-character prompt block over meow-memory's seven-layer SQLite: 0.977 hit@1 on a 146-entry corpus with 106 distractors, 3.3 ms per query at 1,200 entries, 8 tool schemas in 4,714 B of raw parameters.",
+   "descZh": "8 个 memory_* 工具 + 一段 1235 字符常驻注入，主库是 meow 的七层 SQLite：146 条宽池（含 106 条干扰）照抄 hit@1 0.977、1200 条库单次检索 3.3ms、8 个工具参数共 4714 B。"
+  },
+  {
    "file": "hanhan9999999999999999999__dsh-memory-nebula.yml",
    "name": "hanhan9999999999999999999/dsh-memory-nebula",
    "url": "https://github.com/hanhan9999999999999999999/dsh-memory-nebula",
@@ -49411,6 +49701,16 @@
    "stars": null,
    "descEn": "Prompt booster for the composer. Left-click the composer button and the draft is lightly polished and replaced in place (undoable, no popup). Right-click opens a menu with 8 built-in modes plus your own, where each mode's template can be edited or new modes added (saved on the host), and the model used for the rewrite is picked from the live dsh model list. Other modes show a before/after preview. Based on rongxingda/dsh-prompt-enhance (Apache-2.0); do not install both — both add a composer button and share Ctrl+Alt+E, so disable one of them if the upstream is present.",
    "descZh": "输入框提示词提升。左键点击输入框按钮，草稿被轻度润色后直接替换（可撤销、不弹窗）；右键打开模式菜单：8 个内置模式加自定义模式，每个模式的模板可编辑、可新增（保存在宿主端），并可从 dsh 当前可用的模型列表中选择改写所用的模型；其他模式先显示前后对比预览。基于 rongxingda/dsh-prompt-enhance（Apache-2.0）修改；不要与上游同装——两者都会添加输入框按钮并共用 Ctrl+Alt+E，装了两个请停用其中一个。"
+  },
+  {
+   "file": "HanYu-me__dsh-sider-task-reviewer.yml",
+   "name": "HanYu-me/dsh-sider-task-reviewer",
+   "url": "https://github.com/HanYu-me/dsh-sider-task-reviewer",
+   "category": "agi",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Sider Task Reviewer: another model of your choice (any provider dsh has, with its reasoning effort) reviews the task the current conversation is doing or has done. Review the last turn, the whole conversation or turns N–M; look at the conversation, the files it wrote, or both; quick, or deep, where the reviewer may also read files, list folders and search. Read-only throughout: neither the plugin nor the reviewer ever edits a file or runs a command (no tests, no builds, no git); anything that needs a change or a command run is written as a suggestion for the main conversation to do. Agent-style reviewers such as Antigravity (Gemini through the agy CLI) are run in their read-only plan mode. Each review gives a verdict (pass / doubt / fail) and findings with severity, evidence and a suggestion, saved per conversation and exportable as Markdown. The reviews of one conversation remember each other: each new review is sent with the earlier conclusions and the discussion, so the reviewer stays consistent, and you can discuss the latest review with the reviewer in the panel (its replies can go into the input box). A right-sidebar tab holds the settings and reports; a shield beside the input box reviews the last turn on a left click and puts the suggestions into the input box, and opens a menu on a right click. Findings reach the working model only when you press a button, or in continuous review, which sends them, waits for the fix and reviews again until a review passes or the round limit (5 by default). Optional live review after every turn only reports. Four built-in prompts (work done, derivations, literature surveys, plans) that you can edit, plus your own. Common secrets are hidden before anything is sent. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "任务审查（Sider Task Reviewer）：用你选的另一个模型（dsh 里的任何模型，可选思考强度）审查当前对话正在做或已经做完的任务。范围可选最后一轮、整个对话或第 N–M 轮；内容可选对话、写出的文件或两者；深度分快速和深入（深入时审查模型还可以读文件、列目录、搜索来核实）。全程只读：插件和审查模型都不会修改任何文件，也不运行任何命令（测试、构建、git 都不运行），需要修改或需要运行才能确认的，都写成建议交给主会话去做。Antigravity（通过 agy CLI 运行的 Gemini）这类会自己用工具的审查模型，以只读的 plan 模式运行。每次审查给出结论（通过 / 有疑问 / 有问题）和带严重度、证据位置、建议的问题列表，按对话保存，可导出 Markdown。同一个对话的审查前后连贯：每次审查都带上之前的结论和讨论；也可以点最近一次报告，在面板里和审查 AI 讨论，它的回答可以放进输入框。右侧边栏「任务审查」页签放设置和报告；输入框旁的盾牌左键审查最后一轮并把建议放进输入框，右键打开菜单。审查结果只有你点按钮时才发给主模型；「连续审查」会自动发送、等主对话修改后再审，直到通过或达到轮数上限（默认 5 轮）。可选的实时审查在每轮结束后审查，只提示不打断。内置四个提示词（标准、理论推导、文献与事实、任务计划），都可以修改，也能新建自己的。发送前隐藏常见的密钥和 token。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "HanYu-me__dsh-small-toolkit.yml",
@@ -49983,6 +50283,16 @@
    "descZh": "把 fight-scene-director 打戏设计技能注册进 DSH，移植自同名 Codex 技能。输出适配 Seedance 2.0/2.5 与 MiniMax H3 的结构化中文提示词，并支持轨迹图与初始站位图生图提示词。"
   },
   {
+   "file": "HauWong__dsh-utodo.yml",
+   "name": "HauWong/dsh-utodo",
+   "url": "https://github.com/HauWong/dsh-utodo",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Sidebar todo and idea panel: tasks with a single date or a date range, overdue, important and due-soon views, and notes with colour-coded tags.",
+   "descZh": "侧栏待办与想法面板：待办支持单日或日期区间，提供逾期、重要、临期视图；想法可加彩色标签。"
+  },
+  {
    "file": "hawk2048__oh-my-dsh.yml",
    "name": "hawk2048/oh-my-dsh",
    "url": "https://github.com/hawk2048/oh-my-dsh",
@@ -50493,6 +50803,16 @@
    "descZh": "键盘流 DSH 会话导航：按住 Control 在侧边栏显示 1-9 编号、Control+Tab 轮转、Control+J 从覆盖全部会话（含折叠分组与未渲染行）的面板跳转；双击 Option 为可点击控件显示字母提示，Option+Enter 聚焦输入框。"
   },
   {
+   "file": "helloloveworld__capy-connect.yml",
+   "name": "helloloveworld/capy-connect",
+   "url": "https://github.com/helloloveworld/capy-connect",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Brings Capy models into DSH as a tool-capable provider: a local OpenAI-compatible gateway plus a device tunnel, so tool calls run inside DSH under its own permissions.",
+   "descZh": "把 Capy 模型接入 DSH 的可执行提供方：本地 OpenAI 兼容网关加设备隧道，工具调用由 DSH 按自身权限执行。"
+  },
+  {
    "file": "helloworld010234__dsh-fluid-chat-width.yml",
    "name": "helloworld010234/dsh-fluid-chat-width",
    "url": "https://github.com/helloworld010234/dsh-fluid-chat-width",
@@ -50731,6 +51051,16 @@
    "stars": null,
    "descEn": "19 browser_* tools that let agents drive DeepSeek Harness's built-in sidebar browser over a loopback bridge: accessibility-tree reads with stable refs, real CDP clicks and keys, screenshots, network interception, device emulation, a cookie vault, document-start script injection, multiple browser instances, and raw CDP passthrough. Requires DSH launched with --remote-debugging-port=9222.",
    "descZh": "19 个 browser_* 工具，让 agent 通过回环桥驱动 DSH 内置的侧边栏浏览器：带稳定 ref 的无障碍树读取、CDP 真实点击与按键、截图、网络拦截、设备模拟、Cookie 保险库、document-start 脚本注入、多浏览器实例，以及任意 CDP 命令透传。需以 --remote-debugging-port=9222 启动 DSH。"
+  },
+  {
+   "file": "Hero-997__dsh-rewind-message.yml",
+   "name": "Hero-997/dsh-rewind-message",
+   "url": "https://github.com/Hero-997/dsh-rewind-message",
+   "category": "session",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Rewind and edit sent user messages in DSH Web: long-press or right-click a prompt to edit it inline and resend as a new branch.",
+   "descZh": "在 DSH Web 里回退并编辑已发送的问题：长按或右键一条 user 消息，就地改文本后作为新分支重发。"
   },
   {
    "file": "HERO476__dsh-conversation-recycle-bin.yml",
@@ -51753,6 +52083,16 @@
    "descZh": "以当前桌面壁纸为基础做模糊处理的液态玻璃换肤：壁纸被模糊并蒙一层白纱作为整窗画布，侧栏与聊天面板保持半透明；输入框、代码块、预览面板、菜单等承载文字的表面按可读性分档加磨砂，控件为 Apple 液态玻璃质感。Windows 上读取当前桌面壁纸作为画布，其他平台回退到自绘渐变。"
   },
   {
+   "file": "holosama212__dsh-rinko-nai.yml",
+   "name": "holosama212/dsh-rinko-nai",
+   "url": "https://github.com/holosama212/dsh-rinko-nai",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Generate and edit images in DeepSeek Harness through YesNAI (nai.rinko.ai / ynai.rinko.ai) or any YesNAI-compatible or OpenAI-compatible site. Ships native tools rinko_nai_image (text-to-image and free quote), rinko_nai_img2img (reference-image edit, gated by a per-site toggle), rinko_nai_parallel (multi-key parallel), rinko_nai_status, and a batch-task tool for /api/ynai/batches that stays disabled until the site enables it. Multi-key and single-key parallelism, a settings panel (login, balance, activities, image packs, gallery, ledger, prompt-parameter presets, no-charge quote), and inline same-origin image display. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "在 DeepSeek Harness 里通过 YesNAI（公益站 nai.rinko.ai / 主站 ynai.rinko.ai）或任意 YesNAI 兼容 / OpenAI 兼容站点出图与改图。原生工具：rinko_nai_image（文生图 / 免费询价）、rinko_nai_img2img（参考图改图，按站点开关）、rinko_nai_parallel（多 Key 并行）、rinko_nai_status，以及批次任务工具（/api/ynai/batches，站点未开放时默认禁用）。支持多 Key 与单 Key 并行、设置页（登录/余额/活动/图包/画廊/流水/参数预设/免费预估）、对话内同源内联显示。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "holy-ovo__dsh-startup.yml",
    "name": "holy-ovo/dsh-startup",
    "url": "https://github.com/holy-ovo/dsh-startup",
@@ -52421,6 +52761,16 @@
    "stars": null,
    "descEn": "OpenCode Go quota in the DSH right sidebar: per-model monthly caps, the shared 5-hour, weekly and monthly allowance left, and an opencode_quota tool for chat.",
    "descZh": "在 DSH 右侧边栏查看 OpenCode Go 各模型的月度上限与共享 5 小时／每周／每月额度剩余，并在对话中提供 opencode_quota 工具。"
+  },
+  {
+   "file": "hseons__dsh-cmdk.yml",
+   "name": "hseons/dsh-cmdk",
+   "url": "https://github.com/hseons/dsh-cmdk",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Adds a keyboard palette to the web UI: search sessions and message text with jumps to the matching message, run commands, switch workspaces, and register third-party providers.",
+   "descZh": "给 Web 界面加一个键盘面板：搜索会话与消息正文并能跳到命中的那条消息、执行命令、切换工作区，还可用 provider 协议接入第三方命令。"
   },
   {
    "file": "hseons__dsh-usage-peak.yml",
@@ -53223,6 +53573,16 @@
    "descZh": "在 DeepSeek 助理中接入 Outlook 邮箱和日历，支持未读角标与 AI 邮件草稿。新授权需要在设置中填写自己的 Microsoft Entra 应用客户端 ID，微软登录页在 DeepSeek Harness 内置浏览器中打开。申请的权限包括邮件读写与发信、日历和 To Do 读写。AI 功能会把邮件内容交给你配置的模型；欢迎页天气会请求 Open-Meteo，使用当前位置时还会请求 BigDataCloud。"
   },
   {
+   "file": "huihui3488__dsh-native-toast.yml",
+   "name": "huihui3488/dsh-native-toast",
+   "url": "https://github.com/huihui3488/dsh-native-toast",
+   "category": "notify",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Windows notification-center toasts when a DeepSeek Harness turn finishes or the agent waits for your choice or approval; clicking one brings the app forward and scrolls to the finished turn or focuses the pending question. Text, logo, sound and per-event switches are configurable. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "任务完成、需要你选择或批准时，在 Windows 通知中心弹出原生通知；点击通知会把 DeepSeek Harness 带回前台，并滚动到刚结束的一轮或定位到待回答的提问。文字、徽标、提示音与各类开关都可配置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "HuiKun-Yan__dsh-litbench--plugin.yml",
    "name": "HuiKun-Yan/dsh-litbench#plugin",
    "url": "https://github.com/HuiKun-Yan/dsh-litbench/tree/main/plugin",
@@ -53671,6 +54031,16 @@
    "stars": null,
    "descEn": "UFO archive terminal: search official and civilian records, keep a local archive, read it offline.",
    "descZh": "UFO 档案终端：检索官方与民间记录，落到本地档案馆，离线可读。"
+  },
+  {
+   "file": "Hyfish-oO__dsh-pushpin.yml",
+   "name": "Hyfish-oO/dsh-pushpin",
+   "url": "https://github.com/Hyfish-oO/dsh-pushpin",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Pins the DSH window above other windows from a pushpin in the title bar. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "标题栏右上角一颗钉子，把整个 DSH 窗口钉在其他窗口上面。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "Hyfwdnmd666__dsh-ai-ball.yml",
@@ -55233,6 +55603,16 @@
    "descZh": "工具调用等待审批、智能体提问等你选择、或会话跑完一轮时，弹出 Edge/Windows 桌面通知，且只在你不看 DSH 页面（后台或未聚焦）时提醒；浏览器或 Windows 抑制通知时可用可选提示音兜底。"
   },
   {
+   "file": "inaflash123__dsh-auto-group.yml",
+   "name": "inaflash123/dsh-auto-group",
+   "url": "https://github.com/inaflash123/dsh-auto-group",
+   "category": "market",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Files newly installed plugins into plugin-market groups by matching name tokens against a weighted capability table, leaves groups you arranged by hand untouched, and sends unrecognised plugins to an uncategorised group.",
+   "descZh": "按包名词元与加权能力表把新装的插件自动归进插件市场的分组，你手工调过的分组不受影响，认不出用途的放进「未分类」。"
+  },
+  {
    "file": "inaflash123__dsh-ui-placement.yml",
    "name": "inaflash123/dsh-ui-placement",
    "url": "https://github.com/inaflash123/dsh-ui-placement",
@@ -55361,6 +55741,16 @@
    "stars": null,
    "descEn": "DSH tools for reproducing and validating the ml-quant-trading protocol v1 CPU benchmark, then drafting an issue-ready report. Requires a local clone of initial-d/ml-quant-trading (set as the workspace or repoPath) plus Python and PyTorch; this plugin does not fetch the repository or install its dependencies.",
    "descZh": "用于复现并校验 ml-quant-trading protocol v1 CPU 基准测试，并生成可提交 issue 报告的 DSH 工具。需要本地 clone initial-d/ml-quant-trading，并将其设为 workspace 或 repoPath，同时自行准备 Python 和 PyTorch；本插件不会获取仓库或安装依赖。"
+  },
+  {
+   "file": "ink1219__dsh-continue-on-failure.yml",
+   "name": "ink1219/dsh-continue-on-failure",
+   "url": "https://github.com/ink1219/dsh-continue-on-failure",
+   "category": "session",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Shows a Continue card above the composer after a model request fails, so one click resumes the turn without retyping; keeps a per-message Retry action on finalized replies.",
+   "descZh": "模型请求失败后在输入框上方出现「继续」卡片，点一下即可接着跑，不用手动重新输入；另为已完成的回复保留逐条「重试」按钮。"
   },
   {
    "file": "InkshadeWoods__dsh-tool-visual-primitives.yml",
@@ -56011,6 +56401,16 @@
    "stars": null,
    "descEn": "Contacts for DSH: local address book with groups, multi-value fields, search and vCard import/export.",
    "descZh": "DSH 联系人：本地通讯录，支持分组、多值字段、搜索与 vCard 导入导出。"
+  },
+  {
+   "file": "ityyq777__dsh-workbench--packages-danmaku.yml",
+   "name": "ityyq777/dsh-workbench#danmaku",
+   "url": "https://github.com/ityyq777/dsh-workbench/tree/main/packages/danmaku",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Danmaku for DSH: play your own bullet comments across the whole interface, or layer them over the desktop itself, with a local library, per-item styles and weighted rotation.",
+   "descZh": "DSH 弹幕：把自建弹幕轮播在整个界面，也可叠加到整个桌面，含弹幕库、逐条样式与权重轮播。"
   },
   {
    "file": "ityyq777__dsh-workbench--packages-host.yml",
@@ -57113,6 +57513,16 @@
    "descZh": "多智能体中文辩论模拟：8 名辩手、实时双栏讨论与草稿纸、评委计分、单边计时、每轮 ZIP 归档、训练方可选胜率阈值或固定轮次收官，并生成 Word 备赛包。"
   },
   {
+   "file": "jdzpd666__dsh-computer-replacer-lite.yml",
+   "name": "jdzpd666/dsh-computer-replacer-lite",
+   "url": "https://github.com/jdzpd666/dsh-computer-replacer-lite",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Windows desktop automation for DSH: 14 UIA-first tools with approval-gated input and zero-image OCR screen reading.",
+   "descZh": "DSH 的 Windows 桌面自动化：14 个 UIA 优先工具，写操作全程审批，读屏只回文字不传图像。"
+  },
+  {
    "file": "jediliu005__dsh-bili-whale-safever-by-jediliu.yml",
    "name": "jediliu005/dsh-bili-whale-safever-by-jediliu",
    "url": "https://github.com/jediliu005/dsh-bili-whale-safever-by-jediliu",
@@ -57201,6 +57611,16 @@
    "stars": null,
    "descEn": "Global Alt+M model command palette for DeepSeek Harness Web: fuzzy search over models and providers, favorites and recents, per-model reasoning effort, provider and model configuration, request retries, capacity presets, and optional OpenRouter image/video generation tools.",
    "descZh": "DeepSeek Harness Web 的全局 Alt+M 模型命令面板：模型与提供商的模糊搜索、收藏与最近使用、每模型思考档位、提供商与模型配置、请求重试、容量预设，以及可选的 OpenRouter 图片/视频生成工具。"
+  },
+  {
+   "file": "Jensen0925__dsh-codearts-dock.yml",
+   "name": "Jensen0925/dsh-codearts-dock",
+   "url": "https://github.com/Jensen0925/dsh-codearts-dock",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Connects Huawei Cloud CodeArts models to DeepSeek Harness with manual account switching, credit alerts, model presets, local request metadata and password-encrypted configuration backups. Registers the codearts provider; enable only one CodeArts connector at a time. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "将华为云码道模型接入 DeepSeek Harness，提供手动账号切换、积分提醒、模型预设、本机请求记录和密码加密配置备份。注册 codearts provider，同一时间仅启用一个码道接入插件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "JeremyCruzFang__dsh-plugin-dshm--bridge.yml",
@@ -57469,8 +57889,8 @@
    "category": "tools",
    "downloads": null,
    "stars": null,
-   "descEn": "Controls Mi Home (米家) devices through mijiaAPI. Registers six agent tools for login, device list, device spec, property read and write, scenes and sensors, and adds a sidebar workbench whose device tiles, device detail pages, scene list and consumable gauges follow the Mi Home app layout. Needs Python 3.10 or newer; the plugin creates its own virtualenv and installs mijiaAPI into it. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "通过 mijiaAPI 控制米家设备。注册六个 agent 工具，覆盖登录、设备列表、设备规格、属性读写、场景与传感器；并在侧栏提供工作台，设备磁贴、设备详情页、场景列表与耗材余量按米家 App 的布局呈现。需要 Python 3.10 及以上，插件会自建虚拟环境并安装 mijiaAPI。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "A whole-home smart-home workbench grown out of a Mi Home plugin. Registers 13 agent tools: Mi Home cloud login, device list, device spec, property read/write, Mi Home scenes and sensors, plus LAN/BLE scanning, whole-home inventory, per-device capabilities, control, admin-page reading, custom scenes and a capability catalog. Backends: Home Assistant entities, Tuya LAN, Shelly, classic TP-Link Kasa, Yeelight, Philips Hue, Tasmota/WLED, local miIO, ONVIF/DLNA, and router, switch, ONT and NAS admin pages. A sidebar workbench shows device tiles, detail pages, scenes and consumable gauges. Controls follow the capabilities a device actually reports; protocols that are not implemented stay discovery-only or read-only rather than guessing write commands. Needs Python 3.12 with a virtualenv built from requirements.txt, and requirements-optional.txt for mDNS, Tuya and BLE. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "从米家插件扩展而来的全屋智能工作台。注册 13 个 agent 工具：米家云端登录、设备列表、设备规格、属性读写、米家场景与传感器，以及局域网与蓝牙扫描、全屋设备清单、单台设备能力、控制、管理页读取、自定义场景与能力项目录。接入方式包括 Home Assistant 实体、Tuya 局域网、Shelly、传统 TP-Link Kasa、Yeelight、Philips Hue、Tasmota/WLED、miIO 本地、ONVIF/DLNA，以及路由器、交换机、光猫与 NAS 的管理页。侧栏工作台提供设备磁贴、详情页、场景列表与耗材余量；控制项按设备实际报告的能力生成，未实现的协议只做发现或读取，不猜写入命令。需要 Python 3.12 并按 requirements.txt 自建虚拟环境，mDNS、Tuya 与蓝牙另需 requirements-optional.txt。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "Jessicaisleep__dsh-source-inbox.yml",
@@ -57529,8 +57949,8 @@
    "category": "ui",
    "downloads": null,
    "stars": null,
-   "descEn": "Reskins the DSH thinking row: pick an image, give that image its own line pool, and the row types the line out one character at a time with a highlight sweep, over a 2-4 colour gradient you control. Three packs ship in the box (39 images, 41 lines, 184 verbs). Everything is edited in Settings -> Thinking and lands on the next line, no restart, and packs import or export as .zip. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "给 DSH 的「思考状态」行换皮肤：一张图配自己的文案池，文字逐字打出、高光扫过，2–4 色渐变可调。内置三套（39 图 / 41 句 / 184 个动词）。在 设置 → 思考状态 里配，改完下一句话就生效，不用重启；套组可导入导出 .zip。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Reskins the DSH thinking row: pick an image, give that image its own line pool, and the row types the line out one character at a time with a highlight sweep, over a 2-4 colour gradient you control. Three packs ship in the box (39 images, 41 lines, 184 verbs). Each pack can also carry a music pool that plays only while the row is on screen - drawn at random, in order, or as a single loop - and the 酒狐 pack ships with three clips of 朋友的酒. Everything is edited in Settings -> Thinking and lands on the next line, no restart, and packs import or export as .zip. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "给 DSH 的「思考状态」行换皮肤：一张图配自己的文案池，文字逐字打出、高光扫过，2–4 色渐变可调。内置三套（39 图 / 41 句 / 184 个动词）。每个套组还能配自己的音乐池，只在那一行出现时播放，随机 / 顺序 / 单曲循环三种抽取；酒狐自带《朋友的酒》三段。在 设置 → 思考状态 里配，改完下一句话就生效，不用重启；套组可导入导出 .zip。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "jetformat__dsh-plugin.yml",
@@ -58873,6 +59293,26 @@
    "descZh": "Windows 多盘磁盘分工面板：用绿/黄/红标出可清理、需确认、系统占用，核对下载目录，并给出多盘分工与迁移建议。"
   },
   {
+   "file": "jklin6632-dot__dsh-approval-enter.yml",
+   "name": "jklin6632-dot/dsh-approval-enter",
+   "url": "https://github.com/jklin6632-dot/dsh-approval-enter",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Press Enter to approve a pending approval request without the mouse - normal typing still sends.",
+   "descZh": "按一下回车就批准待确认的操作，不用再点鼠标；正常打字仍照旧发送。"
+  },
+  {
+   "file": "jklin6632-dot__dsh-notify.yml",
+   "name": "jklin6632-dot/dsh-notify",
+   "url": "https://github.com/jklin6632-dot/dsh-notify",
+   "category": "notify",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Windows corner card that pops when a turn finishes or a tool needs approval - click it to jump back to DSH.",
+   "descZh": "回合跑完或工具等你批准时，桌面角落弹一张卡片，点一下就跳回 DSH。"
+  },
+  {
    "file": "jkm6221__dsh-workspace-folders.yml",
    "name": "jkm6221/dsh-workspace-folders",
    "url": "https://github.com/jkm6221/dsh-workspace-folders",
@@ -59813,6 +60253,16 @@
    "descZh": "DeepSeek Harness 分步工作流地图：把会话折叠成一条分步列表，给每个进度百分比标注来源而不是只报一个数，并支持把提示词排入下一步队列、被取用前可撤回。"
   },
   {
+   "file": "JqandCl__dsh-memory-huixiang.yml",
+   "name": "JqandCl/dsh-memory-huixiang",
+   "url": "https://github.com/JqandCl/dsh-memory-huixiang",
+   "category": "memory",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A local-first memory library for DSH: plain-text cards that decay and strengthen, recall that admits when it does not know, and everything kept on your own disk.",
+   "descZh": "给 AI 一个本地记忆库：纯文本卡片，会随时间变淡、也会被想起来；记不清时如实说不知道；数据全放在你自己的电脑里。"
+  },
+  {
    "file": "jqlong17__dsh-meeting-memo.yml",
    "name": "jqlong17/dsh-meeting-memo",
    "url": "https://github.com/jqlong17/dsh-meeting-memo",
@@ -60453,6 +60903,16 @@
    "descZh": "通过官方 pluginManager 服务定时原地更新已安装的 profile 插件，可配置间隔与排除列表，重启 DSH 后加载新代码。"
   },
   {
+   "file": "jyz48prsbr-netizen__dsh-prompt-enhancer.yml",
+   "name": "jyz48prsbr-netizen/dsh-prompt-enhancer",
+   "url": "https://github.com/jyz48prsbr-netizen/dsh-prompt-enhancer",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Adds an Enhance Prompt button beside the composer model picker. Prompts are verbatim from WorkBuddy and interactions follow proven DSH plugins, with one-click restore of the original draft.",
+   "descZh": "在输入框模型选择器旁增加增强提示词按钮，提示词逐字取自 WorkBuddy，交互整合自成熟 DSH 插件，支持一键恢复原文。"
+  },
+  {
    "file": "jyz48prsbr-netizen__dsh-sidebar-entry-toggle.yml",
    "name": "jyz48prsbr-netizen/dsh-sidebar-entry-toggle",
    "url": "https://github.com/jyz48prsbr-netizen/dsh-sidebar-entry-toggle",
@@ -60461,6 +60921,16 @@
    "stars": null,
    "descEn": "Adds a Settings section that automatically lists every left-sidebar entry, including newly installed plugins, with switches to show or hide each and drag-to-reorder; uses stable slot ids so saved choices survive language changes, and display-only changes never unload plugins.",
    "descZh": "在设置中增加分区，自动列出左侧栏所有入口（含新安装的插件，无需手动白名单），用开关控制显示/隐藏并拖动排序；用稳定 slot id 保证语言切换后选择不丢失，调整只影响显示、不卸载插件。"
+  },
+  {
+   "file": "jyz48prsbr-netizen__dsh-sidebar-refresh.yml",
+   "name": "jyz48prsbr-netizen/dsh-sidebar-refresh",
+   "url": "https://github.com/jyz48prsbr-netizen/dsh-sidebar-refresh",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Adds a small gold-bordered refresh button to the right of the sidebar brand wordmark. Click it to reload the DSH page.",
+   "descZh": "在侧栏品牌标识右侧增加一个金边小方块刷新按钮，点击刷新 DSH 页面。"
   },
   {
    "file": "jyz48prsbr-netizen__dsh-web-link.yml",
@@ -61333,6 +61803,16 @@
    "descZh": "开工前检查当前会话能否真正执行一项任务：本轮工具准入、模型路由、工作区写入边界、文档引擎与 MCP 可见性，逐项给出状态与依据；可选最小探测，并在经批准的处理后复检。"
   },
   {
+   "file": "keminoco-beep__dsh-session-delete.yml",
+   "name": "keminoco-beep/dsh-session-delete",
+   "url": "https://github.com/keminoco-beep/dsh-session-delete",
+   "category": "session",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Delete DSH conversations and workspace folders from context menus, including live sessions, without restarting DSH. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "从右键菜单彻底删除 DSH 会话和工作区文件夹；运行中的会话无需重启 DSH 即可删除。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "ken95573__dsh-model-show.yml",
    "name": "ken95573/dsh-model-show",
    "url": "https://github.com/ken95573/dsh-model-show",
@@ -62021,6 +62501,16 @@
    "stars": null,
    "descEn": "A customized fork of TQSY114514/dsh-ui-appearance for theme palettes, wallpapers, and glassmorphism, with a layout fix for duplicate blank space alongside better-sidebar 0.18.0.",
    "descZh": "基于 TQSY114514/dsh-ui-appearance 的定制 fork，提供主题调色、壁纸与毛玻璃，并修复与 better-sidebar 0.18.0 共用时的重复留白。"
+  },
+  {
+   "file": "killher1__dsh-claude-preset.yml",
+   "name": "killher1/dsh-claude-preset",
+   "url": "https://github.com/killher1/dsh-claude-preset",
+   "category": "identity",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Claude Code agent preset adapting the system prompt, 13 tool descriptions, Plan Mode, and 9-section compaction for DSH.",
+   "descZh": "适配 Claude Code 行为系统提示词、13 项工具描述、Plan Mode 与 9 段式压缩的智能体预设。"
   },
   {
    "file": "kimaky__dsh-copy-as.yml",
@@ -63173,6 +63663,16 @@
    "descZh": "使用本机 D2 CLI 在 DSH 右侧边栏预览图表，支持实时渲染、源码编辑、缩放及图表、代码、分屏视图。"
   },
   {
+   "file": "Kostyastudy__dsh-matu-tutor.yml",
+   "name": "Kostyastudy/dsh-matu-tutor",
+   "url": "https://github.com/Kostyastudy/dsh-matu-tutor",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "UESTC APTAT (码图) C homework workbench: sync assignments, edit code with C highlighting, compile and run with local gcc, submit to APTAT for a real score, and review it with an AI tutor. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "电子科大码图（APTAT）C 语言作业工作台：同步作业、带 C 语法高亮的编辑器、用本机 gcc 编译运行、真实提交到码图拿评分，并由 AI 助教讲评。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "kouyichi__dsh-plugins--dsh-a2a.yml",
    "name": "kouyichi/dsh-plugins#dsh-a2a",
    "url": "https://github.com/kouyichi/dsh-plugins/tree/main/dsh-a2a",
@@ -63241,6 +63741,16 @@
    "stars": null,
    "descEn": "Adds a Hindsight configuration and status dashboard to the DSH sidebar for connection, model, embedding and bank settings, with health checks and ownership-checked local service controls; memory tools are provided by the separate official integration. Hindsight itself is a separate service and is not installed by this plugin.",
    "descZh": "在 DSH 侧边栏提供 Hindsight 配置与状态面板，管理连接、模型、向量和记忆库设置，支持健康检查及经归属核验的本机服务控制；记忆工具由独立的官方集成提供。Hindsight 服务需另行安装，本插件不负责部署。"
+  },
+  {
+   "file": "KouzakiUmi__dsh-opendesign-corouter.yml",
+   "name": "KouzakiUmi/dsh-opendesign-corouter",
+   "url": "https://github.com/KouzakiUmi/dsh-opendesign-corouter",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "OpenDesign CoRouter providers for DeepSeek Harness: separate Design Plan and paid model pools with per-model coverage preflight, layered quota windows and balances, desktop-session and device login, public website price tiers, per-model context, reasoning and image controls with a chat-side context capsule, and scoped empty-turn monitoring for deepseek-v4.1-flash.",
+   "descZh": "为 DeepSeek Harness 提供 OpenDesign CoRouter 双 Provider：套餐赠送与付费模型池逐模型核实附赠权益，分层额度窗口与余额、桌面登录态与设备授权登录、官网公开价格档、每模型上下文/思考/图片控制与聊天侧上下文胶囊，并对 deepseek-v4.1-flash 做限定范围的空轮监控与恢复。"
   },
   {
    "file": "KouzakiUmi__dsh-prompt-zh.yml",
@@ -63441,6 +63951,16 @@
    "stars": null,
    "descEn": "Scans 20+ AI agents on this machine (Codex, Claude Code, cc-switch, Hermes, opencode, Gemini, Grok, Kimi, CodeBuddy, Trae, OpenClaw, Qoder, WorkBuddy, Zcode, Cursor, Windsurf, Cline, Roo Code, Qwen Code, ...) and one-click syncs, manages and adds their MCP servers and skills into DSH — global or per-workspace.",
    "descZh": "扫描本机 20+ 种 AI agent 的 MCP 服务器与 Skills（Codex、Claude Code、cc-switch、Hermes、opencode、Gemini、Grok、Kimi、CodeBuddy、Trae、OpenClaw、Qoder、WorkBuddy、Zcode、Cursor、Windsurf、Cline、Roo Code、Qwen Code 等），一键同步、管理并添加进 DSH（全局或按工作区）。"
+  },
+  {
+   "file": "kuanbandu__dsh-email.yml",
+   "name": "kuanbandu/dsh-email",
+   "url": "https://github.com/kuanbandu/dsh-email",
+   "category": "identity",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Email for DeepSeek Harness: after one login in Settings → Email, the agent reads, searches, replies and sends mail through eight email_* tools. Reads use IMAP PEEK so messages are never marked as seen; passwords stay in the harness credential store; IMAP/SMTP can go through an HTTP CONNECT or SOCKS5 proxy with separate routes per direction. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "给 DeepSeek Harness 装邮箱：在「设置 → 邮件」里登录一次后，agent 可用 8 个 email_* 工具读信、检索、回复、发信、等验证邮件、下载附件。读信用 IMAP PEEK，不会把邮件标记为已读；密码存在 harness 凭据库；IMAP/SMTP 可走 HTTP CONNECT 或 SOCKS5 代理，并支持收/发分别指定路由。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "kuanfu0430__dsh-sidebar-branch-chat.yml",
@@ -64523,6 +65043,16 @@
    "descZh": "DSH 侧栏禅道工作台：粘贴禅道浏览页链接读取 Bug/任务/需求，多选后交给当前或新会话（带入描述、最近动态、截图转真实图片附件、其它附件落盘可读），AI 处理完把备注与状态（已解决、已关闭、重新激活、开始、完成等）单条或批量回写禅道，面板与 5 个 Agent 工具都能写；Bug 的备注与状态回写已实测通过，任务与需求表单走同一套代码路径。"
   },
   {
+   "file": "lbg2002__dsh-glaze-theme.yml",
+   "name": "lbg2002/dsh-glaze-theme",
+   "url": "https://github.com/lbg2002/dsh-glaze-theme",
+   "category": "theme",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Chinese porcelain and Morandi theme with 16 OKLCH palettes, 6 presets, configurable sidebar tones, static SVG canvas patterns, thinking/composer/bubble styles, 0-100% composer opacity, artistic fonts, and brand/hero customization persisted to ~/.dsh/glaze-theme.json without idle animations or blur. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "东方瓷釉与莫兰迪主题：含 16 套 OKLCH 色板与 6 套中式全案预设，支持侧栏基调（含左右无界通透）、静态国风底纹、思考框/输入框造型与 0–100% 透明度、气泡样式、艺术字体及品牌欢迎语定制，配置持久化至 ~/.dsh/glaze-theme.json，默认零模糊、无常驻动画。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "lcestou__dsh-oh-my-claude.yml",
    "name": "lcestou/dsh-oh-my-claude",
    "url": "https://github.com/lcestou/dsh-oh-my-claude",
@@ -64753,6 +65283,36 @@
    "descZh": "用 MinerU 把 PDF 与文档解析为结构化 Markdown。文件会上传到 MinerU 云端，无离线模式。"
   },
   {
+   "file": "Lee2277-t__dsh-aigc-label.yml",
+   "name": "Lee2277-t/dsh-aigc-label",
+   "url": "https://github.com/Lee2277-t/dsh-aigc-label",
+   "category": "security",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Write and check the AIGC implicit label that Chinese rules require on AI-generated content - the named AIGC property inside an Office file's docProps/custom.xml, carrying Label, ContentProducer and ProduceID. `aigc_label_write` stamps docx, xlsx and pptx and reads the property back to confirm it landed; `aigc_label_check` reports what a file currently carries. The producer code is never built in, because stamping a file with someone else's code misattributes where it came from - without one the write tool refuses rather than writing a half label.",
+   "descZh": "给 docx/xlsx/pptx 写入与查验 AIGC 隐式标识，即 Office 文件 docProps/custom.xml 里那条名为 AIGC 的属性，含 Label、ContentProducer、ProduceID。`aigc_label_write` 负责写入并回读确认，`aigc_label_check` 报出文件现在带了什么。服务提供者编码不内置——把别人的编码写进文件等于把这份内容的来源指向了别的主体，所以没有配置时它宁可拒绝写入，也不写一条残缺的标识。"
+  },
+  {
+   "file": "Lee2277-t__dsh-font-subset.yml",
+   "name": "Lee2277-t/dsh-font-subset",
+   "url": "https://github.com/Lee2277-t/dsh-font-subset",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Cut a font down to the characters a page actually uses. `font_coverage` reports which characters a font is missing, before the cut turns them into tofu boxes; `font_subset` then emits a woff2 (or woff or ttf) containing only what the page needs. Measured on simhei.ttf - 9.3 MB to 3.5 KB for 24 distinct characters. Characters can be given directly, read from a file, or collected from an html/vue/js/ts/css tree.",
+   "descZh": "按实际用到的字裁剪字体。`font_coverage` 先报出字体里缺哪些字——在裁剪把它们变成豆腐块之前；`font_subset` 再输出只含所需字符的 woff2（或 woff、ttf）。实测 simhei.ttf：24 个不同字，9.3 MB 裁到 3.5 KB。字符可以直接给、从文件读，或从 html/vue/js/ts/css 目录里收集。"
+  },
+  {
+   "file": "Lee2277-t__dsh-miniapp-audit.yml",
+   "name": "Lee2277-t/dsh-miniapp-audit",
+   "url": "https://github.com/Lee2277-t/dsh-miniapp-audit",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Before submitting a WeChat mini program, check the parts a machine can. `miniapp_privacy_scan` lists the privacy APIs that must be declared in the user-privacy guideline, gaps in `requiredPrivateInfos`, and silent failure handlers that leave a tap doing nothing; `miniapp_asset_audit` reports package weight and assets no source file references; `miniapp_release_check` combines both and adds the items only a human can confirm in the console. Every hit carries a file and line, and machine-checked items are kept apart from the manual ones.",
+   "descZh": "小程序提审前先把机器能查的部分查一遍。`miniapp_privacy_scan` 列出需要在用户隐私保护指引里声明的接口、`requiredPrivateInfos` 缺项，以及让用户「点了没反应」的静默失败点；`miniapp_asset_audit` 报包体积与源码里从未引用的资源；`miniapp_release_check` 合并两者，并单列只能在后台人工确认的项。每条命中都带文件与行号，机器查的和人工确认的分开列。"
+  },
+  {
    "file": "Lee2277-t__dsh-resolve.yml",
    "name": "Lee2277-t/dsh-resolve",
    "url": "https://github.com/Lee2277-t/dsh-resolve",
@@ -64761,6 +65321,16 @@
    "stars": null,
    "descEn": "Builds DaVinci Resolve timelines from a declarative edit spec: writes an importable .fcpxml with rendered title overlays and cross dissolves on the free edition, and drives the running project through Resolve's scripting API on Studio.",
    "descZh": "用一份声明式剪辑 spec 生成达芬奇时间线：免费版输出可导入的 .fcpxml 与渲染好的标题图层、交叉溶解；Studio 版直接驱动正在运行的工程，并可导帧、启动渲染。"
+  },
+  {
+   "file": "Lee2277-t__dsh-zip-verify.yml",
+   "name": "Lee2277-t/dsh-zip-verify",
+   "url": "https://github.com/Lee2277-t/dsh-zip-verify",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Check that a delivery zip really round-trips before you hand it over. `zip_verify` decompresses every entry, checks its CRC32, compares each file against a source directory by hash, and reports entry names that only decode as GBK or that carry an unflagged UTF-8 name; `zip_list` dumps the entries with size and compression method without verifying anything. It reads the central directory itself instead of trusting an external unzip, so a perfectly good Compress-Archive output is not mistaken for mojibake.",
+   "descZh": "交付包打出来之后，先验证它真能原样还原。`zip_verify` 逐条解压、核对 CRC32、按哈希与源目录逐文件对账，并报出只能按 GBK 解码的条目名和未打 UTF-8 标记的中文名；`zip_list` 只列条目的大小与压缩方式，不做校验。它自己读中央目录而不依赖外部解压工具，因此不会把一份完全正常的 Compress-Archive 输出看成乱码。"
   },
   {
    "file": "Lee2277-t__pbip-forge.yml",
@@ -66093,14 +66663,24 @@
    "descZh": "在工作区工具栏下方加一排状态 chip，按「运行中 / 待确认 / 未读」筛选会话，列出全部匹配项（工作区·标题·时间）并可直接打开；会话行尾同时显示状态圆点。"
   },
   {
+   "file": "liaty8__dsh-muteki-preset--plugins-muteki-preset.yml",
+   "name": "liaty8/dsh-muteki-preset#muteki-preset",
+   "url": "https://github.com/liaty8/dsh-muteki-preset/tree/main/plugins/muteki-preset",
+   "category": "security",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Full preset bundle of the Muteki CTF swarm mode (same repo): an evidence-gated blackboard workflow (facts must cite captured tool-output artifacts, dead ends are logged), programmatic dispatch tools (muteki_run/tick/dispatch/review/cli) with per-challenge token-bucket and cost quotas, first-solve hard cancel of every live worker, and tool-evidence capture. Installing the bundle registers the preset and bootstraps the muteki-board skill plus ~/.dsh-muteki/config.json on first start (existing config is never overwritten); the right-sidebar console is the separate muteki-workbench entry. Requires DSH 0.2.2-rc.3+ and Python 3.",
+   "descZh": "Muteki CTF 蜂群模式的预设本体 bundle（同仓库）：证据门黑板流程（fact 必须引用捕获的工具输出证据、死路记账）、程序化派单工具（muteki_run/tick/dispatch/review/cli）+ 按题独立的令牌桶与成本额度、首解硬收束全部在跑 worker、工具证据捕获。安装即注册预设，首启自动铺设 muteki-board 技能与 ~/.dsh-muteki/config.json（已有配置绝不覆盖）；右侧栏控制台是另外的 muteki-workbench 条目。需 DSH 0.2.2-rc.3+ 与 Python 3。"
+  },
+  {
    "file": "liaty8__dsh-muteki-preset--plugins-muteki-workbench.yml",
    "name": "liaty8/dsh-muteki-preset#muteki-workbench",
    "url": "https://github.com/liaty8/dsh-muteki-preset/tree/main/plugins/muteki-workbench",
    "category": "ui",
    "downloads": null,
    "stars": null,
-   "descEn": "Right-sidebar control console for the Muteki CTF swarm preset (same repo): tier buttons switch the preset to bulk mode and set pool size, token refill and cost walls at runtime without a restart, with a CNY/USD per-challenge dispatch and estimated-cost ledger and auto-opened live subagent panes; dispatch and ledger data come from the preset orchestrator, installed separately via install.ps1. An optional first-solve alert banner surfaces each new flag the moment a worker writes it back, with one-click copy (flag value only), per-flag delete and delete-all behind an in-panel confirmation modal.",
-   "descZh": "Muteki CTF 蜂群预设（同仓库）的右侧栏控制台：档位按钮一键切靶场批量并设并发池/令牌回填/成本墙，运行时生效不用重启；按题显示派单次数与估算成本的人民币/美元账本，派单自动打开子代理实时 pane；派单与账本数据来自需另装（install.ps1）的预设 orchestrator。可选「首解即报」横幅在 worker 写回 flag 的瞬间亮旗，支持一键复制（仅 flag 值）、逐条删除与全部删除（工作台内确认模态）。"
+   "descEn": "Right-sidebar control console for the Muteki CTF swarm preset (same repo): tier buttons switch the preset to bulk mode and set pool size, token refill and cost walls at runtime without a restart, with a CNY/USD per-challenge dispatch and estimated-cost ledger and auto-opened live subagent panes; this entry is the workbench UI only — the preset itself is the separate muteki-preset entry (market-installable bundle; install.ps1 remains an alternative). An optional first-solve alert banner surfaces each new flag the moment a worker writes it back, with one-click copy (flag value only), per-flag delete and delete-all behind an in-panel confirmation modal.",
+   "descZh": "Muteki CTF 蜂群预设（同仓库）的右侧栏控制台：档位按钮一键切靶场批量并设并发池/令牌回填/成本墙，运行时生效不用重启；按题显示派单次数与估算成本的人民币/美元账本，派单自动打开子代理实时 pane；本条目仅工作台 UI——预设本体是另外的 muteki-preset 条目（market 可装 bundle；install.ps1 仍为备选）。可选「首解即报」横幅在 worker 写回 flag 的瞬间亮旗，支持一键复制（仅 flag 值）、逐条删除与全部删除（工作台内确认模态）。"
   },
   {
    "file": "libiwolve__dsh-experience-library.yml",
@@ -66599,8 +67179,8 @@
    "category": "workflow",
    "downloads": null,
    "stars": null,
-   "descEn": "AgentCompare compares 2–4 answers, files or live pages in the DSH Desktop/Web main conversation, with Chinese/English UI, shared conversation context, blind or open picks and reviewed adoption. Requires a root-level Vite project in a Git repository with at least one commit.",
-   "descZh": "鲸挑细选 AgentCompare：在 DSH Desktop/Web 主对话中比较 2–4 版回答、文件或网页；中英双语，同步主对话上下文，保留选择理由并审查采用。需要 Git 仓库根目录下有 Vite 项目，且至少有一次提交。"
+   "descEn": "Compare 2–4 answers, files or live pages in the main DSH Desktop or Web conversation. Pick styles, compare blind or openly, and review what you adopt. The Chinese/English interface keeps the chosen result and reasons in context.",
+   "descZh": "鲸挑细选 AgentCompare。在 DSH 桌面端或 Web 主对话中比较 2–4 版回答、文件或可操作网页。可选择风格、盲选或公开对比，再审查采用。界面支持中英双语，保留选择结果与理由。"
   },
   {
    "file": "lijiaqi-AI-Product-Manager__dsh-bug-gps.yml",
@@ -67953,6 +68533,16 @@
    "descZh": "一步删掉 DSH 里的对话：日志进可还原的回收站，投影缓存、工作区记账与侧边栏列表同步清理；只有真的有一轮在跑时才拒绝。"
   },
   {
+   "file": "liubaibuliuyan__dsh-turn-rail-left.yml",
+   "name": "liubaibuliuyan/dsh-turn-rail-left",
+   "url": "https://github.com/liubaibuliuyan/dsh-turn-rail-left",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Relocate the DeepSeek Harness conversation turn rail from the right gutter to the left gutter by restyling the built-in rail itself, so ticks, hover previews, click-to-jump and history paging stay unchanged and no second rail is added.",
+   "descZh": "把 DSH 对话里的轮次导航轨道从右侧留白搬到左侧留白：改的是内置轨道本身的样式，刻度、悬停预览、点击跳转与未加载轮次的分页都不变，也不会多出一条轨道。"
+  },
+  {
    "file": "liubaicai__dsh-codebuddy-link.yml",
    "name": "liubaicai/dsh-codebuddy-link",
    "url": "https://github.com/liubaicai/dsh-codebuddy-link",
@@ -67971,6 +68561,16 @@
    "stars": null,
    "descEn": "Connects Qoder models to DeepSeek Harness through the official Qoder CLI over native ACP stdio (no reverse-engineered model API), with qoderclicn (China) having a verified real ACP tool loop; qodercli (international) is selectable but its real inference path is not yet verified. Requires Node.js 22.18+ and the chosen Qoder CLI installed and logged in on the same machine; the plugin does not install or manage accounts.",
    "descZh": "通过官方 Qoder CLI 以原生 ACP stdio 接入 Qoder 模型（无需逆向模型 API）；qoderclicn 中国版已通过真实 ACP 工具链路验证，qodercli 国际版可选但真实推理路径尚未验证。需 Node.js 22.18+，并在同一台机器上安装并登录所选 Qoder CLI；插件不安装 CLI、不管理账户。"
+  },
+  {
+   "file": "liuchenljc__quick-continue-plugin.yml",
+   "name": "liuchenljc/quick-continue-plugin",
+   "url": "https://github.com/liuchenljc/quick-continue-plugin",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Editable one-click reply buttons under the composer. A click queues its text as the next message through the same Client API the official composer uses, so the draft you are typing is never overwritten; the gear on the row renames, retitles, adds, removes and reorders buttons in place, persisted in localStorage. A host-side system-prompt section makes every model end its reply with one short A/B/C option line, so the buttons and the reply always agree; 你来定 tells the agent to pick the option itself and continue instead of asking again. Send failures raise a short inline notice.",
+   "descZh": "在输入框下方加一排可自定义的一键回复按钮。点一下按消息队列投递文字（与官方输入框同一条 Client API），不会覆盖你正在写的草稿；按钮行末尾的齿轮可就地改名、改发送内容、增删与调序，存在 localStorage。Host 侧注入一段系统提示词，让所有模型的回复结尾带一行简短的 A/B/C 选项，按钮与选项始终对得上；「你来定」表示由 agent 自行选择并继续执行，不再反问。发送失败时那一行会给出简短提示。"
   },
   {
    "file": "liudapeng0311__dsh-pwa-launcher.yml",
@@ -68601,6 +69201,16 @@
    "stars": null,
    "descEn": "Review every five distinct ended project sessions in DeepSeek Harness, retain sourced lessons and workflow drafts, and supply project memory to later sessions.",
    "descZh": "每五个不同的项目会话结束后自动复盘，积累有来源的经验与工作流草稿，并为后续会话带入项目记忆。"
+  },
+  {
+   "file": "liuhuoz__dsh-claude-mem.yml",
+   "name": "liuhuoz/dsh-claude-mem",
+   "url": "https://github.com/liuhuoz/dsh-claude-mem",
+   "category": "memory",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A DeepSeek Harness plugin that integrates claude-mem: query, context injection, manual save, and session lifecycle over a local claude-mem worker's HTTP API.",
+   "descZh": "接入 claude-mem 的 DeepSeek Harness 插件：查询、上下文注入、手动保存，以及通过本地 claude-mem worker 的 HTTP API 处理会话生命周期。"
   },
   {
    "file": "liuhusk__dsh-status-card.yml",
@@ -69619,8 +70229,8 @@
    "category": "remote",
    "downloads": null,
    "stars": null,
-   "descEn": "LAN access plugin for the DSH Web UI: a built-in reverse proxy that forwards a LAN port to 127.0.0.1:3080 with Host/Origin rewriting and token-free login. Listens on 127.0.0.1 by default; exposing it to the LAN requires an explicit switch with a security confirmation. The listening port is editable, and the settings page keeps a list of recent client IPs with an optional blacklist (one-click block, 403 page, cannot block the device you are using) plus a reset command that restores defaults. Known limitation: one tab per browser (upstream identity model); other devices or a private window are unaffected. QQ group: 1065464637. If this plugin helps you, a star is appreciated.",
-   "descZh": "DSH Web 界面局域网访问插件：内置反向代理，把局域网端口转发到 127.0.0.1:3080 并改写 Host/Origin、免 Token 登录。默认只监听本机，开放到局域网需显式开启开关并通过安全确认；端口可自定义，带访问 IP 列表与黑名单（可一键拉黑、403 拦截、防止把自己锁在门外）、以及一条恢复默认的重置命令。已知限制：受官方身份模型约束，同一浏览器同时只能开一个标签页，其他设备或无痕窗口不受影响。交流群（QQ）1065464637，问题与建议都欢迎；如果它帮到了你，请点个 Star 支持一下。"
+   "descEn": "LAN access for DSH Web UI: reverse proxy + token-free login; a phone on the same Wi-Fi opens it directly. Editable port, IP blacklist, reset. QQ 1065464637.",
+   "descZh": "DSH Web 局域网访问插件：内置反向代理 + 免 Token 登录，手机同 Wi-Fi 直接打开后台；端口可改，带访问 IP 列表与黑名单（一键拉黑、403 拦截、防把自己锁在门外）和重置命令。交流群 QQ 1065464637，喜欢请点个 Star。"
   },
   {
    "file": "LLinsanity__dsh-chat-find.yml",
@@ -70443,39 +71053,9 @@
    "descZh": "dsh-mistral-pro 的维护分支：接入 Mistral 订阅（Vibe Pro/Team），提供模型路由、多账号故障切换、提示缓存调优、侧边栏额度卡片和统计面板。"
   },
   {
-   "file": "Lornatang__dsh-atlassian.yml",
-   "name": "Lornatang/dsh-atlassian",
-   "url": "https://github.com/Lornatang/dsh-atlassian",
-   "category": "tools",
-   "downloads": null,
-   "stars": null,
-   "descEn": "Connect Atlassian Cloud and self-hosted Jira and Confluence to DeepSeek Harness, with tools and a Jira issue board.",
-   "descZh": "把 Atlassian Cloud 以及自托管的 Jira、Confluence 接入 DeepSeek Harness，提供工具和 Jira 问题看板。"
-  },
-  {
-   "file": "Lornatang__dsh-caveman.yml",
-   "name": "Lornatang/dsh-caveman",
-   "url": "https://github.com/Lornatang/dsh-caveman",
-   "category": "usage",
-   "downloads": null,
-   "stars": null,
-   "descEn": "Caveman skills and tools for DeepSeek Harness: response styles, recoverable tool-result compression, model routing, browser tools, and delegation.",
-   "descZh": "为 DeepSeek Harness 提供 Caveman 技能与工具：响应风格、可恢复的工具结果压缩、模型路由、浏览器工具和委派。"
-  },
-  {
-   "file": "Lornatang__dsh-codex-security.yml",
-   "name": "Lornatang/dsh-codex-security",
-   "url": "https://github.com/Lornatang/dsh-codex-security",
-   "category": "security",
-   "downloads": null,
-   "stars": null,
-   "descEn": "Agent-native static security review workbench with scan artifacts, finding triage, and SARIF/JSON exports.",
-   "descZh": "面向智能体的静态安全审查工作台：扫描产物、问题分级，以及 SARIF/JSON 导出。"
-  },
-  {
-   "file": "Lornatang__dsh-frontgate.yml",
-   "name": "Lornatang/dsh-frontgate",
-   "url": "https://github.com/Lornatang/dsh-frontgate",
+   "file": "Lornatang__dsh-plugin--packages-access-dsh-frontgate.yml",
+   "name": "Lornatang/dsh-plugin#dsh-frontgate",
+   "url": "https://github.com/Lornatang/dsh-plugin/tree/main/packages/access/dsh-frontgate",
    "category": "security",
    "downloads": null,
    "stars": null,
@@ -70483,9 +71063,19 @@
    "descZh": "DeepSeek Harness 网页界面的密码门与反向代理：默认只监听本机回环，没设置密码时首次启动会生成一个密码并只显示一次；需要远程访问时再把 listenHost 设为 0.0.0.0。"
   },
   {
-   "file": "Lornatang__dsh-github.yml",
-   "name": "Lornatang/dsh-github",
-   "url": "https://github.com/Lornatang/dsh-github",
+   "file": "Lornatang__dsh-plugin--packages-integrations-dsh-atlassian.yml",
+   "name": "Lornatang/dsh-plugin#dsh-atlassian",
+   "url": "https://github.com/Lornatang/dsh-plugin/tree/main/packages/integrations/dsh-atlassian",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Connect Atlassian Cloud and self-hosted Jira and Confluence to DeepSeek Harness, with tools and a Jira issue board.",
+   "descZh": "把 Atlassian Cloud 以及自托管的 Jira、Confluence 接入 DeepSeek Harness，提供工具和 Jira 问题看板。"
+  },
+  {
+   "file": "Lornatang__dsh-plugin--packages-integrations-dsh-github.yml",
+   "name": "Lornatang/dsh-plugin#dsh-github",
+   "url": "https://github.com/Lornatang/dsh-plugin/tree/main/packages/integrations/dsh-github",
    "category": "git",
    "downloads": null,
    "stars": null,
@@ -70493,9 +71083,9 @@
    "descZh": "将 DeepSeek Harness 连接到 GitHub MCP，提供仓库、Issue、Pull Request 和 Actions 工具。"
   },
   {
-   "file": "Lornatang__dsh-notion.yml",
-   "name": "Lornatang/dsh-notion",
-   "url": "https://github.com/Lornatang/dsh-notion",
+   "file": "Lornatang__dsh-plugin--packages-integrations-dsh-notion.yml",
+   "name": "Lornatang/dsh-plugin#dsh-notion",
+   "url": "https://github.com/Lornatang/dsh-plugin/tree/main/packages/integrations/dsh-notion",
    "category": "tools",
    "downloads": null,
    "stars": null,
@@ -70503,14 +71093,34 @@
    "descZh": "通过 Notion 官方 MCP 将工作区工具和资源接入 DeepSeek Harness。"
   },
   {
-   "file": "Lornatang__dsh-security-audit.yml",
-   "name": "Lornatang/dsh-security-audit",
-   "url": "https://github.com/Lornatang/dsh-security-audit",
+   "file": "Lornatang__dsh-plugin--packages-security-dsh-codex-security.yml",
+   "name": "Lornatang/dsh-plugin#dsh-codex-security",
+   "url": "https://github.com/Lornatang/dsh-plugin/tree/main/packages/security/dsh-codex-security",
+   "category": "security",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Agent-native static security review workbench with scan artifacts, finding triage, and SARIF/JSON exports.",
+   "descZh": "面向智能体的静态安全审查工作台：扫描产物、问题分级，以及 SARIF/JSON 导出。"
+  },
+  {
+   "file": "Lornatang__dsh-plugin--packages-security-dsh-security-audit.yml",
+   "name": "Lornatang/dsh-plugin#dsh-security-audit",
+   "url": "https://github.com/Lornatang/dsh-plugin/tree/main/packages/security/dsh-security-audit",
    "category": "security",
    "downloads": null,
    "stars": null,
    "descEn": "Security-audit skill for DeepSeek Harness: guided reviews, coverage-led codebase audits, structured findings, and report validators.",
    "descZh": "DeepSeek Harness 的安全审查技能：引导式审查、带覆盖账本的全库审计、结构化问题记录和报告校验器。"
+  },
+  {
+   "file": "Lornatang__dsh-plugin--packages-workflow-dsh-caveman.yml",
+   "name": "Lornatang/dsh-plugin#dsh-caveman",
+   "url": "https://github.com/Lornatang/dsh-plugin/tree/main/packages/workflow/dsh-caveman",
+   "category": "usage",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Caveman skills and tools for DeepSeek Harness: response styles, recoverable tool-result compression, model routing, browser tools, and delegation.",
+   "descZh": "为 DeepSeek Harness 提供 Caveman 技能与工具：响应风格、可恢复的工具结果压缩、模型路由、浏览器工具和委派。"
   },
   {
    "file": "LornBerry__dsh-memory-center.yml",
@@ -71663,6 +72273,16 @@
    "descZh": "向系统提示注入原生 Windows（非 WSL）环境下 PowerShell、字符编码、文件系统与跨平台构建的常见坑点。"
   },
   {
+   "file": "Luciferhhha__dsh-msg-retract.yml",
+   "name": "Luciferhhha/dsh-msg-retract",
+   "url": "https://github.com/Luciferhhha/dsh-msg-retract",
+   "category": "session",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Retracts a user message together with the reply it produced: the turn collapses to a stub in the transcript, an answer still being generated is stopped exactly as the stop button would stop it, and a retracted message can be restored afterwards. Steering messages passed to a running answer can be collapsed the same way without interrupting it.",
+   "descZh": "撤回一条用户消息及其回答：该轮在对话里折叠成占位，正在生成的回答会像按「停止」按钮一样中断，撤回后还能恢复；传入进行中回答的插话消息也能折叠，且不会打断回答。"
+  },
+  {
    "file": "lucifersteps__telos-harness.yml",
    "name": "lucifersteps/telos-harness",
    "url": "https://github.com/lucifersteps/telos-harness",
@@ -72253,6 +72873,16 @@
    "descZh": "为 DeepSeek Harness 增加内阁模式的研究团队预设：首辅与四阁臣。右侧栏「内阁」面板显示成员与派活状态，设置页「内阁成员」可编辑各成员的名称、画像、提示词与模型。"
   },
   {
+   "file": "luojiahao-cn__dsh-literature-lab.yml",
+   "name": "luojiahao-cn/dsh-literature-lab",
+   "url": "https://github.com/luojiahao-cn/dsh-literature-lab",
+   "category": "workflow",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Daily literature pipeline: collects new papers from arXiv, journal RSS, cross-database search and mail alerts, screens them in three AI passes (abstract, triage, full reading), fetches open-access PDFs, writes structured reading cards and files selected papers into Zotero.",
+   "descZh": "每日文献流水线：从 arXiv、期刊 RSS、跨库检索与邮件快讯采集新论文，按「摘要判读 → 初筛 → 精读」三层筛选，取回开放原文，生成结构化精读卡片并把选中的论文入库 Zotero。"
+  },
+  {
    "file": "luokexiaoguo__dsh-redact-gateway.yml",
    "name": "luokexiaoguo/dsh-redact-gateway",
    "url": "https://github.com/luokexiaoguo/dsh-redact-gateway",
@@ -72319,8 +72949,8 @@
    "category": "fun",
    "downloads": null,
    "stars": null,
-   "descEn": "Seasons DeepSeek Harness replies with a light dialect flavor — Northeast, Tianjin, Beijing or Cantonese — behind a five-step frequency ladder (off to about 50%), three intensity levels, and a per-session switch beside the composer. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "给 DeepSeek Harness 的回答偶尔掺一点方言口气（东北话、天津话、北京话、粤语），五档频率（关闭到约 50%）、三档强度，输入框旁可按会话单独切换。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Seasons DeepSeek Harness replies with a light dialect flavor — Northeast, Tianjin, Beijing, Cantonese or Hakka (Meizhou Xingning, experimental) — behind a five-step frequency ladder (off to about 50%), three intensity levels, and a per-session switch beside the composer.",
+   "descZh": "给 DeepSeek Harness 的回答偶尔掺一点方言口气（东北话、天津话、北京话、粤语、客家话·梅州兴宁，试验中），五档频率（关闭到约 50%）、三档强度，输入框旁可按会话单独切换。"
   },
   {
    "file": "luorenyu__dsh-deepsearch.yml",
@@ -73951,6 +74581,16 @@
    "stars": null,
    "descEn": "Off-peak scheduler for DeepSeek Harness: queue prompts to send automatically during DeepSeek off-peak hours, with peak/off-peak price fetching, low-balance alerts and a local usage ledger.",
    "descZh": "DSH 谷价调度器：把写好的指令排在 DeepSeek Harness谷价时段自动发送，附带峰谷价格与时段抓取、余额提醒与本机用量记账。"
+  },
+  {
+   "file": "marchinlab__dsh-quiet-whale-girl.yml",
+   "name": "marchinlab/dsh-quiet-whale-girl",
+   "url": "https://github.com/marchinlab/dsh-quiet-whale-girl",
+   "category": "fun",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A quiet 2.5D animated desktop pet for the DSH Web UI, built on LivLiv Player with the community Kujira whale-girl character. Drag to move, gaze follows the cursor, idle blink and smile, click to interact, and switch between Kujira and Kujira Q. Runs fully locally with no telemetry. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "基于 LivLiv Player 与鲸鱼娘（Kujira）社区角色的 2.5D 动画桌宠：可拖动、视线跟随鼠标、待机眨眼浅笑、点击互动，可切换 Kujira / Kujira Q 两只角色。纯本地运行，不联网、不上传数据。角色素材为 CC BY-NC-SA 4.0 非商用，署名详见仓库 CREDITS。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "MarchLiu__dsh-cybernetics.yml",
@@ -76243,6 +76883,26 @@
    "descZh": "把照片做成 Q 版桌宠：本地抠图、生成 dsh-pet 宠物包，并用程序化动作补齐全套动作，内置宠物不受影响。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
+   "file": "minggemofashi__dsh-pdf-workbench.yml",
+   "name": "minggemofashi/dsh-pdf-workbench",
+   "url": "https://github.com/minggemofashi/dsh-pdf-workbench",
+   "category": "docs",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A PDF reading workbench for DSH: book and chapter libraries, a built-in pdf.js reader, ink and shape annotations, bilingual translation overlays, a right-side preview, and ask-as-you-read conversations. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "面向 PDF 阅读的 DSH 工作台：书库与章节、内置 pdf.js 阅读器、手写与形状标注、双语翻译覆盖、右栏预览，以及随读随问的会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
+   "file": "MingGH__dsh-pin-top.yml",
+   "name": "MingGH/dsh-pin-top",
+   "url": "https://github.com/MingGH/dsh-pin-top",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Gathers DSH's pinned sessions into their own sidebar section with macOS-style colour labels, and adds locate, collapse-all and expand-all buttons to the workspace header.",
+   "descZh": "把 DSH 的置顶会话收进侧边栏独立分区并支持 macOS 式颜色标签，同时给工作区标题栏加上定位、全部收起、全部展开三个按钮。"
+  },
+  {
    "file": "MingHuanYue__dsh-iter-memory.yml",
    "name": "MingHuanYue/dsh-iter-memory",
    "url": "https://github.com/MingHuanYue/dsh-iter-memory",
@@ -76539,8 +77199,8 @@
    "category": "theme",
    "downloads": null,
    "stars": null,
-   "descEn": "Wallpaper Engine library behind the DSH GUI: video and image wallpapers stream from the local Steam library, app surfaces become dark glass, and a wallpaper/appearance panel controls both independently. Scene and web wallpapers are detected and can be replaced with a usable one in one click. An optional reversible app.asar patch adds a real Windows acrylic window. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "把本机 Wallpaper Engine 壁纸作为 DeepSeek Harness 界面背景：视频与图片壁纸从本地 Steam 库流式播放，界面转为深色玻璃，并可用面板分别控制壁纸源与外观。场景/网页类壁纸会被识别并可一键换成可用的壁纸；另有可选的可逆 app.asar 补丁，用于开启 Windows acrylic 透明窗口。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Wallpaper Engine library behind the DSH GUI: video and image wallpapers stream from the local Steam library, app surfaces become dark glass, and a wallpaper/appearance panel controls both independently. Scene and web wallpapers are detected and can be replaced with a usable one in one click. An optional reversible app.asar patch adds a real Windows acrylic window.",
+   "descZh": "把本机 Wallpaper Engine 壁纸作为 DeepSeek Harness 界面背景：视频与图片壁纸从本地 Steam 库流式播放，界面转为深色玻璃，并可用面板分别控制壁纸源与外观。场景/网页类壁纸会被识别并可一键换成可用的壁纸；另有可选的可逆 app.asar 补丁，用于开启 Windows acrylic 透明窗口。"
   },
   {
    "file": "misakalemon__dsh-session-backup.yml",
@@ -77321,6 +77981,16 @@
    "stars": null,
    "descEn": "A free-form grouping layer for the DSH sidebar: nest sessions from different workspaces into draggable groups without changing workspace membership or logs.",
    "descZh": "在 DSH 侧栏官方工作区管理之上增加一层独立自由分组：不同工作区的会话可归入同一多层分组，支持拖拽、搜索、恢复和可选 AI 控制，不改变原工作区归属与日志。"
+  },
+  {
+   "file": "momoqiqi-qwq__dsh-session-top-new-plus.yml",
+   "name": "momoqiqi-qwq/dsh-session-top-new-plus",
+   "url": "https://github.com/momoqiqi-qwq/dsh-session-top-new-plus",
+   "category": "session",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Session overview dock plus a sidebar activity bell for the DSH Web GUI — recent activity grouped by day in one panel, unread counted on the bell badge, reveal-in-sidebar jump, panel themes, do-not-disturb switches, and right-click bookmarks. A community edition of cuijiajun/dsh-session-top-new.",
+   "descZh": "DSH Web GUI 的会话总览：悬浮条 + 侧栏活动铃铛，最近活动按天分组、铃铛角标数着未读、跳转后侧栏自动定位、面板主题与免打扰开关、右键加书签。基于 cuijiajun/dsh-session-top-new 的社区中文增强版。"
   },
   {
    "file": "monagisa__dsh-plugin-shop-accounts.yml",
@@ -79713,6 +80383,16 @@
    "descZh": "早期导航站风格的 AI 入口页：8 个分类共 95 个核验过的入口，搜索框支持名称、别名与拼音缩写，可跳到站点自带搜索，支持浏览器书签导入；图标走同源代理，页面不直连第三方；另有离线规则推荐，按一句话需求给出互补的工具组合。"
   },
   {
+   "file": "naturalth2012__middle-earth-atlas.yml",
+   "name": "naturalth2012/middle-earth-atlas",
+   "url": "https://github.com/naturalth2012/middle-earth-atlas",
+   "category": "fun",
+   "downloads": null,
+   "stars": null,
+   "descEn": "An explorable atlas of The Hobbit, The Lord of the Rings and The Silmarillion: 68 characters with 236 curated relationships, a 46-event timeline across the Ages, 33 places, 14 artifacts, 40 quotes and a force-directed relationship graph with centrality analysis. Includes reading-progress views, three-sided thematic dialectics, book-vs-screen differences, and 17 playable avatar journeys with spoiler-gated choices. Unofficial study guide; not affiliated with any rights holder. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "《霍比特人》《魔戒》《精灵宝钻》可探索图鉴：68 位人物与 236 条关系、46 个纪元事件、33 个地点、14 件宝物、40 句名句，以及带中心性分析的关系图谱。含阅读进度视图、三方主题辩证、原著与改编差异，以及 17 位可扮演角色的剧情旅程。非官方导读工具，与任何权利方无关。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "naturalth2012__three-body-atlas.yml",
    "name": "naturalth2012/three-body-atlas",
    "url": "https://github.com/naturalth2012/three-body-atlas",
@@ -80241,6 +80921,16 @@
    "stars": null,
    "descEn": "Connects DeepSeek Harness agents to Nia Teams group chats with two-way messages, per-chat sessions, and human approval cards.",
    "descZh": "将 DeepSeek Harness 智能体接入 Nia Teams 群聊，支持双向消息、独立群聊会话和人工审批卡片。"
+  },
+  {
+   "file": "Nicecn__dsh-desktop-skin.yml",
+   "name": "Nicecn/dsh-desktop-skin",
+   "url": "https://github.com/Nicecn/dsh-desktop-skin",
+   "category": "theme",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Wallpaper-aware glass skin for DeepSeek Harness: every surface - top bar, sidebar, message cards, composer, menus and code blocks - becomes translucent glass with the wallpaper showing through, and the accent color is sampled from the wallpaper itself, so swapping the wallpaper retints the whole UI. Also restyles the message cards, repairs several host quirks (turn-rail jumps, bottom white band, double-scroll cards) and ships a six-tab settings panel with JSON config export/import.",
+   "descZh": "壁纸感知的 DeepSeek Harness 玻璃皮肤：顶条、侧栏、消息卡片、输入框、菜单与代码块等所有表面都变成半透明玻璃，壁纸从后面均匀透出，主题色直接从壁纸取色——换壁纸即换整套配色。另外重排了消息卡片、修掉宿主几处老毛病（刻度跳转失灵、底部白带、卡片双轴滚动），并带一个六标签设置面板与 JSON 配置导出导入。"
   },
   {
    "file": "nicecx__dsh-auto-approver.yml",
@@ -81473,6 +82163,16 @@
    "descZh": "Windows C 盘清理：扫描临时文件、浏览器缓存、更新残留、服务日志与崩溃转储并逐项预览占用，只清理白名单目录、跳过目录联接与被占用文件，同一套实现还提供三个 Agent 工具。它会永久删除你选中的文件，它的 HTTP 路由没有 DSH 的访问检查。"
   },
   {
+   "file": "notEatingOranges__oranges-dsh-skin.yml",
+   "name": "notEatingOranges/oranges-dsh-skin",
+   "url": "https://github.com/notEatingOranges/oranges-dsh-skin",
+   "category": "theme",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Wallpaper skin for the DSH web client: drop an image into the sidebar dialog and it repaints the interface, with sliders for wallpaper opacity, interface transparency, blur and dimming. The image stays in this browser (IndexedDB); no host behaviour, model requests or network calls.",
+   "descZh": "DSH Web 客户端的壁纸皮肤：在侧边栏对话框里拖入一张图片即可给界面换底，可调壁纸不透明度、界面透明度、模糊与压暗。图片只存在本机浏览器（IndexedDB），不涉宿主行为、模型请求或网络请求。"
+  },
+  {
    "file": "noteflowai__dsh-skills-anywhere.yml",
    "name": "noteflowai/dsh-skills-anywhere",
    "url": "https://github.com/noteflowai/dsh-skills-anywhere",
@@ -81661,6 +82361,16 @@
    "stars": null,
    "descEn": "Composer stats strip for the DSH Web UI: official CNY pricing with auto-synced peak/off-peak tiers, per-model accounting, live timers, subagent-tree merging, DeepSeek account balance, budget alerts, and streaming cost estimation.",
    "descZh": "DSH Web 输入框下方的增强统计条：官方人民币计价（峰谷分时、价目自动同步）、多模型分账、实时计时、子代理树合并、余额直连、预算预警与流式成本估算。"
+  },
+  {
+   "file": "NULLCOLORcat__dsh-Agent-team-fix.yml",
+   "name": "NULLCOLORcat/dsh-Agent-team-fix",
+   "url": "https://github.com/NULLCOLORcat/dsh-Agent-team-fix",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Routes DSH Agent Team members to configured models for routine or difficult tasks.",
+   "descZh": "为 DSH Agent Team 成员按日常任务和困难任务配置不同的模型。"
   },
   {
    "file": "nullptr-DZF__dsh-academic-research-skills.yml",
@@ -82083,6 +82793,16 @@
    "descZh": "端口扳手的 DSH 面板：在 DSH 内查看监听端口、识别占用进程、关闭进程树；仅 Windows，需先安装并运行 PortWrench 本体。"
   },
   {
+   "file": "oldtommmy__notifyhub--integrations-dsh.yml",
+   "name": "oldtommmy/notifyhub#dsh",
+   "url": "https://github.com/oldtommmy/notifyhub/tree/main/integrations/dsh",
+   "category": "notify",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Sends DeepSeek Harness completion notifications to Feishu and optionally continues dsh or Codex desktop conversations from Feishu.",
+   "descZh": "将 DeepSeek Harness 完成结果发到飞书，并可按需在飞书续聊 dsh 或 Codex 桌面会话。"
+  },
+  {
    "file": "oldzhang82__dsh-tps-ttft.yml",
    "name": "oldzhang82/dsh-tps-ttft",
    "url": "https://github.com/oldzhang82/dsh-tps-ttft",
@@ -82239,8 +82959,8 @@
    "category": "docs",
    "downloads": null,
    "stars": null,
-   "descEn": "FishPai: a Markdown editor and WeChat Official Account typesetting tool with themes, interactive components, collaborative editing, and clipboard-ready HTML. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "鱼排：公众号排版与 Markdown 编辑器，支持微信 HTML、主题、交互组件、协同改稿与一键复制。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "FishPai: a WeChat Official Account typesetting and editing workbench with a professional canvas, interactive components, and human-model collaboration.",
+   "descZh": "鱼排：公众号排版与改稿工具，支持专业画布、交互组件、人与模型协同与一键复制到微信。"
   },
   {
    "file": "OMSociety__dsh-git-forge.yml",
@@ -82931,6 +83651,16 @@
    "stars": null,
    "descEn": "Session-header fishbone panel for sub-agent assignments, live status, available token and duration metrics, shared task-board entries, and native child-session navigation.",
    "descZh": "会话标题栏鱼骨图面板，展示子代理分工、实时状态、可用的 Token 与耗时指标及共享任务，并支持跳转子会话。"
+  },
+  {
+   "file": "Ouyangyouzi__dsh-whale-backup.yml",
+   "name": "Ouyangyouzi/dsh-whale-backup",
+   "url": "https://github.com/Ouyangyouzi/dsh-whale-backup",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Whale Girl Backup — one-click backup and restore for DSH: packs chat history, plugins, plugin data, settings and project files into a SHA-256-verified archive on local disk or WebDAV, with scheduled runs, optional SMTP notices and a whale-backup CLI.",
+   "descZh": "鲸鱼娘备份 — 一键备份与恢复：把聊天记录、插件、插件数据、设置和项目文件打包成带 SHA-256 校验的归档，可存到本机或 WebDAV；支持计划任务、恢复前安全备份与同名冲突策略，并提供 whale-backup 命令行。"
   },
   {
    "file": "overact__dsh-multi-window-context-management.yml",
@@ -84543,6 +85273,16 @@
    "descZh": "依据《病历书写基本规范》等公开文件，核对护理记录的书写时限、签名，以及评估表的完整性。列出缺失或次序不符之处供人复核。"
   },
   {
+   "file": "PerryLink__dsh-os--packages-allow.yml",
+   "name": "PerryLink/dsh-os#allow",
+   "url": "https://github.com/PerryLink/dsh-os/tree/main/packages/allow",
+   "category": "security",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Revocable, expiring capability grants with scope and a local audit trail for DSH plugins and out-of-turn authorization checks. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "可撤销、可过期的能力授权，带范围和本地审计记录，供 DSH 插件与回合外操作做授权检查。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "PerryLink__dsh-ota-review-check.yml",
    "name": "PerryLink/dsh-ota-review-check",
    "url": "https://github.com/PerryLink/dsh-ota-review-check",
@@ -85573,6 +86313,16 @@
    "descZh": "为 DSH 提供兼容 SillyTavern 的角色扮演，支持角色卡、预设、世界书及保留后续对话的 swipe 分支，并可切回原生会话视图。"
   },
   {
+   "file": "player462__dsh-pptx-animation.yml",
+   "name": "player462/dsh-pptx-animation",
+   "url": "https://github.com/player462/dsh-pptx-animation",
+   "category": "docs",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Native PowerPoint animation studio: compile a declarative DSL into editable p:timing OOXML, with physical motion curves carrying real inertial overshoot (seven shapes, including acceleration from rest), cross-slide Morph transitions, p:sld element-order validation, and a verify mode that checks transitions in a real PowerPoint.",
+   "descZh": "PowerPoint 原生动画工作台：把声明式 DSL 编译成可编辑的 p:timing OOXML，物理运动曲线带真实惯性过冲（七种形态，含从静止加速），支持跨页 Morph 平滑切换、p:sld 元素顺序校验，以及用真实 PowerPoint 核对切换是否生效的 verify 模式。"
+  },
+  {
    "file": "PlayerOneD__dsh-theme-matrix.yml",
    "name": "PlayerOneD/dsh-theme-matrix",
    "url": "https://github.com/PlayerOneD/dsh-theme-matrix",
@@ -85891,6 +86641,16 @@
    "stars": null,
    "descEn": "Run several DeepSeek Harness sessions side by side, hand work from one to another, and watch the whole collaboration on one read-only canvas.",
    "descZh": "并排运行多个 DeepSeek Harness 会话，让它们互相交接任务，并在同一张只读看板上看清整场协作。"
+  },
+  {
+   "file": "pordlm__py-academic-fig-skill.yml",
+   "name": "pordlm/py-academic-fig-skill",
+   "url": "https://github.com/pordlm/py-academic-fig-skill",
+   "category": "skill",
+   "downloads": null,
+   "stars": null,
+   "descEn": "DSH skill and Python toolkit for plotting academic figures and diagrams with Matplotlib, including PNG/PDF export and figure QA.",
+   "descZh": "用于通过 Matplotlib 绘制学术图表与示意图的 DSH Skill 和 Python 工具包，支持 PNG/PDF 导出与图形质量检查。"
   },
   {
    "file": "poxiao-12138__dsh-poxiao-qqbot.yml",
@@ -87763,6 +88523,16 @@
    "descZh": "确定性的字数统计工具：中文按字、西文按词，另给标点／字符／字素／行数与 UTF-8 字节，并可用 min／max 区间直接判定是否达标。"
   },
   {
+   "file": "qqq111QQQ-11__dsh-bilibili.yml",
+   "name": "qqq111QQQ-11/dsh-bilibili",
+   "url": "https://github.com/qqq111QQQ-11/dsh-bilibili",
+   "category": "fun",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Bilibili inside DeepSeek Harness: home feed, hot lists, rankings and search; QR or SMS sign-in, then like, coin, favorite, follow and comment without leaving the app. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "在 DeepSeek Harness 里逛 B 站：首页推荐、热门、榜单、搜索与看视频；支持扫码／短信登录，登录后可点赞、投币、收藏、关注与评论。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "qqq111QQQ-11__dsh-github.yml",
    "name": "qqq111QQQ-11/dsh-github",
    "url": "https://github.com/qqq111QQQ-11/dsh-github",
@@ -88281,6 +89051,16 @@
    "stars": null,
    "descEn": "Adds an avatar to the left of each turn's final AI reply and to the right of each user message; upload your own image and set its size and circle or square frame.",
    "descZh": "在每轮 AI 回复左侧与你的每条输入右侧各显示一个头像，可上传自己的图片并设置尺寸与圆形/方形头像框。"
+  },
+  {
+   "file": "rabbit-flash__dsh-prompt-optimizer.yml",
+   "name": "rabbit-flash/dsh-prompt-optimizer",
+   "url": "https://github.com/rabbit-flash/dsh-prompt-optimizer",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Rewrites the composer draft with the session's own model and shows an estimated before/after prompt quality score across six dimensions. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "用当前会话模型重写输入框草稿，并给出优化前后六维提示词质量估分对比。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "rabbitRa-git__dsh-progress-report.yml",
@@ -89411,6 +90191,16 @@
    "stars": null,
    "descEn": "Distill any link into Markdown, a wiki or a knowledge base. Installs per host: DSH -> envoy-dsh; Claude Code/Codex -> envoy@envoy. Douyin/Bilibili video, image posts, WeChat, Xiaohongshu, PDFs, podcasts. Video is read on its own timeline with keyframes and ASR transcripts locatable to [mm:ss], so the context carries what was said and shown instead of the title and the recommendation rail. On 60 turns with vs without: ends normally with the gaps named 22% -> 92%, times out 68% -> 0% (the A/B is exploratory: different time caps, no human correctness review). On 123 live links 80% came back usable (93% of the pages that answered).",
    "descZh": "蒸馏一切链接，出摘要、Markdown、Wiki 或知识库。装法按宿主：DSH → envoy-dsh；Claude Code、Codex → envoy@envoy。抖音与 B 站视频、图文笔记、公众号、小红书、PDF、播客都在内。视频按时序读：关键帧配 ASR 转写，内容定到 [mm:ss]，上下文里是实际说过、看得见的东西，不是标题和推荐流。同一批题 60 轮对照：正常读完并把缺口说清 22% → 92%，跑到超时 68% → 0%（这组 A/B 是探索性的：两臂时限不同、未做人工正确性复核）。123 条真实链接里 80% 能直接当素材（能连上的页面里 93%）。"
+  },
+  {
+   "file": "regrevia__github-overview--plugin.yml",
+   "name": "regrevia/github-overview#plugin",
+   "url": "https://github.com/regrevia/github-overview/tree/main/plugin",
+   "category": "dev",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Adds github_overview, which reads the dashboard you run locally over its own HTTP API instead of estimating numbers. It returns browsed views and unique visitors, git clones, npm downloads, the 14-day funnel, per-repository rows with stored-day counts, external issue and pull counts, and star growth, plus the served origin and sync time so a stale read is visible. Unbound or offline yields a reason instead of zeros.",
+   "descZh": "带一个 github_overview 工具：从你自己在本机跑的看板 HTTP API 读数，不做估算。返回浏览与去重访客、git 克隆、npm 下载、14 天漏斗、每个仓库一行并标明已存天数、外部 issue 与 PR 计数、star 增量，同时给出数据来自哪个地址和同步时间，读到旧数据能看出来。没绑定或看板没运行会返回原因，不返回零。"
   },
   {
    "file": "regrevia__pocket-harness--plugins-pocket-harness.yml",
@@ -90641,6 +91431,16 @@
    "stars": null,
    "descEn": "Password gate for DSH: once locked, the unlock screen asks for an identity name, identity number, permission level and password in that order, and opens only when all four match. Offers a confirmed sidebar lock button, three lock-timing modes (on launch, on every page load, manual only), a security question that restores any forgotten field, and it pauses a startup-animation plugin until after unlocking. A soft lock against casual access, not disk encryption.",
    "descZh": "DSH 四重身份门禁：锁定后按顺序验证身份名称、身份编号、权限等级与密码，四项全对才解锁；支持侧边栏手动锁定（先确认）、三档锁定时机（启动时 / 每次页面加载 / 仅手动）、密保问题恢复任一遗忘字段，并会在锁定期间拦下启动动画插件、解锁后重播。这是防随手操作的软锁，不是磁盘加密。"
+  },
+  {
+   "file": "ru-data-analysis__ru-corpus--packages-dsh-ru-corpus.yml",
+   "name": "ru-data-analysis/ru-corpus#dsh-ru-corpus",
+   "url": "https://github.com/ru-data-analysis/ru-corpus/tree/main/packages/dsh-ru-corpus",
+   "category": "docs",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Search and number checking over a local Russian-language document corpus (PDF, scans via OCR, Excel, Word, wide landscape PDF tables): seven corpus_* tools for search, page text, table cells, document card, number check, column totals and exact calculation; needs the ru-corpus-kit Python package.",
+   "descZh": "本地俄语文档语料库（PDF、OCR 扫描件、Excel、Word、横向宽表格）的检索与数字核验：七个 corpus_* 工具，用于检索、页面文本、表格单元格、文档卡片、数字核验、列合计与精确计算；需要 Python 包 ru-corpus-kit。"
   },
   {
    "file": "Ruacha00__dsh-popnotify.yml",
@@ -93523,6 +94323,16 @@
    "descZh": "dsh 的 Git worktree 管理——按仓库聚合工作区，创建与切换 worktree，并查看变更、提交历史与文件差异。"
   },
   {
+   "file": "ShenpingDD__dsh-4quadrant-todo.yml",
+   "name": "ShenpingDD/dsh-4quadrant-todo",
+   "url": "https://github.com/ShenpingDD/dsh-4quadrant-todo",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Four-quadrant todo board for the desktop sidebar: drag between quadrants, due dates, reminders, per-workspace stats and optional Feishu sync. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "桌面侧栏的四象限待办看板：象限间拖拽、截止时间与提醒、按工作区统计，可选飞书同步。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "ShenpingDD__wooden-fish-dsh.yml",
    "name": "ShenpingDD/wooden-fish-dsh",
    "url": "https://github.com/ShenpingDD/wooden-fish-dsh",
@@ -93813,6 +94623,16 @@
    "descZh": "动森风手账主题：渡岛船票品牌区、奶油手账纸、覆盖 118 项 ThemeRuntime token、应用内外观设置与夜岛星空。"
   },
   {
+   "file": "Shirolin__dsh-theme-splat-ui.yml",
+   "name": "Shirolin/dsh-theme-splat-ui",
+   "url": "https://github.com/Shirolin/dsh-theme-splat-ui",
+   "category": "theme",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Splatoon 2 inspired theme with tri-band ink canvas, 118 ThemeRuntime tokens, Special Gauge boot loader, and day/night palettes.",
+   "descZh": "斯普拉遁 2 风格墨街主题：三色涂地画布、覆盖 118 项 ThemeRuntime token、24 格大招启动槽、应用内外观设置与日夜双配色。"
+  },
+  {
    "file": "shisuiqingqian__dsh-video-kit.yml",
    "name": "shisuiqingqian/dsh-video-kit",
    "url": "https://github.com/shisuiqingqian/dsh-video-kit",
@@ -93981,6 +94801,16 @@
    "stars": null,
    "descEn": "Plays MP4, M4V and MOV videos in the DSH right sidebar using the native video player, replacing the \"this file type cannot be previewed\" placeholder.",
    "descZh": "用原生播放器在 DSH 右栏播放 MP4 / M4V / MOV，替掉「此文件类型不支持预览」的占位提示。"
+  },
+  {
+   "file": "shskyc__dsh-conversation-search.yml",
+   "name": "shskyc/dsh-conversation-search",
+   "url": "https://github.com/shskyc/dsh-conversation-search",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Adds a Ctrl+F find panel to the conversation: lists matches with context, highlights every match in place, and jumps to the exact position via Previous, Next, or clicking a result.",
+   "descZh": "在会话中按 Ctrl+F 打开查找面板：列出匹配项及上下文，全部匹配原文高亮，上一处、下一处或点击结果精确跳转到对应位置。"
   },
   {
    "file": "shua-781__dsh-beme.yml",
@@ -94809,8 +95639,8 @@
    "category": "tools",
    "downloads": null,
    "stars": null,
-   "descEn": "Generates images and video from chat using your own Muse account's free weekly allowance, with no API key: it drives the Chrome you are already signed in to, and shows the remaining quota beside the composer. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "在对话里用你自己 Muse 账号的每周免费额度生成图片和视频，不需要 API key：驱动你已登录的 Chrome，并在输入框旁显示剩余额度。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Generates images and video from chat using your own Muse account's free weekly allowance, with no API key: it drives the Chrome you are already signed in to, and shows the remaining quota beside the composer.",
+   "descZh": "在对话里用你自己 Muse 账号的每周免费额度生成图片和视频，不需要 API key：驱动你已登录的 Chrome，并在输入框旁显示剩余额度。"
   },
   {
    "file": "sj244__dsh-qq-bridge.yml",
@@ -97229,8 +98059,8 @@
    "category": "dev",
    "downloads": null,
    "stars": null,
-   "descEn": "Plugin diet and compatibility diagnostics for DeepSeek Harness: scans context cost and plugin/runtime/profile conflicts, then applies low-risk reversible trims only after confirmation; ships a Web settings console.",
-   "descZh": "DSH 插件减负与兼容性体检：扫描上下文成本与插件/运行时/Profile 冲突，只在确认后应用低风险、可回滚的精简项；带 Web 设置控制台。"
+   "descEn": "Four-check plugin checkup for DeepSeek Harness: load, compatibility, context, and a read-only compaction-stack audit; active compaction backends are protected, low-risk trims are reversible, and the next checkup measures the apply result.",
+   "descZh": "DSH 插件四维体检：加载、兼容、上下文与只读压缩链路审计；活跃压缩后端受保护，低风险瘦身可回滚，下一次体检结算实测收益。"
   },
   {
    "file": "StarMoon-win__dsh-restart-plugin.yml",
@@ -97933,6 +98763,16 @@
    "descZh": "DSH 的 MCP 开关面板：可以按服务器整体开关，也可以只隐藏某个工具，还能看到每个服务器的工具定义占用了多少上下文 token。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
+   "file": "success-c__dsh-smart-model-failover.yml",
+   "name": "success-c/dsh-smart-model-failover",
+   "url": "https://github.com/success-c/dsh-smart-model-failover",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Discovers the models of every configured and externally connected provider at runtime, switches to the next one when a request fails, and asks the agent to continue the interrupted work. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "运行时发现所有已配置及外部接入厂商的可用模型，请求失败时自动切到下一个，并让 agent 继续被中断的工作。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "SuCriss__dsh-leekbox.yml",
    "name": "SuCriss/dsh-leekbox",
    "url": "https://github.com/SuCriss/dsh-leekbox",
@@ -98433,6 +99273,16 @@
    "descZh": "DeepSeek Harness 的 MiniMax 音色工作台：用音频样本复刻音色，复刻后用接口返回的试听音频直接试听（不额外合成，因此不触发按音色计费），把文本合成为本地 mp3，用 asr-1.0 转写音频，并在设置面板里管理音色库、API Key 与这些操作；提供 4 个 agent 工具与本地 HTTP 接口。"
   },
   {
+   "file": "Sunshine334419520__dsh-trackpad-zoom.yml",
+   "name": "Sunshine334419520/dsh-trackpad-zoom",
+   "url": "https://github.com/Sunshine334419520/dsh-trackpad-zoom",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Browser-style trackpad pinch zoom for the DSH conversation column and Markdown previews: keeps line breaks, anchors at the pointer, pans horizontally above 100%, and remembers one factor per surface.",
+   "descZh": "为 DSH 对话区与 Markdown 预览加上浏览器式触摸板捏合缩放：保持换行、以指针为中心、超过 100% 可横向平移，两个区域各自记忆比例。"
+  },
+  {
    "file": "Sunshine334419520__smart-selection-translate.yml",
    "name": "Sunshine334419520/smart-selection-translate",
    "url": "https://github.com/Sunshine334419520/smart-selection-translate",
@@ -98691,6 +99541,16 @@
    "stars": null,
    "descEn": "Refines the DeepSeek Harness interface for reading by adjusting layouts and reducing persistent controls. Built for DSH 0.2.2-rc.1 (Web UI); other versions are untested.",
    "descZh": "调整 DeepSeek Harness 界面布局并减少常驻按钮，以突出阅读内容。针对 DSH 0.2.2-rc.1 的 Web 界面制作，其他版本未验证。"
+  },
+  {
+   "file": "superltmajor-pixel__dsh-structured-output.yml",
+   "name": "superltmajor-pixel/dsh-structured-output",
+   "url": "https://github.com/superltmajor-pixel/dsh-structured-output",
+   "category": "identity",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Adds response guidelines for concise answers to simple questions and structured answers to complex tasks, with extra hints for explicit requests at the start of a message for JSON, a comparison table, or a detailed explanation.",
+   "descZh": "为聊天加入自适应表达规则，引导模型简单问题直接答、复杂任务分层回答，并在消息开头明确要求 JSON、表格对比或详细解释时追加相应提示。"
   },
   {
    "file": "superShen0916__dsh-work-skin.yml",
@@ -99701,6 +100561,16 @@
    "stars": null,
    "descEn": "Read-only diagnosis for a model provider that stopped working. Walks the connection chain one link at a time — host runtime and profile identity, the plugin row, whether the provider route is registered, whether it is configurable, the credential metadata the provider itself reports, the model catalogue, the provider's own diagnostic and the last recorded request — and labels each link observed, inferred or unavailable rather than guessing. Diagnoses the `workbuddy`, `workbuddy-ai` and `zcode-cli` routes from their plugins' public diagnostic commands, and adds a sidebar panel plus a copyable redacted report. The offline pass sends no model request, starts no process and reads no credential file; the connection check is a separate opt-in the panel describes before running it. Version 0.1.10 applies the synchronous Host request policy followed by owner admission to all five HTTP routes before diagnostic actions; missing, throwing, malformed or asynchronous admission services fail closed. Declared hosts are DSH 0.2.2-rc.1 and 0.2.2-rc.3. Version 0.1.11 has been verified with DSH 0.2.2-rc.5.",
    "descZh": "面向「某个模型提供方突然不可用」的只读诊断。逐段走完整条连接链路——宿主运行时与 profile 身份、插件条目、provider 路由是否已注册、是否可配置、provider 自己报出的凭据元数据、模型目录、provider 自带诊断、最近一次请求记录——并把每一段标成直接观测、推断或无法取得，而不是猜。通过 WorkBuddy 与 ZCode 插件公开的诊断命令检查 `workbuddy`、`workbuddy-ai` 和 `zcode-cli` 三条路由，附带侧栏面板与可复制的脱敏报告。基础检查不发模型请求、不起进程、不读凭据文件；连接检查是单独的可选项，面板会在运行前说明它要做什么。 0.1.10 对五条 HTTP 路由先执行同步宿主请求策略，再验证 owner 后才运行诊断动作；服务缺失、抛错、畸形或异步返回均拒绝。声明支持 DSH 0.2.2-rc.1 与 0.2.2-rc.3。 0.1.11 已在 DSH 0.2.2-rc.5 验证。"
+  },
+  {
+   "file": "tangyixiao__dsh-sylvan-appearance.yml",
+   "name": "tangyixiao/dsh-sylvan-appearance",
+   "url": "https://github.com/tangyixiao/dsh-sylvan-appearance",
+   "category": "theme",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Native appearance settings for DeepSeek Harness with the Sylvan theme, a live theme editor and JSON import/export. Verified on DSH Web 0.2.2-rc.3 and the Desktop 0.2.2-rc.5 bundled host.",
+   "descZh": "在 DSH 设置中切换、编辑和分享主题。内置 Sylvan · 松雨，支持实时预览和 JSON 导入导出。已验证 Web 0.2.2-rc.3 和 Desktop 0.2.2-rc.5 随包宿主。"
   },
   {
    "file": "tangyixiao__dsh-task-signal.yml",
@@ -100893,6 +101763,16 @@
    "descZh": "从 DeepSeek Harness 驱动团结引擎编辑器：连接已运行编辑器的 Codely 桥，创建与修改 GameObject、改组件属性、执行编辑器命令，并在编辑器进程里跑 C#。改自 opdsh/unity-plugin，适配团结引擎的 Codely 桥。"
   },
   {
+   "file": "TheSeeker1993__dsh-chatgpt-multi-account.yml",
+   "name": "TheSeeker1993/dsh-chatgpt-multi-account",
+   "url": "https://github.com/TheSeeker1993/dsh-chatgpt-multi-account",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Assign ChatGPT accounts to individual DeepSeek Harness sessions and view subscription quotas.",
+   "descZh": "给 DeepSeek Harness 的各个会话分配 ChatGPT 账号，并查看订阅额度。"
+  },
+  {
    "file": "theskywilldawn__dsh-littlestar-anything-voice.yml",
    "name": "小星辰任意语音",
    "url": "https://github.com/theskywilldawn/dsh-littlestar-anything-voice",
@@ -101843,6 +102723,16 @@
    "descZh": "为 DSH 增加 /if 斜杠命令：第一行是条件，其余行是指令。由继承当前会话工具、system prompt 与消息历史的 fork 子代理判断条件并回答 YES 或 NO，只有 YES 才把指令作为一条普通用户消息发给主 agent，NO 则什么都不发送；条件、判断用的 prompt 与判断结果都不会写进主会话。模型工作时命令与普通消息一起排队，可在队列面板里编辑、删除、插话，设置里可切回 0.2.x 的后台模式。判断以只读方式运行，宿主没有可继承上下文的 fork provider 时回退为一次性模型调用加纯文本记录。适配 DSH 0.2.1-rc.5 及以上（已在 0.2.1-rc.5 与 0.2.2-rc.1 验证），需 Node.js 20.3 或更新版本。"
   },
   {
+   "file": "TLEWA__dsh-image-formats.yml",
+   "name": "TLEWA/dsh-image-formats",
+   "url": "https://github.com/TLEWA/dsh-image-formats",
+   "category": "vision",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Extends read_image and the composer to accept AVIF, TIFF and SVG by converting them to PNG first, reusing the Sharp build already shipped with DSH on the host and the browser decoder in the client, with no added runtime dependency.",
+   "descZh": "让 read_image 与输入框接受 AVIF、TIFF、SVG：宿主侧复用 DSH 自带的 Sharp、客户端复用浏览器解码器，先转成 PNG 再走原有附件链路，不新增运行时依赖。"
+  },
+  {
    "file": "TLEWA__dsh-opencode-go-router.yml",
    "name": "TLEWA/dsh-opencode-go-router",
    "url": "https://github.com/TLEWA/dsh-opencode-go-router",
@@ -101851,6 +102741,16 @@
    "stars": null,
    "descEn": "Keeps prompt caches warm for OpenCode Go DeepSeek conversations by predicting each request's cache hit before it is sent, rotating the x-opencode-session routing id when that request would be cold and recent requests are slow, and pooling idle warm ids for reuse by new conversations.",
    "descZh": "为 OpenCode Go 的 DeepSeek 会话保持提示缓存命中：在请求发出前预测其缓存命中率，当该请求预计变冷且近期请求偏慢时轮换 x-opencode-session 路由 id，并把空闲的暖 id 放入池中供新会话复用。"
+  },
+  {
+   "file": "TLEWA__dsh-ps51-guard.yml",
+   "name": "TLEWA/dsh-ps51-guard",
+   "url": "https://github.com/TLEWA/dsh-ps51-guard",
+   "category": "dev",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Guards Windows PowerShell 5.1 commands run through ops_bash by passing the script as UTF-16LE, restoring quoting that bash expansion destroyed, rewriting syntax and encoding switches 5.1 lacks, normalizing exit codes and output, and redirecting powershell to pwsh 7 by default.",
+   "descZh": "为经 ops_bash 调用的 Windows PowerShell 5.1 提供护栏：以 UTF-16LE 传输脚本，还原被 bash 展开破坏的引号，改写 5.1 不支持的语法与编码开关，归一化退出码与输出，并默认把 powershell 重定向到 pwsh 7。"
   },
   {
    "file": "TLEWA__dsh-ptc-noargs.yml",
@@ -102521,6 +103421,16 @@
    "stars": null,
    "descEn": "Pause or resume the running task from a 28 px button beside the DSH composer: safe pause lets the current step finish, holds the next agent/pre-step boundary, and resumes the same turn without a continuation message; force pause cancels immediately, and the default granularity is configurable in Settings.",
    "descZh": "在 DSH 输入框旁用一枚 28px 按钮暂停/恢复正在运行的任务：安全暂停会先跑完当前步骤，再挂在下一个 agent/pre-step 边界，恢复时原地继续同一轮且不插入续跑消息；强制暂停立即取消；默认粒度可在设置中配置。"
+  },
+  {
+   "file": "TreatTrick__dsh-plugin-reply-with-images.yml",
+   "name": "TreatTrick/dsh-plugin-reply-with-images",
+   "url": "https://github.com/TreatTrick/dsh-plugin-reply-with-images",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Searches and embeds reference images into DeepSeek Harness replies with table, collage, strip, and single layouts, using Bing, 360, Baidu, and Wikimedia Commons fallback, native attachment storage, and an optional Web layout client.",
+   "descZh": "为 DeepSeek Harness 回答自动搜索并嵌入参考图片，支持目录表格、三图拼贴、横向图集与单图四种布局，内置 Bing/360/百度/Wikimedia Commons 回退链、原生附件持久化与可选 Web 端排版增强。"
   },
   {
    "file": "TreeCodeTyper__dsh-blender-mc.yml",
@@ -103453,6 +104363,16 @@
    "descZh": "在侧边栏增加设记 Design Memory 组件库面板：按资产类型浏览，支持实时预览、查看设计参数并复制 HTML/CSS/JS。组件页面随插件打包，字体与图片从公开资源库站点加载。"
   },
   {
+   "file": "UNIEPOpep__dsh-attempt-recover.yml",
+   "name": "UNIEPOpep/dsh-attempt-recover",
+   "url": "https://github.com/UNIEPOpep/dsh-attempt-recover",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Renders the text a failed or interrupted turn had already generated as a collapsible block beside that turn in the chat, with a button per section that appends that text back into the conversation context.",
+   "descZh": "把失败或中断的回合里已经生成、却没有进入对话历史的文本，以可折叠块画在该回合下方，并可一键把这段内容加回对话上下文。"
+  },
+  {
    "file": "unifilitence__dsh-notify-say.yml",
    "name": "unifilitence/dsh-notify-say",
    "url": "https://github.com/unifilitence/dsh-notify-say",
@@ -103611,6 +104531,16 @@
    "stars": null,
    "descEn": "Per-conversation system prompt studio for DeepSeek Harness. Append text, shadow-replace one named first-party prompt section, or replace the whole system prompt; changes apply on the next model request without a restart. Overrides persist per session and are inherited by forked conversations along the parent chain, with a Pin action to freeze the inherited result locally. The panel lists the real assembled sections and guards unsaved edits.",
    "descZh": "按对话管理 DeepSeek Harness 的系统提示词：追加文本、按名替换某一第一方段落，或整段替换，保存后下一次模型请求即生效，无需重启。覆盖按会话持久化，fork 出的对话会沿父链继承上游规则，并可用「在此固定」把继承结果固化成本地规则。面板会列出真实的装配段清单，并对未保存的修改做保护。"
+  },
+  {
+   "file": "useragent-1__dsh-cnb.yml",
+   "name": "useragent-1/dsh-cnb",
+   "url": "https://github.com/useragent-1/dsh-cnb",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "CNB (cnb.cool) integration: WeChat QR sign-in, repository and environment control, organization usage, and CNB AI gateway wiring. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "CNB（cnb.cool）集成：微信扫码登录、仓库与云原生开发环境管理、组织用量统计，以及 CNB AI 网关接入。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "usersx__dsh-automation-center.yml",
@@ -104459,8 +105389,8 @@
    "category": "tools",
    "downloads": null,
    "stars": null,
-   "descEn": "Pack several DeepSeek Harness plugins into one .dshpack and install them in one pass. Both formats ship a standalone installer, so a machine with only a bare DSH can install (payloads go to a local vendor folder, installed plugins are skipped unless --replace). Packing always scans for secrets and risky code; high-risk hits pause until you confirm, then the same job resumes without scanning again. Installing shares the progress dock, skips plugins you already have and then lets you replace them with the packed versions; when you are online the market version is preferred. Packs can be opened with a file or folder picker, any directory, an imported-packs list or a link. Categories, search, paging and same-name entries come from the plugin-market catalog.",
-   "descZh": "把多个 DeepSeek Harness 插件打成一个 .dshpack 一次装好；两种包都带独立安装器，对方只剩一个裸 DSH 也能装（插件复制进本机 vendor 再登记，默认跳过已装的，加 --replace 才覆盖）。打包前强制查敏感信息与风险代码，高危先停下等你确认，确认后同一任务从检测点续跑、不再重扫。安装与打包共用进度窗，先跳过本机已装的插件，装完再让你选是否替换；联网时优先用市场版本。取包支持文件/文件夹选择器、任意目录、已导入列表与链接。分类/搜索/分页/同名切换市场版都与插件市场同源。"
+   "descEn": "Who says DSH cannot do modpacks? (Put these plugins together and it is genuinely good.) PCL/HMCL-style modpack tool: bundle plugins with their config and data into one .dshpack - one-click pack, one-click install, works offline, no installing each plugin by hand when moving machines. Also called plugin bundling, custom install, batch install, offline install, migrating or backing up plugin config, sharing a plugin combo. Three strategies - full (offline), download-only (smallest), hybrid (per plugin) - all ship a standalone installer, so a bare DSH can install it: copy into vendor, then register; installed ones are skipped unless you pass --replace. While installing you can pick plugins, choose packed or local config, enable all or keep them off, and sync market groups; sha256, dependencies and licences are checked before installing. Sources: file or folder picker, any directory, imported list and links; categories, search, paging, same-name market switch and groups come from the plugin market, and search can use its AI search on newer versions. Plugin market recommended, not required. npm: https://www.npmjs.com/package/dsh-modpack-kit",
+   "descZh": "谁说dsh不能整整合包呢？（你说这几个插件整一块不牛逼坏了） 类似 HMCL / PCL 的 DSH 整合包工具：把多个插件连同配置与数据打成一个 .dshpack，一键打包、一键安装、离线可装，换机器不用逐个装。 也叫插件打包、自定义安装、批量安装、离线安装、迁移或备份插件配置、分享插件组合。 三种策略：完整包（离线可装）、仅下载码（最小）、混合包（按插件分档），都带独立安装器，裸 DSH 也能装：先复制进 vendor 再登记，已装的默认跳过，--replace 才覆盖。 安装时可逐个挑插件、选包内配置或保留本机、整体启用或先不启用，并同步市场分组；装前校验 sha256、依赖与许可证。 取包支持文件/文件夹选择器、任意目录、已导入列表与链接；分类、搜索、分页、同名切市场版与分组都和插件市场同源，搜索可用市场的新版 AI 搜索。 建议先装插件市场（dshmarket），不是必须。npm：https://www.npmjs.com/package/dsh-modpack-kit"
   },
   {
    "file": "vfuncyy__dsh-edge-bridge--plugin.yml",
@@ -104933,6 +105863,16 @@
    "descZh": "青简写作桥：agent 通过 qing_ 前缀工具起草改稿，右侧宣纸面板排版呈现（mermaid、drawio、表格、公式）；每处修改先摆在纸上供审阅，提交才落稿。需本机运行开源的青简桌面客户端。"
   },
   {
+   "file": "voidwrathhh__dsh-tao-prompt.yml",
+   "name": "voidwrathhh/dsh-tao-prompt",
+   "url": "https://github.com/voidwrathhh/dsh-tao-prompt",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A prompt library in the composer tool row: tag each prompt, insert one at the caret with a click, and let an agent grow the library by editing a JSON file. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "对话输入框工具行里的提示词库：每段提示词一个标签，点一下插入到光标处，库本身是一个 AI 可以直接改写的 JSON 文件。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "volcengine__ark-cli--dsh-plugins-ark-managed-agents.yml",
    "name": "volcengine/ark-cli#ark-managed-agents",
    "url": "https://github.com/volcengine/ark-cli/tree/main/dsh-plugins/ark-managed-agents",
@@ -105181,6 +106121,16 @@
    "stars": null,
    "descEn": "Per-workspace memory library with manual per-chat opt-in, editable rules, three sharing modes, and continuous forgetting; cards stay readable Markdown.",
    "descZh": "按工作区隔离的记忆库，支持按对话手动开启、可编辑规则、三种共用模式和连续遗忘；记忆卡仍是可读的 Markdown。"
+  },
+  {
+   "file": "wahhheee__stash--packages-plugin.yml",
+   "name": "wahhheee/stash#dsh-stash",
+   "url": "https://github.com/wahhheee/stash/tree/main/packages/plugin",
+   "category": "memory",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Shares rules and notes across chats in a workspace, lets forked sessions keep their own notes, and retrieves original conversation turns by reference.",
+   "descZh": "让同一工作区的聊天共享规则和笔记，支持分叉会话独立编辑笔记，并可按引用读取原始对话轮次。"
   },
   {
    "file": "Wahwayhale__dsh-connect-doubao.yml",
@@ -107563,6 +108513,16 @@
    "descZh": "DSH 新人引导插件：按八个领域推荐插件（GitHub Star 与 npm 近月下载加权排序），先出计划再一键安装，并可导出／导入记录 profile 插件清单、精确版本与启用状态的环境码。"
   },
   {
+   "file": "why774__dsh-context-kb.yml",
+   "name": "why774/dsh-context-kb",
+   "url": "https://github.com/why774/dsh-context-kb",
+   "category": "memory",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Turn long conversations into a searchable per-project memory of raw text, conclusion indexes pinned to exact lines, and pitfalls, so a model that lost its context can still find the original decision and code.",
+   "descZh": "把对话原文、结论索引和踩坑记录存成项目里的一份可检索记忆，跨对话累积，让长对话被压缩后模型依然找得回当初的结论和代码。"
+  },
+  {
    "file": "whybebabo__dsh-better-workspace.yml",
    "name": "whybebabo/dsh-better-workspace",
    "url": "https://github.com/whybebabo/dsh-better-workspace",
@@ -108043,6 +109003,16 @@
    "descZh": "面向 DSH 插件开发的隔离环境浏览器验证 skill：一条命令拉起临时 DSH_HOME、独立 `verify_<随机>` profile、独立端口与独立浏览器实例，退出自动清理，不污染正在使用的 profile；自带零依赖 raw-CDP 浏览器驱动（快照 / 点击 / 截图 / 求值）与可选隔离审计。"
   },
   {
+   "file": "Winjazw__effort-slider.yml",
+   "name": "Winjazw/effort-slider",
+   "url": "https://github.com/Winjazw/effort-slider",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Replaces the composer model picker with a draggable reasoning-effort slider: dragging the track changes the model's reasoning effort, and the top tier turns the track into a cosmic particle field.",
+   "descZh": "把输入框的模型选择器换成可拖拽的推理强度滑块：拖动轨道改推理强度，最高档把轨道变成宇宙粒子场。"
+  },
+  {
    "file": "WinKing-R__dsh-uniterminal.yml",
    "name": "WinKing-R/dsh-uniterminal",
    "url": "https://github.com/WinKing-R/dsh-uniterminal",
@@ -108071,6 +109041,16 @@
    "stars": null,
    "descEn": "A settings page that edits the current project's CLAUDE.local.md, the private per-project instruction file DSH's built-in loader reads at the start of a session; the file stays out of git.",
    "descZh": "在设置面板中编辑当前项目的私有指令文件 CLAUDE.local.md——DSH 内置加载器会在会话开始时读取它，文件同时被排除在 git 之外。"
+  },
+  {
+   "file": "winston-zhang-orz__dsh-voice-push-to-talk.yml",
+   "name": "winston-zhang-orz/dsh-voice-push-to-talk",
+   "url": "https://github.com/winston-zhang-orz/dsh-voice-push-to-talk",
+   "category": "voice",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Hold-to-talk hotkey for the voice input plugin: hold Right Option/Alt to record, release to stop and transcribe into the draft.",
+   "descZh": "为语音输入插件提供按键说话热键：按住右 Option/Alt 录音，松开停止并转写到消息草稿。"
   },
   {
    "file": "Winter-And-You-Gone__dsh-deep-verbs.yml",
@@ -108551,6 +109531,16 @@
    "stars": null,
    "descEn": "Sidebar: peak/off-peak phase, switch countdown and alarm, balance and 7-day spend; balance guard, low-balance alert, one-click top-up. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
    "descZh": "侧边栏实时显示峰谷档位、切换倒计时与提醒、余额与近 7 天花费；余额保护，余额预警，支持一键充值。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
+   "file": "wljgp__dsh-find-job.yml",
+   "name": "wljgp/dsh-find-job",
+   "url": "https://github.com/wljgp/dsh-find-job",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Find Job Assistant (dsh-find-job): analyze your abilities, batch-evaluate jobs, generate recruiter greetings, adjust your resume. Job hunting: identify which jobs are worth applying to in bulk — match reasons, greetings and resume rewrites in one pass. Employed but looking: see your gaps against target roles at a glance. Runs and stores everything locally.",
+   "descZh": "求职助手（dsh-find-job）：剖析能力、批量分析职位、一键生成打招呼语、调整简历。帮正在找工作的你：批量识别值得投递的职位，匹配理由、打招呼语、简历改写一次到位。帮在职观望的你：批量看清与意向职位的差距，缺什么一目了然。全程本地运行、本地存储。"
   },
   {
    "file": "wlllyj__dsh-prompt-forge.yml",
@@ -109113,6 +110103,16 @@
    "descZh": "DeepSeek Harness 输入框下方的实时草稿 token 数、按官方高峰/空闲费率计算的会话花费、上下文占用，以及同样的用量在最贵的另一个模型上会花多少；纯客户端，没有 host 半，不接触凭据。"
   },
   {
+   "file": "woodtong__dsh-ghostscreen-mcp.yml",
+   "name": "woodtong/dsh-ghostscreen-mcp",
+   "url": "https://github.com/woodtong/dsh-ghostscreen-mcp",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Mounts the GhostScreen MCP server into DSH through the official MCP client bridge, exposing 25 mcp__ghostscreen__* tools: off-screen window capture (PrintWindow), window-message/UIA input that does not steal focus, and headless-Edge web automation over CDP, with UIA actions gated on human consent. Ships no binary: on each DSH start it checks the newest GhostScreen release, downloads the package in the background, activates it on the next start and removes older versions; the plugin page reports progress and failures, and a local build can be pinned via config.exePath or GHOSTSCREEN_MCP_EXE. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "通过官方 MCP 客户端桥接层把 GhostScreen 服务器接入 DSH，暴露 25 个 mcp__ghostscreen__* 工具：屏幕外窗口捕获（PrintWindow）、不抢焦点的窗口消息/UIA 输入、基于 CDP 的无头 Edge 网页自动化，UIA 动作经人工同意门。插件不带二进制：每次 DSH 启动检查最新 GhostScreen Release，后台静默下载、下次启动启用并清理旧版本；插件页显示进度与失败原因，开发时可用 config.exePath 或 GHOSTSCREEN_MCP_EXE 固定本地构建。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "woody-dx__dsh-pdf-bookmarks.yml",
    "name": "woody-dx/dsh-pdf-bookmarks",
    "url": "https://github.com/woody-dx/dsh-pdf-bookmarks",
@@ -109359,8 +110359,8 @@
    "category": "identity",
    "downloads": null,
    "stars": null,
-   "descEn": "A minimal chat agent preset with only web search, web fetch and attachment reading; keeps the context tiny and the reasoning chain in Chinese.",
-   "descZh": "纯净聊天模式预设，只保留联网搜索、打开网页和读取附件，极小上下文，中文思维链。"
+   "descEn": "Pure-chat preset that replicates the web chat experience: only web search, page fetching and file reading, supports uploads, tiny context, Chinese reasoning chain.",
+   "descZh": "纯净聊天模式预设，复刻网页版的聊天体验。纯聊天，只保留联网搜索、打开网页和读取文件三个工具。支持上传附件，极小上下文，中文思维链。"
   },
   {
    "file": "wssfk12138__dsh-damage-pulse.yml",
@@ -109851,6 +110851,16 @@
    "stars": null,
    "descEn": "Bottom-left floating panel that uploads and switches your own background images, with scrim and blur sliders and three bundled wallpapers.",
    "descZh": "左下角浮窗，上传并切换自定义背景图片，带遮罩与模糊滑块，内置三张壁纸。"
+  },
+  {
+   "file": "wuRDmemory__dsh_vim.yml",
+   "name": "wuRDmemory/dsh_vim",
+   "url": "https://github.com/wuRDmemory/dsh_vim",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Vim-style modal editing and keyboard navigation for DeepSeek Harness conversations, sidebars, and panes.",
+   "descZh": "为 DeepSeek Harness 的对话输入、侧栏和面板提供 Vim 模态编辑与键盘导航。"
   },
   {
    "file": "WuShichao__dsh-ipynb-preview.yml",
@@ -110391,6 +111401,16 @@
    "stars": null,
    "descEn": "Regenerates a session's title from its last 10 user prompts using the model the session itself last used, with an editable preview before the new title is written back.",
    "descZh": "根据会话最近 10 轮用户 prompt，用该会话最近一次使用的模型重新生成标题，预览确认后写回。"
+  },
+  {
+   "file": "WYHboop__dsh-netease-mail.yml",
+   "name": "WYHboop/dsh-netease-mail",
+   "url": "https://github.com/WYHboop/dsh-netease-mail",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "DSH-EMAIL: NetEase enterprise mail (qiye.163.com) inside DeepSeek Harness — eight mail tools for listing, reading, searching, sending, saving attachments and changing flags, a three-pane sidebar inbox, and a bundled SKILL.md that teaches an assistant how to drive them safely. Hand-written IMAP/SMTP with no dependencies. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "DSH-EMAIL：把网易企业邮（qiye.163.com）接进 DSH——八个邮件工具负责列信、读信、搜信、发信、存附件、改标记，一个三栏侧栏「邮箱」面板，外加一份随包 SKILL.md 教助手怎么安全地使唤它们；自写 IMAP/SMTP，零第三方依赖。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "wyk4447__dsh-diff-review.yml",
@@ -111559,8 +112579,8 @@
    "category": "tools",
    "downloads": null,
    "stars": null,
-   "descEn": "MWORKS AI for DeepSeek Harness: Syslab and Sysplorer MCP servers owned by the MCP manager, official MWORKS skills and working rules, and a Runtime environment section on the plugin page. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "DeepSeek Harness 的 MWORKS AI：由 MCP 管理器托管的 Syslab 与 Sysplorer MCP 服务、官方 MWORKS 技能与工作规则，并在插件页提供运行环境设置。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "MWORKS AI for DeepSeek Harness: Syslab and Sysplorer MCP servers owned by the MCP manager, official MWORKS skills and working rules, and a Runtime environment section on the plugin page. ",
+   "descZh": "DeepSeek Harness 的 MWORKS AI：由 MCP 管理器托管的 Syslab 与 Sysplorer MCP 服务、官方 MWORKS 技能与工作规则，并在插件页提供运行环境设置。"
   },
   {
    "file": "xiaobbl__dsh-opencode-go-model-list.yml",
@@ -111571,6 +112591,16 @@
    "stars": null,
    "descEn": "Serves the live opencode Go model catalog from the harness's built-in opencode-go provider route.",
    "descZh": "让 DSH 自带的 opencode-go 供应商跟随 opencode Go 套餐的实时模型列表，opencode 上架新模型后无需改配置即可使用。"
+  },
+  {
+   "file": "xiaobin118__dsh-quiz-tutorial.yml",
+   "name": "xiaobin118/dsh-quiz-tutorial",
+   "url": "https://github.com/xiaobin118/dsh-quiz-tutorial",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A study surface for exam prep: decks generated from review context, each question with a hand-worked solution, an automatic mistake log with redo/review, `/skill` deck generation, and delete/hide for decks. 15 bundled CNN and ML concept questions.",
+   "descZh": "刷题场：把复习内容变成题集，题目旁给逐步手算解析，答错自动进错题本并支持重练；支持 `/skill` 出题与删除/隐藏题集。内置 15 道 CNN 与机器学习概念题。"
   },
   {
    "file": "Xiaocanglan-hub__dsh-whale-memory--packages-dsh-memory-brain.yml",
@@ -111639,8 +112669,8 @@
    "category": "session",
    "downloads": null,
    "stars": null,
-   "descEn": "Adds a tool-free Chat preset for everyday conversation: no tool schemas are sent, the system prompt is one short tone line or empty, and no OS, git or file-tree snapshot is injected. Measured on a plugin-heavy install, one message costs about 1.9K instead of 36K input tokens (roughly 19x fewer); thinking starts off unless you turn it on; on-device DSH Go verified; v0.2.0 adds local slash commands such as `/chat`, `/tone`, `/temp`, `/web` and `/think`, plus opt-in web search that only costs model tokens; v0.3.0 adds web-like composer toggles for thinking and web search that stay in sync with those commands; v0.3.1 gives them DeepSeek-style SVG icons, hover hints and motion, and keeps unrelated global tools out of the request; v0.3.2 adds the web app one-shot icon rotation, removes the square host focus frame, and quiets the hint after a click.",
-   "descZh": "新增零工具的「Chat（轻量对话）」模式，用来做日常聊天：不发送任何工具 schema，系统提示只剩一句极简语气提示或完全留空，也不注入系统、git 与文件树快照。在插件较多的环境实测，单条消息的输入 token 从约 36K 降到约 1.9K（约 19 倍）；思考默认关闭，需要时可在界面里打开；已在安卓 DSH Go 上实机验证。v0.2.0 增加本地斜杠命令（`/chat`、`/tone`、`/temp`、`/web`、`/think`），并支持按需开启联网搜索（只计模型 token）；v0.3.0 在输入框旁提供与网页端同款的「深度思考」与「联网」双开关，并与斜杠命令双向同步；v0.3.1 换成 DeepSeek 同款线框图标，加悬停提示与柔和微交互，并确保请求里不会混入无关的全局工具；v0.3.2 对齐网页端的单次旋转动效，去掉宿主遗留的直角外框，并让点击后的提示气泡自动收起。"
+   "descEn": "Adds a tool-free Chat preset for everyday conversation: no tool schemas are sent, the system prompt is one short tone line or empty, and no OS, git or file-tree snapshot is injected. Measured on a plugin-heavy install, one message costs about 1.9K instead of 36K input tokens (roughly 19x fewer); thinking starts off unless you turn it on; on-device DSH Go verified; v0.2.0 adds local slash commands such as `/chat`, `/tone`, `/temp`, `/web` and `/think`, plus opt-in web search that only costs model tokens; v0.3.0 adds web-like composer toggles for thinking and web search that stay in sync with those commands; v0.3.1 gives them DeepSeek-style SVG icons, hover hints and motion, and keeps unrelated global tools out of the request; v0.3.2 adds the web app one-shot icon rotation, removes the square host focus frame, and quiets the hint after a click; v0.3.3 releases the per-session tool mask when the preset changes, so switching Chat to PTC or Standard no longer loses tools; v0.4.0 adds native image vision, inline text up to 8 KiB, zero-dependency DOCX extraction, and an on-demand read_attachment tool that only exists while the current message carries an upload.",
+   "descZh": "新增零工具的「Chat（轻量对话）」模式，用来做日常聊天：不发送任何工具 schema，系统提示只剩一句极简语气提示或完全留空，也不注入系统、git 与文件树快照。在插件较多的环境实测，单条消息的输入 token 从约 36K 降到约 1.9K（约 19 倍）；思考默认关闭，需要时可在界面里打开；已在安卓 DSH Go 上实机验证。v0.2.0 增加本地斜杠命令（`/chat`、`/tone`、`/temp`、`/web`、`/think`），并支持按需开启联网搜索（只计模型 token）；v0.3.0 在输入框旁提供与网页端同款的「深度思考」与「联网」双开关，并与斜杠命令双向同步；v0.3.1 换成 DeepSeek 同款线框图标，加悬停提示与柔和微交互，并确保请求里不会混入无关的全局工具；v0.3.2 对齐网页端的单次旋转动效，去掉宿主遗留的直角外框，并让点击后的提示气泡自动收起；v0.3.3 在切换预设时释放该会话的工具屏蔽，从 Chat 切到 PTC 或标准模式不再丢失工具；v0.4.0 支持原生识图、8 KiB 内联文本与零依赖 DOCX 抽取，并按需为当前消息放行 read_attachment 读取上传文件。"
   },
   {
    "file": "xiaoge480__dsh-qzone-diary.yml",
@@ -111853,6 +112883,16 @@
    "descZh": "打包 PrismSearch MCP 服务与配套 Agent Skill。网页搜索默认使用 Bing 和百度，无需账号或 API Key；设置 API Key 后可用 Google、Brave，在配置中启用后可用 DuckDuckGo、搜狗、360、Yandex；支持引擎自动回退与聚合模式。另提供图片搜索、微信公众号文章搜索，以及把网页和 PDF 转成 Markdown 并分段读取的 fetch_page。"
   },
   {
+   "file": "xiaoniangaoh__dsh-token-gist.yml",
+   "name": "xiaoniangaoh/dsh-token-gist",
+   "url": "https://github.com/xiaoniangaoh/dsh-token-gist",
+   "category": "usage",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Tracks cumulative input, output, cache-read and cache-write token totals independently of conversation deletion, with a sidebar card, daily breakdown, /token-usage command, and optional Gist backup.",
+   "descZh": "累计统计输入、输出、缓存读取与缓存写入 token 总用量，删除对话也不会丢失；支持 Gist 备份、按天明细、侧边栏卡片与 /token-usage 命令。"
+  },
+  {
    "file": "XiaoOu2024__dsh-novel-generator.yml",
    "name": "XiaoOu2024/dsh-novel-generator",
    "url": "https://github.com/XiaoOu2024/dsh-novel-generator",
@@ -112013,14 +113053,14 @@
    "descZh": "面向本地 AI 陪伴的 AstrBot/DSH 原生显存协调：LLM、IndexTTS、ComfyUI 轮流用卡，不加代理。"
   },
   {
-   "file": "xiaoxiaolelang-ai__dsh-next-steps.yml",
-   "name": "xiaoxiaolelang-ai/dsh-next-steps",
-   "url": "https://github.com/xiaoxiaolelang-ai/dsh-next-steps",
+   "file": "xiaoxiaolelang-ai__dsh-next-move.yml",
+   "name": "xiaoxiaolelang-ai/dsh-next-move",
+   "url": "https://github.com/xiaoxiaolelang-ai/dsh-next-move",
    "category": "ui",
    "downloads": null,
    "stars": null,
-   "descEn": "Per-turn next-step suggestions under each reply: a 2x2 grid of up to four clickable actions, projected from that turn's own tool result instead of a shared per-session store.",
-   "descZh": "在每轮回复下方按 2×2 给出最多四条可点的下一步建议；按轮次投影，不会把上一轮的建议带到下一轮。"
+   "descEn": "Per-turn next-step suggestions under each reply: a 2x2 grid of up to four clickable actions, each tagged with a stance (cautious / standard / bold / alternative / stop), projected from that turn's own tool result instead of a shared per-session store. Renamed from dsh-next-steps to stay distinguishable in the crowded next-step namespace.",
+   "descZh": "在每轮回复下方按 2×2 给出最多四条可点的下一步建议，每条带一个立场标签（稳健 / 标准 / 激进 / 另一条路 / 停），按轮次投影，不会把上一轮的建议带到下一轮。原名 dsh-next-steps，为避免与市面上大量同类插件混淆而改名。"
   },
   {
    "file": "xiaoxiaolelang-ai__dsh-rail.yml",
@@ -112029,8 +113069,8 @@
    "category": "ui",
    "downloads": null,
    "stars": null,
-   "descEn": "Narrow 40px icon rail for the DSH sidebar: panel icons move into a single column so the session list gets the full width, session titles gain a three-level hierarchy, and the DeepSeek account balance sits just above the sidebar footer with today and cumulative spend accounted from balance deltas, plus value-based colours. Follows the DSH 0.2.2-rc.2 sidebar structure (the two-column grid now lives on the nested scrollArea), so icons and the workspace list stay side by side.",
-   "descZh": "把面板图标收进 40px 窄栏、把宽度还给会话列表，会话标题分三级明暗；侧栏底部栏上方常显 DeepSeek 余额，并按余额差值记录今日与累计消费（按数值变色）。已适配 DSH 0.2.2-rc.2 的侧栏结构（两列网格挂在 scrollArea 上），图标列与工作区保持并排。"
+   "descEn": "Narrow 40px icon rail for the DSH sidebar: panel icons move into a single column so the session list gets the full width, session titles gain a three-level hierarchy, and the DeepSeek account balance sits just above the sidebar footer with today and cumulative spend accounted from balance deltas, plus value-based colours. Follows the DSH 0.2.2-rc.2 sidebar structure (the two-column grid now lives on the nested scrollArea), so icons and the workspace list stay side by side. Spend is rounded to cents, the window rebases when the wallet currency changes, and the hover names how much of today came from granted balance and flags any drift between the platform total and the sum of the two wallets.",
+   "descZh": "把面板图标收进 40px 窄栏、把宽度还给会话列表，会话标题分三级明暗；侧栏底部栏上方常显 DeepSeek 余额，并按余额差值记录今日与累计消费（按数值变色）。已适配 DSH 0.2.2-rc.2 的侧栏结构（两列网格挂在 scrollArea 上），图标列与工作区保持并排。金额按分归整、换币种时重开记账窗口；悬浮标注今日消费里有多少来自赠金，并在平台总额与两项之和对不上时给出差额。"
   },
   {
    "file": "xiaoxin3309__dsh-backup-rescue.yml",
@@ -112219,8 +113259,8 @@
    "category": "ui",
    "downloads": null,
    "stars": null,
-   "descEn": "Adds a power menu to the top-right corner of the DeepSeek Harness desktop conversation header: reload the page, shut down, and restart. Shutdown and restart ask the window to end its session so the application finishes its own quit chain instead of being force-killed, then wait for the Host to exit and clear processes left over from the same executable. While an agent or a background job is still running, both show a confirmation card naming the sessions and jobs they would interrupt. Restart replays the original launch arguments. Windows desktop only. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "在 DeepSeek Harness 桌面版会话标题栏右上角加一个电源菜单：刷新页面、关闭、重启。关闭和重启请窗口走自己的会话结束流程，由应用完成关停而不是被强杀，随后等 Host 退出并清理同一可执行文件留下的进程。有 agent 或后台任务在跑时，两者都会先弹出确认卡片，列出会被打断的会话与任务。重启会回放原来的启动参数。仅 Windows 桌面版可用。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Adds a power menu to the top-right corner of the DeepSeek Harness desktop conversation header: reload the page, shut down, and restart. Shutdown and restart ask the window to end its session so the application finishes its own quit chain instead of being force-killed, then wait for the Host to exit and clear processes left over from the same executable. While an agent or a background job is still running, both show a confirmation card naming the sessions and jobs they would interrupt. Restart replays the original launch arguments. Windows desktop only. Every HTTP route asks the connection service for a rejection first, the same Host/Origin fence and browser auth cookie the official host routes use.",
+   "descZh": "在 DeepSeek Harness 桌面版会话标题栏右上角加一个电源菜单：刷新页面、关闭、重启。关闭和重启请窗口走自己的会话结束流程，由应用完成关停而不是被强杀，随后等 Host 退出并清理同一可执行文件留下的进程。有 agent 或后台任务在跑时，两者都会先弹出确认卡片，列出会被打断的会话与任务。重启会回放原来的启动参数。仅 Windows 桌面版可用。每个 HTTP 路由都会先向 connection 服务请求一次判定，用的是官方 host 路由那套 Host/Origin 围栏和浏览器认证 cookie。"
   },
   {
    "file": "xiduo-wang__dsh-datapilot.yml",
@@ -112813,6 +113853,16 @@
    "descZh": "DSH 启动后在后台静默更新已装第三方插件，支持精确锁版的依赖；没有可装更新时完全不出声；装了通知插件时，只在开始安装前提醒一次、装完提醒重启。"
   },
   {
+   "file": "xinming-chenniang__dsh-vram-watch.yml",
+   "name": "xinming-chenniang/dsh-vram-watch",
+   "url": "https://github.com/xinming-chenniang/dsh-vram-watch",
+   "category": "dev",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Diagnostic VRAM sampler for DSH: samples GPU memory continuously and keeps the last hour in memory. After a CUDA out-of-memory or an unexplained slowdown it reports four things instead of a live gauge — baseline, peak and final dedicated VRAM; each process first → last → peak plus whether it is still running; how much spilled into shared system memory; and how far dedicated VRAM stayed above baseline after the task exited. Two tools: vram_report (analyse the in-memory window or a saved CSV, optionally write the window to disk) and vram_watch (status / start / stop). Windows with an NVIDIA GPU only: reads WDDM performance counters through PowerShell and nvidia-smi; no hooks, no service, no screen capture.",
+   "descZh": "DSH 的显存诊断采样器：常驻采样并把最近一小时留在内存里。CUDA 爆显存或没爆却异常变慢之后，它给四段结论而不是实时仪表盘——专用显存的基线/峰值/结束值；每个进程的首次 → 末次 → 峰值以及是否仍在运行；有多少溢出到系统共享内存；任务退出后专用显存还比基线高多少。两个工具：vram_report（分析内存窗口或已保存的 CSV，可选把窗口落盘）与 vram_watch（status / start / stop）。仅限 Windows + NVIDIA：数据来自 PowerShell 读 WDDM 性能计数器与 nvidia-smi；不挂钩子、不装服务、不截屏。"
+  },
+  {
    "file": "XinpengWei__dsh-wechat-bg.yml",
    "name": "XinpengWei/dsh-wechat-bg",
    "url": "https://github.com/XinpengWei/dsh-wechat-bg",
@@ -112939,8 +113989,8 @@
    "category": "remote",
    "downloads": null,
    "stars": null,
-   "descEn": "Exposes the local DSH web UI through a fixed-port gateway with Basic Auth, optional passwordless links and a settings card, forwarding to the host loopback port with a freshly signed session cookie so no trustedHosts or cookie-lifetime setup is needed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "通过固定端口网关把 DSH 本地 Web 界面暴露出去：Basic Auth、可选免密链接、插件面板内的设置卡片；转发时即时签发宿主会话 cookie，无需配置 trustedHosts、也无需调整宿主 cookie 寿命。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Exposes the local DSH web UI through a fixed-port gateway with Basic Auth, optional passwordless links and a settings card, forwarding to the host loopback port with a freshly signed session cookie so no trustedHosts or cookie-lifetime setup is needed.",
+   "descZh": "通过固定端口网关把 DSH 本地 Web 界面暴露出去：Basic Auth、可选免密链接、插件面板内的设置卡片；转发时即时签发宿主会话 cookie，无需配置 trustedHosts、也无需调整宿主 cookie 寿命。"
   },
   {
    "file": "xiongyecpu__dsh-pixel-themes.yml",
@@ -112961,6 +114011,16 @@
    "stars": null,
    "descEn": "Exposes a running DeepSeek Harness as an MCP server over Streamable HTTP or a bundled stdio bridge, so an external agent can create workspaces and sessions, prompt, fork, rename and switch the model on them, read and write files, run foreground and background shell commands, call the instance's own agent tools by name, and read per-turn and cumulative token usage with a cost receipt when a price plugin is installed.",
    "descZh": "把正在运行的 DeepSeek Harness 暴露为 MCP server（Streamable HTTP，或附带的 stdio 桥），外部 agent 可创建 workspace 与会话，发起 prompt、fork、重命名、切换模型，读写文件，运行前台与后台 shell 命令，按名调用该实例自身的 agent 工具，并读取单轮与累计 token 用量；装了计价插件时还给出费用回执。"
+  },
+  {
+   "file": "xishaochen__dsh-aa-killline.yml",
+   "name": "xishaochen/dsh-aa-killline",
+   "url": "https://github.com/xishaochen/dsh-aa-killline",
+   "category": "skill",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Model kill-line charts for DSH. Reads Artificial Analysis model data and OpenRouter cache prices, then renders two self-contained HTML charts (global and China) plotting the AI intelligence index against effective price with the Pareto frontier drawn on top; each chart switches between the official 3-to-1 blended price and an agent-shaped price (50-to-1 input/output ratio, 90 percent cache hit rate, per-model real cache-read prices). A companion table lists each vendor's strongest AA-measured model and checks whether an OpenAI-compatible gateway already lists it. Offline mode recomputes from the local cache without spending API quota; python3 standard library only, no pip install.",
+   "descZh": "模型斩杀线图：读取 Artificial Analysis 模型数据与 OpenRouter 缓存价，渲染全球与国产两张自包含 HTML 图，横轴为价格、纵轴为智能指数，并画出帕累托前沿（即斩杀线）；可在官方 3:1 混合价与 Agent 口径（输入输出 50:1、缓存命中 90%、按模型真实缓存读价）之间切换。另附一张表，列出每家厂商 AA 实测最强模型，并核对某个 OpenAI 兼容网关是否已上架。支持离线模式：用本地缓存重算，不消耗 API 额度；纯 python3 标准库，无需 pip 安装。"
   },
   {
    "file": "xishuai-zero__dsh-entry-organizer.yml",
@@ -113081,6 +114141,16 @@
    "stars": null,
    "descEn": "Operate the Edge or Chrome window that is already open, without restarting it and without closing it: choose a window once, reuse a tab that already shows the URL, read page text or DOM state, click by accessible name or visible text, type, scroll, wait for content and batch steps. 22 tools over UI Automation, SendInput and an optional Tampermonkey bridge; a settings page picks the target window (only yours, only an instance this plugin launches, or automatic). Windows only.",
    "descZh": "操控已经打开的 Edge 或 Chrome 窗口，不重启也不关闭它：一次选定窗口、已打开的网址直接复用标签页、读页面文本或 DOM 状态、按可访问名或可见文字点击、输入、滚动、等待内容、多步合批。22 个工具，基于 UI Automation、SendInput 与可选的篡改猴桥；设置页可选目标窗口（只用你开的窗口／只用本插件启动的实例／自动）。仅 Windows。"
+  },
+  {
+   "file": "xkzm123__dsh-greasyfork.yml",
+   "name": "xkzm123/dsh-greasyfork",
+   "url": "https://github.com/xkzm123/dsh-greasyfork",
+   "category": "dev",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Push userscripts to GreasyFork the way you push code — read your scripts and version history, publish new scripts and updates, edit descriptions, search the site, and check account info, with credentials pasted by hand and no browser automation. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "像 git push 一样把用户脚本推到 GreasyFork：读自己的脚本与版本、发布新脚本、发新版本、改简介、站内搜索、查账号信息；凭证手动录入，不驱动浏览器。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "xlcg10086__dsh-compact-threshold.yml",
@@ -113383,6 +114453,16 @@
    "descZh": "通过拖动侧栏会话、粘贴会话 ID 或从附件菜单选择，把另一段对话作为上下文发送。"
   },
   {
+   "file": "XS-dev__dsh-tokscale-usage.yml",
+   "name": "XS-dev/dsh-tokscale-usage",
+   "url": "https://github.com/XS-dev/dsh-tokscale-usage",
+   "category": "usage",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Local multi-agent token usage studio powered by tokscale and dsh-context: calibrated light/dark cool-mineral themes, configurable harness scope, unified Antigravity/Codex/DSH trends & real output throughput, concentric-ring workspace & session cards, plus /tokscale and tokscale_usage.",
+   "descZh": "基于 tokscale 与 dsh-context 的本机多 Agent 精密遥测用量面板：适配浅色/深色冷调矿物双主题、自定义常用 Harness 范围、Antigravity/Codex/DSH 统一趋势与真实生成吞吐、多维同心环项目与会话卡片，并提供 /tokscale 命令与 tokscale_usage 工具。"
+  },
+  {
    "file": "xs1023__dsh-memory-vault.yml",
    "name": "xs1023/dsh-memory-vault",
    "url": "https://github.com/xs1023/dsh-memory-vault",
@@ -113593,6 +114673,16 @@
    "descZh": "用 Python 在网页、对话或 dsh-go 手机 App 的原生面板里编写自定义工具，保存后免重启注册成 DSH 工具；危险工具每次执行都走内置审批，工具可分组成包，还可选「解锁模式」按对话逐步放出。需 PATH 中有 Python 3。"
   },
   {
+   "file": "xua123__dsh-server-monitor.yml",
+   "name": "xua123/dsh-server-monitor",
+   "url": "https://github.com/xua123/dsh-server-monitor",
+   "category": "dev",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Server resource dashboard for DeepSeek Harness: CPU, memory, disk, network, GPU/NPU/DCU, processes and Docker for the local host and SSH servers, with a global panel and a per-session tab. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "DeepSeek Harness ????????:????? SSH ???? CPU??????????GPU/NPU/DCU???? Docker ??,????????????它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "xuan666-lab__dsh-openrouter-provider-advisor.yml",
    "name": "xuan666-lab/dsh-openrouter-provider-advisor",
    "url": "https://github.com/xuan666-lab/dsh-openrouter-provider-advisor",
@@ -113621,6 +114711,16 @@
    "stars": null,
    "descEn": "MCP server panel for DeepSeek Harness: reads MCP servers from nine existing agent config files (Claude Code, Cursor, VS Code, Codex TOML, Gemini CLI, ZCode, pi, .agents and .dsh), merges them per project, and requires approval bound to a SHA-256 fingerprint before a repository-declared server runs.",
    "descZh": "DeepSeek Harness 的 MCP 服务器管理面板：读取 Claude Code、Cursor、VS Code、Codex TOML、Gemini CLI、ZCode、pi、.agents、.dsh 九种已有配置，按项目合并；仓库声明的服务器需批准后运行，批准绑定 SHA-256 指纹。"
+  },
+  {
+   "file": "xuanfenglajiao__dsh-query-scout.yml",
+   "name": "xuanfenglajiao/dsh-query-scout",
+   "url": "https://github.com/xuanfenglajiao/dsh-query-scout",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Read-only retrieval subagent plugin for DeepSeek Harness: delegates broad file and web lookups to a configured model list with ordered fallback, cooldown, and per-session concurrency queueing via a fixed query_scout tool without switching the main model or breaking its prompt cache.",
+   "descZh": "DeepSeek Harness 的只读检索子代理插件：通过固定工具 query_scout 将大范围文件与网页检索委派给工具栏面板中独立配置的只读模型列表，支持多模型顺序切换、失败冷却与并发排队，不切换主模型、不破坏前缀缓存。"
   },
   {
    "file": "xuanfu-web__dsh-metaphysics.yml",
@@ -113833,6 +114933,16 @@
    "descZh": "此项目旨在桥接 Blender MCP Add-on，使 DSH 上的模型可便捷对接接入当前用户工作的 Blender 以辅助创作，且满足基础安全需要。"
   },
   {
+   "file": "XuezuoYS__dsh-prompt-inject.yml",
+   "name": "XuezuoYS/dsh-prompt-inject",
+   "url": "https://github.com/XuezuoYS/dsh-prompt-inject",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "This plugin provides grouped, per-model access to System and context prompts through on GUI. The grouping design allows multiple prompts with different effects to be combined and assigned to different models quickly and effectively at the same time.",
+   "descZh": "此插件提供图形界面下分组、分模型的 System 和上下文提示词接入，分组设计可有效快捷地同时将多个不同效果的提示词组合分配给不同的模型。"
+  },
+  {
    "file": "xufu5438-netizen__dsh-boot-video.yml",
    "name": "xufu5438-netizen/dsh-boot-video",
    "url": "https://github.com/xufu5438-netizen/dsh-boot-video",
@@ -113891,6 +115001,16 @@
    "stars": null,
    "descEn": "A credit meter for XD Pool (WorkBuddy) accounts that shows each account's remaining credits and package breakdown, measures today/month/all-time consumption from balance snapshots, and warns about credits expiring within 3, 7 and 30 days. It reads its data from the XD Pool plugin (XDTrees/dsh-xdpool) and shows a data-source-unavailable state when that plugin is not installed.",
    "descZh": "XD Pool（WorkBuddy）积分计费面板：显示每个账号的剩余积分与积分包明细，按余额快照差值实测今日/本月/累计已消耗积分，并按 3/7/30 天分档预警即将过期积分。 数据来自 XD Pool 插件（XDTrees/dsh-xdpool）的本地路由，未安装该插件时面板显示「数据源不可用」，本插件不自行实现上游协议。"
+  },
+  {
+   "file": "xunmojx__dsh-3d-whale-pet.yml",
+   "name": "xunmojx/dsh-3d-whale-pet",
+   "url": "https://github.com/xunmojx/dsh-3d-whale-pet",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A 3D baby-orca desktop pet: it can follow your cursor, or wander, roll over and doze off on its own, plus some simple interactions. Stroke the cursor over its head three times to pet it. It nods in time when music plays — local files or any app's sound.",
+   "descZh": "3D 小虎鲸桌宠：可以跟着鼠标，也可以自己溜达、翻身、打盹，还可以简单互动。把鼠标箭头放它头上蹭三下可以摸摸它。放歌时会跟着节拍点头（本地音频或任何软件的声音都行）。"
   },
   {
    "file": "XuRui2022__dsh-paper-manager.yml",
@@ -114291,6 +115411,16 @@
    "stars": null,
    "descEn": "Save whole turns — the question plus the full answer — as plain Markdown inside the session workspace, promote the good ones into a cross-project personal knowledge base, and let the model search it on demand. No database and no runtime dependencies.",
    "descZh": "把整轮问答（问题 + 完整回答）存成工作区里的纯 Markdown；把值得留的提升进跨项目个人知识库，模型可按需检索。无数据库、零运行时依赖。"
+  },
+  {
+   "file": "xypshot__dsh-plugins--plugins-llm-quota-board.yml",
+   "name": "xypshot/dsh-plugins#llm-quota-board",
+   "url": "https://github.com/xypshot/dsh-plugins/tree/main/plugins/llm-quota-board",
+   "category": "usage",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Quota overview for every provider and model deployed in Settings -> Models: shows balances and remaining quotas in one panel, refreshed every 60 seconds.",
+   "descZh": "额度总览：查看设置 -> 模型中已部署的全部供应商和模型的余额与额度，面板每 60 秒自动刷新。"
   },
   {
    "file": "xyrrrrr-r__dsh-eval-control.yml",
@@ -114923,6 +116053,16 @@
    "descZh": "修复桌面端「用其它应用打开」启动编辑器与终端失败（HTTP 502 launch-failed）：从 open-in-app 包交给被启动程序的环境里去掉继承来的 ELECTRON_RUN_AS_NODE 变量，不改动 app.asar。"
   },
   {
+   "file": "yanli-nyan__dsh-recycle-bin.yml",
+   "name": "yanli-nyan/dsh-recycle-bin",
+   "url": "https://github.com/yanli-nyan/dsh-recycle-bin",
+   "category": "security",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Sends file deletions to the Windows Recycle Bin, lists and restores them by id, and blocks permanent shell deletes.",
+   "descZh": "把删除的文件送进 Windows 回收站，可按 id 列出与还原，并拦截 shell 通道的永久删除。"
+  },
+  {
    "file": "yanli-nyan__dsh-sidebar-entry-manager.yml",
    "name": "yanli-nyan/dsh-sidebar-entry-manager",
    "url": "https://github.com/yanli-nyan/dsh-sidebar-entry-manager",
@@ -115151,6 +116291,16 @@
    "stars": null,
    "descEn": "LaTeX workspace for DeepSeek Harness: opening a .tex file shows a line-numbered editor in the right sidebar, saving writes the source and builds it with the local TeX Live latexmk, and an open PDF preview refreshes in place. Includes structured file:line diagnostics, SyncTeX, last-good preview retention and seven agent tools.",
    "descZh": "DeepSeek Harness 的 LaTeX 工作台：打开 .tex 即在右侧栏显示带行号的编辑器，保存时写回源码并用本机 TeX Live latexmk 编译，已打开的 PDF 预览原地刷新。包含结构化 file:line 诊断、SyncTeX、失败保留上一版预览，以及 7 个 Agent 工具。"
+  },
+  {
+   "file": "YaoJunhaoya__dsh-yaoking-company-office.yml",
+   "name": "YaoJunhaoya/dsh-yaoking-company-office",
+   "url": "https://github.com/YaoJunhaoya/dsh-yaoking-company-office",
+   "category": "workflow",
+   "downloads": null,
+   "stars": null,
+   "descEn": "DSH plugin that turns a solo AI session into a project team with a PM and parallel workspaces.",
+   "descZh": "DSH 插件，把单人 AI 会话变成带项目经理和并行工作区的开发团队。"
   },
   {
    "file": "yaopushen__dsh-plugin-background-tasks.yml",
@@ -115431,6 +116581,26 @@
    "stars": null,
    "descEn": "Bridge between DSH and the local WorkBuddy desktop app, in four parts: read, search and append WorkBuddy memory, skills, plans and daily logs; run tasks through the local CodeBuddy CLI with four permission profiles; drive the running WorkBuddy window over CDP (open a conversation, read its replies as sanitized rich HTML, type and send, switch the account-billed model, relaunch it with a debug port when it is missing); and a sidebar panel that puts that conversation surface inside DSH. 25 tools and 15 HTTP routes in one plugin.",
    "descZh": "把 DSH 与本机 WorkBuddy 桌面端接起来，分四块：读写与搜索 WorkBuddy 的记忆、技能、计划和日志；经本机 CodeBuddy CLI 跑任务，带四档权限；通过 CDP 驱动正在运行的 WorkBuddy 窗口（打开会话、以清洗后的富文本读取回复、代打字并发送、切换按账号计费的模型、端口缺失时带调试端口重启它）；再加一个侧栏面板，把同样的对话界面放进 DSH。一个插件里共 25 个工具、15 条 HTTP 路由。"
+  },
+  {
+   "file": "yeah9right__dsh-side-chat.yml",
+   "name": "yeah9right/dsh-side-chat",
+   "url": "https://github.com/yeah9right/dsh-side-chat",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Temporary side chats in the right sidebar: fork the current conversation as read-only background, ask in parallel with its own native composer, open several at once, and release everything when the tab closes. The side chat lives in memory only — no JSONL, no session list, no search hits. Adapted from Lone-Jade/dsh-side-chat (MIT) for DSH 0.2.2.",
+   "descZh": "右侧栏的临时侧聊：把当前对话分叉成只读背景，用原生输入框并行提问，可同时开多个，关掉标签即释放。侧聊只存在内存里——不产生 JSONL，不进会话列表，不出现在搜索结果。基于 Lone-Jade/dsh-side-chat（MIT）适配 DSH 0.2.2。"
+  },
+  {
+   "file": "yeah9right__dsh-traffic-light.yml",
+   "name": "yeah9right/dsh-traffic-light",
+   "url": "https://github.com/yeah9right/dsh-traffic-light",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A draggable traffic light in the window overlay: red while an agent is running, yellow while an agent waits for your answer or approval, green when nothing is running. It reads one state endpoint on this machine once a second and sends nothing off the machine; on Windows it also opens an always-on-top desktop window so the light stays visible over other applications.",
+   "descZh": "窗口浮层里常驻一盏可拖动的红绿灯：有任务在跑亮红灯，等你回答或确认亮黄灯，没有任务在跑亮绿灯。每秒读取本机一个状态接口，不外发任何数据；Windows 上还会另开一个置顶桌面小窗，被别的应用压住时也能看到。"
   },
   {
    "file": "yeahmahao__dsh-fish-notes.yml",
@@ -115829,8 +116999,18 @@
    "category": "ui",
    "downloads": null,
    "stars": null,
-   "descEn": "Antigravity-style /btw side questions for DSH: during a task, one question starts a disposable forked child agent with the full tool set, answers in its own right-Sidebar tab (tool calls and permission prompts included), and leaves the main conversation and its model context untouched.",
-   "descZh": "DSH 的 Antigravity 风格 /btw 侧问：任务进行中问一句，由一个临时 fork 的子 agent 带着完整工具在右侧栏自己的页签里作答（工具调用与审批都在那里），主对话与模型上下文完全不受影响。"
+   "descEn": "Antigravity-style /btw side questions for DSH: during a task, one question starts a disposable forked child agent with the full tool set, answers in Markdown inside its own right-Sidebar tab (with tool calls and follow-ups), and leaves the main conversation and its model context untouched. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "DSH 的 Antigravity 风格 /btw 侧问：任务进行中问一句，由一个临时 fork 的子 agent 带着完整工具去查证，答案以 Markdown 呈现在右侧栏自己的页签里（可追问、可查看工具调用），主对话与模型上下文完全不受影响。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
+   "file": "yhm138__dsh-codex-session-pin.yml",
+   "name": "yhm138/dsh-codex-session-pin",
+   "url": "https://github.com/yhm138/dsh-codex-session-pin",
+   "category": "session",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Pin and unpin Sessions from the Session header or from a sidebar row, and order pinned Sessions first inside their project. Reads and writes the official workspace pinnedSessionIds, so it keeps no index of its own, and it restores the pin action when a third-party sidebar such as @michengai/dsh-codex-ui replaces the shipped one. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "在会话标题栏或侧栏会话行里置顶 / 取消置顶，并让置顶会话排在所属项目最前面。置顶读写官方工作区的 pinnedSessionIds，本插件不另存索引；当 @michengai/dsh-codex-ui 这类第三方侧栏替换官方侧栏时，它把置顶入口补回来。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "yhm138__dsh-image-rescue.yml",
@@ -116679,8 +117859,8 @@
    "category": "ui",
    "downloads": null,
    "stars": null,
-   "descEn": "Floating Assistant: select text in a Windows app to explain, summarize or translate it, or ask follow-up questions about it; answers stream into a native always-on-top card with free-form input, continuous follow-up, LaTeX formulas, several panels, fold and taskbar minimize. Translation defaults to Bing (Google optional) and falls back to the AI model; DSH pages get a selection float bar and side cards that carry document-source metadata (path/line/page). Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "悬浮助手：在 Windows 应用里选中文字即可解释、总结或翻译，也可以就这段文字连续追问；答案流式落在原生置顶卡里，支持自由输入、连续追问、LaTeX 公式、多窗口并存、折叠与最小化到任务栏。翻译默认 Bing 机译（可选 Google），失败/超时/含公式时自动回退 AI 模型；DSH 页面内另提供划词浮条与侧卡，并带文档出处（路径/行/页）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Floating Assistant: select text in any Windows app to explain, summarize or translate it, or ask follow-up questions about it; answers stream into a native always-on-top card (drag, eight-way resize, fold, minimize to the taskbar, several cards at once), a deep mode also sends the text of the window the selection sits in plus one file you pick as read-only material, and screenshots or scans can be read with Windows OCR; the source line states what that round actually read. Translation defaults to Bing (Google optional) and falls back to the AI model, and each answer reports the tokens and model that produced it. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "悬浮助手：在 Windows 应用里选中文字即可解释、总结或翻译，也可以就这段文字连续追问；答案流式落在原生置顶卡里（可拖动、八向缩放、折叠、最小化到任务栏，多卡并存），深度模式还会带上选区所在窗口的文本与你选定的一个文件（只读材料），截图/图片/扫描件可用 Windows OCR 取词，卡片出处行会写出这一轮实际读了什么。翻译默认 Bing 机译（可选 Google），失败/超时/含公式时自动回退 AI 模型，每轮还会报出用量与产出它的模型。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "yjl9903__AnimeGarden--plugins-dsh.yml",
@@ -118913,6 +120093,16 @@
    "descZh": "让你的 DS 主动来找你，也有自己的新鲜事想分享。 dsh-drop-by「陪伴」沿用你设定的人设，结合最近聊天、记忆与作息，挑合适的时机开口，也给忙碌的你留出安静。ta可以自己查资料、看网页和视频，在研究与休闲之间切换，把新发现、探索进展和当时的心情带回来。QQ、抖音私信任选主入口，共用 DSH 会话；手机上一句“帮我查查这个”，就能发起搜索、推进探索或整理探索笔记，完成后直接收到结果。支持连发消息合并、热聊自然补话、会话前情衔接，还可搭配「鱼鱼状态」感知你的作息。主动频率、免打扰时段和探索节奏，都由你决定。"
   },
   {
+   "file": "YuYuesangzi__dsh-whale-reader.yml",
+   "name": "YuYuesangzi/dsh-whale-reader",
+   "url": "https://github.com/YuYuesangzi/dsh-whale-reader",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Local-file reader for DSH that gives the agent tools to list, search, read by section and save progress, plus a native settings panel with chapters and search. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "DSH 本地文件书库插件：agent 可查书、检索、按章读取并记录进度，设置内提供原生阅读面板。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "yuyun-git__dsh-meow-constellation.yml",
    "name": "yuyun-git/dsh-meow-constellation",
    "url": "https://github.com/yuyun-git/dsh-meow-constellation",
@@ -119243,6 +120433,16 @@
    "descZh": "AI 公司框架：一句话开一家多 Agent 公司——15 个扁平 Skills（老板/流水线/岗位模板/11 个岗位/通用客户记忆）、7 个工作流模板、AgentTeams 运行时与活动面板、带会话隔离的员工侧边栏、飞书机器人桥（老板/任意员工机器人、群聊路由、自主推送、重大决策人工闸门、外部联系人指引）、客户档案 SQLite 数据库与三层记忆（跨群归并）、/company 公司模式开关；不含 RAG。"
   },
   {
+   "file": "yz-china__dsh-sidebar-view-density.yml",
+   "name": "yz-china/dsh-sidebar-view-density",
+   "url": "https://github.com/yz-china/dsh-sidebar-view-density",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Changes how the DSH sidebar, panel column and plugin page are laid out: a detail list, a single column, two columns, or a custom grid with sliders for column count, row height and gaps.",
+   "descZh": "调整 DSH 侧边栏、面板列与插件页的排布：详细列表、单列、双列，或用滑块自定义列数、行高与间距的网格。"
+  },
+  {
    "file": "yzhclcl__dsh-omni-modal.yml",
    "name": "yzhclcl/dsh-omni-modal",
    "url": "https://github.com/yzhclcl/dsh-omni-modal",
@@ -119391,6 +120591,16 @@
    "stars": null,
    "descEn": "Zagent — unified three-role self-improvement loop with three operators. Data-RSI (daily cross-sectional cleaning: winsorize → cross-sectional standardization → median fill, plus experience extraction), Harness-RSI (evolves system prompt / memory / skills), and Model-RSI (evolves alpha training recipes via framework-native walk-forward with 2-day gap and multi-seed). Offline one-command run, GPU auto-detect. Ships one skill.",
    "descZh": "Zagent——统一 RSI 三角色自改进闭环框架，三个算子：Data-RSI（逐日截面清洗：去极值→截面驻日标准化→中位数填充，加经验提取）、Harness-RSI（进化系统提示词/记忆/技能）、Model-RSI（进化 alpha 训练配方，框架内置 walk-forward，含 2 天空白与多 seed）。离线一条命令跑，GPU 自动走 CUDA。附带一个 skill。"
+  },
+  {
+   "file": "z-axk__dsh-clipboard-history.yml",
+   "name": "z-axk/dsh-clipboard-history",
+   "url": "https://github.com/z-axk/dsh-clipboard-history",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Clipboard history beside Settings: records text copied in the DSH Web app and, on Windows, text copied in other applications while DSH runs; search the list, re-copy, pin, delete entries, or pause recording, with history kept in the browser (200 entries). Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "设置旁的剪贴板历史：记录在 DSH 网页中复制的文字，Windows 上还会收录 DSH 运行期间其他应用复制的文本；可搜索、再次复制、固定、删除条目或暂停记录，历史保存在浏览器中（最多 200 条）。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "z-imagine__dsh-free-light-search.yml",
@@ -119583,9 +120793,9 @@
    "descZh": "在侧栏面板列表顶部固定一行开关，收起时这一行仍然留着，所以「插件 … 更多」整列（含末尾的「更多」）塌成一行、工作区随之上移；⌥⌘P（Windows/Linux 为 Ctrl+Alt+P）同样能切换，状态存 localStorage，重开保持。"
   },
   {
-   "file": "zbh13782-lang__dsh-ask-reader.yml",
-   "name": "zbh13782-lang/dsh-ask-reader",
-   "url": "https://github.com/zbh13782-lang/dsh-ask-reader",
+   "file": "zbh13782-lang__dsh-pin-bookmarks.yml",
+   "name": "zbh13782-lang/dsh-pin-bookmarks",
+   "url": "https://github.com/zbh13782-lang/dsh-pin-bookmarks",
    "category": "ui",
    "downloads": null,
    "stars": null,
@@ -123129,8 +124339,8 @@
    "category": "session",
    "downloads": null,
    "stars": null,
-   "descEn": "Attributes workspace files to the session that wrote them by replaying session logs, groups same-named files into v1..vN, gives each session its own tools/ and artifacts/ workspace folder, and reclaims disk through a same-drive recycle bin plus a C-drive cleanup planner. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "通过回放会话日志把工作区文件归属到写它的会话，同名文件自动排成 v1..vN，为每个会话建立独立的 tools/ 与 artifacts/ 工作区，并用同盘回收站与 C 盘清理计划回收磁盘空间。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Attributes workspace files to the session that wrote them by replaying session logs, groups same-named files into v1..vN, gives each session its own tools/ and artifacts/ workspace folder, and reclaims disk through a same-drive recycle bin plus a C-drive cleanup planner.",
+   "descZh": "通过回放会话日志把工作区文件归属到写它的会话，同名文件自动排成 v1..vN，为每个会话建立独立的 tools/ 与 artifacts/ 工作区，并用同盘回收站与 C 盘清理计划回收磁盘空间。"
   },
   {
    "file": "zjbc2000__attention-plugins.yml",
@@ -124043,6 +125253,16 @@
    "descZh": "DSH 的 CommandCode 用量与余额面板：在侧边栏底部显示 API 用量、信用额度、5小时/每周窗口。"
   },
   {
+   "file": "zouzhipeng__dsh-npm-script.yml",
+   "name": "zouzhipeng/dsh-npm-script",
+   "url": "https://github.com/zouzhipeng/dsh-npm-script",
+   "category": "dev",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Floating button in the Web UI that lists every package.json script in the workspace, grouped per project, and runs them with per-command running/stopped status and a stop control for long-lived ones such as a dev server. Captured stdout and stderr are readable after the run; printed http(s) addresses are clickable and open in a new tab, and are also collected into a row of shortcuts above the log. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "Web 界面的悬浮按钮，按项目分组列出工作区里所有 package.json 脚本，并显示每个命令的执行中/已停止状态；常驻命令（如 dev server）可随时停止。运行后可查看捕获的 stdout 与 stderr；输出中的 http(s) 地址可点击并在新标签页打开，同时在日志上方汇总成一行快捷入口。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "zpb332__dsh-competition-team.yml",
    "name": "zpb332/dsh-competition-team",
    "url": "https://github.com/zpb332/dsh-competition-team",
@@ -124071,6 +125291,16 @@
    "stars": null,
    "descEn": "Stops a streaming model call when the same string repeats ten times in a row (threshold configurable), keeps the partial answer as a normal assistant message, and shows a stop notice with the workspace, session name and the repeated string. Repeat counts can vary by unit length through a piecewise table or a JavaScript module, and code regions (fenced, inline, indented) use a relaxed threshold.",
    "descZh": "同一字符串连续重复达到阈值（默认 10 次）时截停本次生成，已生成内容照常提交；截停后弹出通知，显示所属工作区、会话名称与重复的字符串。重复次数可按单元长度用分段表或 JS 模块决定，代码区域（围栏 / 行内 / 缩进）使用放宽的阈值。"
+  },
+  {
+   "file": "ZR2331314__dsh-talk-with.yml",
+   "name": "ZR2331314/dsh-talk-with",
+   "url": "https://github.com/ZR2331314/dsh-talk-with",
+   "category": "identity",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Story-oriented multi-persona plugin for one DSH window: switch personas by how you address them, put several on stage in one turn with shared memory, and every message shows the speaker's avatar with the persona name under it. Avatars auto-switch per story stage (panel stage picker / stage-avatar upload, or {{stage:stageId}} marks in replies). Each persona is a folder (persona.json + prompt.md + avatar), so adding one touches no code.",
+   "descZh": "剧情向多人格插件：同一窗口按称呼切换人格、一轮点几位同台接话（共用记忆、按点名顺序各说一段）；每条消息贴回说话者头像并在下方显示人格名，同台一条消息内按【名字】分节各贴各的头像；剧情阶段推进时头像自动替换（面板选阶段/传阶段图，或回复中输出 {{stage:阶段id}} 标记）。人格 = 一个文件夹（persona.json + prompt.md + avatar），增减不改代码。"
   },
   {
    "file": "ZRAZN__dsh-effort-slider-split-seat.yml",
@@ -124933,6 +126163,16 @@
    "descZh": "提供两个审查工具与四个技能，覆盖中长文本（例如小说）与文档审稿：七维 AI 味打分、带行号的阻断项，以及落盘的长篇连续性状态。不要与同作者的旧版 dsh-deai-audit 同装，二者注册同名工具。"
   },
   {
+   "file": "zz12hui__dsh-radar.yml",
+   "name": "zz12hui/dsh-radar",
+   "url": "https://github.com/zz12hui/dsh-radar",
+   "category": "market",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Ranking navigator for DSH plugins and agent skills: ships the 6,245-entry catalog (plus 896 skill repos) inside the bundle, scans it locally on every open against configurable keyword groups and star/download/recency thresholds, and generates an install prompt you paste into a session instead of installing anything itself. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "插件与技能排行导航：把 6,245 条插件目录和 896 个技能仓库随包带上，每次打开按可调的词条分组与星标/下载/更新时间阈值在本地全量扫描，只生成安装提示词交给会话执行，自己不动你的机器。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "zzbkl__dsh-cold-boot.yml",
    "name": "zzbkl/dsh-cold-boot",
    "url": "https://github.com/zzbkl/dsh-cold-boot",
@@ -125021,6 +126261,16 @@
    "stars": null,
    "descEn": "Wires Claude Desktop, Claude Code and Codex to a local DeepSeek Harness over MCP, and adds a status panel to the DSH web UI.",
    "descZh": "把 Claude 桌面版 / Claude Code / Codex 通过 MCP 接到本机 DeepSeek Harness，并在 DSH 页面内提供运行状态面板。"
+  },
+  {
+   "file": "zznn11__dsh-voice-read.yml",
+   "name": "zznn11/dsh-voice-read",
+   "url": "https://github.com/zznn11/dsh-voice-read",
+   "category": "voice",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Play button on finished assistant replies that reads them aloud through the official DeepSeek TTS API (tide or stella voice).",
+   "descZh": "给每条已完成的助手回复加一个播放按钮，点了用 DeepSeek 官方 TTS 念出来（tide 男声 / stella 女声）。"
   },
   {
    "file": "zzsszz1122__dsh-agnes-media.yml",
