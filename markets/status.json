@@ -18,36 +18,36 @@
       "id": "marketplace",
       "status": "fresh",
       "plugins": 1951,
-      "sha256": "ee5c426ed65f24dd89317624c5a38c804a171659f1fcb4fb26a87b4c0191406b",
-      "snapshotAt": "2026-11-22T07:10:07.911Z"
+      "sha256": "ba11de8ac2e56f594209a635db6674df39cc75cb8b9036df3a0e9b2f4fa03b43",
+      "snapshotAt": "2026-11-22T19:53:06.055Z"
     },
     {
       "id": "hub",
       "status": "fresh",
-      "plugins": 3384,
-      "sha256": "aa31dcb2188b87c1b578c9435da59e86f7b30486e89641710a9865759e88e6a7",
-      "snapshotAt": "2026-11-22T07:10:11.411Z"
+      "plugins": 3389,
+      "sha256": "7445860efa86d72668f63c3777cd5b3e497f49c4dc8112e6283f686c6eac0d8f",
+      "snapshotAt": "2026-11-22T19:53:08.368Z"
     },
     {
       "id": "tangyixiao",
       "status": "fresh",
-      "plugins": 8625,
-      "sha256": "3be05bdc34fe806cf1e565f310936ae3603f6c3f8b2bc8fbda68b9002bd8b500",
-      "snapshotAt": "2026-11-22T07:10:12.201Z"
+      "plugins": 8624,
+      "sha256": "a9630da7af40292cc4434402f0f6f222e77104b6b2d29a718a600a45fd219ce3",
+      "snapshotAt": "2026-11-22T19:53:09.211Z"
     },
     {
       "id": "tangyixiao-preview",
       "status": "fresh",
-      "plugins": 8625,
-      "sha256": "c9179a5fbd3f7184bd6553612e896e6d0fb9c573322fe29d31573951f1ea6032",
-      "snapshotAt": "2026-11-22T07:10:13.082Z"
+      "plugins": 8624,
+      "sha256": "8b93e2cfa2a161e8ad3c4564aff5955657774ded045fb14128ac607cc4987521",
+      "snapshotAt": "2026-11-22T19:53:10.004Z"
     }
   ],
   "summary": {
     "sources": 6,
     "plugins": 8625,
-    "listings": 30409,
-    "versionRecords": 32607,
-    "conflicts": 1374
+    "listings": 30412,
+    "versionRecords": 32598,
+    "conflicts": 1375
   }
 }
