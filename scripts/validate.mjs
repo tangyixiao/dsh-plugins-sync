@@ -8,6 +8,42 @@ import { validateSources, validateIndex, digest } from './market-data.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const json = (path) => JSON.parse(readFileSync(join(root, path), 'utf8'));
+const inventory = json('profiles/public-plugins.json');
+const fields = (record, names) => assert.deepEqual(Object.keys(record).sort(), [...names].sort());
+fields(inventory, ['schemaVersion', 'profiles']);
+assert.equal(inventory.schemaVersion, 1);
+assert.ok(Array.isArray(inventory.profiles) && inventory.profiles.length);
+const profileNames = new Set();
+for (const profile of inventory.profiles) {
+  fields(profile, ['profile', 'plugins']);
+  assert.match(profile.profile, /^(?:desktop|web|im-setup|qqbot|headless|profile-[1-9][0-9]*)$/);
+  assert.ok(!profileNames.has(profile.profile));
+  profileNames.add(profile.profile);
+  assert.ok(Array.isArray(profile.plugins));
+  const names = new Set();
+  for (const plugin of profile.plugins) {
+    fields(plugin, ['name', 'version', 'source', 'status', 'origin']);
+    assert.match(plugin.name, /^(?:@[a-z0-9][a-z0-9._-]*\/)?[a-z0-9][a-z0-9._-]*$/);
+    assert.match(plugin.version, /^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?$/);
+    assert.ok(!names.has(plugin.name), `Duplicate ${plugin.name} in ${profile.profile}`);
+    names.add(plugin.name);
+    assert.ok(['installed', 'enabled', 'disabled'].includes(plugin.status));
+    assert.ok(['direct', 'bundle', 'host'].includes(plugin.origin));
+    const { source } = plugin;
+    if (source.type === 'tarball') {
+      fields(source, ['type', 'spec', 'integrity']);
+      assert.match(source.spec, /^https:\/\/(?:registry\.npmjs\.org\/(?:@[\w.-]+\/)?[\w.-]+\/-\/[\w.+-]+\.tgz|github\.com\/[\w.-]+\/[\w.-]+\/releases\/download\/[\w.+-]+\/[\w.+-]+\.tgz)$/);
+      assert.match(source.integrity, /^sha512-[A-Za-z0-9+/]{86}==$/);
+    } else {
+      fields(source, ['type', 'spec']);
+      if (source.type === 'npm') assert.equal(source.spec, `${plugin.name}@${plugin.version}`);
+      else {
+        assert.equal(source.type, 'git');
+        assert.match(source.spec, /^github:[\w.-]+\/[\w.-]+#[a-f0-9]{40}$/);
+      }
+    }
+  }
+}
 const index = json('plugins.json');
 const files = readdirSync(join(root, 'data/plugins')).filter((file) => file.endsWith('.yml'));
 assert.equal(files.length, index.count);
