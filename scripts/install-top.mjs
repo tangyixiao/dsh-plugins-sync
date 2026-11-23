@@ -24,6 +24,10 @@ const profilePkg = JSON.parse(readFileSync(join(profileDir, 'package.json'), 'ut
 const installed = Object.keys(profilePkg.dependencies || {});
 
 const entries = pkg.top20.filter((e) => {
+  if (e.spec.endsWith('#SKIP-ALREADY-INSTALLED')) {
+    console.log(`SKIP (no pinned revision): ${e.name}`);
+    return false;
+  }
   if (forceAll) return true;
   if (e.skip) { console.log(`SKIP (pinned): ${e.name}`); return false; }
   const npmName = e.spec.startsWith('npm:')
@@ -42,7 +46,7 @@ for (const e of entries) {
   const spec = e.spec.replace(/^npm:/, '');
   console.log(`\n=== ${e.name} => ${spec} ===`);
   try {
-    execFileSync('dsh', ['plugin', 'add', '--profile', profileArg, spec],
+    execFileSync('dsh', ['plugin', '--profile', profileArg, 'add', '--save-exact', spec],
       { stdio: 'inherit', shell: process.platform === 'win32' });
     ok++;
   } catch (err) {

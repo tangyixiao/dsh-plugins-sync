@@ -11,6 +11,7 @@
 
 | 路径 | 说明 |
 |---|---|
+| `profiles/public-plugins.json` | 个人恢复清单：各 profile 的公开插件、精确版本与安装来源 |
 | `data/plugins/*.yml` | 上游全量插件清单（12763 个，逐插件元数据） |
 | `data/downloads.json` / `stars.json` / `capabilities.json` | 上游采集的下载量、stars、权限扫描数据 |
 | `plugins.json` | 本仓库生成的扁平索引：名称/URL/分类/下载/stars/中英描述，已按 下载↓ stars↓ 排序 |
@@ -25,19 +26,33 @@
 | `market-plugins.json` | 按包名聚合的来源位置与版本冲突记录；声明保留在来源快照中 |
 | `markets/status.json` | 每个来源的 fresh / cached / unavailable 状态 |
 
-## 新设备一键恢复
+## 按个人清单恢复
+
+[个人插件清单](profiles/public-plugins.json) 按 profile 记录已安装的公开插件、精确版本和公开来源。同一插件在不同 profile 中可以使用不同版本。`profile-1` 等是自定义配置的匿名编号，在新设备上可按插件组合对应到本地 profile。
+
+恢复时按 `source.spec` 安装 `origin: direct` 的条目。标为 `host` 的条目随相应版本的 DSH 提供。`enabled` 表示当时的配置已将该插件列入启用清单，`disabled` 表示已安装但未列入。安装完成后请核对这两种状态。
+
+清单只包含公开软件信息。账号需要在新设备登录，文件路径和设备专用设置在本机配置。更新个人清单时从已安装版本重新核对；每六小时运行的市场同步更新目录和排行榜。
+
+例如，Web 配置可以用下面的命令恢复清单中的 ZCode Plan Bridge。Desktop 的插件由 Desktop 自带的插件管理器安装。安装后按清单核对需要启用的条目。
+
+```sh
+dsh plugin --profile web add --save-exact dsh-zcode-plan-bridge@0.7.0
+```
+
+## 在新设备安装固定 Top 20
 
 ```sh
 git clone https://github.com/tangyixiao/dsh-plugins-sync
 cd dsh-plugins-sync
 node scripts/install-top.mjs --profile web        # 装 top20（自动跳过已装）
-node scripts/install-top.mjs --profile web --all  # 忽略 skip 标记强装
+node scripts/install-top.mjs --profile web --all  # 重装有精确来源的精选条目
 ```
 
 也可以随时点名安装任意插件（清单在 `plugins.json`）：
 
 ```sh
-dsh plugin add --profile web <npm包名@版本 或 github:owner/repo#commit>
+dsh plugin --profile web add --save-exact <npm包名@版本 或 github:owner/repo#commit>
 ```
 
 ## 当前 Top 20（按下载量，已钉版本）
