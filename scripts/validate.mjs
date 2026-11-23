@@ -41,7 +41,8 @@ for (const source of sources) {
   assert.equal(snapshot.url, source.url);
   assert.equal(snapshot.channel, source.channel);
   assert.equal(snapshot.sha256, digest(snapshot.index));
-  snapshots.set(source.id, validateIndex(snapshot.index, source.url));
+  validateIndex(snapshot.index, source.url);
+  snapshots.set(source.id, snapshot.index);
 }
 const aggregate = json('market-plugins.json');
 const status = json('markets/status.json');

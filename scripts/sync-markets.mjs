@@ -3,7 +3,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync, renameSync } from '
 import { resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { isDeepStrictEqual } from 'node:util';
-import { validateSources, validateIndex, aggregateParsedMarkets, digest } from './market-data.mjs';
+import { validateSources, parseSnapshotPlugins, aggregateParsedMarkets, digest } from './market-data.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const config = JSON.parse(readFileSync(join(root, 'markets.config.json')));
@@ -43,7 +43,7 @@ for (const source of sources) {
     if (previous.url !== source.url || previous.id !== source.id || previous.sha256 !== digest(previous.index)) {
       throw new Error(`Invalid cache identity/integrity: ${source.id}`);
     }
-    previousPlugins = validateIndex(previous.index, source.url).plugins;
+    previousPlugins = parseSnapshotPlugins(previous.index, source.url);
   }
   try {
     const index = localSource ? JSON.parse(readFileSync(join(localSource, `${source.id}.json`))) : await fetchIndex(source.url);
@@ -51,7 +51,7 @@ for (const source of sources) {
     const unchanged = previous?.sha256 === sha256;
     // JSON.stringify normalizes overflowing numbers to null in the persisted digest.
     const plugins = unchanged && isDeepStrictEqual(index, previous.index)
-      ? previousPlugins : validateIndex(index, source.url).plugins;
+      ? previousPlugins : parseSnapshotPlugins(index, source.url);
     const snapshot = { ...source, snapshotAt: unchanged ? previous.snapshotAt : new Date().toISOString(), sha256, index };
     write(path, snapshot);
     snapshots.push({ ...source, sha256, plugins });

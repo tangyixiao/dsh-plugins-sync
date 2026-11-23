@@ -23,6 +23,18 @@ export function validateIndex(index, url) {
   return parsed;
 }
 
+export function parseSnapshotPlugins(index, url) {
+  const { plugins } = validateIndex(index, url);
+  for (const [pluginIndex, plugin] of plugins.entries()) {
+    const original = index.plugins[pluginIndex].versions;
+    // The official parser sorts versions by SemVer; pointers refer to the stored JSON.
+    if (plugin.versions.some((entry, i) => entry.version !== original[i].version)) {
+      plugin.snapshotOffsets = new Map(original.map((entry, i) => [entry.version, i]));
+    }
+  }
+  return plugins;
+}
+
 // Retain source pointers and every version claim; never choose one market's target over another.
 export function aggregateParsedMarkets(snapshots) {
   const packages = new Map();
@@ -37,8 +49,9 @@ export function aggregateParsedMarkets(snapshots) {
       }
       entry.listings.push({ sourceId: snapshot.id, pluginIndex });
       listings++;
-      plugin.versions.forEach((version, versionIndex) => {
+      plugin.versions.forEach((version, parsedIndex) => {
         versionRecords++;
+        const versionIndex = plugin.snapshotOffsets?.get(version.version) ?? parsedIndex;
         const candidates = entry.versions.get(version.version) ?? [];
         candidates.push({ sourceId: snapshot.id, pluginIndex, versionIndex,
           signature: JSON.stringify(canonical({ source: version.source, engines: version.engines })) });
