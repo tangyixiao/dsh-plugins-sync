@@ -24,13 +24,12 @@ export function validateIndex(index, url) {
 }
 
 // Retain source pointers and every version claim; never choose one market's target over another.
-export function aggregateMarkets(snapshots) {
+export function aggregateParsedMarkets(snapshots) {
   const packages = new Map();
   let listings = 0;
   let versionRecords = 0;
   for (const snapshot of snapshots) {
-    const parsed = validateIndex(snapshot.index, snapshot.url);
-    parsed.plugins.forEach((plugin, pluginIndex) => {
+    snapshot.plugins.forEach((plugin, pluginIndex) => {
       let entry = packages.get(plugin.name);
       if (!entry) {
         entry = { name: plugin.name, listings: [], versions: new Map() };

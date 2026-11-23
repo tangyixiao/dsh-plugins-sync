@@ -2,7 +2,8 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync, renameSync } from 'node:fs';
 import { resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { validateSources, validateIndex, aggregateMarkets, digest } from './market-data.mjs';
+import { isDeepStrictEqual } from 'node:util';
+import { validateSources, validateIndex, aggregateParsedMarkets, digest } from './market-data.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const config = JSON.parse(readFileSync(join(root, 'markets.config.json')));
@@ -36,25 +37,32 @@ let failures = 0;
 for (const source of sources) {
   const path = join(snapshotDir, `${source.id}.json`);
   let previous;
+  let previousPlugins;
   if (existsSync(path)) {
     previous = JSON.parse(readFileSync(path));
     if (previous.url !== source.url || previous.id !== source.id || previous.sha256 !== digest(previous.index)) {
       throw new Error(`Invalid cache identity/integrity: ${source.id}`);
     }
-    validateIndex(previous.index, source.url);
+    previousPlugins = validateIndex(previous.index, source.url).plugins;
   }
   try {
     const index = localSource ? JSON.parse(readFileSync(join(localSource, `${source.id}.json`))) : await fetchIndex(source.url);
-    const parsed = validateIndex(index, source.url);
     const sha256 = digest(index);
-    const snapshot = { ...source, snapshotAt: previous?.sha256 === sha256 ? previous.snapshotAt : new Date().toISOString(), sha256, index };
-    snapshots.push(snapshot);
+    const unchanged = previous?.sha256 === sha256;
+    // JSON.stringify normalizes overflowing numbers to null in the persisted digest.
+    const plugins = unchanged && isDeepStrictEqual(index, previous.index)
+      ? previousPlugins : validateIndex(index, source.url).plugins;
+    const snapshot = { ...source, snapshotAt: unchanged ? previous.snapshotAt : new Date().toISOString(), sha256, index };
     write(path, snapshot);
-    health.push({ id: source.id, status: 'fresh', plugins: parsed.plugins.length, sha256, snapshotAt: snapshot.snapshotAt });
-    console.log(`${source.id}: OK ${parsed.plugins.length} plugins ${sha256.slice(0, 12)}`);
+    snapshots.push({ ...source, sha256, plugins });
+    health.push({ id: source.id, status: 'fresh', plugins: plugins.length, sha256, snapshotAt: snapshot.snapshotAt });
+    console.log(`${source.id}: OK ${plugins.length} plugins ${sha256.slice(0, 12)}`);
   } catch (error) {
     failures++;
-    if (previous) snapshots.push(previous);
+    if (previous) {
+      const { id, url, channel, sha256 } = previous;
+      snapshots.push({ id, url, channel, sha256, plugins: previousPlugins });
+    }
     health.push({ id: source.id, status: previous ? 'cached' : 'unavailable', error: error.message,
       ...(previous ? { plugins: previous.index.plugins.length, sha256: previous.sha256, snapshotAt: previous.snapshotAt } : {}) });
     console.error(`${source.id}: ${previous ? 'using cached snapshot' : 'unavailable'} (${error.message})`);
@@ -62,7 +70,7 @@ for (const source of sources) {
 }
 // A first-sync failure must not publish an aggregate which silently omits a configured market.
 if (snapshots.length === sources.length) {
-  const aggregate = aggregateMarkets(snapshots);
+  const aggregate = aggregateParsedMarkets(snapshots);
   write(join(root, 'market-plugins.json'), aggregate);
   write(join(root, 'markets/status.json'), { sources: health, summary: aggregate.summary }, true);
   const lines = ['# 多市场索引同步', '',

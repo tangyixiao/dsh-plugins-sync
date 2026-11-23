@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { aggregateMarkets, validateSources, validateIndex } from '../scripts/market-data.mjs';
+import { aggregateParsedMarkets, validateSources, validateIndex } from '../scripts/market-data.mjs';
 
 const plugin = (version, dsh, registry = 'https://registry.npmjs.org/') => ({
   name: 'example-plugin', title: 'Example',
@@ -8,6 +8,9 @@ const plugin = (version, dsh, registry = 'https://registry.npmjs.org/') => ({
 });
 const snapshot = (id, p, channel = 'stable') => ({ id, channel, url: `https://${id}.example/index.json`, sha256: id,
   index: { format: 1, title: id, plugins: [p] } });
+const aggregateMarkets = (snapshots) => aggregateParsedMarkets(snapshots.map((source) => ({
+  ...source, plugins: validateIndex(source.index, source.url).plugins,
+})));
 
 test('same-version install and compatibility conflicts retain all source claims', () => {
   const stable = snapshot('stable', plugin('1.0.0', '^0.2.0'));
