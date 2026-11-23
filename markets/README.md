@@ -2,14 +2,14 @@
 
 | 来源 | 通道 | 状态 | 插件条目 | 内容快照时间 |
 |---|---|---|---:|---|
-| [Awesome DSH Plugin](https://awesome-dsh-plugin.com/index.json) | stable | fresh | 6484 | 2026-11-22T07:10:05.522Z |
-| [Open Plugin Market](https://dshopen.org/index.json) | stable | fresh | 1340 | 2026-11-22T07:10:07.009Z |
-| [DSH Marketplace](https://dshmarketplace.dev/market/index.json) | stable | fresh | 1951 | 2026-11-22T19:53:06.055Z |
-| [DSH Plugin Hub](https://dpharness.com/market/index.json) | stable | fresh | 3389 | 2026-11-22T19:53:08.368Z |
-| [Tangyixiao DSH Market](https://tangyixiao.github.io/dsh-plugin-market/index.json) | stable | fresh | 8624 | 2026-11-22T19:53:09.211Z |
-| [Tangyixiao DSH Market Preview](https://tangyixiao.github.io/dsh-plugin-market/preview/index.json) | preview | fresh | 8624 | 2026-11-22T19:53:10.004Z |
+| [Awesome DSH Plugin](https://awesome-dsh-plugin.com/index.json) | stable | fresh | 6554 | 2026-11-23T03:45:03.424Z |
+| [Open Plugin Market](https://dshopen.org/index.json) | stable | fresh | 1337 | 2026-11-23T03:45:05.214Z |
+| [DSH Marketplace](https://dshmarketplace.dev/market/index.json) | stable | fresh | 1965 | 2026-11-23T03:45:06.138Z |
+| [DSH Plugin Hub](https://dpharness.com/market/index.json) | stable | fresh | 3388 | 2026-11-23T03:45:08.677Z |
+| [Tangyixiao DSH Market](https://tangyixiao.github.io/dsh-plugin-market/index.json) | stable | fresh | 8689 | 2026-11-23T03:45:09.531Z |
+| [Tangyixiao DSH Market Preview](https://tangyixiao.github.io/dsh-plugin-market/preview/index.json) | preview | fresh | 8689 | 2026-11-23T03:45:10.347Z |
 
-合计：8625 个包名，30412 条来源记录，32598 条版本记录，1375 个版本来源或兼容声明冲突。
+合计：8689 个包名，30622 条来源记录，32810 条版本记录，1385 个版本来源或兼容声明冲突。
 
 快照时间仅在内容变化时更新；每次在线检查见 GitHub Actions 日志。cached 表示本轮失败后保留了上次成功数据。
 稳定版与预览版分别保留。同名版本冲突不自动选胜者，完整声明在各来源快照中，聚合文件保留可追溯的记录位置。
