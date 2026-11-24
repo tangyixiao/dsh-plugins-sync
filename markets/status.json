@@ -3,9 +3,9 @@
     {
       "id": "awesome",
       "status": "fresh",
-      "plugins": 6717,
-      "sha256": "1706c147c32d80a6953d6121f19ae2460662570f7a038edbb3538ee362429e6e",
-      "snapshotAt": "2026-11-23T07:55:49.163Z"
+      "plugins": 6715,
+      "sha256": "2347857a0c5a59c1f73caa6b22fb7128acf0768b4f908ff91a23d598b1f653ad",
+      "snapshotAt": "2026-11-24T00:07:46.033Z"
     },
     {
       "id": "open",
@@ -18,36 +18,36 @@
       "id": "marketplace",
       "status": "fresh",
       "plugins": 1965,
-      "sha256": "97a94325238b12aad5300d802b7f6f28f7218b613e71738cc02b1bae1bf62bb3",
-      "snapshotAt": "2026-11-23T07:55:52.082Z"
+      "sha256": "6eaa09e17746ef4eb05010376143f9ec3dcaede8f9b4cf68e5843553029be0a0",
+      "snapshotAt": "2026-11-24T00:07:48.338Z"
     },
     {
       "id": "hub",
       "status": "fresh",
-      "plugins": 3389,
-      "sha256": "ca4b551621ec5a972927b45cd82803ec09e3c983dbed1015856e7f8c7eaf6d8b",
-      "snapshotAt": "2026-11-23T07:55:56.044Z"
+      "plugins": 3398,
+      "sha256": "f1cb905f5106b2e59c8baeef6408cb796bd90ee11c11939eb4e6dd6a5761ed98",
+      "snapshotAt": "2026-11-24T00:07:51.477Z"
     },
     {
       "id": "tangyixiao",
       "status": "fresh",
-      "plugins": 8689,
-      "sha256": "1d870017e97ff3aeca746d67f05a7a9d63518fafe82866b4987ef5e4f384c59a",
-      "snapshotAt": "2026-11-23T03:45:09.531Z"
+      "plugins": 8857,
+      "sha256": "957ea657daf11b4953e0686846ff19b5136a79475653f056c0c32b22deedb32c",
+      "snapshotAt": "2026-11-24T00:07:52.269Z"
     },
     {
       "id": "tangyixiao-preview",
       "status": "fresh",
-      "plugins": 8689,
-      "sha256": "b8c6b0e91d3f7de17ccea5e00a3e664fef65f55ae694dfe502c8e762cff55249",
-      "snapshotAt": "2026-11-23T03:45:10.347Z"
+      "plugins": 8857,
+      "sha256": "e395936bec08993e6e41ddfdea435c85d57450fdb3d89ba54bd1ec170bce0477",
+      "snapshotAt": "2026-11-24T00:07:53.055Z"
     }
   ],
   "summary": {
     "sources": 6,
-    "plugins": 8858,
-    "listings": 30914,
-    "versionRecords": 33102,
-    "conflicts": 1604
+    "plugins": 8861,
+    "listings": 31257,
+    "versionRecords": 33379,
+    "conflicts": 1572
   }
 }
