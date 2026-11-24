@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-11-24T00:07:44.605Z",
- "count": 12960,
+ "generatedAt": "2026-11-24T10:09:07.417Z",
+ "count": 12961,
  "plugins": [
   {
    "file": "dsh-market__dsh-market.yml",
@@ -79011,6 +79011,16 @@
    "stars": null,
    "descEn": "Alibaba Open Code Review for DSH: host-model delegation with native preview/rule tools and a review skill, plus optional OCR-managed reviews.",
    "descZh": "将阿里 Open Code Review 接入 DSH：通过原生文件筛选、规则工具和审查技能复用当前会话模型，并提供可选的 OCR 独立审查模式。"
+  },
+  {
+   "file": "modelgo__dsh-modelgo-provider.yml",
+   "name": "modelgo/dsh-modelgo-provider",
+   "url": "https://github.com/modelgo/dsh-modelgo-provider",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "ModelGo is a stable, enterprise-grade AI model API platform: one API key calls the latest mainstream models such as Claude, GPT, Gemini and DeepSeek, compatible with the OpenAI and Anthropic protocols. Choose models flexibly for AI coding and agent workflows, with per-call cost records, a visual dashboard, and budget and spending-limit management.",
+   "descZh": "ModelGo 是稳定的企业级 AI 大模型 API 平台，一个 API Key 即可调用 Claude、GPT、Gemini、DeepSeek 等最新主流模型，兼容 OpenAI 与 Anthropic 协议。为 AI 编程和 Agent 工作流灵活选择模型，调用费用逐笔可查，提供可视化看板，支持预算与消费上限管理。"
   },
   {
    "file": "Modellix__dsh-modellix.yml",
