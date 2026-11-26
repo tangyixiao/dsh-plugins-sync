@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-26T08:40:46.574Z",
+  "generatedAt": "2026-11-26T21:45:55.312Z",
   "upstream": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
-  "upstreamCommit": "3a871c0434952db938651635648596ed83ba13f2",
-  "inputSha256": "effc8ef8e7295d9eb99e1bc78dd6bcfb97d990036b77f01d326c6cde20008629",
-  "upstreamCount": 13281,
-  "count": 13281,
+  "upstreamCommit": "260ad6cda14145c1f84872a231a097aaa3bd0ca0",
+  "inputSha256": "d7886e289fc809837ae4753b286428069b9061df06131ddb34e1ab76a3896739",
+  "upstreamCount": 13432,
+  "count": 13432,
   "duplicateUrlCount": 0,
   "overrides": [
     {
