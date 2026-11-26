@@ -3,51 +3,51 @@
     {
       "id": "awesome",
       "status": "fresh",
-      "plugins": 6885,
-      "sha256": "e0c421a7f11eeaf55743796713abfadeef26db0e3adfc432b4941dd84c7b5c28",
-      "snapshotAt": "2026-11-25T08:55:00.089Z"
+      "plugins": 6974,
+      "sha256": "fbc4e41c8307dd515e2fdd0fa1218772026baa3413aebcec0f37198ba97d7f3b",
+      "snapshotAt": "2026-11-26T08:40:47.549Z"
     },
     {
       "id": "open",
       "status": "fresh",
-      "plugins": 1487,
-      "sha256": "659ea81cd355679dabbfda8b4febf6f1769fa060b030611b6aafae09a088e354",
-      "snapshotAt": "2026-11-25T08:55:01.843Z"
+      "plugins": 1499,
+      "sha256": "aa758ad9540351a8ec589529bbf9fb5987e7ff195683e7407d72195e76179dff",
+      "snapshotAt": "2026-11-26T08:40:49.645Z"
     },
     {
       "id": "marketplace",
       "status": "fresh",
-      "plugins": 1983,
-      "sha256": "e94cc1ed8899f9743f7a6b0109ca65a03e01a8baa495e7080fe9dc3d86ee46bc",
-      "snapshotAt": "2026-11-25T21:51:57.055Z"
+      "plugins": 2005,
+      "sha256": "d786d301103b07758ce2a6f14cafd97c26b6e097c8f527aa6e4d3c92257aa00b",
+      "snapshotAt": "2026-11-26T08:40:50.952Z"
     },
     {
       "id": "hub",
       "status": "fresh",
-      "plugins": 3410,
-      "sha256": "7a61c422d0834f7adb05a5345c8634bc92b03bd1d2cf8063b040503537b6d6a7",
-      "snapshotAt": "2026-11-25T21:52:01.757Z"
+      "plugins": 3413,
+      "sha256": "003998bdf8fe813af72f571feb5fd7bc206ab475afd1c46cc547ff91bc305bbb",
+      "snapshotAt": "2026-11-26T08:40:54.509Z"
     },
     {
       "id": "tangyixiao",
       "status": "fresh",
-      "plugins": 9041,
-      "sha256": "9cf9f859bd96e672e27bd3a8b83d352f3141604af701338a5a23c087d5957f58",
-      "snapshotAt": "2026-11-25T21:52:02.829Z"
+      "plugins": 9040,
+      "sha256": "ab61714864f755d9bd7a4d01906a9ab1a523474a2c02cc042e91435615449cab",
+      "snapshotAt": "2026-11-26T08:40:55.448Z"
     },
     {
       "id": "tangyixiao-preview",
       "status": "fresh",
-      "plugins": 9041,
-      "sha256": "bf9a33fc55c29ea9ce60f1fdd63476f36dd4e59d2d9a20e0f6301c2129e32a5c",
-      "snapshotAt": "2026-11-25T21:52:03.758Z"
+      "plugins": 9040,
+      "sha256": "5423f5e4be23a191fb453c53b51c0acb1fee3a436dea4cce5f6a7d564c6b43ca",
+      "snapshotAt": "2026-11-26T08:40:56.351Z"
     }
   ],
   "summary": {
     "sources": 6,
-    "plugins": 9041,
-    "listings": 31847,
-    "versionRecords": 33981,
-    "conflicts": 1603
+    "plugins": 9149,
+    "listings": 31971,
+    "versionRecords": 34089,
+    "conflicts": 1644
   }
 }
