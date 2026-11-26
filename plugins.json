@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-11-25T21:51:53.613Z",
- "count": 13273,
+ "generatedAt": "2026-11-26T08:40:46.574Z",
+ "count": 13281,
  "plugins": [
   {
    "file": "dsh-market__dsh-market.yml",
@@ -37363,6 +37363,16 @@
    "descZh": "飞书智能工作台：一句话生成多维表格，并在侧栏处理日程、待办、群聊、邮件与通讯录。"
   },
   {
+   "file": "deepnoseedown__dsh-weather-sandbox.yml",
+   "name": "deepnoseedown/dsh-weather-sandbox",
+   "url": "https://github.com/deepnoseedown/dsh-weather-sandbox",
+   "category": "theme",
+   "downloads": null,
+   "stars": null,
+   "descEn": "A sea that runs its own weather. Sun and moon rise and set, clouds drift and gather, wind comes from a real pressure grid, and the grass bends in travelling waves. Rain, snow, puddles and melt cycle on their own; a plump character on the grass walks at its own pace and reacts to what the sky does. Four view modes, no dependencies. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "一片自己会变天气的海。日月升落，云飘云散，风从真实的 16×16 气压网格吹来，整片草跟着一道道波伏下去。下雨、下雪、积水、融雪全自动循环；草地上还有一条自己走走停停、会对着天空变化做出反应的大肥鱼。四种看法，零依赖。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "deepseek-dsh__dsh-workspace.yml",
    "name": "deepseek-dsh/dsh-workspace",
    "url": "https://github.com/deepseek-dsh/dsh-workspace",
@@ -43019,8 +43029,8 @@
    "category": "session",
    "downloads": null,
    "stars": null,
-   "descEn": "Per-session DeepSeek Harness system-prompt section editing with templates, presets, automatic backups, blank-window drafts, message appends and per-session global-tool switches; only explicitly enabled sessions are affected. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
-   "descZh": "按会话改写、置空或新增 DeepSeek Harness 系统提示词 section，支持模板、预设、自动备份、空白窗口草稿、追加消息与按会话的 global 工具开关；只影响用户明确开启的会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+   "descEn": "Per-session DeepSeek Harness system-prompt section editing and a local Agent preset registry, with templates, presets, automatic backups, blank-window drafts, message appends and per-session global-tool switches; only explicitly enabled sessions are affected, agent presets apply to new sessions,  and the session config becomes read-only after the first turn so stale overrides yield when DSH changes official text.",
+   "descZh": "按会话改写、置空或新增 DeepSeek Harness 系统提示词 section，并注册本机 Agent 预设，支持模板、预设、自动备份、空白窗口草稿、追加消息与按会话的 global 工具开关；只影响用户明确开启的会话；Agent 预设只影响新会话；首轮后提示词配置转为只读，官方段变化时覆盖让位。"
   },
   {
    "file": "Eva7788519__dsh-screenshot-tool.yml",
@@ -52183,6 +52193,16 @@
    "descZh": "半页（dsh-half-page）：给智能体用的书房，它通过 reading_* 工具一章一章读 ~/.dsh/reading 里的书，在章节旁写读后感，也把自己写的东西放在这里，面板显示它的阅读进度。插件会往系统提示里加几行，告诉智能体这间书房归它自己、读不读随它。不是待办清单。"
   },
   {
+   "file": "heiyedehen__dsh-self-clock.yml",
+   "name": "heiyedehen/dsh-self-clock",
+   "url": "https://github.com/heiyedehen/dsh-self-clock",
+   "category": "tools",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Heartbeat (dsh-self-clock) — the agent sets its own timers: at the due moment it gets one quiet notice in the same conversation, after a five-gate check of whether the user is actually idle. It ships heartbeat_* and presence tools plus a settings panel; timers persist across restarts, and nothing is injected while the model is talking. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "鱼的心跳（dsh-self-clock）：给智能体自己设的闹钟——到点在同一段对话里收到一句安静的通知，它先看你有没有在说话。带 5 个工具和设置面板，闹钟落盘、重启不丢，模型输出期间不打扰。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
+  },
+  {
    "file": "heiyedehen__dsh-whale-whispers.yml",
    "name": "heiyedehen/dsh-whale-whispers",
    "url": "https://github.com/heiyedehen/dsh-whale-whispers",
@@ -56711,6 +56731,16 @@
    "stars": null,
    "descEn": "Restart button in the window caption band: one click closes the whole desktop app and relaunches it (the original v0.1.0 restart helper). The repository also ships a tool that patches the installed desktop shell so its tray menu carries a Restart item.",
    "descZh": "窗口标题栏的重启按钮：点一下关闭整个桌面应用再重新拉起（沿用最初的 v0.1.0 重启逻辑）。仓库另附一个工具，可为已安装的桌面壳打补丁，使其托盘菜单里出现「重启」一项。"
+  },
+  {
+   "file": "iiiigoblin__Game--plugins-deepseek-harness-permission-converge.yml",
+   "name": "iiiigoblin/Game#deepseek-harness-permission-converge",
+   "url": "https://github.com/iiiigoblin/Game/tree/main/plugins/deepseek-harness-permission-converge",
+   "category": "security",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Adds a fourth permission preset with the full filesystem scope of danger-full-access while keeping approvals available like read-only and workspace-write.",
+   "descZh": "新增第四档权限：全盘读写范围与「完全权限」相同，但像「仅可查看」和「工作区内修改」一样保留审批通道。"
   },
   {
    "file": "iiiweiii__dsh-guardwall.yml",
@@ -67231,6 +67261,16 @@
    "stars": null,
    "descEn": "DeepSeek Harness UI polish: one Markdown style across every renderer, select-text annotations with numbered pins, a sidebar that drags down to 214px and remembers its width, a first launch that fills the screen, sidebar panel and plugin icons collected into one top row of five, and a colour-cycling marker for running sessions.",
    "descZh": "DeepSeek Harness 界面增强：统一各处 Markdown 排版、划词批注（带编号的段落标记）、可拖到 214px 并记住宽度的侧栏、首次启动铺满屏幕、侧栏面板与插件图标合并为顶部一行（每行 5 个），以及运行中会话的彩色状态环。"
+  },
+  {
+   "file": "lavandiI__dsh-peak-opencode.yml",
+   "name": "lavandiI/dsh-peak-opencode",
+   "url": "https://github.com/lavandiI/dsh-peak-opencode",
+   "category": "usage",
+   "downloads": null,
+   "stars": null,
+   "descEn": "OpenCode Go rate band above the composer: the tariff that applies to the current model (peak, off-peak, flat or free), the price per million tokens for input, output and cache, and the time left until the rate changes. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "输入框上方的 OpenCode Go 费率条：显示当前模型适用的费率（高峰、低谷、统一或免费）、每百万 token 的输入／输出／缓存价格，以及距离费率切换的剩余时间。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "lavapapa__dsh-composer-layout.yml",
@@ -79463,6 +79503,26 @@
    "descZh": "DeepSeek Harness 的学习笔记本：每本笔记本是一个工作区，课文、测验、学习计划与对话都以真实的 Harness 会话打开并带一句预设首条消息；学习者记忆分笔记本与全局两层，课程风格可自由填写，课时完成状态由学习者手动标记。"
   },
   {
+   "file": "MicroCapCap__dsh-icon-studio.yml",
+   "name": "MicroCapCap/dsh-icon-studio",
+   "url": "https://github.com/MicroCapCap/dsh-icon-studio",
+   "category": "ui",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Replaces the DeepSeek Harness application icons from one PNG — tray, About panel, desktop and Start Menu shortcuts, window, taskbar, Explorer entry, and the icon resources inside the executable — backing up the originals first, verifying the patched executable before the swap, and restoring the official set with one command.",
+   "descZh": "用一张 PNG 替换 DeepSeek Harness 的应用图标——托盘、关于面板、桌面与开始菜单快捷方式、窗口、任务栏、资源管理器条目，以及可执行文件内的图标资源——换前备份原文件、换前校验打补丁后的可执行文件，并可一条命令恢复官方图标。"
+  },
+  {
+   "file": "MicroCapCap__intelligent-inspiration.yml",
+   "name": "MicroCapCap/intelligent-inspiration",
+   "url": "https://github.com/MicroCapCap/intelligent-inspiration",
+   "category": "docs",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Renders eight Markdown fence languages — cards, actions, inspiration, quiz, sort, softmax, match, and chart — as interactive blocks in DeepSeek Harness chat answers, so a model can lay out a quiz or a comparison instead of plain text.",
+   "descZh": "把八种 Markdown 围栏语言——cards、actions、inspiration、quiz、sort、softmax、match 与 chart——渲染成 DeepSeek Harness 回答里的交互块，模型可以直接排版测验或对比内容，而不必只写纯文本。"
+  },
+  {
    "file": "MicroCapCap__periodic-model-picker.yml",
    "name": "MicroCapCap/periodic-model-picker",
    "url": "https://github.com/MicroCapCap/periodic-model-picker",
@@ -85851,6 +85911,16 @@
    "stars": null,
    "descEn": "This plugin adds native Office editors to DeepSeek Harness so you and your AI agent can edit Word documents, Excel workbooks, and PowerPoint slide decks together and review changes in place.",
    "descZh": "这款插件给 DeepSeek Harness 装上原生 Office 编辑器，你可以与 AI 共同编辑 Word 文稿、Excel 表格和 PowerPoint 幻灯片，并在原位置核对修改。"
+  },
+  {
+   "file": "ogidimitrov__dsh-peak-cost.yml",
+   "name": "ogidimitrov/dsh-peak-cost",
+   "url": "https://github.com/ogidimitrov/dsh-peak-cost",
+   "category": "usage",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Adds one line under the composer with DeepSeek's live peak/off-peak billing status, this session's estimated USD cost broken down by content category (web results, tool results, messages, thinking, system prompt, tool schemas), and the account balance.",
+   "descZh": "在输入框下方显示 DeepSeek 当前计费时段、按内容分类（网页结果、工具结果、消息、思考、系统提示、 工具定义）拆分的本会话预估花费，以及账户余额。"
   },
   {
    "file": "oh-dsh-plugins__dsh-agentdeck.yml",
@@ -99721,6 +99791,16 @@
    "stars": null,
    "descEn": "Import a public DeepSeek or Doubao chat share link into a DSH workspace as a static, resumable session.",
    "descZh": "把公开的 DeepSeek 或豆包对话分享链接导入 DSH 工作区，成为一个静态、可续聊的会话。"
+  },
+  {
+   "file": "SillyMeo-1__dont-guess-ask.yml",
+   "name": "SillyMeo-1/dont-guess-ask",
+   "url": "https://github.com/SillyMeo-1/dont-guess-ask",
+   "category": "agi",
+   "downloads": null,
+   "stars": null,
+   "descEn": "When a requirement was never stated, puts the 2-5 readings it inferred into a choice card in the composer and waits for a pick instead of guessing. While that question waits outside the asking session, a light-red banner in a screen corner shows it, and clicking it jumps back to the session. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.",
+   "descZh": "需求没明说时，先把推断出的 2–5 种读法摆进输入区的选择框等你挑，而不是自己猜着往下做；问题还没答、而你没看着那个会话时，屏幕角落会亮起浅红提示条，点它直接跳回提问的会话。它的 HTTP 路由没有 DSH 的访问检查，浏览器里打开的网页可以调用它们。"
   },
   {
    "file": "SilverIodide42__dsh-session-consistency.yml",
