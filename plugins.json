@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-11-26T21:45:55.312Z",
- "count": 13432,
+ "generatedAt": "2026-11-27T08:51:10.689Z",
+ "count": 13445,
  "plugins": [
   {
    "file": "dsh-market__dsh-market.yml",
@@ -39143,6 +39143,16 @@
    "descZh": "会话面板停靠后，将对话记录居中显示在旁边空间。"
   },
   {
+   "file": "dkmnx__recollect--adapters-dsh.yml",
+   "name": "dkmnx/recollect#dsh",
+   "url": "https://github.com/dkmnx/recollect/tree/main/adapters/dsh",
+   "category": "memory",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Per-workspace Recollect memory for DeepSeek Harness. Adds a scoped memory tool and injects a memory snapshot for each agent's working directory.",
+   "descZh": "为 DeepSeek Harness 提供按工作区隔离的 Recollect 记忆，添加作用域记忆工具，并注入与当前工作目录绑定的记忆快照。"
+  },
+  {
    "file": "Dkrillex__dsh-macos-pet.yml",
    "name": "Dkrillex/dsh-macos-pet",
    "url": "https://github.com/Dkrillex/dsh-macos-pet",
@@ -42551,6 +42561,16 @@
    "stars": null,
    "descEn": "Wishing House theme skin with warm amber glow, live moon phases, meteors, typing sparks, procedural chime audio, and daily fortune slips.",
    "descZh": "许愿屋古风主题皮肤：暖灯琥珀色调、今日真实月相与轨迹、字落生辉打字萤火、纯原生风铃音效与每日许愿签。"
+  },
+  {
+   "file": "Elosiad__dsh-script-progress.yml",
+   "name": "Elosiad/dsh-script-progress",
+   "url": "https://github.com/Elosiad/dsh-script-progress",
+   "category": "agi",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Makes long-running scripts carry a progress bar with percent, rate and ETA, reports milestones at 10/25/50/75/90% in chat, and feeds the DSH progress channel so the UI shows them live.",
+   "descZh": "让长任务脚本自带进度条（百分比 / 速度 / ETA），在 10/25/50/75/90% 里程碑回报聊天，并写进 DSH 进度通道让界面实时显示。"
   },
   {
    "file": "elsebit__dsh-deepseek-usage-extended.yml",
@@ -68589,8 +68609,8 @@
    "category": "model",
    "downloads": null,
    "stars": null,
-   "descEn": "GitHub Copilot sign-in for the built-in github-copilot route, on github.com or a GitHub Enterprise host: a Settings page with a GitHub host field, OAuth device-flow login, and credentials kept in the Harness credential store.",
-   "descZh": "为内置 github-copilot 通道提供 GitHub Copilot 登录，支持 github.com 或 GitHub Enterprise 主机：设置页带 GitHub host 字段，OAuth 设备码登录，凭据存入 Harness 凭据库。"
+   "descEn": "GitHub Copilot Bridge provider for DeepSeek Harness, with GitHub/Enterprise device-flow sign-in, a live model catalog, model visibility and pinning controls.",
+   "descZh": "为 DeepSeek Harness 提供独立的 GitHub Copilot Bridge 模型服务，支持 GitHub/Enterprise 设备码登录、实时模型目录、模型显示控制与置顶。"
   },
   {
    "file": "leinaldo__dsh-routines.yml",
@@ -77623,6 +77643,16 @@
    "descZh": "让 agent 在长工具链中途说明进度，而不是一路静默到最终答复：一条随每次请求下发的常驻系统提示词规则，加上每 N 次工具调用后注入的一条提醒。插件页内的面板可调整步频、提醒上限与两段文本，保存即热生效。"
   },
   {
+   "file": "maburykh-gif__dsh-plugins--packages-ai-hubs-models.yml",
+   "name": "maburykh-gif/dsh-plugins#ai-hubs-models",
+   "url": "https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/ai-hubs-models",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Six OpenAI-compatible AI hubs (Polza, GenAPI, ChadGPT, BotHub, provod.ai, GPTunnel) as separate model-picker sections: text, architecture, design, image and video routes wherever the hub catalogue has such models, plus a settings card with each hub key page and slash-command shortcodes that switch the session model to a section. ruGPT is not included because its API sits behind an anti-bot wall.",
+   "descZh": "把六个 OpenAI 兼容的 AI 网关（Polza、GenAPI、ChadGPT、BotHub、provod.ai、GPTunnel）作为独立分区接入模型选择器：按各网关目录提供文本、架构、设计、图像与视频路由，并在设置页提供各网关密钥页链接与切换会话模型的分区快捷命令。ruGPT 未收录，其 API 有反爬拦截。"
+  },
+  {
    "file": "maburykh-gif__dsh-plugins--packages-aitunnel-models.yml",
    "name": "maburykh-gif/dsh-plugins#aitunnel-models",
    "url": "https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/aitunnel-models",
@@ -77633,6 +77663,46 @@
    "descZh": "模型选择器中的 AITunnel：把同一个 OpenAI 兼容网关（https://api.aitunnel.ru/v1）声明为五条独立路由——文本、架构、设计、图像和视频，每条路由的模型列表写在插件的 patch 文件里；密钥从凭据库的 AITUNNEL_API_KEY 读取。"
   },
   {
+   "file": "maburykh-gif__dsh-plugins--packages-bothub-models.yml",
+   "name": "maburykh-gif/dsh-plugins#bothub-models",
+   "url": "https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/bothub-models",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "BotHub routes in the model picker: the OpenAI-compatible gateway (https://openai.bothub.chat/v1) as five sections — text, architecture, design, images and video; the key is read from BOTHUB_API_KEY in the credential store. A settings card edits each section's shortcode, creates user-defined sections as extra provider routes, and links to the developer page (author referral link, disclosed).",
+   "descZh": "在模型选择器中接入 BotHub（https://openai.bothub.chat/v1）OpenAI 兼容网关，按文本、架构、设计、图像与视频五个分区展示，密钥从凭据库的 BOTHUB_API_KEY 读取。设置卡片支持编辑各分区快捷码、以额外提供方路由形式创建自定义分区，并提供开发者页链接（含作者推广链接，已注明）。"
+  },
+  {
+   "file": "maburykh-gif__dsh-plugins--packages-chadgpt-models.yml",
+   "name": "maburykh-gif/dsh-plugins#chadgpt-models",
+   "url": "https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/chadgpt-models",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "ChadGPT token API routes in the model picker: the OpenAI-compatible endpoint (https://chadgpt.ru/api/v1) as three sections — text, architecture and design, separate from the ChadGPT chat subscription; the key is read from CHADGPT_API_KEY in the credential store. A settings card edits shortcodes, creates user-defined sections, and links to the key page (author referral link, disclosed).",
+   "descZh": "在模型选择器中接入 ChadGPT token API（https://chadgpt.ru/api/v1）OpenAI 兼容端点，按文本、架构与设计三个分区展示（独立于 ChadGPT 聊天订阅），密钥从凭据库的 CHADGPT_API_KEY 读取。设置卡片支持编辑快捷码、创建自定义分区，并提供密钥页链接（含作者推广链接，已注明）。"
+  },
+  {
+   "file": "maburykh-gif__dsh-plugins--packages-genapi-models.yml",
+   "name": "maburykh-gif/dsh-plugins#genapi-models",
+   "url": "https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/genapi-models",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "GenAPI routes in the model picker: the OpenAI-compatible chat gateway (https://proxy.gen-api.ru/v1) as five sections — text, architecture, design, images and video; the key is read from GENAPI_API_KEY in the credential store. The image and video sections are catalogs only, because GenAPI generates media through its native task API. A settings card edits shortcodes, creates user-defined sections, and links to the key page (author referral link, disclosed).",
+   "descZh": "在模型选择器中接入 GenAPI（https://proxy.gen-api.ru/v1）OpenAI 兼容对话网关，按文本、架构、设计、图像与视频五个分区展示，密钥从凭据库的 GENAPI_API_KEY 读取；图像与视频分区仅作目录展示（实际生成需走其原生任务 API）。设置卡片支持编辑快捷码、创建自定义分区，并提供密钥页链接（含作者推广链接，已注明）。"
+  },
+  {
+   "file": "maburykh-gif__dsh-plugins--packages-gptunnel-models.yml",
+   "name": "maburykh-gif/dsh-plugins#gptunnel-models",
+   "url": "https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/gptunnel-models",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "GPTunnel routes in the model picker: the OpenAI-compatible gateway (https://gptunnel.ru/v1) as five sections — text, architecture, design, images and video; the key is read from GPTUNNEL_API_KEY in the credential store. The image and video sections are catalogs only, because GPTunnel generates media through its separate CreativeLab API. A settings card edits shortcodes, creates user-defined sections, and links to the key page (author referral link, disclosed).",
+   "descZh": "在模型选择器中接入 GPTunnel（https://gptunnel.ru/v1）OpenAI 兼容网关，按文本、架构、设计、图像与视频五个分区展示，密钥从凭据库的 GPTUNNEL_API_KEY 读取；图像与视频分区仅作目录展示（实际生成需走其独立 CreativeLab API）。设置卡片支持编辑快捷码、创建自定义分区，并提供密钥页链接（含作者推广链接，已注明）。"
+  },
+  {
    "file": "maburykh-gif__dsh-plugins--packages-pause-ru.yml",
    "name": "maburykh-gif/dsh-plugins#pause-ru",
    "url": "https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/pause-ru",
@@ -77641,6 +77711,46 @@
    "stars": null,
    "descEn": "Russian-language fork of dsh-pause (MIT): pauses the agent right before it sends the next model request of a tool round, keeping the composer usable — a bare Enter or the resume button continues, and text typed meanwhile is sent as a steering message; every label, hint and error is in Russian, and the pause never interrupts an in-flight API call.",
    "descZh": "dsh-pause 的俄语本地化分叉（MIT）：在一轮工具调用结束、下一次模型请求发出前暂停，输入框保持可用——直接按回车或点继续按钮放行，期间输入的文字作为插话随请求发出；所有标签、提示与错误均为俄语，暂停不会打断进行中的 API 调用。"
+  },
+  {
+   "file": "maburykh-gif__dsh-plugins--packages-pii-guard.yml",
+   "name": "maburykh-gif/dsh-plugins#pii-guard",
+   "url": "https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/pii-guard",
+   "category": "security",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Reversible masking of Russian personal data and secrets in model requests: at the undici transport layer it replaces SNILS, INN, OGRN/OGRNIP, KPP, BIK, bank accounts, Russian passports, OMS policies, cards, +7 phones, emails, addresses and names, plus API keys, JWT, PEM keys and passwords with stable placeholders, and restores the originals in the SSE or JSON response, so the provider sees placeholders while the agent, tools and session log keep real values. Fail-closed, an audit journal without originals, enforce/audit/off modes, per-category switches, a custom dictionary and an allowlist.",
+   "descZh": "在 undici 传输层对发往模型的请求做可逆脱敏：把俄罗斯个人数据（СНИЛС、ИНН、ОГРН/ОГРНИП、КПП、БИК、银行账号、俄罗斯护照、ОМС 保单、银行卡、+7 电话、邮箱、地址、姓名）与密钥类数据（API key、JWT、PEM、密码）替换为稳定占位符，并在 SSE/JSON 响应中还原原值，因此服务商只看到占位符，而智能体、工具与会话日志保留真实值。默认 fail-closed，审计日志不写原值，支持 enforce/audit/off 模式、按类别开关、自定义词典与白名单。"
+  },
+  {
+   "file": "maburykh-gif__dsh-plugins--packages-polza-models.yml",
+   "name": "maburykh-gif/dsh-plugins#polza-models",
+   "url": "https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/polza-models",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Polza.ai routes in the model picker: one OpenAI-compatible gateway (https://polza.ai/api/v1) declared as five sections — text, architecture, design, images and video; the key is read from POLZA_AI_API_KEY in the credential store. A settings card edits each section's shortcode, creates user-defined sections as extra provider routes, and links to the key page (author referral link, disclosed).",
+   "descZh": "在模型选择器中接入 Polza.ai（https://polza.ai/api/v1）OpenAI 兼容网关，声明为文本、架构、设计、图像与视频五个分区，密钥从凭据库的 POLZA_AI_API_KEY 读取。设置卡片支持编辑各分区快捷码、以额外提供方路由形式创建自定义分区，并提供密钥页链接（含作者推广链接，已注明）。"
+  },
+  {
+   "file": "maburykh-gif__dsh-plugins--packages-provod-models.yml",
+   "name": "maburykh-gif/dsh-plugins#provod-models",
+   "url": "https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/provod-models",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "provod.ai routes in the model picker: the OpenAI-compatible gateway (https://api.provod.ai/v1) declared as five sections — text, architecture, design, images and video; the key is read from PROVOD_API_KEY in the credential store. A settings card edits each section's shortcode, creates user-defined sections as extra provider routes, and links to the key page (author referral link, disclosed).",
+   "descZh": "在模型选择器中接入 provod.ai（https://api.provod.ai/v1）OpenAI 兼容网关，声明为文本、架构、设计、图像与视频五个分区，密钥从凭据库的 PROVOD_API_KEY 读取。设置卡片支持编辑各分区快捷码、以额外提供方路由形式创建自定义分区，并提供密钥页链接（含作者推广链接，已注明）。"
+  },
+  {
+   "file": "maburykh-gif__dsh-plugins--packages-rugpt-models.yml",
+   "name": "maburykh-gif/dsh-plugins#rugpt-models",
+   "url": "https://github.com/maburykh-gif/dsh-plugins/tree/main/packages/rugpt-models",
+   "category": "model",
+   "downloads": null,
+   "stars": null,
+   "descEn": "ruGPT routes in the model picker: the OpenAI-compatible gateway (https://rugpt.io/api/openai/v1) declared as three sections — text, architecture and design; the key is read from RUGPT_API_KEY in the credential store. A settings card edits each section's shortcode, creates user-defined sections as extra provider routes, and links to the service panel (author referral link, disclosed).",
+   "descZh": "在模型选择器中接入 ruGPT（https://rugpt.io/api/openai/v1）OpenAI 兼容网关，声明为文本、架构与设计三个分区，密钥从凭据库的 RUGPT_API_KEY 读取。设置卡片支持编辑各分区快捷码、以额外提供方路由形式创建自定义分区，并提供服务面板链接（含作者推广链接，已注明）。"
   },
   {
    "file": "maburykh-gif__dsh-plugins--packages-textru-unique.yml",
@@ -93811,6 +93921,16 @@
    "stars": null,
    "descEn": "Qingshi diary and family-tree assistant: reads and writes career records, resolves relatives by kinship term, and drives the real H5 pages in a desktop window.",
    "descZh": "青史日记与族谱助手：读写生涯记录、按称谓倒推亲属关系，并在独立窗口里操作真实 H5 页面。"
+  },
+  {
+   "file": "qq2550049106__ai-veil-bridge.yml",
+   "name": "qq2550049106/ai-veil-bridge",
+   "url": "https://github.com/qq2550049106/ai-veil-bridge",
+   "category": "notify",
+   "downloads": null,
+   "stars": null,
+   "descEn": "AI-Veil takeover indicator: registers the veil_emit and veil_cancel tools so every agent takeover action shows a system-level banner and border, plays a cue, sends a desktop notification, and offers one-key abort.",
+   "descZh": "AI-Veil 接管提示器：把 Agent 的接管动作注册为 veil_emit / veil_cancel 两个工具，桌面端随之弹出系统级横幅与边框、播放提示音、发桌面通知，并可一键中止。"
   },
   {
    "file": "qq304379685__dsh-lanhu-dashboard-x.yml",
@@ -132581,6 +132701,16 @@
    "stars": null,
    "descEn": "Timed send for the chat composer: pick a moment and the host delivers the message then. Inside an existing conversation tasks join that conversation; from the new-session screen each task gets its own pre-created session.",
    "descZh": "聊天输入框的定时发送：选好时刻到点由 Host 真正发出。已有对话内任务排进当前对话；新会话界面每条任务各建一个独立会话。"
+  },
+  {
+   "file": "zls2010419-crypto__deepseek-harness-memory.yml",
+   "name": "zls2010419-crypto/deepseek-harness-memory",
+   "url": "https://github.com/zls2010419-crypto/deepseek-harness-memory",
+   "category": "memory",
+   "downloads": null,
+   "stars": null,
+   "descEn": "Long-term memory plugin with auto-recall, per-repo isolation, a memory graph, user-profile injection, an Ebbinghaus forgetting curve, and OpenVINO embeddings.",
+   "descZh": "长期记忆插件：自动召回、按仓库隔离、记忆图谱、用户画像注入、艾宾浩斯遗忘曲线与 OpenVINO 向量化。"
   },
   {
    "file": "zlun-yan__dsh-python-manager.yml",
