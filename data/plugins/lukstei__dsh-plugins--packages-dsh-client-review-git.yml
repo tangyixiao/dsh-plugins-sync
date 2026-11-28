@@ -1,0 +1,6 @@
+url: https://github.com/lukstei/dsh-plugins/tree/main/packages/dsh-client-review-git
+name: lukstei/dsh-plugins#dsh-client-review-git
+category: git
+description:
+  en: Adds a read-only Git and GitButler diff viewer in a sidebar tab and split-pane overlay, with line quoting and a git_review_present tool.
+  zh: 在侧栏标签与分栏浮层提供只读 Git/GitButler 差异评审视图，支持行级引用与 git_review_present 工具。

@@ -1,0 +1,6 @@
+url: https://github.com/lukstei/dsh-plugins/tree/main/packages/dsh-scratch-dir
+name: lukstei/dsh-plugins#dsh-scratch-dir
+category: session
+description:
+  en: Creates a git-ignored .agents/scratch/<sessionId> folder for each session and injects its path into the agent system prompt.
+  zh: 为每个会话创建带 .gitignore 的 .agents/scratch/<sessionId> 临时目录，并将路径注入系统提示词。

@@ -1,0 +1,7 @@
+url: https://github.com/warm-flame-core/dsh-jlc-art-pcb
+name: warm-flame-core/dsh-jlc-art-pcb
+category: tools
+icon: https://raw.githubusercontent.com/warm-flame-core/dsh-jlc-art-pcb/main/assets/icon-180.png
+description:
+  en: 'Turns an illustration into a manufacturable JLCPCB art PCB. A free two-tone route (OSP bare copper or ENIG) posterizes to the three tones a PCB has and vectorizes a silhouette board outline; a paid route (UV colour silkscreen) quantizes to a palette, places a bitmap on the silkscreen layer and exports the Fabrication_Colorful files. Both can add gold accents from a numbered colour-block table, local-contrast highlight gilding, an inset gold frame and board cutouts. Includes an environment doctor, a pre-write canvas audit, a JLC constraint validator, and an independent Gerber self-checker.'
+  zh: '把一张插画做成可打样的嘉立创艺术板：免费双色路线（OSP 裸铜或沉金）压成三色调并矢量化为剪影板框；付费全彩路线（UV 彩色丝印）量化调色板、把位图贴到丝印层并导出 Fabrication_Colorful 四件套。两条路线都能叠加金色配饰（按编号色块表挑选）、高光沉金、内嵌金框与板框镂空。另附环境自检、写入前画布预检、工艺约束校验器，以及一个独立的 Gerber 自检器。'

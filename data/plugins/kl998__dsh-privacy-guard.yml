@@ -1,0 +1,6 @@
+url: https://github.com/kl998/dsh-privacy-guard
+name: kl998/dsh-privacy-guard
+category: security
+description:
+  en: 'Masks ID card numbers, phone numbers, emails, bank cards, passports, secrets and Chinese labeled fields in tool results and user messages before the model reads them, replacing each value with a marker. A Session that reads a document-type file, receives an image, or matches a rule stops uploading its Session log and withholds telemetry ledger records, and a resumed Session is marked again and announced once on its first message. Text inside images and unlabeled prose are not masked; model requests still carry the masked content.'
+  zh: '在模型读取工具结果与用户消息之前，把身份证号、手机号、邮箱、银行卡号、护照号、密钥与中文标签字段替换为占位符。会话一旦读取文档类文件、收到图片或命中规则，就停止上传会话日志并扣留遥测 ledger 记录；重启恢复的会话会重新标记，并在首条消息提示一次。图片内文字与无标签正文不做脱敏，模型请求本身仍携带脱敏后的内容。'

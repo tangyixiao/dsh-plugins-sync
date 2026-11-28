@@ -1,0 +1,6 @@
+url: https://github.com/lukstei/dsh-plugins/tree/main/packages/dsh-session-handoff
+name: lukstei/dsh-plugins#dsh-session-handoff
+category: session
+description:
+  en: Adds a /handoff command and context-usage ring to start a fresh session seeded with a resume brief and optional model switch.
+  zh: 提供 /handoff 命令与上下文用量环，生成交接摘要并在新会话中续接，支持切换模型。

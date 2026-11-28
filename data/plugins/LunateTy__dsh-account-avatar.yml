@@ -1,0 +1,7 @@
+url: https://github.com/LunateTy/dsh-account-avatar
+name: LunateTy/dsh-account-avatar
+category: ui
+icon: https://raw.githubusercontent.com/LunateTy/dsh-account-avatar/main/assets/icon-180.png
+description:
+  en: Replaces the sidebar account avatar with a picture you upload and a custom name, keeping up to 100 pictures with three shapes, and works signed in or out.
+  zh: 把侧栏账号头像换成自己上传的图片并自定义昵称，最多保存 100 张历史、三种形状，登录和未登录都能用。

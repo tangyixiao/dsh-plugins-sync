@@ -1,0 +1,6 @@
+url: https://github.com/Lxeon/dsh-localstate-sync
+name: Lxeon/dsh-localstate-sync
+category: session
+description:
+  en: Persists browser localStorage keys matching a prefix to a JSON file under the DSH home and restores them before the page boots.
+  zh: 把匹配前缀的浏览器 localStorage 键持久化到 DSH home 下的 JSON 文件，并在页面启动前恢复。

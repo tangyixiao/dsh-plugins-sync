@@ -1,0 +1,6 @@
+url: https://github.com/lukstei/dsh-plugins/tree/main/packages/dsh-client-favicon
+name: lukstei/dsh-plugins#dsh-client-favicon
+category: ui
+description:
+  en: Renders the browser tab favicon as an eight-tick ring showing running sessions in green, review sessions in orange, and pending interactions as a center dot.
+  zh: 将浏览器标签页图标绘制为八格状态环，以绿色表示运行中会话、橙色表示待评审会话、中心红点表示待交互。

@@ -1,0 +1,6 @@
+url: https://github.com/lukstei/dsh-plugins/tree/main/packages/dsh-client-pwa
+name: lukstei/dsh-plugins#dsh-client-pwa
+category: remote
+description:
+  en: Serves a web app manifest and icons so DSH installs as a PWA, with optional header and CIDR verification for reverse-proxy login.
+  zh: 提供 Web App Manifest 与图标使 DSH 可作为 PWA 安装，并支持基于请求头与 CIDR 的反向代理免令牌登录。

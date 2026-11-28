@@ -1,0 +1,7 @@
+url: https://github.com/edwardhey/dsh-ponytail
+name: edwardhey/dsh-ponytail
+category: skill
+description:
+  en: 'Adds the Ponytail lazy-senior workflow to DeepSeek Harness with four modes, a composer selector, six focused skills, bilingual descriptions, per-skill toggles, and cache-friendly switching.'
+  zh: '为 DeepSeek Harness 接入 Ponytail 懒人资深工程师工作流，提供四档模式、输入框选择器、六个专项技能、双语描述、逐技能开关和缓存友好的切换。'
+icon: https://raw.githubusercontent.com/edwardhey/dsh-ponytail/main/assets/icon-180.png

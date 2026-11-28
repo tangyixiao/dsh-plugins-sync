@@ -1,0 +1,6 @@
+url: https://github.com/DrizzleGig/dsh-novel-persona
+name: DrizzleGig/dsh-novel-persona
+category: workflow
+description:
+  en: "Late in a long novel, the biggest risk is characters drifting and prose losing its voice. Turn character settings into book-level constraints, and build protagonist or supporting-cast cards from the sidebar at any time. Search by personality tags, import local novels and folders, and distill prose patterns that fit the persona, with a local fallback when offline. Switch the panel background freely, keep data in its own store, and hand a one-click snapshot to the main workbench, so every character stays consistent from start to finish."
+  zh: "长篇写到后期，最怕角色性格走样、行文失真。把人物设定做成全书最高约束，侧边栏随时建主角、配角人物卡。支持性格标签检索、导入本地小说及文件夹，直接提炼“贴合人设的行文写法”，无网也能本地兜底。界面底色随心切，独立存盘，随时供主工作台一键取用快照，让每个角色从头立到尾。"

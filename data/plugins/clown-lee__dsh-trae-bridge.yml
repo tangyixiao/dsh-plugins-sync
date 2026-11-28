@@ -1,0 +1,7 @@
+url: https://github.com/clown-lee/dsh-trae-bridge
+name: clown-lee/dsh-trae-bridge
+category: model
+description:
+  en: 'Bring the Trae IDE''s own models into DeepSeek Harness: both the CN and the international editions appear as separate groups, the model list comes from Trae''s own cache, thinking is shown as a separate block, and no API key or token copying is needed. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 把 Trae 桌面端自带的模型接进 DeepSeek Harness：国内版与国际版各成一组，模型清单取自 Trae 自己的缓存，思考过程单独显示，不需要 API Key，也不用复制令牌。其 HTTP 路由未做 DSH 权限校验，浏览器中打开的任意网页都可能直接调用。
+icon: https://raw.githubusercontent.com/clown-lee/dsh-trae-bridge/main/assets/icon-180.png

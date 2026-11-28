@@ -1,0 +1,6 @@
+url: https://github.com/lukstei/dsh-plugins/tree/main/packages/dsh-log
+name: lukstei/dsh-plugins#dsh-log
+category: dev
+description:
+  en: Routes Cordis logger output to stdout and log files with configurable per-logger severity thresholds.
+  zh: 将 Cordis 日志输出到标准输出或日志文件，支持按日志器名称分别配置输出级别阈值。

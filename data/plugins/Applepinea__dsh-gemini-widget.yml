@@ -1,0 +1,7 @@
+url: https://github.com/Applepinea/dsh-gemini-widget
+name: Applepinea/dsh-gemini-widget
+category: ui
+description:
+  en: 'A Gemini-girl widget in the DSH window whose expression follows the session state (idle, thinking, waiting for your confirmation, turn finished) and shows live context usage, tokens, cache hit rate, per-turn cost and DeepSeek balance; it plays a sound and pops a bubble when the agent needs a confirmation or an answer, adds a compact stats bar under the input box, and offers adjustable size, sounds and docking.'
+  zh: 'DSH 界面里的 Gemini娘挂件，表情随会话状态切换（待机、思考、等你确认、回合结束），实时显示上下文占用、Token、缓存命中率、每轮花费与 DeepSeek 余额；需要授权或提问时发声冒泡提醒，输入框下方附紧凑统计栏，尺寸、音效与停靠可调。'
+icon: https://raw.githubusercontent.com/Applepinea/dsh-gemini-widget/main/assets/icon.png

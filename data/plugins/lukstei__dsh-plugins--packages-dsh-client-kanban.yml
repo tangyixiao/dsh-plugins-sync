@@ -1,0 +1,6 @@
+url: https://github.com/lukstei/dsh-plugins/tree/main/packages/dsh-client-kanban
+name: lukstei/dsh-plugins#dsh-client-kanban
+category: ui
+description:
+  en: Organizes sessions into To Do, Active, Review, and Done lanes in a sidebar board and main panel, deriving state from session events and exposing kanban_add_link.
+  zh: 在侧栏与主面板提供 To Do、Active、Review、Done 四列会话看板，基于会话事件派生状态，并提供 kanban_add_link 工具。

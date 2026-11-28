@@ -1,0 +1,6 @@
+url: https://github.com/vegeta555/dsh-precise-search
+name: vegeta555/dsh-precise-search
+category: session
+description:
+  en: Search prompts and replies across sessions, then open the hit message, scroll to the keyword, and highlight it. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 跨会话搜索提问与回答正文，点击结果直接打开会话并定位到关键词高亮。其 HTTP 路由未做 DSH 权限校验，浏览器中打开的任意网页都可能直接调用。
