@@ -1,0 +1,6 @@
+url: https://github.com/54dsb1/dsh-stream-agent
+name: 54dsb1/dsh-stream-agent
+category: workflow
+description:
+  en: Single-stream DSH plugin for streaming tool calls, context compaction, token budgets, prefix-cache-aware requests, and PTC-compatible code execution.
+  zh: 单流 DSH 插件，支持流式工具调用、上下文压缩、token 预算、前缀缓存感知请求和 PTC 兼容代码执行。

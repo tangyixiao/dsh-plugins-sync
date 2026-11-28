@@ -1,0 +1,7 @@
+url: https://github.com/AMindFlow/dsh-fleetseek
+name: AMindFlow/dsh-fleetseek
+category: tools
+description:
+  en: 'FleetSeek: ordered multi-provider web search chain that tries your saved vendors in turn, aggregating free quotas into one high-quota, always-available search tool; per-entry proxy egress enforced by an OS-level PAC sandbox.'
+  zh: 'FleetSeek：有序多厂商搜索降级链：按保存顺序逐个尝试、失败或无结果才降级，把各厂商免费额度聚合为一个高额度、始终可用的 web_search；条目级代理出站由 OS 级 PAC 沙箱强制执行。'
+icon: https://raw.githubusercontent.com/AMindFlow/dsh-fleetseek/main/src/icon.png

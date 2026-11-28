@@ -1,0 +1,7 @@
+url: https://github.com/anise0x7c/dsh-git-sidepanel
+name: anise0x7c/dsh-git-sidepanel
+category: git
+description:
+  en: 'A VS Code(Code OSS) style Git source-control sidebar for DSH: review working-tree changes with unified diffs, stage, unstage, discard or ignore files, commit, amend, commit and push, check out branches, follow the commit graph, and fetch, pull, push or sync remotes. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: VS Code（Code OSS）风格的 DSH Git 源代码管理侧边栏插件：查看工作区改动与 unified diff，暂存、取消暂存、丢弃或忽略文件，提交、修补提交、提交并推送，切换分支，浏览提交图，并对远端执行 fetch、pull、push 与同步。其 HTTP 路由未做 DSH 权限校验，浏览器中打开的任意网页都可能直接调用。
+icon: https://raw.githubusercontent.com/anise0x7c/dsh-git-sidepanel/main/assets/icon-180.png

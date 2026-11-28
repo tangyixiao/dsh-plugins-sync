@@ -1,0 +1,7 @@
+url: https://github.com/rigelmansid/dsh-stock-flick
+name: rigelmansid/dsh-stock-flick
+category: ui
+description:
+  en: 'A-share market workspace for DeepSeek Harness: 31 Shenwan level-1 sectors, 131 industries and 5,581 stocks in nested treemaps sized by float cap, total cap or turnover, with 1/3/5-day intraday and daily/weekly/monthly charts, a rule-based trend readout, a watchlist, a trade ledger with realized P&L and a daily P&L curve, price and percent alerts, and JSON export. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: DeepSeek Harness 的 A 股工作台：31 个申万一级行业、131 个二级行业与 5581 只个股的嵌套云图，面积按流通市值、总市值或成交额切换；1/3/5 日分时与日周月 K 线、规则化趋势研判、自选、可编辑交易流水与已实现盈亏、按日收益曲线、价格与涨跌幅预警，以及 JSON 导出。其 HTTP 路由未做 DSH 权限校验，浏览器中打开的任意网页都可能直接调用。
+icon: https://raw.githubusercontent.com/rigelmansid/dsh-stock-flick/main/docs/icon-180.png

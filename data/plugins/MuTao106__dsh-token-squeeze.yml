@@ -1,0 +1,6 @@
+url: https://github.com/MuTao106/dsh-token-squeeze
+name: MuTao106/dsh-token-squeeze
+category: tools
+description:
+  en: Squeezes every tool result before the model reads it, stripping terminal noise, folding JSON and console tables into compact records, capping oversized output with an on-disk spill and collapsing repeated results.
+  zh: '在模型读到之前压缩每条工具结果：去除终端噪声、把 JSON 与控制台表格折成紧凑记录、超大输出按上限截断并把原文落盘、重复结果折叠成一行指针。'

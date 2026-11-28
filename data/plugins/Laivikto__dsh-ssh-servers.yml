@@ -1,0 +1,6 @@
+url: https://github.com/Laivikto/dsh-ssh-servers
+name: Laivikto/dsh-ssh-servers
+category: remote
+description:
+  en: Manage SSH hosts, reconnect in chat, browse and transfer remote files, and capture Linux health snapshots.
+  zh: 管理 SSH 主机，在原聊天中重连，浏览和传输远程文件，并采集 Linux 巡检快照。

@@ -1,0 +1,6 @@
+url: https://github.com/lukstei/dsh-plugins/tree/main/packages/dsh-schedule-script
+name: lukstei/dsh-plugins#dsh-schedule-script
+category: workflow
+description:
+  en: Runs recurring background TypeScript checks without calling the model, waking the agent only when a script returns a prompt.
+  zh: 在后台定时运行 TypeScript 检查脚本而不消耗模型 Token，仅在脚本返回 prompt 时唤醒 Agent。

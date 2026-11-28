@@ -1,0 +1,8 @@
+url: https://github.com/Lin-Liszt/dsh-Lily-theme
+name: Lin-Liszt/dsh-Lily-theme
+category: theme
+description:
+  en: 'A Wuthering Waves Lily theme for DSH: orchid-purple sidebar and dock, lily line-art, 4K splash, two video backdrops and the full theme feature set. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 《鸣潮》莉莉主题：薰衣草紫侧栏与底栏、白百合线稿、4K 开屏、两段视频背景与完整主题功能集。其 HTTP 路由未做 DSH 权限校验，浏览器中打开的任意网页都可能直接调用。
+icon: https://raw.githubusercontent.com/Lin-Liszt/dsh-Lily-theme/main/icon.png
+tarball: https://github.com/Lin-Liszt/dsh-Lily-theme/releases/download/v2.2.2/dsh-lily-theme-evelyn.tgz

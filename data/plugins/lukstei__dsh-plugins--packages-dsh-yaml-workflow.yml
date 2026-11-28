@@ -1,0 +1,6 @@
+url: https://github.com/lukstei/dsh-plugins/tree/main/packages/dsh-yaml-workflow
+name: lukstei/dsh-plugins#dsh-yaml-workflow
+category: workflow
+description:
+  en: Runs YAML-defined multi-step prompt workflows via /wf with typed args, human approval gates, print steps, subagent fan-out, and authoring tools.
+  zh: 通过 /wf 执行 YAML 多步提示词工作流，支持类型化参数、人工审批门、print 步骤、子 Agent 编排与工作流编写工具。

@@ -1,0 +1,8 @@
+url: https://github.com/nange1107/dsh-omnicat
+name: nange1107/dsh-omnicat
+category: usage
+description:
+  en: OmniCat AI sidebar plugin for balance, gift credit, today's usage, model prices, API keys, and a connectivity test. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 全能猫 AI 侧边栏插件，查看余额、赠送金、今日用量、模型分时价、API Key，并测试连通性。其 HTTP 路由未做 DSH 权限校验，浏览器中打开的任意网页都可能直接调用。
+icon: https://raw.githubusercontent.com/nange1107/dsh-omnicat/main/icon-180.png
+tarball: https://github.com/nange1107/dsh-omnicat/releases/download/v0.1.6/dsh-omnicat-0.1.6.tgz

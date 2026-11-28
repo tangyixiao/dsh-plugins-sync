@@ -1,0 +1,6 @@
+url: https://github.com/lukstei/dsh-plugins/tree/main/packages/dsh-debug
+name: lukstei/dsh-plugins#dsh-debug
+category: dev
+description:
+  en: Adds /copy-transcript and /copy-session-id slash commands to copy session snapshot events or the session ID to the clipboard.
+  zh: 新增 /copy-transcript 与 /copy-session-id 斜杠命令，将会话快照事件或会话 ID 复制到剪贴板。

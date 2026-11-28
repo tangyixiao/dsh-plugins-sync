@@ -1,0 +1,6 @@
+url: https://github.com/kanxue0201/dsh-element-ref
+name: kanxue0201/dsh-element-ref
+category: browser
+description:
+  en: Picks elements in the DSH right-Sidebar browser, edits their styles in place field by field, and sends the selector, HTML snapshot, computed styles and a screenshot of image, SVG or canvas elements to the model through the element_ref_details tool. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 在 DSH 右栏浏览器里连续点选网页元素，原地逐项调样式并在气泡里写一句要求，发送后把选择器、HTML 快照、计算样式与图片 / SVG / canvas 的元素截图经 element_ref_details 工具交给模型。其 HTTP 路由未做 DSH 权限校验，浏览器中打开的任意网页都可能直接调用。

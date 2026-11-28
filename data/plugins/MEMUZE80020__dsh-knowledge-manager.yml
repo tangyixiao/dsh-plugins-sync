@@ -1,0 +1,6 @@
+url: https://github.com/MEMUZE80020/dsh-knowledge-manager
+name: MEMUZE80020/dsh-knowledge-manager
+category: memory
+description:
+  en: Local SQLite knowledge base the agent searches before answering and writes accepted findings to afterwards, with sensitive-content flags and optional MariaDB/MySQL libraries. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 本地 SQLite 知识库：DSH 回答前自动检索、回答后把认可的结论与踩坑经验记下来，敏感内容默认不外传，可选连 MariaDB/MySQL 外部库。其 HTTP 路由未做 DSH 权限校验，浏览器中打开的任意网页都可能直接调用。

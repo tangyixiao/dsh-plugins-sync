@@ -1,6 +1,7 @@
 url: https://github.com/byteuser1977/ColaMD-themes
 name: byteuser1977/ColaMD-themes
-category: dev
+category: docs
+icon: https://raw.githubusercontent.com/byteuser1977/ColaMD-themes/main/assets/icon.png
 description:
-  en: "Extract CSS themes from URLs, DOCX or PDF; generate, validate and export ColaMD contract themes, and export Markdown to standalone HTML or PDF."
-  zh: "从 URL、DOCX 或 PDF 提取 CSS 主题，生成并校验 ColaMD 契约主题，以及将 Markdown 导出为独立 HTML 或 PDF。"
+  en: 'Markdown themes for DSH: pick one of 69 themes beside the composer, render .md files in place, and export documents or 11-layout slide decks to PDF, Word or PPTX with the same CSS. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: DSH 的 Markdown 主题工具：输入框旁选 69 套主题，按主题就地渲染 .md，并把文稿或 11 种版式的幻灯片导出为与屏幕一致的 PDF / Word / PPTX。其 HTTP 路由未做 DSH 权限校验，浏览器中打开的任意网页都可能直接调用。

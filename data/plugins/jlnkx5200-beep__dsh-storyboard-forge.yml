@@ -1,0 +1,7 @@
+url: https://github.com/jlnkx5200-beep/dsh-storyboard-forge
+name: jlnkx5200-beep/dsh-storyboard-forge
+category: tools
+description:
+  en: 'Storyboard-to-film pipeline for DeepSeek Harness: Seedream stills, optional ComfyUI depth and matte passes, MiniMax H3 or Sand.ai MAGI-2 video shots and a Three.js stage are compiled into one render plan that Remotion renders frame-exactly. Ships seven shot strategies, six style presets, a SHA256 content-addressed cache, three agent tools and a loopback-only web console; generation needs your own Ark key plus a MiniMax or Sand.ai key (MAGI-2 quota is subject to Sand.ai), and scripts/qa-mock.mjs runs the pipeline end to end without any key. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.'
+  zh: 面向 DeepSeek Harness 的分镜到成片管线：Seedream 静帧、可选的 ComfyUI 深度与抠像、MiniMax H3 或 Sand.ai MAGI-2 视频镜头与 Three.js 舞台编译成同一份渲染计划，由 Remotion 逐帧确定性出片。内置 7 种镜头策略、6 套风格预设、SHA256 内容寻址缓存、3 个 Agent 工具与仅回环可访问的网页控制台；出片需自备 Ark Key 以及 MiniMax 或 Sand.ai Key（MAGI-2 配额由 Sand.ai 决定），而 scripts/qa-mock.mjs 不配任何 Key 也能把管线跑通。其 HTTP 路由未做 DSH 权限校验，浏览器中打开的任意网页都可能直接调用。
+tarball: https://github.com/jlnkx5200-beep/dsh-storyboard-forge/releases/latest/download/dsh-storyboard-forge.tgz

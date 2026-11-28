@@ -7,11 +7,16 @@ description:
     across every stored session, get the original file path, or copy them out in one call.
     A context compressor only shrinks what is already inside the live window, and a transcript
     searcher returns quoted text, so neither hands back the original file. It also injects one
-    per-workspace Markdown memory file into the system prompt every turn, searches past
-    transcripts with AND keywords plus an optional time window and workspace filter, and
-    reports index health. Keyword search only, no embedding service.
+    Markdown memory file into the system prompt every turn; with memoryDir pinned, every
+    workspace reads the same file, and two host-side tools (append and exact replace, guarded by
+    a cross-process lock) let a session in any workspace update it, which the AI's own
+    workspace-scoped write tool cannot do. Also searches past transcripts with AND keywords plus
+    a time window and workspace filter, and reports index health. Keyword search only, no
+    embedding service.
   zh: >-
     把历史会话里带过的图片和文档找回来：按主题跨会话搜附件、拿到原始文件路径、或一次性复制出来。
     上下文压缩器只压缩当前窗口里的东西，会话检索返回的是引用文本——两者都给不回原始文件。此外每轮
-    把一个按工作区定位的 Markdown 记忆文件注入系统提示，支持多关键词 AND、时间窗与工作区过滤的
-    会话检索，并提供索引体检。仅关键词检索，不依赖向量服务。
+    把一个 Markdown 记忆文件注入系统提示；固定 memoryDir 后，所有工作区读的是同一份，并且提供
+    两个 host 侧工具（追加与精确替换，带跨进程写锁），让任意工作区的会话都能更新它——这是 AI 自己的
+    write 工具（被限制在当前工作区）做不到的。还支持多关键词 AND、时间窗与工作区过滤的会话检索，
+    并提供索引体检。仅关键词检索，不依赖向量服务。

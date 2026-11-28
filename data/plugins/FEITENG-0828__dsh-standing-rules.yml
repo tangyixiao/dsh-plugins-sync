@@ -1,0 +1,6 @@
+url: https://github.com/FEITENG-0828/dsh-standing-rules
+name: FEITENG-0828/dsh-standing-rules
+category: session
+description:
+  en: Appends the rules from AGENTS.md to incoming user messages as a reminder, with a configurable rules file and an interjection switch.
+  zh: 把 AGENTS.md 的规则附加到用户消息上作为提醒，可配置规则文件和插话提醒开关。

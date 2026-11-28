@@ -1,0 +1,6 @@
+url: https://github.com/AnoneX2/dsh-retry-and-switch
+name: AnoneX2/dsh-retry-and-switch
+category: model
+description:
+  en: Retries transient model-request failures per session, optionally cycling through an ordered provider, model, and reasoning-effort pool.
+  zh: 按会话重试临时模型请求失败，并可按顺序轮换提供方、模型和思考强度。

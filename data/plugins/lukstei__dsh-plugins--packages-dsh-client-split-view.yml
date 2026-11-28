@@ -1,0 +1,6 @@
+url: https://github.com/lukstei/dsh-plugins/tree/main/packages/dsh-client-split-view
+name: lukstei/dsh-plugins#dsh-client-split-view
+category: ui
+description:
+  en: Displays multiple sessions in side-by-side panes with per-pane file, review, and related-session overlays that persist across reloads.
+  zh: 支持多会话分栏并排显示，可在窗格内以浮层打开文件、评审或关联会话，并在刷新后恢复布局。

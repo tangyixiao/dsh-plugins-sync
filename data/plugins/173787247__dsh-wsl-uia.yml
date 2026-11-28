@@ -2,5 +2,5 @@ url: https://github.com/173787247/dsh-wsl-uia
 name: 173787247/dsh-wsl-uia
 category: wsl
 description:
-  en: "Windows UI Automation from WSL: enumerate top-level windows, read a bounded element tree, and wait for or trace the path to a named element."
-  zh: "Windows UI Automation：枚举顶层窗口、读取有界元素树，并按名等待元素或取祖先链。"
+  en: 'Windows UI Automation observation from WSL: enumerate top-level windows and read a bounded element tree with stable per-observation handles.'
+  zh: 在 WSL 中进行 Windows UI 自动化观测：枚举顶层窗口，读取受限范围的元素树，并为每次观测提供稳定的元素句柄。

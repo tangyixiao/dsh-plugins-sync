@@ -1,0 +1,6 @@
+url: https://github.com/qiancheng19494/dsh-screen-qa
+name: qiancheng19494/dsh-screen-qa
+category: tools
+description:
+  en: 'Screen Q&A for DeepSeek Harness: capture the screen, read the question with Apple Vision OCR, and answer it with DeepSeek multi-sample voting.'
+  zh: '屏幕问答：截图后用苹果 Vision OCR 读题，再用 DeepSeek 多采样投票作答。'

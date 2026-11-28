@@ -1,0 +1,6 @@
+url: https://github.com/sqeqceqacv/dsh-workspace-scope/tree/main/packages/workspace-scope
+name: sqeqceqacv/dsh-workspace-scope#workspace-scope
+category: tools
+description:
+  en: Per-workspace policy for DeepSeek Harness that gates tool definitions, prompt sections, SOUL and a local cross-session memory database; unmanaged workspaces are left untouched. Its HTTP routes have no DSH access check, so a web page open in your browser could call them.
+  zh: 按工作区裁剪工具定义、系统提示段、SOUL 与本地跨会话记忆库；未托管工作区完全不介入。其 HTTP 路由未做 DSH 权限校验，浏览器中打开的任意网页都可能直接调用。

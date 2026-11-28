@@ -1,0 +1,7 @@
+url: https://github.com/603619710-creator/dsh-peak-coach
+name: 603619710-creator/dsh-peak-coach
+category: workflow
+icon: https://raw.githubusercontent.com/603619710-creator/dsh-peak-coach/main/assets/icon-180.png
+description:
+  en: 'During DeepSeek peak billing hours (weekdays 9:00-12:00 and 14:00-18:00 Beijing time) the agent stops doing the work and hands you the plan, commands, and acceptance checks instead; off-peak it behaves exactly as usual. Reads and searches keep working during peak, and an explicit order unlocks the work for a few minutes.'
+  zh: 'DeepSeek 高峰时段（北京时间工作日 9:00–12:00、14:00–18:00）把「动手」关上，只给方案、命令和验收标准；谷时（午休、18:00 之后、周末、法定节假日）照默认模式正常干活。峰时读文件、搜索、查文档照常可用，你明确下令时临时解锁几分钟。'
